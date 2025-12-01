@@ -13,11 +13,18 @@
 
 \typeout{NT FILE schools/nova/fct/nova-fct-cbbi-defaults.ldf}%
 
-\ifmscdoc{}{%
-  \ClassError{novathesis}{Invalid document type: `\@DOCTYPE'.  Must be `msc'!}{}{}%
+
+%-----------------------------------------------------------------
+% New global properties
+%-----------------------------------------------------------------
+\options{/novathesis,
+% NOVA/FCT
+  nova/fct/company/logo/.new value = {},
+  nova/fct/company/name/.new value = {},
 }
 
-% FCT-NOVA specific customization
+
+% NOVA FCT specific customization
 \openany
 \ntsetup{doctype=msc}
 \ntsetup{print/secondcover=true}
@@ -28,6 +35,7 @@
 \AtEndPreamble{%
   % [tabular,lining]
   \RequirePackage[]{montserrat}
+  \ifxeorlua{\setsansfont{montserrat}}{}
 }
 
 % Faculty / School

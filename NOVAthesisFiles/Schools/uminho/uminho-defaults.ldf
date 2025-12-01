@@ -7,6 +7,23 @@
 
 \typeout{NT FILE uminho/uminho-defaults.ldf}%
 
+
+%-----------------------------------------------------------------
+% New global properties
+%-----------------------------------------------------------------
+\options{/novathesis,
+% UMINHO
+  uminho/copyrightmodifier/.new choice = {by-nc-sa, by-sa, by, by-nc, by-nd, by-nc-nd},
+  uminho/skipblankcovers/.new toggle   = false,
+  uminho/signatureline/.new toggle     = true,
+}
+
+
+%-----------------------------------------------------------------
+% Do not accept pdfLaTex
+%-----------------------------------------------------------------
+\AddValidProcessor{uminho}{lua,xe}
+
 %-----------------------------------------------------------------
 % memoir customization
 %-----------------------------------------------------------------
@@ -16,7 +33,7 @@
 %-----------------------------------------------------------------
 % novathesis customization
 %-----------------------------------------------------------------
-% \ntsetup{lang/cover=pt}
+\ntsetup{lang/cover=pt}
 \ntsetup{print/secondcover=true}
 \ntsetup{print/statement=true}
 \ntsetup{countsecondcover=true}
@@ -109,7 +126,7 @@
 }
 \NTAddToHook{abstract/mid}{%
   % \let\oldchapterheadstart=\chapterheadstart%
-  {{\noindent\newsgottbf\Large\thedoctitle(\@LSHORT,main)}\\[1ex]}%
+  {{\noindent\bfseries\Large\thedoctitle(\@LSHORT,main)}\\[1ex]}%
 }
 \NTAddToHook{abstract/post}{%
   \let\chapterheadstart=\oldchapterheadstart%
@@ -199,6 +216,8 @@
 %% Draw the cover page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\ntaddtocover{1-2}{}
+\ntaddtocover{N-1}{N-1}
 
 % University and School logos
 \ntaddtocover[vspace=-0.6mm,halign=l,height=2.6cm]{1-1}{%
@@ -222,7 +241,7 @@
   \textbf{\theuniversity(pt)}%
   \\%
   \addfontfeature{LetterSpace=1.2}%
-  \newsgottlig\theschool(pt)%
+  \theschool(pt)%
 }
 
 % Author name

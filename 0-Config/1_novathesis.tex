@@ -12,7 +12,7 @@
 %%============================================================
 
 %-------------------------------------------------------------
-% \ntsetup{doctype=msc}       % The type of document
+% \ntsetup{doctype=msc}         % The type of document
 %                               %     [     phd —> PhD thesis
 %                               %       phdplan —> PhD thesis plan
 %                               %       phdprop —> PhD thesis proposal
@@ -26,7 +26,7 @@
 
 
 %-------------------------------------------------------------
-% \ntsetup{school=uminho/eeng}    % The school id
+% \ntsetup{school=uminho/eeng}  % The school id
 %                               %     [ nova/fct, nova/fct/di-adc, nova/fct/cbbi,
 %                               %       nova/fct/blue, nova/fct/green, nova/fct/brown, nova/fct/red,
 %                               %       nova/itqb/gray, nova/itqb/green, nova/fcsh, nova/ensp, 
@@ -69,11 +69,41 @@
 %                               %     ]
 %                               % DEFAULT: media=screen
 
+%------------------------------------------------------------
+\ntsetup{print/sdgs/list={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17}}
+% \ntsetup{print/sdgs/type=inverted OR normal OR mono}   % default: inverted
+% \ntsetup{print/sdgs/size=2cm}
+% \ntsetup{print/sdgs/hspace=5mm}
+% \ntsetup{print/sdgs/vspace=4mm}
+%
+% NOVA/IMS - Sustainable Development Goasl (SDG)
+%     Please add the SDGs of your work to the list below
+%     Please uncomment and keep only the SDGs of your work
+%     DEFAULT: all 17 SDGs
+%
+% Do not uncomment items in list below.  Add the number of the SDGs above.
+% (SDG  1) No poverty                                 (SDG  1) Erradicar a Pobreza
+% (SDG  2) Zero hunger                                (SDG  2) Erradicar a Fome
+% (SDG  3) Good health and well-being                 (SDG  3) Saúde de Qualidade
+% (SDG  4) Quality education                          (SDG  4) Educação de Qualidade
+% (SDG  5) Gender equality                            (SDG  5) Igualdade de Género
+% (SDG  6) Clean water and sanitation                 (SDG  6) Água Potável e Saneamento
+% (SDG  7) Affordable and clean energy                (SDG  7) Energias Renováveis e Acessíveis
+% (SDG  8) Decent work and economic growth            (SDG  8) Trabalho Digno e Crescimento Económico
+% (SDG  9) Industry, innovation and infrastructure    (SDG  9) Indústria, Inovação e Infraestruturas
+% (SDG 10) Reduced inequalities                       (SDG 10) Reduzir as Desigualdades
+% (SDG 11) Sustainable cities and communities         (SDG 11) Cidades e Comunidades Sustentáveis
+% (SDG 12) Responsible consumption and production     (SDG 12) Produção e Consumo Sustentáveis
+% (SDG 13) Climate action                             (SDG 13) Ação Climática
+% (SDG 14) Life below water                           (SDG 14) Proteger a Vida Marinha
+% (SDG 15) Life on land                               (SDG 15) Proteger a Vida Terrestre
+% (SDG 16) Peace, justice, and strong institutions    (SDG 16) Paz, Justiça e Instituições Eficazes
+% (SDG 17) Partnerships for the goals                 (SDG 17) Parcerias Para a Implementação dos Objetivos
 
 
 %-------------------------------------------------------------
 % \ntsetup{print/webography=Webography} % Generate a separate bibliography for @online references
-%                                 % DEFAULT: All references in a single bibliography
+%                               % DEFAULT: All references in a single bibliography
 
 
 
@@ -175,7 +205,7 @@
 %\ntsetup{print/copyright=false} % Shall the copyright message be printed??
 %                               % DEFAULT: print/copyright=true
 
-% \ntsetup{print/index=true}     % Print the (words) index at the end of the document
+% \ntsetup{print/index=true}    % Print the (words) index at the end of the document
 %                               % DEFAULT: print/index=false
 
 
@@ -187,18 +217,18 @@
 
 
 %-------------------------------------------------------------
-% \ntsetup{style/url=same}       % Use the same (main) font in URLs
+% \ntsetup{style/url=same}      % Use the same (main) font in URLs
 %                               % DEFAULT: whatever hyperref uses as default
 
 
 
 %-------------------------------------------------------------
-% \ntsetup{style/font=futura}   % You can use any of the default LaTeX style files:
+% \ntsetup{style/font=newsgott} % You can use any of the default LaTeX style files:
 %                               % (*) available only for xelatex/lualatex)
 %                               % Or any of the additional styles
 %                               %     [ bookman, erewhon, libertine,
 %                               %       newpx, opensans, scholax,
-%                               %       arial(*), callibri(*), newsgot(*), 
+%                               %       arial(*), callibri(*), newsgott(*), 
 %                               %       kieranhealy(*), futura(*) ]
 %                               % DEFAULT: style/font=newpx
 
@@ -234,7 +264,7 @@
 
 
 %-------------------------------------------------------------
-% \ntsetup{spine/layout=trim}    % Print the “book spine” at the end of the document?
+% \ntsetup{spine/layout=trim}   % Print the “book spine” at the end of the document?
 %                               %     [   no —> do not print the book spine
 %                               %       full —> print the book spine in a full page
 %                               %       trim —> print and trim the page to the width
@@ -249,7 +279,7 @@
 % \ntsetup{spine/width=2cm}     % Force the “book spine” width
 %                               % DEFAULT: natural width of book spine for double-sided 80gr paper
 
-% \ntsetup{debug={cover,spine}}   % Cover development and debug: print rulers in the cover page
+% \ntsetup{debug={cover,spine}} % Cover development and debug: print rulers in the cover page
 %                               %     [ cover —> print grid in covers and spine
 %                               %       spine —> print red boxes around spine elements
 %                               %     ]
