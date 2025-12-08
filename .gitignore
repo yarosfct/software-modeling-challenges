@@ -9,6 +9,10 @@ template.*
 !template.tex
 !template.pdf
 
+# Ignore temp files
+.needlualatex
+.keep-dir
+
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
 *.aux
@@ -63,6 +67,8 @@ _minted-template
 # latexrun
 latex.out/
 AUXDIR/
+BUILDDIR/
+.nopdflatex
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
@@ -389,7 +395,7 @@ $RECYCLE.BIN/
 ~*
 
 ### Fonts ###
-**/Fonts
+# **/Fonts
 
 ### Scripts ###
 **/Scripts
