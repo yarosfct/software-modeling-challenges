@@ -21,12 +21,12 @@
 %                                 (if omitted defaults to main title without line breaks)
 %-------------------------------------------------------------------
 %         You may use "\\" to force line breaks
-\nttitle(main,en){A Very Long and Impressive\\Thesis Title with a Forced Line Break}%
-\nttitle(main,pt){Um Título de Tese Longo\\e com uma Mudança de Linha Forçada}%
+\nttitle(main,en){Challenges in Learning and Teaching Software Modelling: A Socio-Technical Grounded Theory Approach}%
+\nttitle(main,pt){Desafios na Aprendizagem e Ensino de Modelação de Software: Uma Abordagem de Teoria Fundamentada Sócio-Técnica}%
 
 %         You may use "\\" to force line breaks
-\nttitle(sub,en){Some thoughts on the Life, the Universe,\\and Everything Else}%
-\nttitle(sub,pt){Algumas considerações sobre a Vida,\\o Universo e Tudo o Mais}%
+% \nttitle(sub,en){Some thoughts on the Life, the Universe,\\and Everything Else}%
+% \nttitle(sub,pt){Algumas considerações sobre a Vida,\\o Universo e Tudo o Mais}%
 
 %         You may NOT use "\\" to force line breaks
 % \nttitle(spine,en){A Very Long and Impressive Thesis Title}%
@@ -40,12 +40,13 @@
 %         You may use "\\" to force line breaks
 %         The stared (*) version will only define if undefined, otherwise ignored
 % \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-%    For FCT-NOVA, please open file “9_nova_fct.tex” and uncomment
+%    For FCT-NOVA, please open file "9_nova_fct.tex" and uncomment
 %    the right name for your Department from the given list
 %    otherwise fill the entries below
 %-------------------------------------------------------------------
-\ntdepartment*(pt){Departamento de\\Nome do Departamento}
-\ntdepartment*(en){Department of\\Name of the Department}
+% Department is defined in 9_nova_fct.tex
+% \ntdepartment*(pt){Departamento de\\Nome do Departamento}
+% \ntdepartment*(en){Department of\\Name of the Department}
 
 
 
@@ -55,12 +56,13 @@
 %         You may use "\\" to force line breaks
 %         The stared (*) version will only define if undefined, otherwise ignored
 % \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
-%    For FCT-NOVA, please open file “9_nova_fct.tex” and uncomment
+%    For FCT-NOVA, please open file "9_nova_fct.tex" and uncomment
 %    the right name(s) for the PhD/MSc program from the given list
 %    otherwise fill the entries below
 %-------------------------------------------------------------------
-\ntdegreename*(pt){Nome do Programa de Estudos}
-\ntdegreename*(en){Study Program Name}
+% Degree name is defined in 9_nova_fct.tex
+% \ntdegreename*(pt){Nome do Programa de Estudos}
+% \ntdegreename*(en){Study Program Name}
 
 
 
@@ -72,8 +74,9 @@
 %         You may use "\\" to force line breaks
 %         The stared (*) version will only define if undefined, otherwise ignored
 %-------------------------------------------------------------------
-\ntspecialization*(pt){Designação da Especialidade}
-\ntspecialization*(en){Specialization Name}
+% No specialization for this degree
+% \ntspecialization*(pt){Designação da Especialidade}
+% \ntspecialization*(en){Specialization Name}
 
 
 
@@ -98,7 +101,7 @@
 % SYNTAX: \ntauthorname(gender){full name}{abbreviated name}
 %         Use [f] for female and [m] for male
 %-------------------------------------------------------------------
-\ntauthorname(m){John Very Longname Doe}{John Doe}
+\ntauthorname(m){Yaroslav Hayduk}{Y. Hayduk}
 
 
 
@@ -106,8 +109,8 @@
 % AUTHOR previous degree
 % SYNTAX: \ntauthordegree{degree}
 %-------------------------------------------------------------------
-\ntauthordegree(en){Master/BSc in Name of Previous Degree}
-\ntauthordegree(pt){Mestrado/Licenciatura em Nome do Grau Anterior}
+\ntauthordegree(en){Bachelor in Computer Science and Engineering}
+\ntauthordegree(pt){Licenciatura em Engenharia Informática}
 
 
 
@@ -134,10 +137,9 @@
 %         You may use "\\" to force line breaks
 %-------------------------------------------------------------------
 % Advisers(s)
-\ntaddperson{adviser}(a,f){Mary Doe Adviser Name, Full Professor, NOVA University Lisbon}
+\ntaddperson{adviser}(a,m){Miguel Goulão, Professor, NOVA University Lisbon}
 % Co-advisers(s)
-\ntaddperson{adviser}(c,m){John Doe Co-Adviser Name, Associate Professor, NOVA University Lisbon}
-\ntaddperson{adviser}(c,f){John Doe other Co-Adviser Name, Full Professor, NOVA University Lisbon}
+\ntaddperson{adviser}(c,m){Grischa Liebel, Associate Professor, Reykjavik University}
 
 
 
@@ -154,11 +156,12 @@
 %                           [m] for male
 %         You may use "\\" to force line breaks
 %-------------------------------------------------------------------
-\ntaddperson{committee}(c,m){Name of the committee chairperson, Full Professor, FCT-NOVA}
-\ntaddperson{committee}(r,m){Name of a rapporteur, Associate Professor, Another University}
+% Committee members will be added when document status is set to final
+% \ntaddperson{committee}(c,m){Name of the committee chairperson, Full Professor, FCT-NOVA}
+% \ntaddperson{committee}(r,m){Name of a rapporteur, Associate Professor, Another University}
 % \ntaddperson{committee}(r,m){Name of another rapporteur, Assistant Professor, Another University}
 % \ntaddperson{committee}(a,m){Name of the adviser present in defense, Associate Professor, Some University}
 % \ntaddperson{committee}(ca,m){Name of the co-adviser present in defense, Associate Professor, Some University}
-\ntaddperson{committee}(m,f){Another member of the committee, Full Professor, Another University}
-\ntaddperson{committee}(m,f){Yet another member of the committee, Assistant Professor, Another University}
+% \ntaddperson{committee}(m,f){Another member of the committee, Full Professor, Another University}
+% \ntaddperson{committee}(m,f){Yet another member of the committee, Assistant Professor, Another University}
 % \ntaddperson{committee}(g,m){Guest member of the committee, Position, University}

@@ -525,6 +525,4 @@ These show how GT is actually used and give me rhetorical models for the Methods
 9. **A Framework for Teaching Conceptual Modeling and Metamodeling (Bork)**
 10. **A Research Agenda for Identifying and Developing Required Competencies in SE**
 11. **Dimensions of Experientialism for SE Education**
-12. **Using grounded theory to study the experience of software development**
-
-grischal
+12. **Using grounded theory to study the experience of software development**n
