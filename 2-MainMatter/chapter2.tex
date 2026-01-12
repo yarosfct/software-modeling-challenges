@@ -14,15 +14,124 @@
 \section{Software modelling \& conceptual modelling}
 \label{sec:software_modelling_conceptual}
 
-% Content to be added
+\subsection{Purpose and role of modelling in software engineering}
+\label{subsec:purpose_role_modelling_se}
+
+Software systems are complex socio-technical constructs that must meet a variety of functional and non-functional requirements while evolving under technical, organisational, and human constraints. Within this context, software modelling supports reasoning about software systems by providing abstractions that capture relevant aspects of reality at an appropriate level of detail. Models serve as blueprints for design, facilitate communication among stakeholders, and enable analysis and validation of system properties before implementation \cite{maslov2021conceptual,buchmann2020conceptual}.
+
+While modelling is frequently introduced through widely adopted notations such as the UML or BPMN, it is important to recognise that modelling should not be reduced to ``drawing diagrams''. Instead, models should be viewed and treated as structured representations based in a modelling language's semantics and intended to serve a clear purpose for specific stakeholders within a given context. This perspective frames modelling not merely as documentation, but as a means of constructing and manipulating knowledge about a domain or system \cite{buchmann2020conceptual}.
+
+\subsection{Conceptual modelling as a broader discipline}
+\label{subsec:conceptual_modelling_broader_discipline}
+
+It is relevant to differentiate between software modelling as a practice within software engineering, and conceptual modelling as a broader discipline that studies how to represent, structure, and reason about domains and systems across various fields. Conceptual modelling is not limited to software development alone; it is also applied in organisational analysis, enterprise and service design, data-intensive systems, and other domains where abstraction is needed to manage complexity and facilitate understanding \cite{maslov2021conceptual}. Mappings of conceptual modelling education also reinforce its interdisciplinary nature, while highlighting that conceptual modelling spans a broad family of modelling subtypes (such as data, process, goal, and enterprise modelling) that often evolve with limited pedagogical or theoretical integration \cite{maslov2021conceptual,bogdanova2020domain,bogdanova2020camelot}.
+
+This disciplinary perspective is particularly relevant for research on teaching and learning software modelling. If modelling is treated merely as a supplementary topic within software engineering courses, students may not fully appreciate its significance or develop oversimplified views of its purpose and application. The conceptual modelling perspective argues instead that modelling languages resemble knowledge schemas: they define what can be expressed, how meaning is structured, and what kinds of analysis or tooling become possible. Therefore, understanding modelling requires engaging with both notational elements and the underlying semantics, as well as the modelling goals and the intended audience of the produced models \cite{buchmann2020conceptual}.
+
+\subsection{Modelling methods, languages, and artefacts}
+\label{subsec:modelling_methods_languages_artefacts}
+
+Several authors conceptualise a modelling method as more than a set of symbols or notations. A modelling method can be understood as comprising a modelling language (including syntax, semantics, and notation), a modelling procedure (the process or steps to create models), and supporting mechanisms and algorithms such as analysis, simulation, or transformation capabilities \cite{bork2020framework,buchmann2020conceptual}. This holistic view clarifies why students may be able to reproduce symbols yet still struggle to apply modelling meaningfully: the method's procedural and analytical aspects are often less explicitly taught or emphasised.
+
+From this viewpoint, the value of a modelling language is not only in enabling representation, but also in supporting reasoning. When a language is treated as a structured schema, models become more than static diagrams: they can become queryable, analysable, and transformable artefacts that facilitate deeper engagement with the domain. This opens the door to tool support that can provide feedback on syntactic correctness, highlight semantic issues, help manage complexity, or even automate certain modelling tasks \cite{bogdanova2020camelot,maslov2021conceptual}.
+
+\subsection{Implications for the scope of this thesis}
+\label{subsec:implications_scope_thesis}
+
+This thesis adopts the view that software modelling is an instantiation of the broader discipline of conceptual modelling. It therefore treats modelling as a discipline involving:
+\begin{enumerate}
+    \item Conceptual understanding of modelling constructs and their semantics,
+    \item Procedural competence in constructing and refining models from problem descriptions,
+    \item Analytical judgement of model quality and fit-for-purpose, and
+    \item Socio-technical awareness of how modelling practices are shaped by tools, learning contexts, and stakeholder needs.
+\end{enumerate}
+
+These aspects resonate with existing work on modelling learning outcomes and competencies, which emphasises not only knowledge of notations but also procedural skills, evaluative abilities and reflective understanding \cite{bogdanova2020camelot,bogdanova2020domain,bork2020framework,sedelmaier2014research}.This framing motivates the later background sections on modelling education, grounded theory, and learning outcomes, and provides the conceptual foundation for investigating challenges in learning and teaching modelling from both student and instructor perspectives.
 
 \section{Modelling education (conceptual, process, goal, UML, MDE)}
 \label{sec:modelling_education}
 
+\subsection{Overview of conceptual modelling education}
+\label{subsec:overview_conceptual_modelling_education}
+
+Conceptual and software modelling are widely taught across computing and software-related programs, but the way these topics are taught and integrated into curricula remains fragmented. Maslov et al. \cite{maslov2021conceptual} map the conceptual modelling education literature and identify that educational work is scattered across various modelling sub-communities (e.g., data modelling, process modelling, enterprise modelling, etc.), which often evolve in parallel with limited reuse of frameworks, terminology, and learning theories across subfields \cite{maslov2021conceptual}. Within this landscape, modelling appears in diverse course contexts (from introductory programming courses to advanced software engineering), and courses emphasise different modelling families and purposes (e.g., data-centric, process-centric, goal-oriented, etc.).
+
+The same studies also highlight that much of the current practice in modelling education is driven by instructor experience and preferences, local institutional constraints, and the availability of tools, rather than by systematically articulated educational frameworks or empirically validated design principles \cite{maslov2021conceptual}. While there is a broad consensus on the importance of modelling skills for software professionals, there is less agreement on which specific \emph{competencies} learners should acquire, how these competencies should be scaffolded, and how learning should be assessed in a reliable and educationally meaningful way.
+
+\subsection{Bloom-based perspectives on modelling learning outcomes}
+\label{subsec:bloom_perspectives_modelling_learning_outcomes}
+
+In response to the fragmented state of modelling education, several authors have proposed to adapt Bloom's revised taxonomy to conceptual and domain modelling, with the goal of making learning outcomes more explicit and comparable across courses and contexts. At a general level, these works start from the cognitive levels of remembering, understanding, applying, analysing, evaluating, and creating \cite{krathwohl2002revision}, and specialise them to the kinds of activities involved in modelling, such as interpreting models, constructing models from textual descriptions, critiquing model quality, or designing new modelling methods.
+
+Bogdanova and Snoek analyse learning outcomes and assessment tasks for domain modelling through the lens of Bloom's revised taxonomy, identifying that existing tasks tend to concentrate on understanding, analysing, and creating conceptual knowledge while giving less attention to evaluation, procedural knowledge, or metacognition \cite{bogdanova2020domain}. Building on this analysis, CaMeLOT provides a three-dimensional framework that combines Bloom's cognitive levels with a knowledge dimension (factual, conceptual, procedural, metacognitive) and specific content areas of conceptual data modelling (e.g., classes, relationships, methods, quality, and tool support) \cite{bogdanova2020camelot}. This framework is instantiated with detailed example learning outcomes and can be used to design or audit courses.
+
+Bork extends this Bloom-based perspective to both conceptual modelling and metamodeling, mapping knowledge and cognitive dimensions to all components of a modelling method (language, semantics, notation, procedure, mechanisms and algorithms) \cite{bork2020framework}. An evaluation of a ``Smart City'' teaching case using this framework reveals that  even rich, practice-oriented material may still underemphasise certain cognitive levels (e.g., evaluation) or knowledge types (e.g., metacognitive knowledge). These works collectively suggest that Bloom's taxonomy can provide a useful lens for reflecting on and improving modelling education, by making learning objectives more explicit and balanced across different dimensions.
+
+\subsection{Process and goal modelling education}
+\label{subsec:process_goal_modelling_education}
+
+Beyond data and structural modelling, there is growing interest in how students learn process and goal-oriented modelling. For business process modelling with BPMN, Maslov outlines a research agenda for developing empirically validated process-moddelling education that integrates insights from conceptual modelling education, process model quality research, and learning sciences \cite{bpmn-education}. This agenda highlights the need for systematic mapping of existing work, empirical studies of novice modellers' behaviour and typical errors, and the design and experimental evaluation of BPMN-specific teaching strategies and feedback mechanisms. This reflects a broader recognition that teaching process modelling effectively requires more than just introducing notation; it requires attention to cognitive demands, quality criteria, and the kinds of feedback needed to help learners improve.
+
+Goal and actor-oriented modelling introduces additional layers of complexity, as it requires learners to reason about stakeholder intentions, rationales, and dependencies. The iStar learning study explicitly investigates the challenges students face when learning iStar, using a combination of Bloom-based task framing and grounded theory analysis of tutorials, modelling sessions, and interviews \cite{istar-learning}. The authors report difficulties at multiple cognitive levels, including understanding the semantics of iStar constructs, applying the notation to real requirements, and analysing models to assess completeness and appropriateness. They derive a catalogue of strategies and tool-supported requirements (e.g., conceptual clarification, syntax checking, process guidance, templates, visualisation, and semi-automation modelling from text) that could help address these challenges \cite{istar-learning}.
+
+These strands of work on BPMN and iStar education illustrate that different modelling families pose distinct learning challenges and may require specialised pedagogical approaches. They also reinforce the broader themes identified in conceptual modelling education: the need for scaffolding from text to model, support for managing complexity, and explicit attention to how learners evaluate and refine their models.
+
+\subsection{Modelling, tools, and model-driven engineering in education}
+\label{subsec:tools_mde_education}
+
 % Content to be added
+
+% Write about tools as a mediator of modelling learning: modelling isnt experienced purely conceptually, tools shape cognitive load, feedback, iteration speed, etc
+
+% Spectrum of tooling: lightweight diagramming tools (paper/draw.io/web tools) to full MDE environments / industrial-grade (Papyrus, Eclipse Modelling Framework, etc)
+
+% Key claim: students attitudes towards modelling and tools are context-dependent (course design + support + what models are used for).
+
+% Destinguish between modelling for communication/analysis vs modelling for MDE (code generation, transformations, etc). Different tool support and student expectations.
+
+% Citations:
+% \cite{liebel2014model}
+% for evidence that tool perceptions varies by course setup,
+% same tool can be loved or hated depending on the integration
+% UML perceived more positively when used for requirements/analysis than only for code-gen/MDA
+
+% \cite{human-factors-mde}
+% tools should be design/selected with human factors in mind
+%  argument that education tooling should not equal industrial feature completeness
+
+
+\subsection{Competence-oriented and human-centred perspectives}
+\label{subsec:competence_human_centre}
+
+% Content to be added
+
+\subsection{Implications for this thesis}
+\label{subsec:modelling_education_implications}
+
+% Content to be added
+% Unsure if i should keep this approach of implications for each section
+
 
 \section{Grounded Theory}
 \label{sec:grounded_theory}
+
+\subsection{Overview and key characteristics}
+\label{subsec:gt_overview}
+
+% Content to be added
+
+\subsection{Grounded Theory in software engineering}
+\label{subsec:gt_in_se}
+
+% Content to be added
+
+\subsection{Socio-Technical Grounded Theory}
+\label{subsec:stgt}
+
+% Content to be added
+
+\subsection{Implications for this thesis}
+\label{subsec:gt_implications_thesis}
 
 % Content to be added
 
