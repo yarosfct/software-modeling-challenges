@@ -11,17 +11,98 @@
 \chapter{Related Work}
 \label{cha:related_work}
 
-\section{Empirical studies on learning/teaching specific modelling frameworks (iStar, UML, data models)}
-\label{sec:empirical_studies_modelling_frameworks}
+\section{Conceptual modelling education landscape}
+\label{sec:rw_landscape}
 
-% Content to be added
+Existing work on conceptual modelling education spans multiple modelling families and research communities, including data modelling, process modelling, requirements-related modelling, and model-driven development. (However, the literature is not unified under a single pedagogical tradition.) A mapping of conceptual modelling education by Maslov et al.\ highlights that educational research is distributed across multiple communities and modelling subfields, which often evolve in parallel with limited reuse of terminology, learning theories, and evaluation approaches across subdomains \cite{maslov2021conceptual}. This fragmentation complicates comparison of findings across modelling families and (limits the accumulation of shared evidence on which teaching strategies and supports are effective).
 
-\section{Broader SE education work on experience, competencies, experiential learning}
-\label{sec:broader_se_education}
+The present thesis builds on this observation by drawing together frameworks and empirical results from different modelling education strands (conceptual/data, process, goal-oriented, and tool-supported modelling) and by focusing on the specific challenges and support needs reported by both students and teachers.
 
-% Content to be added
+\section{Modelling frameworks}
+\label{sec:rw_frameworks}
 
-\section{Existing theories/frameworks (CaMeLOT, Domain Modelling in Bloom, etc.)}
-\label{sec:existing_theories_frameworks}
+A common approach to strengthening modelling education research is to define explicit frameworks for learning outcomes, competencies, and assessment design. Several works adapt Bloom's revised taxonomy \cite{krathwohl2002revision} to modelling activities, aiming to clarify what learners should know and be able to do beyond learning a notation. (The following subsections summarise three modelling-education frameworks that are especially relevant to this thesis.)
 
-% Content to be added
+\subsection{CaMeLOT: a framework for conceptual data modelling learning outcomes}
+\label{subsec:rw_camelot}
+
+CaMeLOT proposes an educational framework for conceptual data modelling that combines Bloom's cognitive levels with a knowledge dimension (factual, conceptual, procedural, metacognitive) and modelling content areas \cite{bogdanova2020camelot}. The framework is instantiated with detailed example learning outcomes and can be used to design course objectives, learning activities, and assessments in a more systematic manner. (For this thesis, CaMeLOT is particularly valuable as a template for articulating modelling competence across cognitive and knowledge dimensions, and for motivating the inclusion of procedural and reflective elements rather than focusing exclusively on diagram construction.)
+
+\subsection{Domain Modelling in Bloom: empirical analysis of assessment practices}
+\label{subsec:rw_domain_bloom}
+
+Bogdanova and Snoeck empirically analyse domain-modelling assessment tasks through the lens of Bloom's revised taxonomy \cite{bogdanova2020domain}. They report that many tasks concentrate on understanding, analysing, and creating conceptual knowledge, while evaluation, procedural knowledge, and metacognitive learning outcomes receive limited explicit attention. This work provides evidence that modelling courses may implicitly expect higher-level modelling competence without systematically scaffolding or assessing foundational skills. In this thesis, these findings support the motivation for examining modelling challenges in relation to cognitive demands and for considering whether educational support should target not only modelling syntax but also strategies for evaluation and refinement.
+
+\subsection{Teaching conceptual modelling and metamodeling}
+\label{subsec:rw_bork_framework}
+
+Bork extends Bloom-based framing to both conceptual modelling and metamodeling, relating cognitive and knowledge dimensions to the components of modelling methods (language, semantics, notation, procedure, mechanisms and algorithms) \cite{bork2020framework}. By analysing a teaching case using the proposed framework, the work suggests that even practice-oriented materials may strongly emphasise model creation while neglecting explicit evaluation tasks and metacognitive reflection. This perspective is useful for the present thesis because it frames modelling competence as method-level understanding and reflective judgement, aligning with this thesis focus on challenges experienced by learners and educators when moving from notation use to meaningful modelling practice.
+
+\section{Empirical studies on modelling learning challenges}
+\label{sec:rw_empirical_challenges}
+
+While modelling frameworks clarify educational targets, empirical studies are needed to understand where learners struggle in practice and which supports are perceived as valuable. Two complementary strands are particularly relevant: studies of goal-oriented modelling learning challenges and research agendas for process modelling education.
+
+\subsection{iStar learning challenges and support requirements}
+\label{subsec:rw_istar_learning}
+
+The core empirical reference for this thesis is the iStar learning study, which investigates the challenges beginners face when learning and practicing iStar and derives requirements for facilitating learning \cite{istar-learning}. Using Bloom-based task framing and grounded theory analysis, the study reports difficulties at multiple cognitive levels, including understanding the semantics of modelling constructs, applying the notation to real requirements scenarios, and analysing models for quality and completeness. The authors derive a catalogue of strategies and tool-supported requirements (e.g., conceptual clarification, syntax checking, process guidance, templates, advanced visualisation, and partial automation from textual requirements) and implement a subset of these requirements in a prototype tool \cite{istar-learning}. This thesis builds on these insights by extending the focus from a single modelling method to broader modelling education contexts and by eliciting perspectives from both students and teachers.
+
+\subsection{Process modelling education and the need for empirical validation}
+\label{subsec:rw_bpmn_education}
+
+In the domain of process modelling, Maslov argues for empirically validated process modelling education using BPMN and outlines a research agenda that integrates conceptual modelling education, process model quality research, and learning theory \cite{bpmn-education}. The agenda emphasises systematic synthesis of existing work, empirical investigation of novice modelling behaviour and typical errors, and the design and experimental validation of BPMN-specific teaching strategies and feedback mechanisms. (This work is relevant as a parallel to goal modelling education): it illustrates that modelling families pose distinct cognitive and practical demands, but that recurring educational needs include scaffolding, feedback, and mechanisms to manage complexity.
+
+\section{Tools and model-driven engineering in education}
+\label{sec:rw_tools_mde}
+
+Modelling education is strongly shaped by tool choice, especially in model-driven and model-based engineering settings. Tools can support learners through feedback, automation, and manageability, but can also introduce friction that distorts students' perceptions of modelling.
+
+\subsection{Perception of tools and UML in MDE education}
+\label{subsec:rw_liebel_tools_uml}
+
+Liebel et al.\ conduct a multi-case study of model-driven software engineering courses and report that students' perceptions of modelling tools are highly context-dependent \cite{liebel2014model}. The same tool may be perceived as useful in one course and cumbersome in another depending on project structure, available support, and the role that models play (e.g., communication versus strict code generation). The study also suggests that perceptions of UML are more robustly positive when models are used for requirements and analysis rather than exclusively as code generation inputs \cite{liebel2014model}. These results motivate the present thesis to treat tooling and course design as socio-technical factors that shape modelling experiences, rather than as neutral delivery mechanisms.
+
+\subsection{Human factors in model-driven engineering}
+\label{subsec:rw_hf_mde}
+
+Work on human factors in model-driven engineering argues for research that accounts for usability, cognitive load, and the alignment between tools and user goals \cite{human-factors-mde}. From an educational perspective, this supports the view that modelling tools should be evaluated not only by feature completeness, but also by how they support learning processes such as exploration, error detection, reflection, and progressive mastery.
+
+\section{Human factors and learning context in modelling education}
+\label{sec:rw_human_context}
+
+Beyond frameworks, methods, and tools, modelling education is influenced by motivational and contextual factors such as domain choice, inclusiveness, and the authenticity of tasks.
+
+
+\subsection{Domain diversity, motivation, and inclusion}
+\label{subsec:rw_domain_diversity}
+
+Research on domain diversity and motivation in modelling education reports that educators' assumptions about ``motivating'' domains do not always match students' preferences, and that students value domains that connect to their interests and everyday or socially relevant contexts \cite{domain-diversity-motivation}. The work also highlights that assignment design can unintentionally exclude learners when domains or examples presume cultural, economic, or experiential background that not all students share \cite{domain-diversity-motivation}. These insights inform this thesis by motivating interview questions about domain choice, perceived relevance, and learning barriers that go beyond notation difficulties.
+
+
+\subsection{Experiential learning and authenticity}
+\label{subsec:rw_experientialism}
+
+Holmes et al.\ propose dimensions of experientialism in software engineering education and show that students strongly value learning experiences that involve real projects, real tasks, and real mentors \cite{holmes2014dimensions}. Although this work is not modelling-specific, it contributes a useful lens for interpreting how authenticity and mentorship can influence learners' engagement and competence development, and it supports the relevance of studying modelling experiences in realistic educational contexts.
+
+\section{Competence-oriented agendas and methodological precedents}
+\label{sec:rw_competence_methods}
+
+Competence-oriented perspectives provide a complementary lens for structuring educational goals and for linking teaching approaches to measurable outcomes.
+
+
+\subsection{Competency identification and development in SE education}
+\label{subsec:rw_evelin}
+
+Sedelmaier and Landes propose the EVELIN research agenda for identifying and developing competencies in software engineering and argue that curricula should be grounded in explicit competence models rather than topic lists \cite{sedelmaier2014research}. They introduce a six-level classification system for technical competencies and advocate an iterative approach in which competence targets are identified, competence levels are measured, and teaching strategies and structural constraints are adjusted over time \cite{sedelmaier2014research}. While not specific to modelling, this agenda supports the thesis stance that modelling competence should be treated as multi-dimensional (conceptual, procedural, analytical, socio-technical) and studied through systematic empirical methods. It also complements Bloom-based modelling frameworks by emphasising explicit competence models and iterative alignment between competence targets, teaching methods, and structural constraints.
+
+\subsection{Grounded Theory in software engineering research}
+\label{subsec:rw_gt}
+
+Methodologically, grounded theory has been widely discussed in software engineering research as an approach for developing explanatory theory from qualitative data. Stol et al.\ provide a critical review and practical guidelines for conducting grounded theory in software engineering \cite{stol2016grounded}, while Hoda et al.\ propose a socio-technical grounded theory perspective that explicitly accounts for the interplay between social and technical factors \cite{hoda2018socio}. Adolph et al.\ offer a practical account of using grounded theory to study the experience of software development \cite{adolph2011using}. These works provide methodological grounding for the approach used in this thesis and support the validity of using interviews and iterative coding to derive themes and requirements from participant experiences.
+
+\section{Summary}
+\label{sec:rw_summary_positioning}
+
+In summary, existing work provides: (i) landscape-level evidence that modelling education research is fragmented across modelling families and communities \cite{maslov2021conceptual}; (ii) frameworks that structure modelling learning outcomes using Bloom-based dimensions \cite{bogdanova2020domain,bogdanova2020camelot,bork2020framework}; (iii) empirical studies and agendas that identify modelling-specific learning challenges and the need for validated educational support \cite{istar-learning,bpmn-education}; and (iv) tool-, competence-, and human-centred perspectives that emphasise context, usability, motivation, inclusiveness, and authenticity \cite{liebel2014model,domain-diversity-motivation,holmes2014dimensions,sedelmaier2014research}.
+

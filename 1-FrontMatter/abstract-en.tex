@@ -8,36 +8,17 @@
 
 \typeout{NT FILE abstract-en.tex}%
 
-Regardless of the language in which the dissertation is written, usually there are at least two abstracts: one abstract in the same language as the main text, and another abstract in some other language.
+Software and conceptual modelling are widely taught in software engineering and related computing programmes, yet students often experience modelling as either an essential aid for understanding and communication or as burdensome ``extra documentation''. Prior research on modelling education offers valuable insights but remains fragmented across modelling families and communities. Bloom-based frameworks and modelling-specific taxonomies help articulate learning outcomes and competencies, while empirical studies of specific modelling methods highlight recurring difficulties, such as understanding construct semantics, applying modelling to requirements, and judging model quality. However, there remains a need to consolidate these perspectives into an integrated, empirically grounded understanding of modelling education challenges and support needs that reflects both student and instructor viewpoints across educational contexts.
 
-The abstracts' order varies with the school.  If your school has specific regulations concerning the abstracts' order, the \gls{novathesis} (\LaTeX) template will respect them.  Otherwise, the default rule in the \gls{novathesis} template is to have in first place the abstract in \emph{the same language as main text}, and then the abstract in \emph{the other language}. For example, if the dissertation is written in Portuguese, the abstracts' order will be first Portuguese and then English, followed by the main text in Portuguese. If the dissertation is written in English, the abstracts' order will be first English and then Portuguese, followed by the main text in English.
-%
-However, this order can be customized by adding one of the following to the file \verb+5_packages.tex+.
+This thesis investigates how software modelling is experienced, taught, and learned in higher education, treating modelling as a socio-technical activity shaped by conceptual understanding, procedural strategies, tool mediation, and course design constraints. The study addresses three research questions: (RQ1) what challenges students and instructors perceive in learning and teaching modelling and how these challenges manifest across modelling activities (e.g., interpreting, creating, refining, evaluating); (RQ2) which strategies are used to address these challenges and what pedagogical and tool-related support needs are identified; and (RQ3) how socio-technical factors such as tools, domains, feedback practices, and course structures shape modelling experiences.
 
-\begin{verbatim}
-    \ntsetup{abstractorder={<LANG_1>,...,<LANG_N>}}
-    \ntsetup{abstractorder={<MAIN_LANG>={<LANG_1>,...,<LANG_N>}}}
-\end{verbatim}
-
-For example, for a main document written in German with abstracts written in German, English and Italian (by this order) use:
-\begin{verbatim}
-    \ntsetup{abstractorder={de={de,en,it}}}
-\end{verbatim}
-
-Concerning its contents, the abstracts should not exceed one page and may answer the following questions (it is essential to adapt to the usual practices of your scientific area):
-
-\begin{enumerate}
-  \item What is the problem?
-  \item Why is this problem interesting/challenging?
-  \item What is the proposed approach/solution/contribution?
-  \item What results (implications/consequences) from the solution?
-\end{enumerate}
+Methodologically, the thesis adopts a qualitative, theory-building approach based on Grounded Theory, informed by Socio-Technical Grounded Theory to explicitly attend to interactions between social and technical elements. Data are collected through semi-structured interviews complemented by activity-centered elicitation grounded in concrete modelling tasks or artefacts. Bloom's revised taxonomy is used as a sensitising concept to support interpretation and communication of the cognitive nature of challenges without constraining the grounded analysis. The expected outcome is an empirically grounded account of modelling education challenges and support needs that can inform the design of teaching practices and educational tools aimed at fostering modelling competence in realistic learning contexts.
 
 % Abstract keywords
 \keywords{
-  One keyword \and
-  Another keyword \and
-  Yet another keyword \and
-  One keyword more \and
-  The last keyword
+  software modelling education \and
+  conceptual modelling \and
+  grounded theory \and
+  socio-technical perspective \and
+  modelling competence
 }
