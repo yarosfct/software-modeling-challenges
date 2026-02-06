@@ -14,3 +14,30 @@ Fix:
 Keep the "what is GT" explanation in the Methodology (its a method)
 If keeping the Background GT section, make it short (or remove it), and just point forward: "we use GT; Chapter 4 details the variant and procedure"
 In related work 3.6.2, keep only 1 short paragraph
+
+Title: Exploring Actions, Interactions and Challenges in Software Modelling Tasks: An Empirical Investigation with Students
+
+Journal: Springer Empirical Software Engineering
+
+bibliograpy wrong citings
+
+table in the end of the methodology
+
+work flow section after methodology
+diagram of the expected workflow
+and quick explanation of the diagram
+
+zoom for transcriptions
+
+refine the student script
+refine the teacher script
+
+teacher interviews
+
+finish transcriptions 
+start coding process
+
+check zoom stuff
+
+Research questions explained in more detail in the methodology and shorthened
+

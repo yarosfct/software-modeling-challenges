@@ -6,101 +6,72 @@
 %% Chapter 4: Methodology
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Main references for the methodology section:
-
-% iStar learning study (overall structure: tutorial/context -> task -> interview -> requirements/strategy)
-
-% Strauss/Corbin-style GT (axial coding paradigm like the iStar study)
-
-% Stol et al. (GT rigour + reporting + fit-for-purpose guidance)
-
-% Hoda et al. (explicit socio-technical lens and trustworthiness)
-
-% Adolph et al. (practical GT advice: constant comparison, memoing, theoretical sampling, saturation)
-
-% plus option "human factors" add-ons (domain/motivation/inclusion; tools in education) to enrich the context
-
-
 \typeout{NT FILE chapter4.tex}%
 
 \chapter{Methodology}
 \label{cha:methodology}
 
-\section{Research design and rationale}
+\section{Research design}
 \label{sec:method_design}
 
-This thesis investigates how software modelling is experienced, taught, and learned in higher education settings. The focus is on modelling as a socio-technical activity, encompassing conceptual understanding, procedural strategies, tool mediation, and educational and organisational constraints. Since these phenomena are not well explained by existing theory and are strongly context-dependent, the study adopts a qualitative, theory-building research design.
+This study uses a qualitative, theory-building research design based on Grounded Theory (GT) as adapted for software engineering research \cite{stol2016grounded,adolph2011using}. To explicitly attend to the interplay between social and technical elements in modelling education (e.g., students and instructors, teaching practices, notations, tools, and artefacts), the analysis is informed by Socio-Technical Grounded Theory (STGT) \cite{hoda2018socio}. Data collection and analysis proceed iteratively, allowing emerging insights to shape subsequent sampling and probing \cite{adolph2011using,stol2016grounded}.
 
-The study employs a Grounded Theory (GT) approach, which is well-suited to under-theorised problem areas where the goal is to generate an explanatory account grounded in empirical data such as participants' experiences and perspectives, rather than testing pre-existing hypotheses \cite{stol2016grounded,adolph2011using}. To explicitly account for the interactions between social and technical elements (e.g., notations, tools, course structures, and stakeholder perspectives), the analysis is informed by Socio-Technical Grounded Theory (STGT) \cite{hoda2018socio}. The study design follows an iterative logic in which data collection and analysis proceed in parallel, allowing emerging insights to guide subsequent sampling and questioning \cite{adolph2011using,stol2016grounded}.
+The overall design is informed by prior modelling-education research that combines modelling activities with interviews to elicit situated reasoning and derive support requirements, particularly the iStar learning study \cite{istar-learning}. The present work applies a similar activity-anchored elicitation logic while targeting a broader range of modelling contexts beyond a single modelling method.
 
-In addition, the methodology draws inspiration from prior empirical studies on modelling education, particularly the iStar learning study, which combined task-based learning activities with semi-structured interviews and grounded theory analysis to derive a structured set of challenges and corresponding support requirements \cite{istar-learning}. The present work adapts and extends this approach to a broader scope beyond a single modelling method, while maintaining the strengths of an activity-centered elicitation design and a systematic theory-building analysis.
-
-
-\section{Research questions}
+\section{Research questions and operational focus}
 \label{sec:method_rq}
 
-The study is guided by the following overarching research questions:
+The study is guided by three research questions:
 
 \begin{itemize}
-    \item \textbf{RQ1:} What challenges do students and instructors perceive in learning and teaching software modelling in higher education, and how do these challenges manifest across different modelling activities (e.g., interpreting, creating, refining, and evaluating models)?
+    \item \textbf{RQ1:} What challenges do students and instructors perceive in learning and teaching software modelling in higher education, and how do these challenges manifest across modelling activities (e.g., interpreting, creating, refining, and evaluating models)?
     \item \textbf{RQ2:} What strategies do students and instructors employ to address these challenges, and what support needs (pedagogical and tool-related) do they identify?
     \item \textbf{RQ3:} How do socio-technical factors (e.g., tools, course design, domains, feedback practices) shape modelling learning and teaching experiences?
-\end{itemize} 
+\end{itemize}
 
-These questions are exploratory and explanatory in nature, aiming to uncover the lived experiences of key stakeholders (students and instructors) and making them suitable for a grounded-theory-based methodology \cite{stol2016grounded,hoda2018socio}.
+To guide data collection and analysis, each research question is treated as an analytic focus rather than a hypothesis to test. RQ1 focuses on characterising challenges and their variation across modelling activities and contexts. RQ2 focuses on coping strategies and articulated support needs, including the conditions under which particular forms of support are seen as helpful. RQ3 focuses on linking challenges and strategies to contextual influences, clarifying how social and technical factors co-shape modelling experiences.
 
 \section{Study context and participants}
 \label{sec:method_context_participants}
 
-The study is conducted in the context of higher education software engineering and related courses that include software modelling components, such as requirements engineering, software design, business process modelling, or model-driven engineering. Two participant groups are targeted:
+The study is conducted in higher education software engineering and related courses that include software modelling components (e.g., requirements engineering, software design, business process modelling, or model-driven engineering). Two participant groups are targeted:
 \begin{itemize}
     \item \textbf{Students:} learners who have encountered modelling activities in at least one course and have completed at least one modelling-related assignment or project.
     \item \textbf{Instructors:} lecturers or teaching assistants who have taught modelling-related content and have experience assessing student models or guiding modelling activities.
 \end{itemize}
 
-Sampling follows the principle of theoretical sampling: initial participants are recruited to seed the analysis, and subsequent recruitment is guided by emerging categories (e.g., differences between courses, notations, or tool ecosystems) until categories are sufficiently elaborated \cite{adolph2011using,stol2016grounded}. To ensure informative accounts, inclusion criteria emphasise participants with direct experience of modelling tasks rather than only theoretical exposure.
+Sampling follows the principle of theoretical sampling: initial participants are recruited to seed the analysis, and subsequent recruitment is guided by emerging categories (e.g., variation across courses, notations, tool ecosystems, or assignment styles) until categories are sufficiently elaborated \cite{adolph2011using,stol2016grounded}. Inclusion criteria emphasise direct experience with modelling tasks in order to support experience-near accounts of challenges, strategies, and contextual constraints.
 
 \section{Data collection}
 \label{sec:method_data_collection}
 
-Data collection consists of semi-structured interviews complemented by an activity-centered elicitation component. This combination is intended to elicit both reflective accounts and concrete, situated examples of modelling practice, following the logic used in prior modelling education research \cite{istar-learning}. The procedure was refined through a pilot to ensure clarity, timing, and depth of questioning.
+Data collection consists primarily of semi-structured interviews, complemented by an activity-centered elicitation component anchored in concrete modelling tasks or artefacts. This combination is intended to elicit both reflective accounts and situated examples of modelling practice, following the logic used in prior modelling education research \cite{istar-learning}. The procedure was refined through a pilot to validate the interview flow, estimate duration (20--30 minutes), and improve probing for concrete examples.
 
-% TODO: Refine the description of the activity-centered elicitation component once the final procedure (task vs walkthrough) is stabilised.
-
-\subsection{Instruments and pilot}
+\subsection{Interview guides and pilot}
 \label{subsec:method_instruments_pilot}
 
-Two semi-structured interview guides were developed: one for students and one for instructors. The guides share a common backbone (perceptions of modelling, challenges, strategies, support needs) but differ in emphasis: student interviews focus on learning experiences and task-level difficulties, whereas instructor interviews focus on teaching goals, scaffolding, assessment, and observed misconceptions. The pilot interview phase was used to validate the interview flow, estimate duration (20--30 minutes), and improve probing questions for eliciting concrete examples and contextual detail.
+Two semi-structured interview guides were developed: one for students and one for instructors. The guides share a common backbone (perceptions of modelling, challenges, strategies, support needs) but differ in emphasis. Student interviews focus on learning experiences and task-level difficulties; instructor interviews focus on teaching goals, scaffolding and assessment practices, and observed student misconceptions.
 
-Bloom-based modelling frameworks also informed the formulation of prompts by mapping modelling competence to observable activities (e.g., interpreting models, constructing models from text, and judging model quality), supporting a balanced coverage of cognitive demands without imposing Bloom as a coding template.
+The pilot interview phase was used to refine question wording, ordering, and probing strategies, with the goal of improving the specificity of examples and the clarity of contextual detail. Bloom-based modelling frameworks informed the formulation of prompts by mapping modelling competence to observable activities (e.g., interpreting models, constructing models from text, and judging model quality), supporting broad coverage of cognitive demands without imposing Bloom as a coding template.
 
-% TODO: In the next revision, strengthen the inclusion-related prompts for student interviews and the Bloom-framed competence prompts for instructor interviews.
-
-\subsection{Activity-centered elicitation: modelling task}
+\subsection{Activity-centered elicitation}
 \label{subsec:method_modelling_task}
 
 To move beyond abstract opinions, participants are invited to discuss a concrete modelling task or artefact. Depending on participant context, this includes one of the following:
 (i) a short modelling exercise based on a brief scenario, or
 (ii) a retrospective walkthrough of a recent modelling assignment or model created/assessed in a course.
 
-This activity-centered elicitation is inspired by the iStar learning study, which used a tutorial and modelling session followed by an interview to anchor participant reflections in a concrete modelling experience \cite{istar-learning}. The goal is to surface tacit reasoning, decision points, typical errors, and tool- or feedback-related constraints that may not emerge from interview questions alone.
-
-% TODO: Clarify the relative prevalence of retrospective walkthroughs vs short exercises once data collection is finalised.
-
-
+This activity-centered elicitation is inspired by the iStar learning study, which used a tutorial and modelling session followed by an interview to anchor reflections in a concrete modelling experience \cite{istar-learning}. The goal is to surface tacit reasoning, decision points, typical errors, and tool- or feedback-related constraints that may not emerge from interview questions alone.
 
 \subsection{Interviews}
 \label{subsec:method_interviews}
 
 Interviews are conducted individually and last approximately 20--30 minutes. Student interviews cover background, perceived usefulness of modelling, learning difficulties, strategies for going from text to model, evaluation criteria, tool experiences, and motivational and contextual factors (including inclusion-related experiences where relevant). Instructor interviews address teaching objectives, scaffolding practices, assessment design, common student misconceptions, tool choices and constraints, and perceived gaps in current pedagogy. Interviews include flexible probing to explore emerging themes in depth, consistent with GT's iterative and adaptive logic \cite{adolph2011using,stol2016grounded}.
 
-% TODO: If the Instruments subsection remains high-level, consider moving detailed guide emphases (motivation/inclusion; Bloom-framed prompts) entirely into this subsection for clearer separation.
-
 \subsection{Surveys}
 \label{subsec:method_surveys}
 
-% TODO: This component is not defined in the current draft.
-
+At the time of writing, the survey component has not been finalised. If included, surveys will be used as a complementary data source to characterise the prevalence or distribution of selected themes emerging from interviews (e.g., commonly reported challenges or tool-related frustrations) and to support sampling for variation. Survey design, sampling, and analysis procedures will be specified once the survey instrument and its role in the overall design are stabilised.
 
 \section{Data analysis}
 \label{sec:method_analysis}
@@ -108,27 +79,35 @@ Interviews are conducted individually and last approximately 20--30 minutes. Stu
 \subsection{Grounded Theory variant and socio-technical stance}
 \label{subsec:method_gt_variant}
 
-The analysis follows Grounded Theory principles as adapted for software engineering research \cite{stol2016grounded,adolph2011using}. In particular, the study adopts a socio-technical lens aligned with STGT, treating modelling education as an interaction between social elements (students, instructors, feedback practices, course constraints) and technical elements (notations, tools, model artefacts, automation features) \cite{hoda2018socio}. This stance informs both the coding process and the interpretation of emerging categories.
+The analysis follows Grounded Theory principles as adapted for software engineering research \cite{stol2016grounded,adolph2011using}. In particular, the study adopts a socio-technical stance aligned with STGT, treating modelling education as an interaction between social elements (students, instructors, feedback practices, course constraints) and technical elements (notations, tools, model artefacts, automation features) \cite{hoda2018socio}. This stance informs both the coding process and the interpretation of emerging categories.
 
 \subsection{Coding process}
 \label{subsec:method_coding}
 
-The coding process follows an iterative progression of open coding, axial coding, and selective coding. Open coding is used to label segments of interview transcripts and artefacts with conceptual codes capturing modelling challenges, strategies, perceptions of value, tool interactions, and contextual constraints. Constant comparison is applied throughout: newly coded incidents are compared to previous incidents and codes to refine categories and identify variation \cite{adolph2011using}.
+The coding process follows an iterative progression of open coding, axial coding, and selective coding. Open coding labels segments of interview transcripts and artefacts with conceptual codes capturing modelling challenges, strategies, perceptions of value, tool interactions, and contextual constraints. Constant comparison is applied throughout: newly coded incidents are compared to previous incidents and codes to refine categories and identify variation \cite{adolph2011using}.
 
-Axial coding is used to relate categories using a coding paradigm (e.g., phenomenon, causal conditions, context, intervening conditions, and strategies), as demonstrated in modelling education research on iStar learning \cite{istar-learning}. Selective coding is then employed to integrate categories into a coherent explanatory account. Following guidance for GT in SE, memoing is used continuously to document analytic decisions, emerging hypotheses, and links between categories \cite{stol2016grounded,adolph2011using}.
+Axial coding relates categories using a coding paradigm (e.g., phenomenon, causal conditions, context, intervening conditions, and strategies), as demonstrated in modelling education research on iStar learning \cite{istar-learning}. Selective coding then integrates categories into a coherent explanatory account. Memoing is used continuously to document analytic decisions, emerging hypotheses, and links between categories \cite{stol2016grounded,adolph2011using}.
 
 \subsection{Theoretical sampling and saturation}
 \label{subsec:method_sampling_saturation}
 
-Sampling decisions are guided by emerging categories rather than predetermined demographic quotas. For example, if early analysis suggests that tool frustration is a major driver of negative modelling attitudes, additional participants may be recruited from courses with different tool ecosystems to explore variation. Data collection continues until categories are sufficiently elaborated and additional data no longer contribute new properties or relationships to the core explanatory account \cite{adolph2011using,stol2016grounded}.
+Sampling decisions are guided by emerging categories rather than predetermined demographic quotas. For example, if early analysis suggests that tool friction is a major driver of negative modelling experiences, additional participants may be recruited from courses with different tool ecosystems to explore variation. Data collection continues until categories are sufficiently elaborated and additional data no longer contribute new properties or relationships to the explanatory account \cite{adolph2011using,stol2016grounded}.
 
 \subsection{Bloom's taxonomy as a sensitising concept}
 \label{subsec:method_bloom_sensitising}
 
-Bloom's revised taxonomy is used as a sensitising concept to support interpretation and communication of findings, particularly when describing the cognitive nature of modelling challenges (e.g., understanding modelling constructs, applying modelling procedures, analysing model quality) \cite{krathwohl2002revision}. Importantly, Bloom is not imposed as a rigid coding template; instead, grounded categories remain primary, and Bloom-inspired language is used where it aligns with participant accounts and helps structure the presentation of results, consistent with GT guidance to avoid forcing data into preconceived frameworks \cite{stol2016grounded}. 
+Bloom's revised taxonomy is used as a sensitising concept to support the interpretation and communication of findings, particularly when describing the cognitive character of reported modelling challenges (e.g., difficulties related to understanding constructs and their semantics, applying modelling procedures, and evaluating model adequacy) \cite{krathwohl2002revision}. In practice, Bloom is applied \emph{after} grounded categories have been developed: codes and categories are generated inductively, and Bloom-inspired terminology is used selectively as an analytic lens and reporting vocabulary where it aligns with participant accounts and helps articulate differences between types of challenges across modelling activities. Bloom is therefore not used as a coding scheme or set of predefined bins; this avoids forcing data into a priori frameworks and is consistent with grounded theory guidance for maintaining the primacy of emergent concepts \cite{stol2016grounded}.
 
 \section{Rigour and trustworthiness}
 \label{sec:method_rigour}
+
+To ensure rigour, the study follows established guidance for conducting grounded theory in software engineering and adopts a socio-technical stance consistent with STGT. Trustworthiness is addressed through practices that support credibility, dependability, confirmability, and transferability.
+
+Credibility is supported by grounding categories in concrete, experience-near accounts and by using activity- or artefact-centred elicitation to anchor participant reflections in specific modelling tasks and decisions. Constant comparison is used throughout analysis to refine categories, identify variation across participants and contexts, and seek disconfirming cases that challenge emerging interpretations. Where feasible, preliminary interpretations are discussed with supervisors and refined through peer debriefing.
+
+Dependability and confirmability are supported through a transparent analytic trail. Coding decisions, category evolution, and sampling changes are documented through memos, and links between claims and supporting excerpts are preserved. Iteration between data collection and analysis is recorded to make the development of the explanatory account traceable.
+
+Transferability is addressed by providing contextual detail about participants, course settings, modelling notations, and tool environments, enabling readers to assess the relevance of findings to other educational contexts. Rather than aiming for statistical generalisation, the thesis targets analytical generalisation by describing patterns of challenges and support needs and the conditions under which they appear.
 
 \section{Ethics and data management}
 \label{sec:method_ethics}
@@ -138,4 +117,4 @@ Participation is voluntary and based on informed consent. Interview recordings a
 \section{Methodological limitations}
 \label{sec:method_limitations}
 
-As a qualitative, context-sensitive study, the findings aim for analytical rather than statistical generalisation. Participant accounts may be influenced by recall bias, social desirability, and variation in course contexts. Additionally, tool- and notation-specific experiences may limit transferability across institutions or modelling families. These limitations are mitigated by triangulating accounts with concrete artefacts where possible, sampling for variation as categories emerge, and explicitly documenting contextual factors that shape the observed phenomena \cite{stol2016grounded,hoda2018socio}.
+As a qualitative, context-sensitive study, the findings aim for analytical rather than statistical generalisation. Participant accounts may be influenced by recall bias, social desirability, and variation in course contexts. Additionally, tool- and notation-specific experiences may limit transferability across institutions or modelling families. These limitations are mitigated by triangulating accounts with concrete artefacts where possible, sampling for variation as categories emerge, and documenting contextual factors that shape the observed phenomena \cite{stol2016grounded,hoda2018socio}.
