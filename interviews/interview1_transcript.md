@@ -121,58 +121,43 @@ Interviewee 17:03
 I think I look for readability and correctness and like matching requirements. I try to, I guess, walk through the diagram to see if it makes sense with every component. But, yeah, definitely readability is a big part. I think,
 
 Interviewer  17:19  
-do you think the your probably won't remember it, but do you think your course gave you, give you like, quality rules, quality checklists for like, for analyzing a diagram? Or was that mostly like teacher's job? Or, here's my diagram. You evaluate it.
+your probably won't remember it, but do you think your course gave you like, quality rules, quality checklists for analyzing a diagram? Or was that mostly like teacher's job? Or, here's my diagram. You evaluate it.
 
 Interviewee  17:42  
 I think that was more like, I feel like there has to have been some sort of a guideline for that. I just can't remember it exactly, like there's probably some sort of system that they sort of taught us to validate these things. But I just it's not present in my mind
 
 Interviewer 18:02   
-right now. Okay, okay, no worries with it. So in the end, do you compare your model with other models, like with other students, with your friends when you finish, like, for example, that exam? Yes, sir, you would. And what would you look like? Look for on that those comparisons,
+right now. Okay, okay, no worries with it. So in the end, do you compare your model with other models, like with other students, with your friends when you finish, for example the exam? (interviewee "Yes, sir") And what would you look for on those comparisons?
 
 Interviewee 18:27  
 I guess, for example, for my dissertation, I've looked at other dissertations and their architecture diagrams and all that stuff. And I guess what I look for is clarity in their diagrams. And if it's clear to me what their architecture and what their system is about, I try to sort of emulate the presentation of that, sort of ensure that my diagram is clear to an outside person that is not aware of how the system works yet, but would be aware of it once they read the diagram.
 
 Interviewer 19:06  
-Okay, okay, okay, okay, I can understand so great. Now I want to ask you about tools and core setup. If you remember. I don't expect you to remember it perfectly. But I assume you might remember something because sometimes the experience also depends a lot on the environment, not in just annotation. So for example, if your classrooms forced you to use a specific use the classroom computers to use a specific, outdated tool for modeling, it can affect your experience, and that's what I'm trying to get here. So do you remember, perchance, what tools did you use for modeling? Like paper, just plain paper. Draw your some other like
-
-Unknown Speaker  19:56  
-related to i
+Okay, I can understand so great. Now I want to ask you about tools and core setup. If you remember. I don't expect you to remember it perfectly. But I assume you might remember something because sometimes the experience also depends a lot on the environment, not in just annotation. So for example, if your classrooms forced you to use a specific use the classroom computers to use a specific, outdated tool for modeling, it can affect your experience, and that's what I'm trying to get here. So do you remember, perchance, what tools did you use for modeling? Like paper, just plain paper. Drawio, some other like related tool.
 
 Interviewee 19:58  
 i remember using. Specific tool for UML diagrams. I think it was Star something, I'm not sure, but I remember using that specific tool, and it had like a bajillion options, and that was, that was what was confusing. But then I did discover a draw io, and I think it's, I guess, at least for basic diagrams, it's more useful to me because I'm not super involved in software engineering, so having less things at my disposal makes it easier for me to do something instead of being overwhelmed by the offer.
 
 Interviewer 20:33  
-So for example, if I ask you, any tools did you like you would say, for example, draw ya because of easiness, clarity, like the templates and tools you disliked, was probably the star tool that you mentioned, that used in the software engineering, yeah, and you
+So for example, if I ask you, any tools did you like you would say, for example, drawio because of easiness, clarity, like the templates and tools you disliked, was probably the star tool that you mentioned, that you used in the software engineering? But you would say that the main issue in that was like the UI was overwhelming, usability, mostly usability issues, right?
 
-Unknown Speaker  20:55  
-name that, but yeah,
-
-Speaker 1  20:58  
-it's okay. It's okay. I will research it better, because I also had that course.
-
-Unknown Speaker  21:03  
-But you would say that the main issue in that was like
-
-Speaker 1  21:07  
-the UI was overwhelming usability, mostly usability issues, right?
-
-Speaker 2  21:12  
+Interviewee 21:12  
 Yeah, just way too much all at once.
 
-Speaker 1  21:16  
+Interviewer 21:16  
 So in your opinion, did the tools ever make modeling feel harder or easier than it should be?
 
-Speaker 2  21:26  
+Interviewee 21:26  
 Yeah, I feel like they made it for example, the UML one specifically made it harder, but draw you made it easier. So really depends on how things are implemented.
 
 Interviewer 21:35  
-So yeah, the tools can improve your like, your experience of modeling, depending on how well made is the tool, right? Yeah, absolutely. Okay. Then thinking about modeling assignments and project, what kind of domains or examples Did you work with? In this case, was the in your case, was the free call, right? Can you describe a little bit the Free call.
+So yeah, the tools can improve your like, your experience of modeling, depending on how well made is the tool, right? (interviewee: "Yeah, absolutely.") Okay. Then thinking about modeling assignments and project, what kind of domains or examples Did you work with? That in your case was the freecol, right? Can you describe a little bit the freecol.
 
 Interviewee 22:03  
-It was an open source sort of sieve, like game, and what we had to do was sort of go into the code base, find out, you know, code smells, anti patterns, that sort of stuff, and then extend the game with features that we came up with, and that's where the diagram modeling part came in, where we had to sort of explain how our systems would work with the existing game systems, that sort of stuff.
+It was an open source sort of CIV, like game, and what we had to do was sort of go into the code base, find out, you know, code smells, anti patterns, that sort of stuff, and then extend the game with features that we came up with, and that's where the diagram modeling part came in, where we had to sort of explain how our systems would work with the existing game systems, that sort of stuff.
 
 Interviewer 22:33  
-So do you think that domain, specifically, the game was interesting for you, meaningful for you or like, you didn't like that domain because, for example, you don't like games or something else. Do you think the domain motivated you, like, regarding modeling made you like, more motivated to do modeling? Actually?
+So do you think that domain, specifically, the game was interesting for you, meaningful for you or, you didn't like that domain because, for example, you don't like games or something else. Do you think the domain motivated you, regarding modeling made you more motivated to do modeling?
 
 Interviewee 22:55  
 Yeah, because I do like video games, and it's really even if it weren't a video game, just having something where I can immediately see my impact in sort of the application makes it much more motivating to work on it and make something you know, that integrates well with it, because it's it's affecting my experience at the end.
@@ -180,64 +165,52 @@ Yeah, because I do like video games, and it's really even if it weren't a video 
 Interviewer 23:18  
 Okay, okay, so in your opinion, how do I say experiential side of that project was good? What I mean by that is like, having an open source project that you're like, was made by someone and you are just implementing stuff to it made the experience better, or no, like it was like practical experience. It was a practical project. It wasn't something made out of Scratch. It was something that existed and real people put effort in. It motivated you or not?
 
-Unknown Speaker  23:56  
-Yeah, absolutely. I
-
-Interviewee 24:00  
-think the fact that it's such a long standing project, and that so many people throughout the years have contributed to it makes it more interesting to sort of look into it and see, okay, how are different people approaching this problem? How can I do things that fit in here? It was a lot of fun.
+Interviewee 23:56  
+Yeah, absolutely. I think the fact that it's such a long standing project, and that so many people throughout the years have contributed to it makes it more interesting to sort of look into it and see, okay, how are different people approaching this problem? How can I do things that fit in here? It was a lot of fun.
 
 Interviewer 24:22  
-I know, because you only had that course, but like, were there any like case that you were allowed to choose your own domain? Like, even I assume, your thesis, your like dissertation, you were allowed to choose your domain, right? Yeah. And do you think that ability to choose what you want to do, like, even for modeling? Do you think it affects or change your like, motivation or effort you put into the thing?
+I know, because you only had that course, but like, were there any like case that you were allowed to choose your own domain? Like, even I assume, your thesis, your dissertation, you were allowed to choose your domain, right? Yeah. And do you think that ability to choose what you want to do, like, even for modeling? Do you think it affects or change your like, motivation or effort you put into the thing?
 
-Unknown Speaker  24:56  
-Absolutely something, something that I'm interested in?
-
-Interviewee 25:01  
-I'll go out of my way to make it, make it really good, and try to make it stand out, know it. And that definitely motivates sort of having proper diagrams, proper explanations. Because I wanted to, wanted to not just be understood by me, but to have a sort of communicable to the outside.
+Interviewee 24:56  
+Absolutely something, something that I'm interested in? I'll go out of my way to make it, make it really good, and try to make it stand out, know it. And that definitely motivates sort of having proper diagrams, proper explanations. Because I wanted to, wanted to not just be understood by me, but to have a sort of communicable to the outside.
 
 Interviewer 25:21  
-Okay, okay, perfect. And how about feedback? Like, how did you receive feedback on your modeling work in your courses? Like, did the teacher just submit the grade grades? Like, did he add comments? Like, asked other people to review, or was it just like, tool based checks?
+Okay, okay, perfect. And how about feedback? Like, how did you receive feedback on your modeling work in your courses? Did the teacher just submit the grade grades? Did he add comments? Asked other people to review, or was it just, tool based checks?
 
 Interviewee 25:43  
 Like, we had a sort of big project discussion at the end, so we went through what everyone did and sort of discuss the diagrams and what was wrong with them. So yeah, it wasn't just like, Okay, here's your grade or here's a tool that validated yes or no.
 
 Interviewer 26:03  
-Was it done by the teacher? Was peer review? Like you reviewed the teachers, only done by the teachers, and you said it was only done then at the end,
+Was it done by the teacher? Was peer review? Like you reviewed ... (the interviewee said: "the teachers") and you said it was only done then at the end?
 
-Unknown Speaker  26:14  
-yeah, if I remember, do you
+Interviewee 26:14  
+yeah, if I remember
 
 Interviewer 26:15  
-think if it was done like earlier, would it help you improve the quality of your diagrams, like, I think those discussions periodically, or like doing it earlier than, like, iteratively, in a way,
+do you think if it was done like earlier, would it help you improve the quality of your diagrams, doing those discussions periodically, or like doing it earlier than that, or just doing it iteratively, in a way,
 
 Interviewee 26:30  
 yeah, I think it would, because then anything that was wrong along the way would have been at least addressed, and probably would not have propagated towards the end and actually became something that was like, Okay, this is completely wrong. Why would you do that? You know,
 
-Unknown Speaker  26:46  
-okay, okay, I see.
-
 Interviewer 26:48  
-And like, what feedback do you think would have helped the most? Like, examples of good models, like common mistakes, checklists, how to do stuff like step by step guidance.
+And like, what feedback do you think would have helped the most? Like, examples of good models, common mistakes, checklists, how to do stuff, step by step guidance.
 
 Interviewee 27:03  
 I guess examples for me personally are more useful, I think because I learn a lot from seeing things. So I think that would have been useful and sort of for example, okay, this text, this text description, translates to this model. Those sort of examples would be useful for me to sort of make the mental connections of, okay, when somebody asks for this type of relation, this is what it represents on the diagram, that sort of stuff.
 
 Interviewer 27:31  
-Okay, okay, so in your opinion, having templates like from common modeling steps, of common modeling processes would be a great like help as feedback. Yeah, I think. Okay, so now I will ask the last couple of questions. I want to understand what good modeling skill means to you and what you'd improve. So if you think of modeling as a skill, which should a good modeler be able to do?
+Okay, so in your opinion, having templates like from common modeling steps, of common modeling processes would be a great like help as feedback. (Interviewee: Yeah, I think). Okay, so now I will ask the last couple of questions. I want to understand what good modeling skill means to you and what you'd improve. So if you think of modeling as a skill, which should a good modeler be able to do?
 
 Interviewee 28:06  
 I think a good model modeler should be able to represent, I guess, complex systems in a way that makes them, at least visually, not super complex, right? Abstraction, able to communicate, yeah, abstraction, okay, sort of communicate the ideas better,
 
-Unknown Speaker  28:25  
-okay, you think only abstraction, like,
+Interviewer 28:25  
+okay, you think only abstraction, like, maybe clarity like, the ability to like,
 
-Speaker 1  28:31  
-maybe clarity like, the ability to like,
-
-Unknown Speaker  28:36  
+Interviewee 28:36  
 yeah, clarity is sort of
 
-Interviewer/Interviewee 28:39  
+Interviewer 28:39  
 checking, asking good questions, iteration, iterating, stuff like that. No, mostly abstraction.
 
 Interviewee 28:45  
@@ -246,16 +219,13 @@ And I don't think necessarily, like a lot of abstraction. I don't think a lot of
 Interviewer 29:00  
 Do you think that soft skills, like communication, negotiation, teamwork, matter, or is it like mostly technical?
 
-Speaker 2  29:10  
-I think there's probably a balance of both, because a person with good soft skills probably understands how to communicate the ideas better, like as a baseline, and that probably translates to how they represent those
+Interviewee 29:10  
+I think there's probably a balance of both, because a person with good soft skills probably understands how to communicate the ideas better, like as a baseline, and that probably translates to how they represent those ideas as well.
 
-Unknown Speaker  29:23  
-ideas as well.
+Interviewer 29:25  
+good, perfect. And do you think that, for example, you so you do agree that, like, soft skills matter somewhat, right? Yeah. Okay. Do you feel that the course, in specific, the software engineering you had helped you develop those, if yes, which ones like communication, teamwork, negotiation,
 
-Speaker 1  29:25  
-Good, good, good, perfect. And do you think that, for example, you so you do agree that, like, soft skills matter somewhat, right? Yeah. Okay. Do you feel that the course, in specific, the software engineering you had helped you develop those, if yes, which ones like communication, teamwork, negotiation,
-
-Speaker 2  29:50  
+Interviewee 29:50  
 I guess, yeah. I think it was, you know, since the group as a whole wasn't very great, the whole teamwork aspect and sort of. Yeah, I guess I wouldn't say leadership, but somebody has to shift the tasks here or there. I think that was developed during that course, because, you know, half of the team had to pick up the other half of the team's work. And I think that at least maybe the negotiation aspect helps, because now we're trying to figure out what each one of us needs to do that sort of thing.
 
 Intreviewer 30:32:

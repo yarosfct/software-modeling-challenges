@@ -41,3 +41,18 @@ check zoom stuff
 
 Research questions explained in more detail in the methodology and shorthened
 
+ACM computing curricula
+
+Gantt chart
+
+Adicionar os guias das interviews
+
+Relacionar as perguntas da interview com os RQs
+
+Verificar o STGT literature review
+
+Domain Diversity, Motivation, Inclusion, and Feedback in Software Modelling Education
+
+Isabella Graßl, Christopher Lazik, Shalini Chakraborty,  Grischa Liebel, Miguel Goulão
+
+Submitted to Foundations of Software Engineering (FSE) - Software Engineering Education Track (SEET) (FSE 2026 SEET)
