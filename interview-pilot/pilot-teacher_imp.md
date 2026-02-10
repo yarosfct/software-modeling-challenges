@@ -1,7 +1,3 @@
-Got it — I’ll refactor the teacher pilot into a **readable, interview-ready script** where each question is explicitly tied to **RQ1/RQ2/RQ3**, with **optional probes** you can pick only if needed. I’ll also add short **transition lines** so you can smoothly move through it.
-
----
-
 # Teacher Interview Script (20–30 min)
 
 ## 0) Opening (30–45s)
@@ -228,4 +224,3 @@ This gives you very “grounded” data without needing them to open files live.
 
 ---
 
-If you want, I can also rewrite this into a **one-page printable interviewer sheet** (same content, even tighter), but the above is already structured so you can read it smoothly and keep moving.

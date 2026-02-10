@@ -8,6 +8,14 @@
 
 
 %%============================================================
+
+%-------------------------------------------------------------
+% Keep appendices numbered (A, B, ...) by printing them as part of mainmatter.
+% This avoids the unnumbered backmatter chapter behavior that yields .1, .2, ...
+\AtBeginDocument{%
+    \ntsetprintorder{mainmatter}{chapters; appendices}%
+    \ntsetprintorder{backmatter}{annexes; bib; alllistof; myprintglossaries}%
+}
 %% THE MOST IMPORTANT/POPULAR TEMPLATE CUSTOMIZATION / OPTIONS
 %%============================================================
 
