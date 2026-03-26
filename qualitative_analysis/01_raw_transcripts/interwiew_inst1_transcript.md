@@ -239,12 +239,3 @@ Do you think its a cultural issue, what i mean by cultural is student culture or
 
 2:
 Its portuguese culture together with the fact that they have a heavy workload, so they have 4 or 5 disciplines, and then they start demanding to many works, and they have a lots of tests, the continuous evaluation in the end is bad, for me is really bad, in the middle of the semester, they different activities, tests and other practical works and in the end they have to make choices, and not going to the classes to do the practical work and study for the test, i think continuos evaluation is not good for students and not for us.
-
-
-
-vasco.amaral@fct.unl.pt vasco amaral
-amm@fct.unl.pt ana moreira
-fba@iscte-iul.pt
-isabel.sofia@ipbeja.pt
-
-Vasco Amaral, Ana Moreira, Fernando Brito e Abreu, Isabel Sofia Brito

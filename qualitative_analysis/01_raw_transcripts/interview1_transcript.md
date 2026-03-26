@@ -251,5 +251,3 @@ So one last question, this will be the actual last question. Is there anything i
 
 Interviewee 33:00:
 I dont think so, its kinda hard to me to grasp, because im not super involved in this domain, but i think from what i understand of system modelling, software engineering, this sort of stuff, i think that we covered everything that i know about it.
-
-Interviewer: Thanks and stuff like that
