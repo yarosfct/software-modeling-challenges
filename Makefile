@@ -104,6 +104,10 @@ SCHL := $(if $(SCHL),$(SCHL),nova/fct)
 default: validate-config check-env check-build
 	$(BUILD) $(SCHL) ${BFLAGS}
 
+.PHONY: tts
+tts:
+	python3 scripts/export_thesis_tts.py
+
 #————————————————————————————————————————————————————————————————————————————
 # The main targets
 # e.g. '$(MAKE) lua'

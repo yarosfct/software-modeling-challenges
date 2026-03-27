@@ -1,128 +1,197 @@
-# Student Interview Plan (20-30 min)
+# Student Interview Guide A - Comparable Revision (20-30 min)
 
-## 1. Structure and timing (rough)
+This version keeps continuity with the current student pilot, but trims abstract questions, reduces overlap, and puts more weight on concrete learning experiences. It is still semi-structured: ask the core questions, use only the probes that help the student become specific, and follow emerging topics when they clearly matter for the thesis.
 
-1. Background and context — 3-4 min
-2. Experience with modeling — 6-8 min
-3. Learning and challenges — 7-8 min
-4. Tools, assignments, motivation & inclusion — 6-7 min
-5. Competencies and closing — 3-4 min
+## 0. Opening (30-45s)
 
-Total= ~25 min
+**What you say**
 
-## 2. Background and context (3-4 min)
+> Thanks for meeting with me. I am studying how modelling is taught and learned in higher education, especially the difficulties students face, what helps them learn, and how things like feedback, tools, assignments, and workload shape that experience.
+> With your permission, I would like to record so I do not miss details. This should take around 20 to 30 minutes. You can skip any question.
 
-First I should start by getting to know a little bit about the subject background and how that background fits the context of this study.
+*(If not recording: "I will take notes instead.")*
 
-**Q1**. Can you tell me a bit about your studies and where modeling fits in? (Program, year, courses, etc.)
+---
 
-Possible probes:
-- Which courses have included modeling so far? (Expect to hear about SE)
-- What kinds of diagrams or natations have you used? (e.g., UML, BPMN, ER, iStar...)
-- Outside courses, have you ever used models in projects, internships, works, or even personal projects?
+## 1. Background and context (2-3 min)
 
-Goal: situate their experience level and which modeling solutions/flavours they have seen.
+### Q1 - Where modelling fits in your studies
 
+**Ask**
 
-## 3. Experience with modeling — overall view (6-8 mins)
+* "Can you briefly tell me about your studies and where modelling fits into them?"
 
-Get to know how the subject feels about modeling and what is their opinion on the matter? What is their view on CM/SM? What they classify as modeling? Do they like it or not? Was it ever useful to them? etc.
+**Probe only if needed**
 
-**Q2**. When you hear Software modeling or conceptual modeling, what comes to your mind?
+* "Which courses have included modelling so far?"
+* "What kinds of diagrams or notations have you used?"
+* "Have you ever used models outside coursework, for example in a project, internship, or personal work?"
 
-PP:
-- What is the first image or example that comes to mind (pops up)?
-- Would you say you see it more as useful (or not) tool/work, extra documentation, or something else?
-- If you had to briefly explain modeling to another student (1-2 sentences), what would you say?
+---
 
-**Q3**. Considering your courses so far, or even outside of academic context, can you remember a moment when modeling felt particularly useful to you?
+## 2. Experience with modelling (5-6 min)
 
-PP:
-- What was the context? (course / projects / assignment / work)
-- What exactly about that modeling activity helped you?
-- Did it change/influence how you understand the system/problem?
-- How did your mood/motivation change before vs after that activity?
+### Q2 - What modelling feels like to you
 
-**Q4**. And can you remember a moment when modeling felt confusing, pointless or frustrating?
+**Ask**
 
-PP:
-- What made it confusing or frustrating?
-- Was it the notation, the tool, the task, the instructions, the group...?
-- And what did you do then? Did you skip things, ask for help, just draw something quickly without thinking too much, ...?
-- If you imagine the same situation again, what would have helped you to handle it better?
+* "When you think about software modelling or conceptual modelling, do you see it mostly as useful, frustrating, extra documentation, or something else?"
 
-Goal: surface pain points + early hints of requirements (support, instructions, tooling, etc.)
+**Probe only if needed**
 
+* "What makes you see it that way?"
+* "Has that view changed over time?"
 
-## 4. Learning and challenges (Bloom-ish) - 7-8 mins
+### Q3 - A moment when modelling felt useful
 
-Here I want to touch understanding, applying, analyzing/evaluating, without using Bloom technicalities.
+**Ask**
 
-**Q5**. When you learn a new modeling notation or framework, what is usually the hardest part for you at the beginning?
+* "Can you remember a moment when modelling felt genuinely useful to you?"
 
-PP:
+**Probe only if needed**
 
-- Is it more about remembering the symbols, understanding the concepts, or knowing how to start a model from a text/problem?
-- Do you remember a specific language where this was very obvious?
-- What do you usually do to make sense of a new notation? (like draw small examples, search only, talk to colleagues...)
+* "What was the context?"
+* "What exactly did the modelling help you do or understand?"
+* "Did it change how you saw the system or problem?"
 
-**Q6**. Imagine you get a text description of a system and you have to build a model from it. What steps do you personally take?
+### Q4 - A moment when modelling felt confusing or frustrating
 
-PP:
-- Where do you usually start? (actors, classes, processess, goals...) and why?
-- Do you feel like you usually have a structured strategy or is it more of a trial-and-error process?
-- What helps you decide what to include and waht to ignore in the model?
-- (If interesting) Has any teacher/course ever explicitly taught you a step-by-step approach for going from text to model? What did that look like?
+**Ask**
 
-**Q7**. Once you have a model, how do you decide whether it is good enough or needs changes?
+* "Can you remember a moment when modelling felt confusing, pointless, or frustrating?"
 
-PP:
-- Do you use any mental criteria like: is it complete? consistent? readable? matches requirements?...?
-- Have you learned quality rules or checklists in any course?
-- Do you ever compare your model with other peoples models? what do you look for when doing that?
+**Probe only if needed**
 
-Goal: tap into analyze/evaluate without forcing terminology.
+* "What made it difficult: the notation, the tool, the task, the instructions, the group, or something else?"
+* "What did you do when that happened?"
+* "What would have helped you handle that situation better?"
 
+**Interviewer note**
 
-## 5. Tools, assignments, motivation and inclusion - 6-7 min
+* Q3 and Q4 are high-yield. If the student answers in a general way, ask for one concrete assignment, class, or project.
 
-**Q8**. What tools have you used for modeling (paper, draw.io, visual paradigm, eclipse tools, web tools,...)? How has that been?
+---
 
-PP:
-- Any tools you particularly liked? why?
-- Any you really disliked? why? what went wrong or felt frustrating?
-- Do tools ever make you feel that modeling is harder or easier than it actually is?
+## 3. Learning process and challenges (8-9 min)
 
-**Q9**. Thinking about assignments or projects with modeling, what kind of domains or examples have you worked with? (e.g., games, business systems, transport, health, ...)
+### Q5 - Hardest part when learning a new notation or framework
 
-PP:
-- Were there any domains that felt very interesting/motivating or meaningful to you?
-- Any that felt boring, alien or hard to relate to?
-- Have you ever been given a chance to choose your own domain for a modeling assignment/project?
-- (Optional) Have you ever felt that an assignment or example didn't really fit your background or experience, or made you feel a bit out of place? can you describe that?
+**Ask**
 
+* "When you learn a new modelling notation or framework, what is usually the hardest part at the beginning?"
 
-## 6. Competencies and closing - 3-4 min
+**Probe only if needed**
 
-**Q10**. If you think about modeling as a skill, what do you think a "good modeller" should be able to do?
+* "Is it more about remembering symbols, understanding concepts, or knowing how to start from a text or problem?"
+* "Was there a specific notation or framework where this became very obvious?"
 
-PP:
-- What kind of abilities or habits come to mind?
-- Do you think that soft skills matter? or is modeling solely about technical skills? why you think that?
-- Do you feel that your courses helped you move in that direction? In which aspects yes or no?
+### Q6 - How you go from problem description to model
 
-**Q11**. If you could change one or two things in how modeling is taught in your degree, what would you change?
+**Ask**
 
-PP:
-- Anything about explanations/materials?
-- Anything about tools?
-- Anything abour assignments/domains?
-- Anything about feedback you receive on your models?
+* "Imagine you get a text description of a system and need to build a model. What steps do you personally take?"
 
+**Probe only if needed**
 
-**Q12**. Is there anything we havent talked about that you think is important about learning or using modeling?
+* "Where do you usually start, and why?"
+* "Does it feel like a structured process or more like trial and error?"
+* "What helps you decide what to include and what to leave out?"
+* "Has any teacher ever explicitly taught you a step-by-step approach for doing this?"
 
+### Q7 - Worked examples and starting confidence
 
-Finally thank them and ask if they'd be OK to be contacted for clarification later, and stop.
+**Ask**
+
+* "When a teacher shows a worked example or solves a modelling exercise step by step, how much does that help when you later have to solve a similar task on your own?"
+
+**Probe only if needed**
+
+* "Do you feel able to transfer that example, or do you usually need another example first?"
+* "If there is no example yet, how confident do you feel starting on your own?"
+* "Do you tend to wait for the teacher's demonstration before you feel comfortable moving ahead?"
+
+### Q8 - How you judge whether a model is good enough
+
+**Ask**
+
+* "Once you have a model, how do you decide whether it is good enough or needs changes?"
+
+**Probe only if needed**
+
+* "Do you use any mental criteria such as completeness, consistency, readability, or fit to the requirements?"
+* "Have you ever been given quality rules, a checklist, or a rubric?"
+* "If multiple solutions could be valid, how do you handle the uncertainty of whether your model is acceptable?"
+
+---
+
+## 4. Tools, assignments, and course conditions (5-6 min)
+
+### Q9 - Tools and what they change
+
+**Ask**
+
+* "What tools have you used for modelling, and how has that been for you?"
+
+**Probe only if needed**
+
+* "Any tool you particularly liked or disliked? Why?"
+* "Do tools ever make modelling feel harder or easier than it actually is?"
+* "Would guidance or suggestions from a tool help you, or would that be annoying?"
+
+### Q10 - Assignments, domains, and course pressure
+
+**Ask**
+
+* "Thinking about modelling assignments or projects, what kinds of domains have you worked with, and what course conditions made modelling easier or harder for you?"
+
+**Probe only if needed**
+
+* "Were any domains especially motivating or especially hard to relate to?"
+* "Have you ever been able to choose your own domain?"
+* "Did workload, deadlines, or missing classes affect how well you could learn modelling?"
+* "Did transitions between different modelling families ever feel difficult, or not really?"
+
+---
+
+## 5. Closing (3-4 min)
+
+### Q11 - What you would change
+
+**Ask**
+
+* "If you could change one or two things about how modelling is taught in your degree, what would you change?"
+
+**Probe only if needed**
+
+* "Anything about explanations or examples?"
+* "Anything about tools?"
+* "Anything about assignments, workload, or feedback?"
+
+### Q12 - Anything missing
+
+**Ask**
+
+* "Is there anything we have not talked about that you think is important about learning or using modelling?"
+
+**Close**
+
+> Thank you. This was very helpful. If needed, may I contact you later for a short clarification?
+
+---
+
+## Quick coverage
+
+* Challenges and sticking points -> Q4, Q5, Q6, Q7, Q8
+* Supports and coping strategies -> Q6, Q7, Q8, Q9, Q11
+* Contextual and course factors -> Q1, Q4, Q9, Q10
+
+---
+
+## Semi-structured guidance
+
+* Prioritise Q4, Q6, Q7, and Q8 if time becomes tight.
+* Ask for a concrete example whenever the student gives a broad opinion.
+* Good follow-up topics if they arise naturally: waiting for teacher demonstrations, confidence in sharing a solution before the teacher solves it, relation semantics, workload pressure, and differences between formal coursework modelling and informal modelling outside class.
+* Do not try to ask every probe. The goal is depth on the most diagnostic experiences.
 
 
