@@ -36,9 +36,25 @@ Main characteristics:
 * stronger focus on starting a model, worked example transfer, self-checking, sharing confidence, workload, and transitions between modelling families
 * better if the goal is to refine the thesis argument quickly
 
+## Guide C - Gap-Filling Version (current recommendation for new interviews)
+
+File: pilot-student-guide-c.md
+
+Choose this version when:
+
+* you are conducting interviews after the first coding cycle (S1-S3, L1-L4)
+* you want to fill gaps: AI, group work, RE/stakeholders, cross-family transfer, large-course feedback, professional visibility
+* you want worked examples of expected depth: see example-student-interview-s4.md (shy/individual), s5.md (group-positive), s6.md (RE/Munich)
+
+Main characteristics:
+
+* extends Guide B with Q8-Q14 gap blocks (use selectively)
+* still incident-based and time-triage friendly
+* does not recruit a "no prior exposure" stratum; prior exposure may still emerge in Q1/Q8
+
 ## Practical recommendation
 
-If you are unsure, start from Guide B and keep Guide A open as fallback. Guide B is more likely to produce high-value evidence in 20-30 minutes, while Guide A is better when you want more continuity with the original pilot structure.
+For **new** interviews after the first analysis cycle, use **Guide C**. Use Guide B when you need a shorter diagnostic session without gap topics. Use Guide A when you want continuity with the earliest pilot structure.
 
 ## Shared interviewer reminders
 

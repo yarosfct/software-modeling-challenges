@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "2ac5ec783fcb62a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "17dad0e493dc1bff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffd5c94a7036105b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "cross_case_analysis.canvas",
+                "viewState": {
+                  "x": 524.3308458939065,
+                  "y": 210.8428561004674,
+                  "zoom": -0.8000000000000002
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "cross_case_analysis"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9fb7846637cad201",
+    "type": "split",
+    "children": [
+      {
+        "id": "a80a54d90dd7d1d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3a43ea194a166fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "513616b82169594b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3753a837fb4e3de9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9e24f4063c4322ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a53f116b1d46796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "383437fba66b6582",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "cross_case_analysis.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for cross_case_analysis"
+            }
+          },
+          {
+            "id": "d3987256ab120326",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "cross_case_analysis.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from cross_case_analysis"
+            }
+          },
+          {
+            "id": "ad9f639a088c00ea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3b6ac6966b499615",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f1f45d2f4b15ea55",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "cross_case_analysis.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of cross_case_analysis"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a3a43ea194a166fe",
+  "lastOpenFiles": [
+    "qualitative_analysis/03_memos/XXbWAbXB",
+    "qualitative_analysis/03_memos/XXdXN5hi",
+    "qualitative_analysis/03_memos/XXYydKII",
+    "qualitative_analysis/03_memos/XXa0mZct",
+    "qualitative_analysis/03_memos/XXp3qiu1",
+    "qualitative_analysis/03_memos/XX29Mhrv",
+    "qualitative_analysis/03_memos/XX3LgYBa",
+    "qualitative_analysis/03_memos/XXaj9Vju",
+    "qualitative_analysis/03_memos/XX8IPAyj",
+    "qualitative_analysis/03_memos/XXw0Ckww",
+    "qualitative_analysis/03_memos/XXMpOa7V",
+    "qualitative_analysis/04_cross_case_analysis/comparison_ai_modelling_judgement.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_feedback_channels.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_workload_attendance.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_ambiguity_justification.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_modelling_value.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_assessment_revision.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_cross_family_modelling.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_domains_authenticity.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_socially_produced_value.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_tools_progressive_guidance.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_worked_examples.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_model_quality.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_starting_independently.md",
+    "qualitative_analysis/04_cross_case_analysis/category_framework.md",
+    "qualitative_analysis/04_cross_case_analysis/core_phenomenon.md",
+    "qualitative_analysis/01_raw_transcripts/S1_transcript.md",
+    "qualitative_analysis/01_raw_transcripts/S2_transcript.md",
+    "qualitative_analysis/02_first_cycle_coding/coding_S6C.md",
+    "qualitative_analysis/02_first_cycle_coding/coding_S5C.md",
+    "qualitative_analysis/02_first_cycle_coding/coding_S4C.md",
+    "cross_case_analysis.canvas",
+    "qualitative_analysis/01_raw_transcripts/L4_transcript.md",
+    "qualitative_analysis/01_raw_transcripts/L3_transcript.md",
+    "qualitative_analysis/01_raw_transcripts/L2_transcript.md",
+    "qualitative_analysis/01_raw_transcripts/L1_transcript.md",
+    "Welcome.md"
+  ]
+}

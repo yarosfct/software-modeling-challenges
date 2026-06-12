@@ -36,9 +36,24 @@ Main characteristics:
 * stronger focus on starting barriers, worked examples, quality judgement, transition between modelling families, tools, and workload constraints
 * better if the goal is to refine the thesis argument quickly
 
+## Guide C - Gap-Filling Version (current recommendation for new interviews)
+
+File: pilot-teacher-guide-c.md
+
+Choose this version when:
+
+* you are conducting interviews after the first coding cycle (S1-S3, L1-L4)
+* you want to fill gaps: AI and assessment, scale-dependent pedagogy, shy students, multi-family transitions, integrated tooling, RE/socio-technical practice
+
+Main characteristics:
+
+* extends Guide B with Q8-Q13 gap blocks (use selectively)
+* adds explicit probes on AI, class size, and passive students
+* still incident-first with time triage
+
 ## Practical recommendation
 
-If you are unsure, start from Guide B and keep Guide A open as fallback. Guide B is more likely to produce analytically useful data in a 20-30 minute interview, while Guide A is better when you need more continuity with the earlier pilot and cleaner RQ mapping.
+For **new** interviews after the first analysis cycle, use **Guide C**. Use Guide B for shorter diagnostic sessions. Use Guide A for continuity with the earliest pilot structure.
 
 ## Shared interviewer reminders
 
