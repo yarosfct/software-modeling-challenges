@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "cross_case_analysis.canvas",
+                "file": "Canvas/evidence_map_worked_examples.canvas",
                 "viewState": {
-                  "x": 524.3308458939065,
-                  "y": 210.8428561004674,
-                  "zoom": -0.8000000000000002
+                  "x": 3219.301015862312,
+                  "y": 204.78061678599127,
+                  "zoom": -0.40000000000000013
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "cross_case_analysis"
+              "title": "evidence_map_worked_examples"
             }
           }
         ]
@@ -187,8 +187,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "a3a43ea194a166fe",
+  "active": "ffd5c94a7036105b",
   "lastOpenFiles": [
+    "qualitative_analysis/03_memos/memo_S6M5.md",
+    "Canvas/evidence_map_worked_examples.canvas",
+    "qualitative_analysis/03_memos/memo_S6M3.md",
+    "qualitative_analysis/03_memos/memo_S5M3.md",
+    "qualitative_analysis/03_memos/memo_S4M3.md",
+    "qualitative_analysis/03_memos/memo_S3M5.md",
+    "qualitative_analysis/03_memos/memo_S2M3.md",
+    "qualitative_analysis/03_memos/memo_S1M5.md",
+    "qualitative_analysis/03_memos/memo_L4M6.md",
+    "qualitative_analysis/03_memos/memo_L3M4.md",
+    "qualitative_analysis/03_memos/memo_L2M3.md",
+    "qualitative_analysis/03_memos/memo_L2M2.md",
+    "qualitative_analysis/03_memos/memo_L1M2.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_worked_examples.md",
+    "evidence_map_worked_examples.canvas",
+    "qualitative_analysis/04_cross_case_analysis/canvas_build_plan.md",
+    "Canvas",
+    "qualitative_analysis/04_cross_case_analysis/RESUME_HERE.md",
+    "example.canvas",
+    "qualitative_analysis/04_cross_case_analysis/canvas_mapping_guide.md",
+    "qualitative_analysis/04_cross_case_analysis/category_framework.md",
+    "qualitative_analysis/04_cross_case_analysis/axial_model.md",
+    "qualitative_analysis/04_cross_case_analysis/theoretical_sampling_plan.md",
+    "qualitative_analysis/04_cross_case_analysis/response_mode_matrix.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_model_quality.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_feedback_channels.md",
+    "cross_case_analysis.canvas",
+    "qualitative_analysis/04_cross_case_analysis/comparison_ai_modelling_judgement.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_assessment_revision.md",
+    "qualitative_analysis/04_cross_case_analysis/comparison_ambiguity_justification.md",
     "qualitative_analysis/03_memos/XXbWAbXB",
     "qualitative_analysis/03_memos/XXdXN5hi",
     "qualitative_analysis/03_memos/XXYydKII",
@@ -197,34 +227,6 @@
     "qualitative_analysis/03_memos/XX29Mhrv",
     "qualitative_analysis/03_memos/XX3LgYBa",
     "qualitative_analysis/03_memos/XXaj9Vju",
-    "qualitative_analysis/03_memos/XX8IPAyj",
-    "qualitative_analysis/03_memos/XXw0Ckww",
-    "qualitative_analysis/03_memos/XXMpOa7V",
-    "qualitative_analysis/04_cross_case_analysis/comparison_ai_modelling_judgement.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_feedback_channels.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_workload_attendance.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_ambiguity_justification.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_modelling_value.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_assessment_revision.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_cross_family_modelling.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_domains_authenticity.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_socially_produced_value.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_tools_progressive_guidance.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_worked_examples.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_model_quality.md",
-    "qualitative_analysis/04_cross_case_analysis/comparison_starting_independently.md",
-    "qualitative_analysis/04_cross_case_analysis/category_framework.md",
-    "qualitative_analysis/04_cross_case_analysis/core_phenomenon.md",
-    "qualitative_analysis/01_raw_transcripts/S1_transcript.md",
-    "qualitative_analysis/01_raw_transcripts/S2_transcript.md",
-    "qualitative_analysis/02_first_cycle_coding/coding_S6C.md",
-    "qualitative_analysis/02_first_cycle_coding/coding_S5C.md",
-    "qualitative_analysis/02_first_cycle_coding/coding_S4C.md",
-    "cross_case_analysis.canvas",
-    "qualitative_analysis/01_raw_transcripts/L4_transcript.md",
-    "qualitative_analysis/01_raw_transcripts/L3_transcript.md",
-    "qualitative_analysis/01_raw_transcripts/L2_transcript.md",
-    "qualitative_analysis/01_raw_transcripts/L1_transcript.md",
-    "Welcome.md"
+    "qualitative_analysis/03_memos/XX8IPAyj"
   ]
 }
