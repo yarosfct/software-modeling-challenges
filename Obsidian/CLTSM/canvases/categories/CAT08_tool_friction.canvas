@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"hub","type":"text","text":"CAT8 — Tool friction, switching, and cost\nRQ3 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
+		{"id":"cases","type":"text","text":"Cases\nL1 L2 L4 S1 S3 S6","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
+		{"id":"code_group","type":"text","text":"**Codes** (19) — Ctrl+hover a link to preview\n\n- [[L1-C17]] — prefers modelling tools over generic drawing tools\n- [[L1-C18]] — tool licensing pushes lecturer to switch tools\n- [[L1-C20]] — wants more tool time and examples in class\n- [[L1-C21]] — ideal tool would give feedback and next steps\n- [[L2-C11]] — code-generating tools motivate code-focused students\n- [[L2-C12]] — typed tools block mistakes and improve model quality\n- [[L2-C13]] — one multi-diagram tool reduces tool switching\n- [[L4-C16]] — expensive tools limit access and integration\n- [[L4-C26]] — missing integrated tools drives whiteboard use\n- [[L4-C27]] — piStar semantic checking is valued for iStar\n- [[L4-C28]] — switching tools across families creates friction\n- [[L4-C29]] — wants lightweight integrated cross-paradigm tool\n- [[S1-C08]] — tool options overwhelming for simple relations\n- [[S1-C20]] — fewer tool options make drawing easier\n- [[S3-C14]] — Bizagi vocabulary in UI helped learning\n- [[S3-C15]] — tool hover hints helped beginners start\n- [[S3-C16]] — large diagrams slow and can corrupt on save\n- [[S6-C04]] — worked examples set acceptable abstraction levels\n- [[S6-C12]] — separate tools and missed tutorial blocked NFR progress","x":580,"y":180,"width":520,"height":612,"color":"5"},
+		{"id":"memo_group","type":"text","text":"**Memos** (6) — Ctrl+hover a link to preview\n\n- [[S1M4]] — simpler tools reduce option overwhelm\n- [[S3M4]] — Bizagi scaffolds vocabulary and syntax\n- [[S6M3]] — examples and attendance carry abstraction norms\n- [[L1M5]] — proper tools versus draw.io in teaching stance\n- [[L4M5]] — whiteboard compensates for missing integrated tools\n- [[L2M3]] — tools motivate through code and guardrails","x":-380,"y":180,"width":520,"height":248,"color":"5"},
+		{"id":"explainer","type":"text","text":"What this means\n\nTools also create pain: too many options, licence limits, and mid-course tool switches slow everyone down.","x":80,"y":-340,"width":520,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}

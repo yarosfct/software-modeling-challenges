@@ -403,4 +403,15 @@ interviews/*.mp4
 ### Scripts ###
 **/Scripts
 
+### CLTSM author-only (local; not for coordinators / remote) ###
+# Working habits, changelogs, resume aids, phase scratch
+Obsidian/CLTSM/qualitative_analysis/stgt_*_habit.md
+Obsidian/CLTSM/qualitative_analysis/04_cross_case_analysis/findings_map_changelog.md
+Obsidian/CLTSM/qualitative_analysis/04_cross_case_analysis/_phase_a_*.md
+Obsidian/CLTSM/qualitative_analysis/04_cross_case_analysis/thesis_resume_roadmap.md
+Obsidian/CLTSM/qualitative_analysis/04_cross_case_analysis/_author/
+Obsidian/CLTSM/canvases/thesis_resume_roadmap.canvas
+Obsidian/CLTSM/findings_map_overview.md
+Obsidian/CLTSM/findings_map_relations.md
+
 # End of https://www.toptal.com/developers/gitignore/api/latex,windows,linux,macos

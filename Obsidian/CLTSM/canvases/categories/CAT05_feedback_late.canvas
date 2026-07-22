@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"hub","type":"text","text":"CAT5 — Feedback arrives too late\nRQ2 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
+		{"id":"cases","type":"text","text":"Cases\nL1 L2 L3 S1 S2","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
+		{"id":"code_group","type":"text","text":"**Codes** (16) — Ctrl+hover a link to preview\n\n- [[L1-C05]] — trial and error with tutor feedback improves models\n- [[L1-C08]] — accepts multiple valid modelling solutions\n- [[L1-C09]] — two-stage delivery with feedback on both\n- [[L1-C10]] — grades completeness consistency and readability\n- [[L2-C04]] — evaluation criteria taught but class time runs short\n- [[L2-C05]] — lecturer sees students skip self-evaluation of models\n- [[L2-C16]] — revision allowed but only final submission is graded\n- [[L2-C21]] — lecturer prioritizes more time over buying better tools\n- [[L3-C17]] — continuous evaluation outperforms exam-only route\n- [[L3-C18]] — staged assignments cover different UML parts without revision loop\n- [[L3-C19]] — manual feedback at scale is not feasible\n- [[S1-C18]] — validation rules not retained from course\n- [[S1-C22]] — feedback only at end not along the way\n- [[S2-C19]] — quality rules taught but not retained\n- [[S2-C25]] — detailed feedback only if student initiates\n- [[S2-C26]] — end-of-course feedback on models","x":540,"y":240,"width":520,"height":528,"color":"5"},
+		{"id":"memo_group","type":"text","text":"**Memos** (5) — Ctrl+hover a link to preview\n\n- [[S1M5]] — end-only feedback lets errors accumulate\n- [[S2M4]] — feedback gated by student initiative\n- [[L1M6]] — two-stage assessment rewards correction\n- [[L2M2]] — time pressure shrinks the evaluation loop\n- [[L3M5]] — breadth blocks revisiting the same model","x":-380,"y":240,"width":520,"height":220,"color":"5"},
+		{"id":"explainer","type":"text","text":"What this means\n\nUseful comments often arrive only at the end of a project or course. Mistakes pile up for weeks before anyone corrects them.","x":80,"y":-360,"width":520,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}

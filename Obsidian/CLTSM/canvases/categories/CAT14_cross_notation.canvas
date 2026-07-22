@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"hub","type":"text","text":"CAT14 — Cross-notation switching is hard\nRQ1 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
+		{"id":"cases","type":"text","text":"Cases\nL1 L3 S5 S6","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
+		{"id":"memo_group","type":"text","text":"**Memos** (4) — Ctrl+hover a link to preview\n\n- [[S6M1]] — multi-notation RE breaks at translation gaps\n- [[L1M4]] — switching notation family shifts the modelling frame\n- [[L3M7]] — different families need different tool affordances\n- [[S5M2]] — examples and public feedback calibrate detail","x":-440,"y":206,"width":520,"height":192,"color":"5"},
+		{"id":"code_group","type":"text","text":"**Codes** (13) — Ctrl+hover a link to preview\n\n- [[L1-C01]] — course covers BPMN SysML and feature models\n- [[L1-C12]] — BPMN expressive detail makes learning harder\n- [[L1-C13]] — shift to feature models changes modelling mindset\n- [[L3-C24]] — BPMN teaching relies on collaborative traceable tools\n- [[L3-C25]] — BPMN richer than activity-diagram analogy suggests\n- [[S5-C01]] — sequence diagram notation and granularity get messy\n- [[S5-C04]] — drafts version one without waiting for demo\n- [[S5-C05]] — teacher examples calibrate acceptable detail level\n- [[S5-C08]] — comfortable sharing work-in-progress publicly\n- [[S6-C01]] — UML class diagram lost trace from goals\n- [[S6-C02]] — nobody explained how much iStar survives in UML\n- [[S6-C08]] — mindset resets moving between notation families\n- [[S6-C14]] — wants explicit continuous translation example","x":600,"y":206,"width":520,"height":444,"color":"5"},
+		{"id":"explainer","type":"text","text":"What this means\n\nSwitching from one notation family to another (for example goals → UML) is hard. What you knew in the first notation does not transfer cleanly.","x":80,"y":-340,"width":520,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}

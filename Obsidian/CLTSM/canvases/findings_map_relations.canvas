@@ -1,0 +1,48 @@
+{
+	"nodes":[
+		{"id":"ph2","type":"text","text":"PH2 — No auto-check, so the teacher is the “right/wrong” signal [finding]\nUnlike code, a model does not compile. Students mostly learn they are wrong when a teacher tells them.","x":1940,"y":-100,"width":380,"height":130,"color":"6"},
+		{"id":"ph4","type":"text","text":"PH4 — A diagram survives only if someone owns it and someone reads it [finding]\nGroup ownership and a real audience decide whether modelling stays alive and careful.","x":1940,"y":541,"width":380,"height":130,"color":"6"},
+		{"id":"ph3","type":"text","text":"PH3 — Want checks and explanations, not auto-drawn homework [finding]\nAcross tools and AI, people ask for validation and help understanding — not a machine that draws the assignment.","x":1940,"y":779,"width":380,"height":130,"color":"6"},
+		{"id":"cat7","type":"file","file":"canvases/categories/CAT07_semantic_checking.canvas","x":760,"y":1119,"width":300,"height":80},
+		{"id":"cat13","type":"file","file":"canvases/categories/CAT13_ai_explainer.canvas","x":320,"y":1291,"width":300,"height":80},
+		{"id":"cat8","type":"file","file":"canvases/categories/CAT08_tool_friction.canvas","x":260,"y":989,"width":300,"height":80},
+		{"id":"cat14","type":"file","file":"canvases/categories/CAT14_cross_notation.canvas","x":-400,"y":844,"width":300,"height":80},
+		{"id":"cat6","type":"file","file":"canvases/categories/CAT06_feedback_access.canvas","x":690,"y":1371,"width":300,"height":80},
+		{"id":"cat11","type":"file","file":"canvases/categories/CAT11_course_load_gaps.canvas","x":-200,"y":90,"width":300,"height":80},
+		{"id":"cat5","type":"file","file":"canvases/categories/CAT05_feedback_late.canvas","x":380,"y":-10,"width":300,"height":80},
+		{"id":"cat1","type":"file","file":"canvases/categories/CAT01_starting_gated.canvas","x":1460,"y":154,"width":300,"height":80},
+		{"id":"cat3","type":"file","file":"canvases/categories/CAT03_teacher_examples.canvas","x":840,"y":194,"width":300,"height":80},
+		{"id":"cat4","type":"file","file":"canvases/categories/CAT04_student_strategies.canvas","x":990,"y":671,"width":300,"height":80},
+		{"id":"cat12","type":"file","file":"canvases/categories/CAT12_judge_good_enough.canvas","x":1500,"y":1159,"width":300,"height":80},
+		{"id":"cat10","type":"file","file":"canvases/categories/CAT10_real_audience.canvas","x":-440,"y":364,"width":300,"height":80},
+		{"id":"cat9","type":"file","file":"canvases/categories/CAT09_groups_kill_save.canvas","x":260,"y":364,"width":300,"height":80},
+		{"id":"ph1","type":"text","text":"PH1 — Turning a written problem into the first diagram [finding]\nThis is the hard, under-taught step. Learning symbol names is easier than making that first model.","x":1940,"y":130,"width":380,"height":130,"color":"6"},
+		{"id":"cat2","type":"file","file":"canvases/categories/CAT02_notation_overload.canvas","x":530,"y":526,"width":300,"height":80}
+	],
+	"edges":[
+		{"id":"r0","fromNode":"cat3","fromSide":"right","toNode":"cat1","toSide":"left","label":"helps explain"},
+		{"id":"r1","fromNode":"cat4","fromSide":"right","toNode":"cat1","toSide":"left","label":"helps explain"},
+		{"id":"r2","fromNode":"cat2","fromSide":"right","toNode":"cat1","toSide":"left","label":"contrasts with"},
+		{"id":"r3","fromNode":"cat5","fromSide":"right","toNode":"cat1","toSide":"left","label":"blocks"},
+		{"id":"r4","fromNode":"cat5","fromSide":"right","toNode":"cat3","toSide":"left","label":"blocks"},
+		{"id":"r5","fromNode":"cat6","fromSide":"right","toNode":"cat12","toSide":"left","label":"blocks"},
+		{"id":"r6","fromNode":"cat7","fromSide":"right","toNode":"cat12","toSide":"left","label":"helps explain"},
+		{"id":"r7","fromNode":"cat8","fromSide":"right","toNode":"cat7","toSide":"left","label":"contrasts with"},
+		{"id":"r8","fromNode":"cat11","fromSide":"right","toNode":"cat3","toSide":"left","label":"blocks"},
+		{"id":"r9","fromNode":"cat11","fromSide":"right","toNode":"cat5","toSide":"left","label":"blocks"},
+		{"id":"r10","fromNode":"cat9","fromSide":"right","toNode":"cat3","toSide":"left","label":"contrasts with"},
+		{"id":"r11","fromNode":"cat10","fromSide":"right","toNode":"cat9","toSide":"left","label":"helps explain"},
+		{"id":"r12","fromNode":"cat10","fromSide":"right","toNode":"cat12","toSide":"left","label":"helps explain"},
+		{"id":"r13","fromNode":"cat13","fromSide":"right","toNode":"cat7","toSide":"left","label":"helps explain"},
+		{"id":"r14","fromNode":"cat14","fromSide":"right","toNode":"cat2","toSide":"left","label":"helps explain"},
+		{"id":"r15","fromNode":"cat14","fromSide":"right","toNode":"cat8","toSide":"left","label":"helps explain"},
+		{"id":"r16","fromNode":"cat1","fromSide":"right","toNode":"ph1","toSide":"left","label":"feeds"},
+		{"id":"r17","fromNode":"cat5","fromSide":"right","toNode":"ph2","toSide":"left","label":"feeds"},
+		{"id":"r18","fromNode":"cat7","fromSide":"right","toNode":"ph3","toSide":"left","label":"feeds"},
+		{"id":"r19","fromNode":"cat9","fromSide":"right","toNode":"ph4","toSide":"left","label":"feeds"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

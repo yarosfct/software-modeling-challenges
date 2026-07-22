@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"cases","type":"text","text":"Cases\nS1 S2 S3 S5","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
+		{"id":"hub","type":"text","text":"CAT2 — Notation and symbol overload create doubt\nRQ1 · finding","x":280,"y":-180,"width":400,"height":100,"color":"4"},
+		{"id":"explainer","type":"text","text":"What this means\n\nToo many symbols, arrows, and diagram rules create doubt. Students get stuck picking the “right” notation instead of modelling the idea.","x":220,"y":-460,"width":520,"height":150,"color":"1"},
+		{"id":"memo_group","type":"text","text":"**Memos** (4) — Ctrl+hover a link to preview\n\n- [[S1M1]] — notation and tool overload block starting\n- [[S3M3]] — notation detail stalls otherwise smooth progress\n- [[S2M3]] — framework burden in course not elsewhere\n- [[S5M2]] — examples and public feedback calibrate detail","x":-70,"y":80,"width":520,"height":192,"color":"5"},
+		{"id":"code_group","type":"text","text":"**Codes** (14) — Ctrl+hover a link to preview\n\n- [[S1-C07]] — FreeCol interaction modelling felt arbitrary\n- [[S1-C08]] — tool options overwhelming for simple relations\n- [[S1-C12]] — symbol choices create doubt at start\n- [[S2-C07]] — modelling is means to an end not motivator\n- [[S2-C08]] — course difficulty from unfamiliar frameworks\n- [[S2-C09]] — fitting abstraction into existing system rules\n- [[S2-C30]] — prescribed frameworks feel off-putting\n- [[S3-C10]] — similar symbols for same thing caused confusion\n- [[S3-C11]] — unfamiliar symbols make people stop\n- [[S3-C12]] — dense diagrams hard to follow visually\n- [[S5-C01]] — sequence diagram notation and granularity get messy\n- [[S5-C04]] — drafts version one without waiting for demo\n- [[S5-C05]] — teacher examples calibrate acceptable detail level\n- [[S5-C08]] — comfortable sharing work-in-progress publicly","x":550,"y":80,"width":520,"height":472,"color":"5"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}

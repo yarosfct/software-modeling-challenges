@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"hub","type":"text","text":"CAT9 — Groups can kill or save the model\nRQ3 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
+		{"id":"cases","type":"text","text":"Cases\nS1 S4 S5 S6","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
+		{"id":"memo_group","type":"text","text":"**Memos** (5) — Ctrl+hover a link to preview\n\n- [[S1M3]] — group conditions displaced modelling effort\n- [[S4M1]] — group work can kill modelling when code wins\n- [[S5M1]] — team coordination carries the modelling work\n- [[S5M4]] — AI and live tools in the group modelling loop\n- [[S6M4]] — pair structure and notation-specific sharing comfort","x":-420,"y":180,"width":520,"height":220,"color":"5"},
+		{"id":"code_group","type":"text","text":"**Codes** (16) — Ctrl+hover a link to preview\n\n- [[S1-C09]] — sprint structures felt arbitrary in large group\n- [[S1-C10]] — stopped modelling and just finished the work\n- [[S1-C11]] — smaller team and shared model would help\n- [[S4-C02]] — group devalued model and abandoned it for code\n- [[S4-C09]] — early group sharing turned model into argument\n- [[S4-C11]] — modelling works when one person owns the design\n- [[S5-C03]] — group reads brief aloud then assigns drafter\n- [[S5-C06]] — good enough means teammates understand scope\n- [[S5-C09]] — shared Miro model with weekly diagram stand-ups\n- [[S5-C10]] — AI suggests options then team rewrites manually\n- [[S5-C11]] — live Miro editing lowered group modelling barrier\n- [[S5-C12]] — passive teammates block motivation regardless of domain\n- [[S5-C13]] — external readers push stakeholder vocabulary\n- [[S6-C06]] — documents alternative iStar decompositions with trade-offs\n- [[S6-C07]] — sharing comfort depends on notation familiarity\n- [[S6-C10]] — pair splits diagrams by type with weekly syncs","x":540,"y":180,"width":520,"height":528,"color":"5"},
+		{"id":"explainer","type":"text","text":"What this means\n\nIn groups, the diagram dies when teammates push to “just code” or stay passive — and survives when someone owns it and the team reviews it regularly.","x":80,"y":-360,"width":520,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}

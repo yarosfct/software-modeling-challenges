@@ -1,241 +1,263 @@
+---
+case_id: L1
+role: lecturer
+version: cleaned
+timestamp_style: none  # none | start | range
+---
 
-Transcript with lecturer: 
+# Interview L1 Transcript
 
-1 - Yaroslav
-2 - Prof
+`Interviewer` = interviewer  
+`Participant` = case participant
 
+## Cleaning notes
 
-1:
+This transcript was cleaned for readability. Repetitions, false starts, and interviewer filler were reduced where they did not affect meaning. Grammar was lightly edited without intentionally changing meaning. Redundant confirmations and circular follow-ups were merged or dropped only when the substantive content was already covered elsewhere in the interview.
+
+For publication-level verbatim quotations, verify the wording against the audio.
+
+## Background and teaching context
+
+**Interviewer:** <!-- T001 -->
 Could you briefly describe your teaching context and where modelling fits into your courses?
 
-2: 
-Okay. Considering modelling, i teach, modelling of systems and process, so basically we start by focusing on business process modeling where we teach the concepts, the notation, and with examples and followed by the practical classes (laboratory), where we have exercises and given a particular case study or two and then we exercise these students, then next the focus is on sysml where we do a brief recap of uml main features cuz some of them might be used like use case diagrams, sequence diagrams, etc. and given the particular notation of sysml and at the begining the focus is on the requirements diagrams of sysml where we present the requirements on diagramatic structure and the other main model that when u close the course is feature modeling, so how to model a family of products, and then you want to use these feature model.
+**Participant:** <!-- T002 -->
+I teach modelling of systems and processes. We start with business process modelling: concepts, notation, examples, and then practical classes with exercises based on one or two case studies. Next we focus on SysML. We briefly recap main UML features because some are reused—use case diagrams, sequence diagrams, and so on—and then present SysML notation. At the beginning the focus is on SysML requirements diagrams and their diagrammatic structure. By the end of the course the main model is feature modelling: how to model a family of products and how to use that feature model.
 
-1:
-Okay, so you mainly teach one course right? But in that course you approach it in different levels?
+**Interviewer:** <!-- T003 -->
+Do you mainly teach one course, but approach modelling at different levels?
 
-2:
-Yeah, as a regent. Then i do, I help with the engineering course, with all the uml diagrams thats putting in focus.
+**Participant:** <!-- T004 -->
+Yes, as regent. I also help with the Software Engineering course, where the focus is on UML diagrams.
 
-1:
-Okay, so the course you teach, and that you are a regent is an advanced course. It's from the master's program, in this case, right?
+**Interviewer:** <!-- T005 -->
+So the course you teach as regent is from the master's programme?
 
-2:
-It's in the master's program, exactly.
+**Participant:** <!-- T006 -->
+Yes, exactly—the master's programme.
 
-1:
-okay. And do you know roughly how many semesters, years have you been teaching that course?
+**Interviewer:** <!-- T007 -->
+Roughly how many years have you been teaching that course?
 
-2:
-i think it is 5 or 6 years
+**Participant:** <!-- T008 -->
+I think five or six years.
 
-1:
-Okay perfect, thank you, now i would like to understand what you aim for the students to learn and how your course design supports that? When a student finishes your course what he should be able to do with modelling?
+## Course aims and learning outcomes
 
-2:
-They should be confortable and confident to model business processes and also to learn how to use the sysml models in a systems engineering context, so the context is a bit higher than only software engineering, because you know the software engineering is part of system engineering, so like to be able to model system that could be like embedded systems for example.
+**Interviewer:** <!-- T009 -->
+What do you aim for students to learn, and how does your course design support that? When a student finishes your course, what should they be able to do with modelling?
 
-1: Which modelling activities matter the most in your courses? what i mean by that is for example interpreting model, creating models, refining, evaluating, which of those steps you think is the most important in your courses?
+**Participant:** <!-- T010 -->
+They should feel comfortable and confident modelling business processes, and they should know how to use SysML models in a systems engineering context. That context is broader than software engineering alone, because software engineering is part of systems engineering—for example, modelling embedded systems.
 
-2:
-yeah, the learning process, okay, they learn the notation but its not enough, they can understand the notation, but they actually have to practice to break the resistence and difficulty to understand how different parts of the model are the most challenging thing. To break the resistence.
+**Interviewer:** <!-- T011 -->
+Which modelling activities matter most in your courses—for example interpreting models, creating models, refining them, or evaluating them?
 
-1: 
-So you would say its kind of a mix between interpreting and creating, understanding the concepts and how to replicate to put it in practice?
+**Participant:** <!-- T012 -->
+The learning process matters most. Students learn the notation, but that is not enough. They can understand the notation, yet they still need practice to break the resistance and overcome the difficulty of seeing how different parts of a model fit together.
 
-2:
-yeah, have the case study, so know whats supposed to do, but then they have to, okay, interpret this model and then map this, what is requested into a model, so thats the most challenging part at the begining to model, and to use the proper notation, and then yeah in the begining there are several errors of how to use correctly the notation, when they actually apply the notation to a particular case study, several errors, typical error, i have a checklist of this, and i also expect, but its part of the learning process.
+**Interviewer:** <!-- T013 -->
+So it is a mix of interpreting and creating—understanding concepts and putting them into practice?
 
-1: 
-What does a good enough model look like to you? For example a student comes to you and shows a model, you look at it and how do you decide its good enough?
+**Participant:** <!-- T014 -->
+Yes. They receive a case study and know what they are supposed to do, but they must interpret the requirements and map them into a model. That is the most challenging part at the beginning: modelling with the proper notation. At first there are many typical notation errors when they apply it to a case study. I keep a checklist of these errors, and I expect them—it is part of the learning process.
 
-2:
-Okay, after trial and error process, so in the end they, showing the thing that are wrongly modelled then they show me, and then say, oh this should be like this and like that, then they realise that, normaly they not repeat it or the errors are not so serious, then the learning process a couple of trials and errors and showing the tutor, this case is me, and then they solve it and then they produce better model, i mean that happens in the last course, since there are several students that now was checked the quality of the models they produced, and in the end the delivery of the practical, the quality of the models they produced, specially the business process models, because it is a the begining of the semester and they have more time and they are quite good
+## Model quality and scaffolding
 
-1:
-How do you typically scaffold students from the problem statement to a model and a better model? what do i mean by this is, how do you explain to the students the processes that should take, like step by step approach for example, okay you should start with this vectors, classes, etc. Do you give these to the students or do you expect them to implicitly know that after learning the theory.
+**Interviewer:** <!-- T015 -->
+What does a good enough model look like to you? When a student shows you a model, how do you decide it is good enough?
 
-2:
-Its by example, yeah in the practical classes, i present a case study, i let them to have a brainstorming, but i dont wait for them to produce the model made, i start now discussing with them on the whiteboard, okay you start like this, you go step by step, no statment by statement, how you map this into a model and thats the process and then this shows how they would now attack the problem, so doing this step-by-step, and trying to mimic this the way that im producing the model as well, so ohh we start like this for example for bpmn, where we start, what pools we need, and you have to focus on the perspective of the organization, and what are the messages they exchange, and then, yeah because not everything is explicit in those case studies, so we have to interpret it and things that are not explicit in the description of this case study.
+**Participant:** <!-- T016 -->
+After a trial-and-error process, students show me what is wrongly modelled, and I explain how it should be. They usually do not repeat the same mistakes, or the errors become less serious. That happens over a couple of trials with tutor feedback until they produce a better model. In the last course I checked the quality of the models students produced. In the end, for the practical delivery, the quality was quite good—especially for business process models, because that work is at the beginning of the semester when they have more time.
 
-1:
-Okay but basically you start with a example of your own, and you expect them to recreate this example but for a slightly different problem, you solve a generic problem on the board and then give them a more specific problem and they solve it? is that your approach?
+**Interviewer:** <!-- T017 -->
+How do you scaffold students from a problem statement to a model and then to a better model? Do you give a step-by-step approach—for example, start with these actors or classes—or do you expect them to infer that after the theory?
 
-2:
-Yeah, after, i give the example, i solve it, i model with them, and then i give them another one for them to do on their own.
+**Participant:** <!-- T018 -->
+I teach by example. In practical classes I present a case study and let them brainstorm, but I do not wait for them to produce the full model first. I discuss the solution on the whiteboard step by step—statement by statement—showing how to map the description into a model. That shows them how to attack the problem. They try to mimic the way I produce the model. For BPMN, for example, we start by deciding which pools we need, focusing on the organisation's perspective and the messages exchanged. Not everything is explicit in the case studies, so they must interpret what is missing from the description.
 
-1:
-And where do students usually get stuck in that progression? if they do
+**Interviewer:** <!-- T019 -->
+So you solve an example on the board and then give them a similar but more specific problem to solve on their own?
 
-2:
-I mean, usually at the begining, to break the ice, then yeah, they have this, they understand the notation, yeah, when i explained it, and then to break the ice, to start now moving, they, i think they feel insecure, they dont know if they really understand it correctly, and then they wait for the teacher to start the solution, so yeah, probably its their culture, this has to do with the culture, so they expect the teacher to start the solution, yeah, because of insecurity or accomodation, i dont know.
+**Participant:** <!-- T020 -->
+Yes. After I give the example and model it with them, I give them another one to do alone.
 
-1:
-But there are cases of students who dont feel the insecurity and just start doing something even if its wrong, they will do it eventually.
+**Interviewer:** <!-- T021 -->
+Where do students usually get stuck in that progression?
 
-2:
-Some yeah, a minority. The others just wait.
+**Participant:** <!-- T022 -->
+Usually at the beginning, breaking the ice. They understand the notation when I explain it, but they feel insecure about whether they really understand it correctly. They wait for the teacher to start the solution—probably cultural accommodation, though I am not sure.
 
-1: 
-And do you teach any, model checking quality criteria explicitly, for example, okay, you've done this, and you should be able, on your own, to reflect if this model is good enough or not  based on requirements?
+**Interviewer:** <!-- T023 -->
+Some students start anyway, even if they get it wrong at first?
 
-2:
-No, model checking, i dont do model checking
+**Participant:** <!-- T024 -->
+Some do, but they are a minority. The others wait.
 
-1:
-okay. And lastly, do we include any, like, reflection, comparison tasks? For example, between students, compare your own models and justify your choices, compare alternatives, something like that? 
+**Interviewer:** <!-- T025 -->
+Do you teach model-checking or explicit quality criteria—for example, so students can reflect on their own whether a model meets the requirements?
 
-2:
-like comparing the solutions with colleagues or with your own?
+**Participant:** <!-- T026 -->
+No, I do not do model checking.
 
-1:
-yes
+**Interviewer:** <!-- T027 -->
+Do you include reflection or comparison tasks—for example, comparing solutions with colleagues or with alternatives and justifying choices?
 
-2:
-Yeah, they, when it happens, I compare, like, the solution with my solution, for example. And then, of course, they,  who do some differently, and then i say oh its fine by me, or if its not its because you are missing this and that, and so, in that case they, i did, or my solution is presented this, but your solution is also accepted. Because in modelling there is not only one way of modelling.
+**Participant:** <!-- T028 -->
+Do you mean comparing solutions with colleagues, or with my solution?
 
-1:
-How do you assess modeling competence in your course? for example, mostly, a student does an assessment, do a model, do you only assess the final model or do you also evaluate the process and the reasoning?
+**Interviewer:**
+Yes.
 
-2:
-For the assessing of the model, okay, I have classes dedicated to for them to show the models. Unfortunately, not all of them take this opportunity before delivering. But in the course they have 2 stage, like you know, in the first stage they produce their models and i give feedback and then i allow them to deliver the updated model for the final delivery, so of course, it is graded but now they have less rate for the first delivery and then the correction is all, uh, I give points for the corrections for the final delivery. 
+**Participant:** <!-- T029 -->
+When it happens, I compare their solution with mine. If someone does it differently, I say it is fine—or, if not, I explain what is missing. My solution is one presentation, but theirs can also be accepted, because in modelling there is not only one correct way.
 
-1:
-So you assess the process and the reasoning. For example, if a student came to you and showed this before receiving feedback, and after feedback, it changed. You also evaluate that component of, okay, he had something wrong, he showed it to me, and fixed it, it's also gonna come to the grades. Or no? or just the final model is basically grade?
+## Assessment and feedback
 
-2:
-before the first delivery i give now a lot of feedback. I'll evaluate the delivery
-and then I give also feedback. for the delivery, and suggest for actions to be addressed for the final delivery, okay? After the final delivery they have the discussions so i explain things i give them I don't only just question, i also give suggestions, so this could be better if you model this that way, so in the end they have the almost complete feedback in the main points they can improve in the final model.
+**Interviewer:** <!-- T030 -->
+How do you assess modelling competence? Do you assess only the final model, or also the process and reasoning?
 
-1:
-okay. So you have it split by two parts, each part is graded, but what matters the most is the final product. Meaning that the first stage is also graded? Where you give feedback, and what's more that matters the most is the final product, but… the process to getting to the final model is also, like, assessed. So, okay, if I understood it properly. One other question, do we explicitly grade quality dimensions? For example completeness, consistency, readability, etc?
+**Participant:** <!-- T031 -->
+I have classes dedicated to students showing their models. Unfortunately, not all of them take that opportunity before delivery. The course has two stages: in the first they produce models and I give feedback; then they may deliver an updated model for the final submission. The first delivery is graded at a lower weight, and I give points for corrections in the final delivery.
 
-2:
-yes, yes, all this, its part of the evaluation.
+**Interviewer:** <!-- T032 -->
+Is the process to reach the final model also assessed, and do you explicitly grade quality dimensions such as completeness, consistency, and readability?
 
-1:
-Now I want to focus on where students struggle, and how do those struggles show in show up in practice. From your perspective, what are the most common challenges students face in modeling? for example, they have challenges with the conceptual part, semantics, meaning, or more with the procedural part, of, okay i will build this or refine this, where do you think they struggle the most?
+**Participant:** <!-- T033 --> <!-- T035 -->
+Before the first delivery I give a lot of feedback. I evaluate that delivery and suggest actions for the final one. After the final delivery we have discussions where I explain points and give suggestions—for example, "this could be better if you modelled it that way." In the end they receive fairly complete feedback on the main points they can still improve. Yes—all of that is part of the evaluation: completeness, consistency, readability, and the rest.
 
-2:
-They struggle a bit with semantics, definitely, so to absorve the concepts of how to use this concepts when it comes to modeling, but i think the main stuggle is in breaking the ice, so start now actually using it in to provide a solution for a certain problem.
+## Student challenges
 
-1:
-So its a mix of both? do you think the conceptual part is due to what? do you think the concepts are challenging, or too difficult for the students? or is it like a overload of concepts a lot of diagram types, a lot of definitions?
+**Interviewer:** <!-- T036 -->
+From your perspective, what are the most common challenges students face in modelling? Is it mainly conceptual—semantics and meaning—or procedural—knowing how to build or refine a model?
 
-2:
-It depends on the models, for example bpmn has lots of concepts, too many details, the language is very expressive which is good, but in the other hand is more difficult to learn.
+**Participant:** <!-- T037 -->
+They struggle somewhat with semantics—absorbing how to use concepts when modelling—but the main struggle is breaking the ice: actually starting to apply modelling to solve a problem.
 
-1:
-So the challenges differ between notation, model family, for example, some students find bpmn easier, some find uml easier, ...
+**Interviewer:** <!-- T038 -->
+What makes the conceptual part difficult? Are the concepts themselves too hard, or is it overload—many diagram types and definitions?
 
-2:
-and some also the interference of the models, you learn a model, and then you learn another model, and then so on, for example, one thing is, some struggle when they move from sysml models to feature models, for software products. The idea that you are not modelling a system but a family of systems and what is, when it comes to variabilities its more difficult for them to be sure that what is a optional features or what is a mandotory feature, and because optional features not for a system, but for going to be chosen to be part of the system and this move from uml or sysml model to a feature model is quite challenging because its a frame of mind they used to model a system they have to move to a different context to a family of systems and its challenging for them.
+**Participant:** <!-- T039 -->
+It depends on the notation. BPMN has many concepts and details. The language is very expressive, which is good, but on the other hand it is harder to learn.
 
-1:
-Can you recall a specific moment when students struggled with modelling in your course? like what was happening?
+**Interviewer:** <!-- T040 -->
+Do the challenges differ between notation families—for example, some students find BPMN easier and others find UML easier?
 
-2:
-it was a feature model, the example i just gave to you is what they struggled with it, i mean, some of them have the resistence, but it should be like this, they have difficulties on the move from the context, its not because of the model itself but because of the context, from a system model to a family of systems or a family of products, there they struggle a lot.
+**Participant:** <!-- T041 -->
+Yes, and there is also interference between models. Students learn one model, then another, and so on. Some struggle when moving from SysML models to feature models for software products. The shift is from modelling a system to modelling a family of systems. Variability is harder: deciding what is optional versus mandatory, because optional features are not properties of one system but choices about what will be part of a system. Moving from a UML or SysML mindset to a feature model is quite challenging—they must change frame of mind from a system to a family of systems.
 
-1:
-When or how did you notice that this was the problem?
+**Interviewer:** <!-- T042 -->
+Can you recall a specific moment when students struggled with modelling in your course?
 
-2:
-During the practical classes, when they show me, and i say, no no, it shouldn't be modeled like this, and they say why not, and i have to explain all over again, although i have explained the same thing on the board but i have to do it together with the students and then to give more examples or counter examples, no no, this should be like that
+**Participant:** <!-- T043 -->
+The feature-model example I just gave is the main one. Some resist the shift in context. It is not the notation itself but the move from a system model to a family of systems or products. They struggle a lot there.
 
-1:
-Okay, what do you think were the conditions for it to happen? for example, time pressure, the tools were not that great for the task, maybe it was a group work, maybe some students have issues with group, unclear requirements, maybe domain unfamilarities?
+**Interviewer:** <!-- T044 -->
+When or how did you notice that was the problem?
 
-2:
-Maybe one of problems is that, you know, at some point in the semester the students start dissapearing, they dont go to the theoretical classes, then they try to learn by themselves through the slides, then they start to interpret it wrongly, and then when it comes to practical classes they, since they are reading by their own and come to the classes so they should have done it differently, i think its also the not going to class when the concepts are presented first, because i dont repeat, theoretical in the practical classes, i just use them, and then many of them have not attended the theoretical classes, and then they think they are going to learn anyway with the same pace, so i want to just know a guide not the best way to, that it wont transform the slides into a tutorial, they have lots of information but not everything is there, i discuss that in the class, i add new information, and then since not all of them are in the theorical classes, they miss information, precisious information to build the correct models, to write the right sementics.
+**Participant:** <!-- T045 -->
+During practical classes, when they show me their work and I say, "No, it should not be modelled like this." They ask why not, and I have to explain again—even though I already explained it on the board. I work through it with them and give more examples or counter-examples.
 
-1:
-One question, if you could redesign that part of the course, what would you change?
+**Interviewer:** <!-- T046 -->
+What conditions contributed—time pressure, tools, group work, unclear requirements, unfamiliar domains?
 
-2:
-We do architectural models, so you produce the models from the first stages of the development, then we migrate, because sysml allows that, has proper models for that, so we migrate from the riquirement stages and early design to architectural design, then from architectural design to a more detail design, so the course covers business model, i mean, requirement models, and design models aswell. Where they focus is on arquitectural models.
+**Participant:** <!-- T047 -->
+One problem is that students start disappearing from theoretical classes partway through the semester. They try to learn from the slides alone, interpret things wrongly, and then arrive at practical classes unprepared. I do not repeat the theory in practical classes; I just use it. Many have not attended the theoretical sessions, yet they expect to keep the same pace. The slides contain a lot of information, but not everything—I discuss and add material in class. When they miss those sessions, they lack precise information needed to build correct models and write the right semantics.
 
-1:
-But do you think changing the way that the things are teached through the year, like starting from the easiest to the most difficult, changing this type of stuff, or for example changing the practical to mandatory so students actually come to those, do you think that would affect anyway the learning capability of students?
+**Interviewer:** <!-- T048 -->
+If you could redesign that part of the course, what would you change?
 
-2:
-Im democratic, i dont oblige anyone, i think its unpopular measure, i mean, im there to help, if they want to learn they learn, but if they dont dedicate enough time for the course, its their responsability and its going to reflect on the grade
+**Participant:** <!-- T049 -->
+We work with architectural models: students produce models from the first stages of development, then migrate—SysML supports this—from requirements and early design to architectural design, and then to more detailed design. The course covers business and requirement models as well as design models, with a focus on architectural models.
 
-1:
-So you think that students dont value software modelling that much, they dont find it interesting?
+**Interviewer:** <!-- T050 -->
+Would changing the teaching sequence—for example, from easiest to most difficult—or making practical attendance mandatory improve learning?
 
-2:
-thats not that, i mean, some of them like it more than others, if they are doing modelling course, because its not compulsory course, so they choose this because they are interested in modelling, but if they in the semester they have no other disciplines and they dont give it priority, i mean, its up to them, i dont know the racionale for that, but yeah, in the end, again i give them opportunities, i have classes dedicated for the practical work, if they dont take advantage of that, its their responsabilities. If they produce weak models or models that are not that great, its their responsability because they have all the opportunities to produce quality reports.
+**Participant:** <!-- T051 -->
+I am democratic; I do not oblige anyone. Mandatory attendance would be an unpopular measure. I am there to help—if they want to learn, they learn. If they do not dedicate enough time, that is their responsibility and it will show in the grade.
 
-1:
-So, thank you, now i'd like to explore how you and students respond to these challanges, and what kind of support seem to help? so when students struggle with modelling what do you typically do to help and what seem to work the best?
+**Interviewer:** <!-- T052 -->
+Do you think students do not value software modelling?
 
-2:
-Give counter examples, explain like, okay if you do this, then this leads to miss information, so for example, a typical example, the way that i teach bpmn i focus on the organization, the other pools, like the client pool or external systems that interact with the organization, they dispose the external pools, they dont need to modeled internally, and i explain to them, okay why are you going to detail the process of the client? im not interest i just want the inputs and the outputs, you are just wasting time modelling these, and the most of the things you are modelling for the client actually is the system that is doing, like checking the clients data, except now we are doing putting this in the client, but it's on the organization And then things like that, trying to explain giving rationale why you are doing this, and not in another way, because you have the model then its about semantics and consistency and some reasoning, on why are you doing that.
+**Participant:** <!-- T053 -->
+Not exactly. Some like it more than others. Modelling is not a compulsory course—they choose it because they are interested. But if in a given semester they have many other subjects and do not prioritise it, that is up to them. I do not know their rationale. I give them opportunities, including classes dedicated to practical work. If they do not take advantage and produce weak models, that is their responsibility—they had the chance to produce quality work.
 
-1:
-Okay, and what role do tools play in those challenges, and what tool support would be the most helpful in teaching? By tools, I mean tools used to develop models, either with ink and paper, draw.io, some other specific to your courses, for example?
+## Support strategies
 
-2:
-about the tools, uh… I should have to be, uh, free tools, and also tools that do some checking, have a metamodel behind it, for example, they love to use the draw.io, i say to avoid, because its just a drawing tool its not a modelling tool. It allows you to draw anything you want but no feedback, it does not say, no you cannot do that, you can create this relationship because its not allowed, bla bla, so i encourage them to use proper modelling tools.
+**Interviewer:** <!-- T054 -->
+When students struggle with modelling, what do you typically do to help, and what seems to work best?
 
-1:
+**Participant:** <!-- T055 -->
+I give counter-examples and explain consequences—for example, "if you do this, it leads to misinformation." In BPMN I focus on the organisation and other pools, such as the client or external systems. Students often model external pools in too much internal detail. I explain: why detail the client's process? I am interested in inputs and outputs, not internal client workflow. Most of what they model for the client actually belongs to the organisation's system—for example, checking client data. I try to give the rationale for modelling choices, because once you have the model it is about semantics, consistency, and reasoning.
+
+## Tools and tool support
+
+**Interviewer:** <!-- T056 -->
+What role do tools play in those challenges, and what tool support would be most helpful in teaching?
+
+**Participant:** <!-- T057 -->
+Tools should be free and should do some checking—they should have a metamodel behind them. Students love draw.io, but I tell them to avoid it because it is a drawing tool, not a modelling tool. It lets you draw anything without feedback; it does not say, "you cannot create this relationship because it is not allowed." I encourage proper modelling tools.
+
+**Interviewer:** <!-- T058 -->
 Can you give an example of a proper modelling tool?
 
-2:
-I use visual paradigm, its not perfect, you can use it, its free, the problem that is more and more with the modelling tools, is that they are being charged, sysml before was very good and they started charging and i had to move to another one. Its something i always struggles when teaching.
+**Participant:** <!-- T059 -->
+I use Visual Paradigm. It is not perfect, but you can use it for free. More and more modelling tools are being charged. SysML tools used to be very good, then they started charging, and I had to move to another one. Tool cost is something I always struggle with when teaching.
 
-1:
-Yeah, but as you said, those tools are never perfect, they sometimes have some issues, what do you think are the main issues on those tools? for example, usability, setup complexity...
+**Interviewer:** <!-- T060 -->
+What are the main issues with those tools—for example usability or setup complexity?
 
-2:
-Not all the checks, are accomplished, i dont remember any specific example, but some times they tell to build models that should not be possible.
+**Participant:** <!-- T061 -->
+Not all checks are enforced. I do not remember a specific example, but sometimes tools let you build models that should not be possible.
 
-1:
-Have you changed tools or avoided tools because of student experience?
+**Interviewer:** <!-- T062 -->
+Have you changed or avoided tools because of student experience?
 
-2:
-oh yeah, there was one from the eclipse platform, it was really bad, the usability was really bad and we exchanged that.
+**Participant:** <!-- T063 -->
+Yes. There was one from the Eclipse platform with really bad usability, and we replaced it.
 
-1:
-Now im going to transition and id like to ask about contextual factors, like domain, course structure, and then close with your ideal supports. So how do you choose assignement domains/examples, and how do those choices affect student engagment and performance?
+## Domains and contextual factors
 
-2:
-I try to get case studies of things that they are somehow familiar with, and that it's not something that's completely different from a domain that they never heard, for example, uber applications, drones aswell, like last semester i used linkedin, it was useful for them and it was a plus for them they learn a system that is going to be useful for them.
+**Interviewer:** <!-- T064 -->
+How do you choose assignment domains and examples, and how do those choices affect student engagement and performance?
 
-1:
-Do you allow students to choose their own domains? did that ever happen?
+**Participant:** <!-- T065 -->
+I try to use case studies students are somehow familiar with—not domains they have never heard of. For example, Uber-like applications, drones, and last semester LinkedIn. LinkedIn was useful because they learned a system that would be practical for them.
 
-2:
-No, i thought about this, but to get everything even, because if they choose a domain they might get a domain more complicated or complex than the others, some applications to be modeled can be simpler or more difficult, so to evaluate these different groups with different applications or systems they are going to model, can be unfair in the end, so i give the same case study with some different variations, basically giving them some creative freedom.
+**Interviewer:** <!-- T066 -->
+Do you allow students to choose their own domains?
 
-1:
-Do you think that you ever chose any domain that was unintationally excluding for some students? for example linkedin, maybe there was some student that was not really into linkedin and felt excluded.
+**Participant:** <!-- T067 -->
+No. I considered it, but if students choose domains, some may pick something more complex than others, and evaluating different groups on different systems would be unfair. I give the same case study with some variations, so they still have creative freedom.
 
-2:
-Yeah some, okay, they might think that its not useful for them, and there might be someone who is not really keen with the topic for personal reasons, but there was a topic they really liked, the gym, modelling the gym systems, management systems, when you went to the gym and use the machines and stuff, they really liked it and they really enjoyed the domain, there are domains they like better, but in the end all the case studies i choose are always some that they are familiar with that.
+**Interviewer:** <!-- T068 -->
+Have you ever chosen a domain that was unintentionally excluding—for example, a student not interested in LinkedIn?
 
-1:
-okay. So… If you could change one or two things to improve modeling learning in your context, what would you change? for example, course design, the way things are done, feedback mechanisms, tool features. Any small change that would have a big impact, in your opinion.
+**Participant:** <!-- T069 -->
+Some may think a topic is not useful for them, and someone might dislike a topic for personal reasons. They really liked modelling gym management systems—machines, attendance, and so on. Some domains appeal more than others, but I always choose case studies that are broadly familiar.
 
-2:
-First of all, it doesnt depend on me, specifically, to have more access to tool, and possibily to use more the tools during the classes, and to be aware of the quality of the tools they use, its to give more emphasis of the use of tooling in the classes. Also the problem is time, because to get used to the tools it takes some time, and you dont have much time in the classes to solve all the issues that appear.
-Also it depends on the time you have to give more examples, and the situations, some times not all the situations are dealt with.
+## Desired improvements
 
-1:
-What would be your opinion on having a tool that is generalized and free for the students provided by the faculty, its free access to the students, and instead of starting with the modelling concepts, the first couple of classes would be familiarizing students with the tool. Im saying a tool that would provide students with, feedbacks, checklists, teaching the next steps for producing a model, templates, whats your opinion if this sort of tool existed?
+**Interviewer:** <!-- T070 -->
+If you could change one or two things to improve modelling learning in your context, what would you change?
 
-2:
-That would be perfect
+**Participant:** <!-- T071 -->
+First, it does not depend only on me: we need more access to tools and ideally more use of tools during classes. Students should be aware of tool quality, and tooling should receive more emphasis in class. Time is also a problem—getting used to tools takes time, and classes are not long enough to solve every issue that appears. I would also like more time to give examples, because sometimes not every situation gets covered.
 
-1:
-Anything else you want to point out?
+**Interviewer:** <!-- T072 -->
+What is your opinion on a generalised, faculty-provided free tool for students—perhaps with the first classes focused on the tool rather than modelling concepts—offering feedback, checklists, next-step guidance, and templates?
 
-2:
-yeah, two things, one is the cultural aspect, that should be taken into account, like students missing classes, just because of time issues, like, oh i dont need classes i learn by myself, ...
+**Participant:** <!-- T073 -->
+That would be perfect.
 
-1:
-Do you think its a cultural issue, what i mean by cultural is student culture or portuguese culture?
+**Interviewer:** <!-- T074 -->
+Is there anything else you want to add?
 
-2:
-Its portuguese culture together with the fact that they have a heavy workload, so they have 4 or 5 disciplines, and then they start demanding to many works, and they have a lots of tests, the continuous evaluation in the end is bad, for me is really bad, in the middle of the semester, they different activities, tests and other practical works and in the end they have to make choices, and not going to the classes to do the practical work and study for the test, i think continuos evaluation is not good for students and not for us.
+**Participant:** <!-- T075 -->
+Two things. One is the cultural aspect: students missing classes because they think they can learn alone—
+
+**Interviewer:** <!-- T076 -->
+Do you mean Portuguese culture, student culture, or both?
+
+**Participant:** <!-- T077 -->
+Portuguese culture, together with a heavy workload. They often have four or five subjects, many tests, and continuous evaluation. In the middle of the semester they face different activities, tests, and practical work. In the end they must choose—for example, skipping practical classes to study for a test. I think continuous evaluation is bad for students and bad for us.

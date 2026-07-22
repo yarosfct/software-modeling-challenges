@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"cases","type":"text","text":"Cases\nL2 L4 S2 S3 S4 S5 S6","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
+		{"id":"memo_group","type":"text","text":"**Memos** (6) — Ctrl+hover a link to preview\n\n- [[S2M5]] — tasks need a concrete communicative purpose\n- [[S4M4]] — domain interest and audience make models matter\n- [[S5M1]] — team coordination carries the modelling work\n- [[S3M6]] — layout choices when others will analyse the model\n- [[L2M5]] — domain and course rhythm gate modeling uptake\n- [[L4M3]] — domain freedom trades lecturer workload for fairness","x":-40,"y":80,"width":520,"height":248,"color":"5"},
+		{"id":"code_group","type":"text","text":"**Codes** (20) — Ctrl+hover a link to preview\n\n- [[L2-C17]] — domain understanding is the hardest learning condition\n- [[L2-C18]] — one shared project domain chosen for fairness\n- [[L2-C19]] — attendance and workload pull students away from class\n- [[L2-C22]] — modeling confined to one unit; low student interest\n- [[L4-C06]] — student project freedom increases lecturer workload\n- [[L4-C07]] — domain choice driven by student fairness\n- [[L4-C08]] — modelling needs problems with real complexity\n- [[L4-C11]] — lecturer sees students want clearer tasks under pressure\n- [[S2-C10]] — modelling was one chore among many\n- [[S2-C28]] — modelling taught in passing needs emphasis\n- [[S2-C29]] — generic modelling tasks lack clear purpose\n- [[S3-C19]] — motivation affects speed more than quality\n- [[S3-C20]] — cared about readability for thesis analysis\n- [[S4-C11]] — modelling works when one person owns the design\n- [[S4-C14]] — interesting domain motivates careful modelling\n- [[S4-C15]] — real reader audience makes diagrams communicative\n- [[S5-C03]] — group reads brief aloud then assigns drafter\n- [[S5-C06]] — good enough means teammates understand scope\n- [[S5-C09]] — shared Miro model with weekly diagram stand-ups\n- [[S5-C13]] — external readers push stakeholder vocabulary","x":580,"y":80,"width":520,"height":640,"color":"5"},
+		{"id":"hub","type":"text","text":"CAT10 — Real audience makes modelling worth it\nRQ3 · finding","x":300,"y":-180,"width":400,"height":100,"color":"4"},
+		{"id":"explainer","type":"text","text":"What this means\n\nModelling feels worth the effort when a real person will read it (supervisor, client, teammate). An “interesting topic” alone is a weaker motivator.","x":240,"y":-480,"width":520,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}

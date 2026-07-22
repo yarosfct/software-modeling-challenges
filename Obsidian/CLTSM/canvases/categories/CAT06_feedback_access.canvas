@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"hub","type":"text","text":"CAT6 — Feedback access depends on initiative and format\nRQ2 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
+		{"id":"cases","type":"text","text":"Cases\nL1 S2 S3 S4 S5 S6","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
+		{"id":"memo_group","type":"text","text":"**Memos** (6) — Ctrl+hover a link to preview\n\n- [[S2M4]] — feedback gated by student initiative\n- [[S3M2]] — professor feedback as correctness gate\n- [[S4M3]] — shy students need private feedback channels\n- [[S5M5]] — group modelling assumes an outgoing participant\n- [[S6M4]] — pair structure and notation-specific sharing comfort\n- [[L1M6]] — two-stage assessment rewards correction","x":-300,"y":180,"width":520,"height":248,"color":"5"},
+		{"id":"code_group","type":"text","text":"**Codes** (17) — Ctrl+hover a link to preview\n\n- [[L1-C05]] — trial and error with tutor feedback improves models\n- [[L1-C08]] — accepts multiple valid modelling solutions\n- [[L1-C09]] — two-stage delivery with feedback on both\n- [[L1-C10]] — grades completeness consistency and readability\n- [[S2-C19]] — quality rules taught but not retained\n- [[S2-C25]] — detailed feedback only if student initiates\n- [[S2-C26]] — end-of-course feedback on models\n- [[S3-C07]] — waited for professor feedback to feel sure\n- [[S3-C13]] — picks first option when two seem valid\n- [[S3-C18]] — slides alone not enough without feedback\n- [[S4-C07]] — resolves design ambiguity privately with teacher\n- [[S4-C08]] — shy student prefers private over public model sharing\n- [[S5-C02]] — public lab presentation exposes unanswered questions\n- [[S5-C15]] — group whiteboarding suits outgoing more than quiet\n- [[S6-C06]] — documents alternative iStar decompositions with trade-offs\n- [[S6-C07]] — sharing comfort depends on notation familiarity\n- [[S6-C10]] — pair splits diagrams by type with weekly syncs","x":520,"y":180,"width":520,"height":556,"color":"5"},
+		{"id":"explainer","type":"text","text":"What this means\n\nGetting feedback depends on asking for it, and on whether it is public or private. Shy students get less help in open, in-front-of-everyone formats.","x":80,"y":-320,"width":520,"height":150,"color":"1"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"hub","type":"text","text":"CAT3 — Teacher examples and walkthroughs unlock work\nRQ2 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
+		{"id":"memo_group","type":"text","text":"**Memos** (6) — Ctrl+hover a link to preview\n\n- [[S1M2]] — worked examples bridge text and diagram\n- [[S2M2]] — examples and professor check substitute for process\n- [[S4M2]] — worked examples unlock reasoning and granularity\n- [[L1M2]] — whiteboard worked example as standard scaffold\n- [[L3M4]] — scaled labs: autonomy with timed rescue\n- [[L4M6]] — active discovery pedagogy resists passivity","x":-300,"y":180,"width":520,"height":248,"color":"5"},
+		{"id":"code_group","type":"text","text":"**Codes** (22) — Ctrl+hover a link to preview\n\n- [[L1-C05]] — trial and error with tutor feedback improves models\n- [[L1-C06]] — whiteboard step-by-step example then solo exercise\n- [[L1-C16]] — counter-examples explain why pools are modelled\n- [[L3-C02]] — large cohort taught with multi-person teaching team\n- [[L3-C14]] — lab assistants break problems into smaller modeled pieces\n- [[L3-C15]] — autonomy first; whiteboard demo when majority stuck\n- [[L3-C16]] — lab supports learning but does not replace theory\n- [[L4-C21]] — lecturer does not solve exercises upfront\n- [[L4-C22]] — icebreakers prepare active participation\n- [[L4-C25]] — lecturer models openness not knowing everything\n- [[L4-C32]] — lecturer sees students overwhelmed by continuous evaluation\n- [[S1-C13]] — text-to-model via trial and error\n- [[S1-C15]] — no remembered step-by-step teaching\n- [[S1-C23]] — learn modelling best from worked examples\n- [[S2-C11]] — trial and error then ask professor\n- [[S2-C14]] — replicate reasoning from completed examples\n- [[S2-C15]] — start with objects then draw relationships\n- [[S2-C17]] — elements taught not explicit modelling process\n- [[S4-C03]] — less confident starting without teacher example\n- [[S4-C04]] — worked examples teach reasoning not memorizing shapes\n- [[S4-C05]] — comparing detail levels showed what good enough means\n- [[S4-C06]] — personal quality checklist learned from feedback","x":500,"y":180,"width":520,"height":696,"color":"5"},
+		{"id":"explainer","type":"text","text":"What this means\n\nA worked example or live teacher walkthrough is what unlocks student work. Hearing the rules alone is usually not enough.","x":80,"y":-380,"width":520,"height":150,"color":"1"},
+		{"id":"cases","type":"text","text":"Cases\nL1 L3 L4 S1 S2 S3 S4 S5 S6","x":-260,"y":-80,"width":300,"height":70,"color":"3"}
+	],
+	"edges":[
+		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
+		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
+		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	]
+}
