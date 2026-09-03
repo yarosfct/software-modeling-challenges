@@ -1,0 +1,46 @@
+{
+  "name": "qualitative-research-pro",
+  "version": "1.0.0",
+  "description": "Academic qualitative research squad for grounded theory, qualitative analysis, academic writing, and research methodology",
+  "type": "module",
+  "bin": {
+    "qualitative-research-pro": "./bin/cli.mjs"
+  },
+  "files": [
+    "agents/",
+    "skills/",
+    "hooks/dist/",
+    "hooks/hooks.json",
+    "rules/",
+    "plugin.json",
+    "bin/",
+    "install.sh",
+    "CLAUDE.md",
+    "AGENTS.md"
+  ],
+  "keywords": [
+    "grounded-theory",
+    "qualitative-research",
+    "academic-research",
+    "glaser",
+    "coding",
+    "memoing",
+    "methodology",
+    "claude-code",
+    "ai-agents",
+    "research-methods"
+  ],
+  "author": "ccashwell (https://github.com/ccashwell)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccashwell/qualitative-research-pro.git"
+  },
+  "homepage": "https://github.com/ccashwell/qualitative-research-pro#readme",
+  "bugs": {
+    "url": "https://github.com/ccashwell/qualitative-research-pro/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

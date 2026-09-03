@@ -1,14 +1,18 @@
 {
 	"nodes":[
-		{"id":"explainer","type":"text","text":"What this means\n\nStudents often freeze before drawing anything. They wait for a teacher demo or a clear example of how to start — without that path, they do not know how to begin.","x":80,"y":-280,"width":520,"height":150,"color":"1"},
 		{"id":"hub","type":"text","text":"CAT1 — Starting is gated without a worked path\nRQ1 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
 		{"id":"cases","type":"text","text":"Cases\nL1 L2 L3 S3 S4 S5","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
 		{"id":"code_group","type":"text","text":"**Codes** (22) — Ctrl+hover a link to preview\n\n- [[L1-C03]] — practice needed to break modelling resistance\n- [[L1-C04]] — mapping case study to notation is hardest start\n- [[L1-C07]] — lecturer sees students wait for teacher to start\n- [[L1-C11]] — semantics struggle plus breaking the ice\n- [[L2-C08]] — lecturer sees semantics and refinement as main breakdown points\n- [[L2-C09]] — lecturer sees students stall when identifying actors and actions\n- [[L2-C10]] — worked examples do not transfer when domain changes\n- [[L3-C02]] — large cohort taught with multi-person teaching team\n- [[L3-C14]] — lab assistants break problems into smaller modeled pieces\n- [[L3-C15]] — autonomy first; whiteboard demo when majority stuck\n- [[L3-C16]] — lab supports learning but does not replace theory\n- [[S3-C04]] — earlier courses were shallow crash courses\n- [[S3-C05]] — prior BPMN contact made MSP easier\n- [[S3-C06]] — could start MSP exercises without waiting\n- [[S3-C17]] — one-week BPMN then course moves on\n- [[S4-C03]] — less confident starting without teacher example\n- [[S4-C04]] — worked examples teach reasoning not memorizing shapes\n- [[S4-C05]] — comparing detail levels showed what good enough means\n- [[S4-C06]] — personal quality checklist learned from feedback\n- [[S5-C04]] — drafts version one without waiting for demo\n- [[S5-C07]] — small prototype settles modelling disagreements\n- [[S5-C14]] — wants weekly assessed diagram peer reviews","x":540,"y":180,"width":520,"height":696,"color":"5"},
-		{"id":"memo_group","type":"text","text":"**Memos** (6) — Ctrl+hover a link to preview\n\n- [[S3M1]] — earlier BPMN contact unlocks MSP start\n- [[S4M2]] — worked examples unlock reasoning and granularity\n- [[L1M1]] — breaking the ice is the main teaching hurdle\n- [[L2M1]] — getting started independently is the hard part\n- [[L3M4]] — scaled labs: autonomy with timed rescue\n- [[S5M3]] — early sharing and self-initiated drafts replace waiting","x":-330,"y":180,"width":520,"height":248,"color":"5"}
+		{"id":"memo_group","type":"text","text":"**Memos** (6) — Ctrl+hover a link to preview\n\n- [[S3M1]] — earlier BPMN contact unlocks MSP start\n- [[S4M2]] — worked examples unlock reasoning and granularity\n- [[L1M1]] — breaking the ice is the main teaching hurdle\n- [[L2M1]] — getting started independently is the hard part\n- [[L3M4]] — scaled labs: autonomy with timed rescue\n- [[S5M3]] — early sharing and self-initiated drafts replace waiting","x":-330,"y":180,"width":520,"height":248,"color":"5"},
+		{"id":"explainer","type":"text","text":"What this means\n\nStudents often freeze before drawing anything. They wait for a teacher demo or a clear example of how to start — without that path, they do not know how to begin.","x":80,"y":-300,"width":520,"height":150,"color":"1"}
 	],
 	"edges":[
 		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
 		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"},
 		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"}
-	]
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

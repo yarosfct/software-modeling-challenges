@@ -1,0 +1,13 @@
+# Qualitative Research Pro - Codex CLI configuration
+# https://github.com/ccashwell/qualitative-research-pro
+
+model = "gpt-5.3-codex"
+
+# Codex will read AGENTS.md as project instructions
+project_doc_fallback_filenames = ["AGENTS.md", "CLAUDE.md"]
+
+[history]
+persistence = "local"
+
+[skills]
+path = "skills"

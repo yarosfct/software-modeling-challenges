@@ -1,0 +1,54 @@
+---
+description: Route thesis work to CLTSM + academic/qualitative skills when relevant
+alwaysApply: true
+---
+
+# CLTSM thesis skill routing
+
+This repo is a qualitative thesis project on challenges of learning/teaching software modelling (CLTSM). The methodological approach is **Socio-Technical Grounded Theory (STGT)** — not classic Glaserian or Strauss–Corbin GT as the primary frame. Before substantial analysis or academic writing, **read and follow the matching project skill(s)** under `.cursor/skills/`.
+
+## Always prefer project conventions first
+
+For anything involving interviews, coding, memos, cross-case analysis, pilots, or literature cards:
+
+1. Read `.cursor/skills/cltsm-analysis/SKILL.md` (includes STGT stance)
+2. Follow vault paths under `Obsidian/CLTSM/qualitative_analysis/` only
+3. Use Obsidian MCP when available for vault search/read
+
+Generic methodology/writing skills support craft; they must not override `cltsm-analysis` or reframe the study away from STGT.
+
+## Skill routing (use when the task matches)
+
+| Task | Read / follow |
+|---|---|
+| Coding, memos, axial/cross-case, negative cases, sampling, vault edits | `cltsm-analysis` (STGT) |
+| Open/axial/selective coding craft, memo writing craft, constant comparison, saturation, GT method questions | `qualitative-research-pro` skills (e.g. `open-coding`, `memo-writing`, `constant-comparison`, `theoretical-sampling`, `category-development`) **adapted to STGT + CLTSM files** — do not default to Glaserian/`constructivist-gt` framing |
+| Qualitative findings reporting, reflexivity, COREQ-style completeness | `academic-writer-skills` → `qualitative-reporting` |
+| Literature review / synthesis | `academic-writer-skills` → `literature-review` (+ QRP `literature-synthesis` if needed); prefer `paper-review/` cards as local notes |
+| Thesis/chapter structure, viva-oriented structure | `academic-writer-skills` → `thesis-dissertation-guide` and/or `scholarly` |
+| Guided drafting of Intro/Methods/Results/Discussion | `scholarly` |
+| Citations, paraphrasing, academic language, grammar | `academic-writer-skills` → `citation-formatter`, `paraphrasing-engine`, `academic-language-toolkit`, `grammar-style-checker` |
+| Argument quality / fallacy check | `academic-writer-skills` → `argumentation-engine` |
+| AI use disclosure / academic integrity | `academic-writer-skills` → `ai-academic-ethics` |
+| Conference slides/posters | `academic-writer-skills` → `conference-presentation` (and project `slides` skill if UI deck work) |
+| Interview protocols | `interview-pilot/pilot-student.md` or `pilot-teacher.md` (guided by `cltsm-analysis`) |
+
+If several rows match, load **`cltsm-analysis` plus the smallest set of specialist skills** needed. Do not load the entire qualitative-research-pro pack into context at once.
+
+## Relevance gate
+
+Apply these skills when the user is doing thesis/analysis/writing work, or when editing:
+
+- `Obsidian/CLTSM/**`
+- `interview-pilot/**`
+- `paper-review/**`
+- thesis chapters, methods, findings, discussion drafts
+
+Skip them for unrelated engineering tasks in this repo unless the user asks for academic framing.
+
+## Evidence and integrity defaults
+
+- No invented quotes, codes, memos, or citations
+- Student evidence ≠ lecturer interpretation ≠ design implication
+- Prefer bounded claims with memo/case IDs (once those exist again)
+- When writing findings, point claims back to transcript / future memo paths under `Obsidian/CLTSM/`

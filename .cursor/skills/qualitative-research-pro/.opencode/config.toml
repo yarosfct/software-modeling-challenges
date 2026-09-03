@@ -1,0 +1,9 @@
+# Qualitative Research Pro - OpenCode CLI configuration
+# https://github.com/ccashwell/qualitative-research-pro
+
+[project]
+# OpenCode reads instructions from this file
+instructions_file = "AGENTS.md"
+
+[model]
+default = "anthropic/claude-opus-4.6"
