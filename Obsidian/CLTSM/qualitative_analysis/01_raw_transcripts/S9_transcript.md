@@ -10,128 +10,113 @@ timestamp_style: none  # none | start | range
 `Interviewer` = interviewer  
 `Participant` = case participant
 
-**Interviewer:**
-Boas, antes de começarmos, preferes fazer a entrevista em portugues ou ingles? uma vez que estudaste no UK.
+## Cleaning notes
 
-**Participant:**
-Epa isso já foi aos anos, é me indiferente, mas siga em portugues que é mais facil articular ahaha.
+This transcript was translated from Portuguese (see [[pt/S9_transcript_pt]]) and cleaned for readability and consistency with other cleaned student transcripts. Consent filler, repetitions, and interviewer filler were reduced where they did not affect meaning. Interviewer questions were tightened for clarity. Grammar was lightly edited for readability without intentionally changing meaning. The opening choice of interview language was dropped as consent-adjacent filler; the interview was conducted in Portuguese.
 
-**Interviewer:**
-Perfeito, então podias explicar me brevemente como a modelação software se relaciona contigo, em que contexto trabalhaste e aplicaste conceitos de modelação software, tanto e de preferencia em contexto academico como profissional?
+For publication-level verbatim quotations, verify the wording against the Portuguese original and the audio.
 
-**Participant:**
-Infelizmente amigo, o nivel academico esta muito fraco aqui na minha cabeça que já lá vai ao tempo, acabei a faculdade lá durante o covid, portanto... 6 anos... Mas pronto, sem desviar muito, ultima vez que usei foi a trabalhar na nokia logo após acabar a faculdade, que me foi atribuido o cargo de product developer, que acabei por nem fazer, mas a empresa financiou me um post graduate relacionado com software modelling onde tive que fazer uma preparação e um exame. Aquilo tinha 3 niveis, inicial, intermedio e avançado, mas eu só fiz o inicial mesmo. 
+## Part 1 — Background, modelling experience, quality and sharing
 
-**Interviewer:**
-E esse curso abordava o que mesmo?
+**Interviewer:** <!-- T002 -->
+Can you briefly explain how software modelling relates to you — where you used it, in academic work and, if relevant, professionally?
 
-**Participant:**
-Ufff não sei se não estou a mentir, mas UML acho eu, era tipo vários diagramas, diagramas de classes, sequence, objects acho eu, use cases e mais alguns provavelmente. 
+**Participant:** <!-- T003 -->
+Unfortunately, the academic side is very weak in my head. It has been a long time. I finished university there during Covid, so about six years ago. Anyway, without going off track, the last time I used it was working at Nokia right after finishing university. I was assigned the role of product developer, which I ended up not actually doing, but the company funded a postgraduate course related to software modelling where I had to do preparation and an exam. It had three levels, initial, intermediate and advanced, but I only did the initial one.
 
-**Interviewer:**
-Okaay, e nesse curso tinhas mesmo aulas ou era estudo através do material disponibilizado?
+**Interviewer:** <!-- T004 -->
+What did that course cover? Did you have real classes, or was it study through the materials they provided?
 
-**Participant:**
-Era mais estudo, o objetivo era passar um exame, mas haviam aulas semanais, mas como era na altura do covid era tudo online.
+**Participant:** <!-- T005 -->
+I am not sure I am not lying, but UML I think. It was several diagrams: class diagrams, sequence, objects I think, use cases, and some more probably.
 
-**Interviewer:**
-E como é que eram essa aulas?
+It was more study. The goal was to pass an exam, but there were weekly classes, and because it was during Covid it was all online.
 
-**Participant:**
-Honestamente nem sei bem, fui as aulas todas, mas o que eu fazia era gravar a aula no caso que fosse necessario rever e estudava pelos materias disponibilizados e fazia os exercicios. Mas lembro vagamente das primeiras aulas quando ainda ia, era basicamente o professor a modelar sistemas e a explicar o raciocionio por trás, tinha uma abordagem interessante, pois ele resolvia primeiro o exercicio e durante a explicação do raciocionio explicava a notação e do porque dessa escolha.
+**Interviewer:** <!-- T006 -->
+What were those classes like?
 
-**Interviewer:**
-Certo, e durante o curso em hertford? não tiveste mesmo nada relacionado a modelação?
+**Participant:** <!-- T007 -->
+Honestly I do not really know. I went to all the classes, but what I did was record the class in case I needed to review, and I studied from the materials they provided and did the exercises. I vaguely remember the first classes when I still attended: it was basically the teacher modelling systems and explaining the reasoning behind it. He had an interesting approach, because he solved the exercise first and, while explaining the reasoning, explained the notation and why that choice.
 
-**Participant:**
-Uhmm bases de dados se for considerado, tivemos que modelar as interações e fazer modelação conceptual. Depois tive uma cadeira que era team project onde tinhamos que dar design do sistema, nessa acho que tambem tivemos um pouco de modelação, no que toca a requisitos e modelação por objetos, onde tinhamos que fazer diagramas de classes. E mais que isso não me recordo.
+**Interviewer:** <!-- T008 -->
+And during the course at Hertford, did you have anything related to modelling? Practicals where students or the teacher solved modelling exercises and shared models with the class?
 
-**Interviewer:**
-E recordaste se tiveste aulas praticas onde os alunos ou professor resolviam exercicios de modelação e partilhavam os seus modelos com a turma? Por exemplo como no post grad o professor resolvia exercicios e explicava para a turma?
+**Participant:** <!-- T009 -->
+Databases, if that counts. We had to model the interactions and do conceptual modelling. Then I had a course that was Team Project where we had to design the system. In that one I think we also had a bit of modelling, around requirements and object modelling, where we had to do class diagrams. Beyond that I do not remember.
 
-**Participant:**
-Em bases de dados é capaz de ter acontecido algo do genero, mas não me lembro mesmo, as restantes cadeiras que eram capazes de ter conceitos de modelação foram todas feitas online que o meu segundo e terceiro ano foram completamente online devido ao covid. E resolução de exercicios com a turma online era um bocado messy. 
+In Databases something of that kind may have happened, but I really do not remember. The remaining courses that might have had modelling concepts were all done online, because my second and third years were completely online due to Covid. Solving exercises with the class online was a bit messy.
 
-**Interviewer:**
-Certo okay assim já sei que perguntas posso dar skip. E lembraste de alguma momento em que sentiste que modelação era dificil, confusa ou frustrante? Mas algo mais especifico, não apenas uma opinião geral?
+**Interviewer:** <!-- T010 -->
+Can you remember one specific moment when modelling felt difficult, confusing, or frustrating — not only a general opinion?
 
-**Participant:**
-Não, não me consigo lembrar de todo. Sempre que usei modelação foi algo concreto e calculado, os conceitos era de certa forma basicos, e a aplicação era intuitiva.
+**Participant:** <!-- T011 -->
+No. I cannot remember at all. Whenever I used modelling it was something concrete and calculated. The concepts were fairly basic, and applying them was intuitive.
 
-**Interviewer:**
-E consegues me dizer o que se passa na tua cabeça ou quais são os teus procedimentos nos primeiros 10 minutos após receberes uma descrição textual para construires um modelo? Isto é, um exercicio do tipo, modela este sistema e é dado um bloco de texto a descrever o sistema. Tiveste este tipo de exercicios alguma vez?
+**Interviewer:** <!-- T012 -->
+When you get a text description and have to build a model, what happens in the first ten minutes? Did you have that kind of exercise?
 
-**Participant:**
-Esse era o tipo de exercicios do post graduate, fiz alguns sim, geralmente pediam nos para fazer um determinado diagrama a partir de uma descrição, o que fazia era ler o texto e desenhar o diagrama, depois de desenhado voltava a ler lentamente e confirmava se estava tudo o que era preciso no diagrama, se o texto fosse muito grande contornava as palavras chave só para me orientar melhor.
+**Participant:** <!-- T013 -->
+That was the type of exercise in the postgraduate course. I did some, yes. They usually asked us to make a given diagram from a description. What I did was read the text and draw the diagram, then after it was drawn I went back and read slowly and checked whether everything that was needed was in the diagram. If the text was very long I circled the keywords just to orient myself better.
 
-**Interviewer:**
-Então basicamente era trial and error?
+**Interviewer:** <!-- T014 -->
+So basically trial and error? If the teacher did not show a worked example and explain the reasoning, how comfortable did you feel starting on your own?
 
-**Participant:**
-Era mais iterativo, mas sim pode ser considerado trial and error.
+**Participant:** <!-- T015 -->
+It was more iterative, but yes it can be considered trial and error.
 
-**Interviewer:**
-E se o professor não mostrasse o exemplo resolvido e explicasse o raciocionio por trás, o quão confortavel sentiaste para começar a resolver sozinho?
+Not very comfortable, I would say. I generally need to see how it is done once in order to try on my own. If I did not have an example solved by the teacher I looked for an example online or a YouTube video explaining it. But once I had a general idea of how to start and what to do, I had no problem trying and failing.
 
-**Participant:**
-Pouco diria, geralmente preciso de ver como é feito uma vez para tentar fazer sozinho, se no caso de não ter um exemplo resolvido pelo professor procurava um exemplo online ou video no youtube a explicar. Mas uma vez que tivesse uma ideia geral de como começar e o que fazer não tinha problemas em tentar e falhar. 
+**Interviewer:** <!-- T016 -->
+How did you decide whether a model was good enough?
 
-**Interviewer:**
-E como é que decidias se um modelo estava bom o suficiente?
+**Participant:** <!-- T017 -->
+When I no longer had anything to add or change.
 
-**Participant:**
-Quando já não tinha mais anda a acrescentar ou a modificar ahaha.
+**Interviewer:** <!-- T018 -->
+Did you ever receive feedback on a model and have to make a change, something small or even redo the model completely?
 
-**Interviewer:**
-E alguma vez recebeste feedback num modelo e tiveste que fazer alguma alteração, algo pequeno ou até mesmo refazer o modelo por completo?
+**Participant:** <!-- T019 -->
+I do not think so.
 
-**Participant:**
-Acho que não.
+**Interviewer:** <!-- T020 -->
+If you finished building a model before the teacher solved it, how confident did you feel sharing your approach with the teacher, the class, or classmates?
 
-**Interviewer:**
-E se acabasses de construir um modelo antes do professor resolver, o quão confiante sentias te em partilhar a tua abordagem, tanto com o professor, com a turma ou com colegas?
+**Participant:** <!-- T021 -->
+That is a bit of a hypothetical scenario because something like that never happened to me, but personally I think I would avoid it a bit. It is not from fear of the model being wrong, but more from my lack of skill when it comes to drawing things. If I were using some tool that helped with drawing, maybe I would not have a problem showing my approach. To classmates, if needed, I would show it without fear. It would be their problem to decipher my model.
 
-**Participant:**
-Uhmm isso é um cenario um bocado hipotetico porque algo desse genero nunca aconteceu me, mas pessoalmente acho que evitava um bocado de o fazer, nem é pelo receio do modelo estar errado mas mais pela minha falta de jeito no que toca a desenhar coisas. Se fosse a usar alguma ferramenta que ajudasse a desenhar talvez até não tinha problemas a mostrar a minha abordagem. A colegas se fosse preciso mostrava sem receio, seria o problema deles descifrar o meu modelo ahaha.
+## Part 2 — Tools, AI, group work and closing
 
-**Interviewer:**
-Agora que abordaste as ferramentas, usaste alguma ferramenta em especifico?
+**Interviewer:** <!-- T022 -->
+You mentioned tools. Did you use a specific one? Did it help or create friction?
 
-**Participant:**
-Sim usei uma naquele post graduate, o nome não me lembro, mas era a ferramenta recomendada deles para UML, não me lembro se era free ou eram eles que disponibilizavam, mas lembro me que o UI era bué arcaico.
+**Participant:** <!-- T023 -->
+Yes, I used one in that postgraduate course. I do not remember the name. It was the UML tool they recommended. I do not remember whether it was free or whether they provided it, but I remember the UI was very archaic.
 
-**Interviewer:**
-E gostaste de usar a ferramenta? achas que a ferramenta ajudou ou criou atrito?
+Mixed feelings about whether I liked the tool. No, as I said it was quite outdated and I feel it slowed me down a bit because of that. There were several menus, options, sub-options. It was almost like picking up Photoshop without ever having touched editing software. On the other hand, I really disliked doing drawings and models in pencil or pen, so I preferred to suffer a bit with that, and additionally it helped a bit because it had descriptions, explanations, templates, and some other things. But it took a while to get the hang of it.
 
-**Participant:**
-Mixed feelings, se gostei da ferramenta. Não, como disse era bastante out dated e sinto que atrasava um bocado por causa disso, havia varios menus, opçoes, subopçoes, era quase como pegar no photoshop sem nunca ter tocado num software de edição. Mas por outro lado, eu não gostava nada de fazer desenhos e modelos a lapis ou caneta, portanto preferia sofrer um bocado com aquilo, e adicionalmente aquilo ajudava um bocado porque tinha descriçoes, explicações, templates, e mais algumas coisas. Mas custava um bocado a pegar o jeito.
+**Interviewer:** <!-- T024 -->
+In general, do you feel modelling tools are beneficial for students, or do they just complicate things more?
 
-**Interviewer:**
-Certo, e qual é a tua opinião geral nessa ferramenta ou em ferramentas para modelação? sentes que é algo benefico para os estudantes/usuarios ou só complica mais as coisas?
+**Participant:** <!-- T025 -->
+I think they are beneficial. For example, the tool I used, if it were cleaner and less complex, would be quite useful for students, especially today. I do not know whether something similar already exists, but adding AI capabilities to a tool like that could simplify the process a lot, I imagine: explain models, guide the next steps, explain concepts and notations, automate layout, check whether the model is correct, and much more. I would even say a well-built tool could be more useful than classes on that topic.
 
-**Participant:**
-Acho que é algo benefico, por exemplo a ferramenta que usei se fosse mais clean e menos complexa, seria algo bastante util para estudantes, principalmente hoje em dia. Não sei se algo parecido já não existe, mas adicionando capabilidades AI a uma ferramenta dessas podia simplificar bastante o processo, imagino. Explicar modelos, guiar para os proximos passos, explicar conceitos e notações, automatizar o layout, dar check se o modelo esta correto, e muito mais. Até diria que uma ferramenta bem construida poderia ser mais util que aulas sobre esse topico.
+**Interviewer:** <!-- T026 -->
+Did you use AI at the time you had to model?
 
-**Interviewer:**
-Perfeito, e chegaste a usar AI na altura que tiveste que modelar?
+**Participant:** <!-- T027 -->
+No. At the time it did not exist yet, or it was very weak.
 
-**Participant:**
-Não, na altura ainda não havia ou era muito fraco.
+**Interviewer:** <!-- T028 -->
+In the group project you mentioned, how did you split the model? Did one person model one part and another another, or one notation and another another?
 
-**Interviewer:**
-E no projeto de grupo, que disseste que tiveste uma cadeira com isso, como é que faziam para repartir o modelo? Isto é, um tratava de modelar um parte e outro outra? ou um tratava de uma notação e outro de outra?
+**Participant:** <!-- T029 -->
+Unfortunately I do not remember at all.
 
-**Participant:**
-Infelizmente não me lembro de todo.
+**Interviewer:** <!-- T030 -->
+If you could make one realistic change to how software modelling is taught in higher education, what would help most?
 
-**Interviewer:**
-Certo sem problema, então agora para encerrar a entrevista, se pudesses fazer uma alteração realista na forma como modelação software é ensinada no ensino superior, o que farias? o que seria um enorme ajuda?
+**Participant:** <!-- T031 -->
+I do not know, because I imagine the teaching and the emphasis on software modelling will vary from university to university, and I did not have much interaction to give my opinion. But if I were to change something in my case, it would be to have a course focused on software modelling, where they explained the utility of modelling well and gave examples of utility at a professional level.
 
-**Participant:**
-Não sei, pois imagino que o ensino e emfase da modelação software há de variar de universidade para universidade, e eu não tive muita interação para dar a minha opinião. Mas se fosse para mudar algo no meu caso era ter uma cadeira focada em modelação software, onde explicassem bem a utilidade da modelação e dessem exemplos de utilidade a nivel profissional.
-
-**Interviewer:**
-Assim concluimos a entrevista, obrigado por participares, depois se precisar de esclarecer alguma coisa eu contato-te e quando for para defender a tese convido-te tambem ahaha.
-
-
-
+**Interviewer:** <!-- T032 -->
+Thank you. This was very helpful.

@@ -10,146 +10,123 @@ timestamp_style: none  # none | start | range
 `Interviewer` = interviewer  
 `Participant` = case participant
 
-**Interviewer:**
-Boas, então agora começando aqui a entrevista, podias me explicar brevemente como a modelação software se relaciona contigo, isto é, em que contexto trabalhaste e aplicaste conceitos de modelação software, tanto e de preferencia em contexto academico como profissional?
+## Cleaning notes
 
-**Participant:**
-Certo, como já deves saber o ISEL tem uma abordagem mais prática e orientada a projetos comparado a outras universidade. Portanto não sei se as minhas respostas teram muito valor para ti, mas de qualquer maneira vou tentar o meu melhor para ser algo de util para ti.
-Então basicamente durante a licenciatura sinto que nem nos explicaram bem o termo de modelação software, provavelmente houve alguma cadeira que mencionou e explicou de alguma forma, mas ou eu não prestei atenção ou já me esqueci, mas pronto, se não estou em erro as primeiras interações que tive com modelação software foi na cadeira Introdução aos sistemas de informação que é do segundo ano, e só sei isto porque fui pesquisar antes da entrevista para me recordar um bocado ahaha. Nessa cadeira tivemos que fazer diagramas de entidade-associação, modelos conceptuais, logicos e fisicos e SQL. Depois tambem no topico de SQL, na cadeira de bases de dados tivemos que fazer diagramas de classes o que acho que tambem é considerado modelação software.
-Na licenciatura foi isto, mas um bocado a parte, sinto que realmente a minha primeira interação com modelação software foi no projeto de licenciatura onde tive que desenvolver um sistema, e um dos requisitos era criar um modelo do sistema para auxiliar a visualização e explicação do sistema. Nessa altura eu não tinha bem noção do que era modelação software, isto é, que notações usar, que partes do meu sistema tinham que ser abstraidos e modelados, tinha a noção que tinha que usar UML, RE, etc, por que estava nos requisitos do projeto, mas não fazia a minima de como usar essas notações. Foi uma learning experience engraçada, mas acabei por desenrrascar me pois eles não foram muito exigentes nesse aspeto. E pronto finalmente no mestrado ai sim tive uma cadeira onde a modelação era devidamente introduzida e explicada apesar de não ser o foco principal da cadeira, que era a Engenharia Software.
+This transcript was translated from Portuguese (see [[pt/S8_transcript_pt]]) and cleaned for readability and consistency with other cleaned student transcripts. Consent filler, repetitions, and interviewer filler were reduced where they did not affect meaning. Interviewer questions were tightened for clarity. Grammar was lightly edited for readability without intentionally changing meaning.
 
-**Interviewer:**
-Ahaha a tua resposta foi bastante elaborada, provavelmente respondeste mais perguntas do que eu esperava inicialmente. E essa cadeira de Engenharia Software, foi mais pratica ou teorica?
+For publication-level verbatim quotations, verify the wording against the Portuguese original and the audio.
 
-**Participant:**
-Como grande parte do curso foi mais orientada a parte pratica, neste caso tivemos de fazer um grande projeto de grupo que provavelmente foi uns 60/70% da cadeira, mas tambem tivemos bastante teoria para aprender, certamente foi das cadeiras com um ratio de pratica/teoria mais equilibrada, mas presumo que seja semelhante a cadeira que tiveste na FCT onde não foi só modelação, tivemos conceitos como code smells, design patterns, unit tests, etc.
+## Part 1 — Background, modelling experience, quality and sharing
 
-**Interviewer:**
-Sim imagino, mas tiveste teoricas onde explicavam conceitos de modelação e praticas onde faziam exercicios de modelação? Algo do genero, o professor descrevia um sistema ou entregava uma descrição de um sistema e os alunos tinham que resolver nas aulas?
+**Interviewer:** <!-- T002 -->
+Can you briefly explain how software modelling relates to you — where you used it, in academic work and, if relevant, professionally?
 
-**Participant:**
-Acho que sim, mas foi pouco, tipo as primeiras aulas por que de resto trabalhavamos no projeto nas praticas.
+**Participant:** <!-- T003 -->
+As you already know, ISEL has a more practical, project-oriented approach compared with other universities. So I do not know whether my answers will be of much value to you, but I will try my best to be useful.
 
-**Interviewer:**
-E lembraste como esses exercicios eram resolvidos? voces resolviam e submetiam? apenas resolviam para praticar? resolviam e apresentavam ao professor ou esperavam que o professor resolvesse no quadro?
+During the bachelor’s I feel they did not even explain the term software modelling very well. There was probably some course that mentioned it and explained it somehow, but either I did not pay attention or I have already forgotten. If I am not mistaken, my first interactions with software modelling were in Introduction to Information Systems, which is a second-year course — I only know that because I looked it up before the interview to remember a bit. In that course we had to do entity-relationship diagrams, conceptual, logical and physical models, and SQL. Then also on the SQL topic, in the Databases course, we had to do class diagrams, which I think also counts as software modelling.
 
-**Participant:**
-Eia, não me lembro bem, mas sei que o professor resolvia no quadro. Nos não submetiamos nada, acho que resolviamos apenas para praticar e não tenho a certeza pois já foi a algum tempo, mas tenho a idea que o professor começava por resolver um problema no quadro, tipo um grande exemplo, explicava os conceitos e a razão por tras das suas decições e depois nos os alunos tinhamos uma lista de exercicios semelhantes que tinhamos que fazer para praticar, e quando acabassemos os exercicios podiamos sair, mas o professor não verificava, portanto se alguem quisesse verificar se a sua solução estava correta tinha que ir ter pessoalmente com o professor o que de certa forma era raro. E isto aplicava-se a quase todos os topicos dessa cadeira.
+That was it in the bachelor’s. A bit separately, I feel that my real first interaction with software modelling was in the bachelor’s project, where I had to develop a system and one of the requirements was to create a model of the system to help visualise and explain it. At that time I did not really know what software modelling was: which notations to use, which parts of my system had to be abstracted and modelled. I had the idea that I had to use UML, requirements engineering, and so on, because it was in the project requirements, but I had no idea how to use those notations. It was a funny learning experience, but I managed to get by because they were not very demanding on that point. And then finally in the master’s I did have a course where modelling was properly introduced and explained, even though it was not the main focus of the course, which was Software Engineering.
 
-**Interviewer:**
-Okay, e qual é que achas que era a razão dos alunos não irem verificar as soluções com o professor? Timidez? era dificil comunicar com o professor? isto é, ele era exigente ou rude? E tu chegaste a ir corrigir os exercicios com o professor?
+**Interviewer:** <!-- T004 -->
+Was that Software Engineering course more practical or theoretical? Were there lectures explaining modelling concepts and practicals where you modelled from a system description?
 
-**Participant:**
-Uhmm não sei bem, pessoalmente não acho que fosse timidez, acho que era mais uma questão de desinteresse ou preguiça. Aqueles exercicios não contavam para a nota, a parte pratica tinha mais valor que a teorica, e não sei se me recordo corretamente mas acho que o professor disponibilizava as soluções depois ou havia alguem que o fazia no grupo do curso. Eu pessoalmente cheguei a ir algumas vezes corrigir os meus modelos e exercicios pois inicialmente achei o topico interessante uma vez que já tinha usado antes no projeto, e até mesmo cheguei a dar uma revisão nos modelos que fiz para o projeto depois de me familiarizar melhor com esses conceitos, o que foi interessante uma vez que encontrei varios pequenos defeitos e erros na sintaxe e nas notações.
+**Participant:** <!-- T005 -->
+Like a large part of the programme, it was more oriented to the practical side. In this case we had to do a large group project that was probably about 60 or 70 percent of the course, but we also had quite a lot of theory to learn. It was certainly one of the courses with a more balanced practice-to-theory ratio. I assume it was similar to the course you had at FCT, where it was not only modelling: we had concepts such as code smells, design patterns, unit tests, and so on.
 
-**Interviewer:**
-E durante esses exercicios das aulas, tu tentavas resolver os exercicios certo? já que dizes que foste corrigir com o professor. Qual é que era a tua aboradagem perante os exercicios? isto é, uma vez que analizasses a descrição do sistema o que fazias nos primeiros 10 minutos? qual era o teu primeiro passo?
+I think there were modelling exercises, but it was little: the first classes, because after that we worked on the project in the practicals.
 
-**Participant:**
-Bem... Como já estava de alguma forma familiarizado com criar modelos mesmo que não tivessem completamente corretos, eu simplesmente sublinhava no texto os detalhes ou requirements do sistema, se fosse algo mais complexo até criava uma lista no canto da folha para me guiar e começava por esboçar o modelo a lapis de forma simples por exemplo apenas os nomes das classes ou atores, setas ou relações e depois quando sentir que esta a um nivel aceitavel começo a carregar mais no lapis e por ultimo depois de rever, reforçar e confirmar que todos os requirements foram satisfeitos e sentir me satisfeito com o modelo em geral passo tudo a caneta e apago o lapis.
+**Interviewer:** <!-- T006 -->
+How were those exercises solved? Did you submit them, only practise, present them to the teacher, or wait for the teacher to solve them on the board?
 
-**Interviewer:**
-E quando o professor resolvia um exercicio ou demonstrava uma solução de um modelo a partir de uma descrição, como é que isso te ajudava? isto é, notação, raciocinio, resposta esperada?
+**Participant:** <!-- T007 -->
+I do not remember well, but I know the teacher solved them on the board. We did not submit anything. I think we only solved them for practice. I am not sure because it was some time ago, but I have the idea that the teacher started by solving a problem on the board, a large example, explained the concepts and the reasoning behind his decisions, and then we students had a list of similar exercises to do for practice. When we finished the exercises we could leave, but the teacher did not check, so if someone wanted to check whether their solution was correct they had to go to the teacher in person, which in a way was rare. And this applied to almost every topic in that course.
 
-**Participant:**
-Era certamente a notação e a explicação de usar aquela notação. O raciocinio também de certa forma, mas essa parte era mais intuitiva para mim. Resposta espera nem tanto pois tinhamos os exercicios resolvidos no fim.
+**Interviewer:** <!-- T008 -->
+Why do you think students did not go and check their solutions with the teacher? Shyness? Was it hard to talk to him? Did you go yourself?
 
-**Interviewer:**
-E achas que isso ajudava a transferir para tarefas ou exercicios semelhantes? estou a referir me aos exemplos do professor
+**Participant:** <!-- T009 -->
+Personally I do not think it was shyness. I think it was more a matter of lack of interest or laziness. Those exercises did not count towards the grade. The practical part was worth more than the theoretical part, and I am not sure I remember correctly, but I think the teacher made the solutions available afterwards, or someone did that in the course group.
 
-**Participant:**
-Obviamente.
+I personally did go a few times to correct my models and exercises, because at first I found the topic interesting since I had already used it in the project. I even went back and reviewed the models I had made for the project after I became more familiar with those concepts, which was interesting because I found several small defects and errors in the syntax and in the notations.
 
-**Interviewer:**
-E como é que decidias se um modelo estava bom o suficiente? tinhas um checklist? comparavas com colegas ou exemplos feitos? Se calhar tinham uma ferramenta que "compilava" os modelos?
+**Interviewer:** <!-- T010 -->
+During those class exercises, what did you do in the first ten minutes after you analysed the system description?
 
-**Participant:**
-Honestamente eu não me preocupava muito com isso, garantia que todos requirements estavam satisfeitos, se o modelo parecesse estar incompleto ou demasiado simples, suspeitava um bocado e se suspeitasse muito, comprava com outros colegas ou até mesmos perguntava ao professor. Em relação a ferramentas, usamos algumas mas não eram obrigatorias, lembro me da camunda, do archi, e acho que ainda houve uma outra, mas pronto eu acabei por não usar nenhuma dessa, apenas o draw.io.
+**Participant:** <!-- T011 -->
+Because I was already somewhat familiar with creating models, even if they were not completely correct, I simply underlined in the text the details or requirements of the system. If it was something more complex I even created a list in the corner of the page to guide me, and I started by sketching the model in pencil in a simple way, for example only the names of the classes or actors, arrows or relations. Then when I felt it was at an acceptable level I started pressing harder with the pencil, and finally, after reviewing, reinforcing, and confirming that all the requirements were satisfied and I was happy with the model in general, I went over everything in pen and erased the pencil.
 
-**Interviewer:**
-E fizeste trabalho de grupo nessa cadeira?
+**Interviewer:** <!-- T012 -->
+When the teacher solved an exercise or demonstrated a solution from a description, what did that actually help you with — notation, reasoning, or the expected answer? Could you transfer that to similar tasks?
 
-**Participant:**
-Não, era tudo individual. Era 60% projeto e 40 relatorio e depois havia uma discussão.
+**Participant:** <!-- T013 -->
+It was certainly the notation and the explanation of using that notation. The reasoning as well, in a way, but that part was more intuitive for me. The expected answer not so much, because we had the solved exercises at the end. Obviously it helped me transfer to similar tasks.
 
-**Interviewer:**
-E haviam fases nesse projeto, por exemplo primeira fase entregar os requisitos, segunda modelo, etc?
+**Interviewer:** <!-- T014 -->
+How did you decide whether a model was good enough? Did you have a checklist, compare with classmates or examples, or a tool that “compiled” models?
 
-**Participant:**
-Não era desenvolvimento continuo.
+**Participant:** <!-- T015 -->
+Honestly I did not worry much about that. I made sure all the requirements were satisfied. If the model seemed incomplete or too simple, I was a bit suspicious, and if I was very suspicious I compared with other classmates or even asked the teacher. As for tools, we used some but they were not mandatory. I remember Camunda, Archi, and I think there was still another one, but I ended up not using any of those, only draw.io.
 
-**Interviewer:**
-Então como funcionava o feedback? tinham de ir falar com o professor ao longo do projeto?
+## Part 2 — Project feedback, sharing, notation switching, workload and AI
 
-**Participant:**
-Sim iamos mostrando o que tinhamos feito ao longo do projeto, quer dizer, era mais o professor que ia verificando e dando dicas e feedback, se surgisse alguma duvida tinhamos que ser nos a ir interagir com o professor.
+**Interviewer:** <!-- T016 -->
+Did you do group work in that course? Were there phases, for example first requirements, then the model?
 
-**Interviewer:**
-E alguma vez recebeste feedback num modelo que implicasse alterações? ou até mesmo refazer completamente o modelo?
+**Participant:** <!-- T017 -->
+No, it was all individual. It was 60 percent project and 40 percent report, and then there was a discussion. It was not phased. It was continuous development.
 
-**Participant:**
-Refazer completamente o modelo que me lembre não, mas feedback do professor praticamente sempre implicava alterações, sejam elas grandes ou pequenas. Claro que também houve feedback positivo no sentido que o modelo estava bom e não precisava de alterações, mas isso já era mais raro.
+**Interviewer:** <!-- T018 -->
+How did feedback work? Did you have to go and talk to the teacher throughout the project? Did feedback ever imply changes, or even completely redoing the model?
 
-**Interviewer:**
-E nas aulas quando resolviam exercicios os alunos iam ao quadro resolver exercicios ou mostravam as soluções a turma?
+**Participant:** <!-- T019 -->
+Yes, we went along showing what we had done throughout the project. Or rather, it was more the teacher who went around checking and giving tips and feedback. If a doubt came up we had to be the ones to go and interact with the teacher.
 
-**Participant:**
-Não, apenas resolviamos os exercicios e se tivessemos duvidas podiamos perguntar ao professor, acho que não houve nenhum caso de resolver exercicios no quadro.
+Completely redoing the model, that I remember, no. But the teacher’s feedback almost always implied changes, large or small. Of course there was also positive feedback in the sense that the model was good and did not need changes, but that was rarer.
 
-**Interviewer:**
-Okay, então vamos mudar essa pergunta um bocado. Se resolvesses algum exercicio para alem do exemplo do professor, o quão confortavel te sentias em mostrar a tua solução a outras pessoas? Por exemplo colegas, professor, etc?
+**Interviewer:** <!-- T020 -->
+In class, when you solved exercises, did students go to the board or show solutions to the class? If you solved an exercise beyond the teacher’s example, how comfortable did you feel showing your solution to other people?
 
-**Participant:**
-Depende um bocado, nunca fui pessoa de interagir no grupo de whatsapp do curso, e lá sinto que varios alunos mostravam e discutiam as suas soluções, não me lembro se este foi o caso em Engenharia de Software mas era comum. Eu por exemplo poderia interagir nesse grupo se soubesse que tinha a resposta errada e quisesse que alguem me mostrasse a correta, mas se alguem pedisse a solução para exercicio x e eu por acaso tivesse, eu hesitava um bocado, esperava que alguma outra pessoa respondesse. Mas no meu grupo de amigos que era pequeno, eramos uns 5 colegas, ai eu não tinha problema nenhum. Não sei se essa resposta ajuda te de alguma forma, mas resumindo, geralmente não tenho problemas nenhums a mostrar as minhas soluções a pessoas proximas a mim, mas desconhecidos hesito um bocado mas mais por um fator social e não falta de segurança na minha solução.
-Adicionalmente quando ia ter com o professor mesmo que não tivesse seguro da minha resposta ou solução, ia sem algum problema porque pronto, estou lá para aprender.
+**Participant:** <!-- T021 -->
+No. We only solved the exercises, and if we had doubts we could ask the teacher. I do not think there was any case of solving exercises on the board.
 
-**Interviewer:**
-Pois, era isso que ia perguntar. Seguindo então, perguntas sobre projetos de grupo não se aplicam a ti, então e tiveste alguma dificuldade a trocar de familias ou notações? por exemplo passar de UML para BPMN ou ER?
+It depends a bit. I was never someone who interacted in the course WhatsApp group, and there I feel that several students showed and discussed their solutions. I do not remember whether this was the case in Software Engineering, but it was common. For example I might interact in that group if I knew I had the wrong answer and wanted someone to show me the correct one, but if someone asked for the solution to exercise x and I happened to have it, I hesitated a bit. I waited for someone else to reply. But in my small group of friends, about five classmates, I had no problem at all.
 
-**Participant:**
-Uhmm, BPMN não sei tive, e ER não me é estranho, mas não me lembro, mas sim lembro me de bugar um bocado com troca de notações principalmente quando eram semelhantes.
+To summarise: generally I have no problem showing my solutions to people close to me, but with strangers I hesitate a bit, more because of a social factor than lack of confidence in my solution. Additionally, when I went to the teacher, even if I was not sure of my answer or solution, I went without a problem, because I am there to learn.
 
-**Interviewer:**
-ER é engenharia de requisitos, desculpa não devia ter abreviado. É tipo modelar os requisitos de um sistema, requisitos funcionais e não funcionais.
+**Interviewer:** <!-- T022 -->
+Did you have difficulty switching families or notations, for example from UML to BPMN or to requirements engineering?
 
-**Participant:**
-Sim sim, lembro me. Era isso mesmo, lembro que esses digramas de requisitos eram parecidos aos de classes e tinham relações parecidas tambem. Isso confundia me um pouco, mas com um exemplo ao lado era tranquilo.
+**Participant:** <!-- T023 -->
+BPMN I am not sure I had. Requirements engineering is not unfamiliar, but I do not remember well. I do remember getting a bit stuck when switching notations, especially when they were similar. I remember that those requirements diagrams looked similar to class diagrams and had similar relations as well. That confused me a bit, but with an example beside me it was fine.
 
-**Interviewer:**
-E sentes que sabendo uma notação passar para uma outra era mais facil ou dificil?
+**Interviewer:** <!-- T024 -->
+Once you knew one notation, was moving to another easier or harder?
 
-**Participant:**
-Era mais facil, no fundo era quase tudo o mesmo, tinha que abstrair uma parte do sistema usando uma notação especifica. Portanto diria que passar de algo como diagramas de classes para requisitos era facil, como por tambem passar de use cases para activity, ou sequence, não me lembro bem agora, mas aqueles tinhas um ator e uma timeline, era mais facil. Basicamente sabendo um tipo de notação facilitava aprender outros tipos, e tambem sendo sincero, não é que odiasse aquilo, mas para mim aquilo eram desenhos para explicar coisas. Sabes quando tentas explicar algo a alguem e dizes a gozar precisas que faça um desenho? ahahaha era tipo isso, isto para dizer que dava mais importancia ao codigo por assim dizer, que sentia que era algo mais tangivel, portanto não ligava muito se os modelos não tivessem perfeitos, desde que lá estivessem...
+**Participant:** <!-- T025 -->
+It was easier. In the end it was almost all the same: I had to abstract a part of the system using a specific notation. So I would say going from something like class diagrams to requirements was easy, as was going from use cases to activity or sequence. I do not remember well now, but those ones where you had an actor and a timeline were easier. Basically, knowing one type of notation made it easier to learn others.
 
-**Interviewer:**
-Interessante, e carga de trabalho? achas que outras cadeiras competiam com essa? no sentido que, ahhh tenho outras cadeiras mais importantes portanto não me vou dedicar a 100% a esta cadeira?
+And being honest, it is not that I hated it, but for me those were drawings to explain things. You know when you try to explain something to someone and you joke that you need them to make a drawing? It was like that. That is to say, I gave more importance to the code, so to speak, which felt more tangible, so I did not care much if the models were not perfect, as long as they were there.
 
-**Participant:**
-Outras cadeiras não digo, sendo honesto não me lembro de todo que cadeiras tinha concurrentemente com essa. Mas nessa altura, no meu primeiro ano de mestrado tinha começado a trabalhar com explicador, o que certamente impactava o meu interesse nesse topico. Como já disse, não odeio a modelação e até tinha interesse pois já tinha usado no projeto de licenciatura, e nem era muito complicado, mas começar a trabalhar e a receber algum dinheiro definitivamente impactou o meu interesse na cadeira e até no curso em geral diria.
+**Interviewer:** <!-- T026 -->
+What about workload? Did other courses compete with that one, in the sense that you would not dedicate yourself 100 percent to it?
 
-**Interviewer:**
-Imagino ahaha, agora para começar a terminar, chegaste a apanhar o AI nessa altura? e se sim ajudou de alguma forma?
+**Participant:** <!-- T027 -->
+Other courses, I cannot say. Being honest I do not remember at all which courses I had at the same time. But at that time, in my first year of the master’s, I had started working as a tutor, which certainly affected my interest in that topic. As I said, I do not hate modelling and I even had interest because I had already used it in the bachelor’s project, and it was not very complicated, but starting to work and receiving some money definitely affected my interest in the course and even in the programme in general, I would say.
 
-**Participant:**
-Isto foi cerca de 4 anos atrás acho eu, portanto sim apenhei, mas não me recordo de ter usado ai nessa cadeira pelo menos. Sinto que para esse tipo de trabalho o AI na altura não era grande ajuda, provavelmente não havia analise de imagem ou era muito fraco e para ajudar com modelos sinto que essa feature é essencial.
+**Interviewer:** <!-- T028 -->
+Did you catch AI at that time, and if so did it help in any way?
 
-**Interviewer:**
-Okay, para terminar agora, se podesses fazer uma unica mudança realista em relação a como modelação software é ensinada isto no ISEL ou em geral, o que seria?
+**Participant:** <!-- T029 -->
+This was about four years ago I think, so yes I caught it, but I do not remember having used AI in that course at least. I feel that for that kind of work AI at the time was not much help. There probably was no image analysis, or it was very weak, and to help with models I feel that feature is essential.
 
-**Participant:**
-Uhmmm está é dificil, deixa me pensar um bocado... Bem para começar até hoje não vejo muita utilidade na modelação software, e até pode ser um bocado controverso, mas acho que isso vai morrer nos proximos anos com o IA... Vibe coding é a nova trend e não vejo ninguem a explicar os sistemas usando a modelação. Portanto acho que deviam mesmo começar por ai, explicar melhor aos alunos a utilidade da modelação, como pode ser aplicada no mundo profissional, quais os beneficios dos modelos, comparaçoes com sistemas que não tem modelos, coisas desse genero. Algo que motivasse os alunos a modelarem os seus sistemas quando começam os seus projetos pessoais por exemplo.
+## Part 3 — Closing
 
-**Interviewer:**
-Compreendo, obrigado mais uma vez pela tua disposição em participar, depois dou te follow up com os resultados e caso tenha alguma duvida ou tenha me faltado alguma coisa vou ter contactar é okay?
+**Interviewer:** <!-- T030 -->
+If you could make one realistic change to how software modelling is taught, at ISEL or in general, what would it be?
 
-**Participant:**
-Sim sim, a vontade. Espero que tudo te corra bem.
+**Participant:** <!-- T031 -->
+This is difficult. Let me think a bit. Well, to start with, even today I do not see much utility in software modelling, and it may be a bit controversial, but I think it will die in the next few years with AI. Vibe coding is the new trend, and I do not see anyone explaining systems using modelling. So I think they should really start there: explain better to students the utility of modelling, how it can be applied in the professional world, what the benefits of models are, comparisons with systems that do not have models, things like that. Something that would motivate students to model their systems when they start their personal projects, for example.
 
-
-
-
-
-
-
-
-
+**Interviewer:** <!-- T032 -->
+Thank you. This was very helpful.

@@ -10,200 +10,153 @@ timestamp_style: none  # none | start | range
 `Interviewer` = interviewer  
 `Participant` = case participant
 
+## Cleaning notes
 
+This transcript was translated from Portuguese (see [[pt/S7_transcript_pt]]) and cleaned for readability and consistency with other cleaned student transcripts. Consent filler, repetitions, and interviewer filler were reduced where they did not affect meaning. Interviewer questions were tightened for clarity. Grammar was lightly edited for readability without intentionally changing meaning.
 
-**Interviewer:**
-Can you tell me about your studies and where modelling fits, including which courses involved modelling?
+For publication-level verbatim quotations, verify the wording against the Portuguese original and the audio.
 
-**Participant:** 
-Bem antes de tudo, só para informar que já acabei os meus estudo à 3 anos portanto a minha memoria do programa e sobre este tema deve estar um pouco enferrujada, mas tentarei o meu melhor para ajudar-te. Como já sabes realizei os meus estudos no tecnico (IST) e tambem conclui lá o meu mestrado, a ultima interação que tive com modelação software se não estou em erro foi durante a minha dissertação que tive de criar um modelo do sistema para apresentar aos instrutores. Já a primeira provavelmente foi em Programação por objetos ou bases de dados e se me recordo corretamente tivemos uma cadeira dedica a modelação software. Acho que era uma cadeira de segundo ano, chamava-se analise e modelação de sistemas se não estou enganado, nessa cadeira introduziram conceitos BPMN, SysML, requisitos, etc, UML e diagramas de classes acho que foi mesmo em programação com objetos.
+## Part 1 — Background, modelling experience, quality and sharing
 
-**Interviewer:**
-E recordaste de algum momento em especifico onde achaste que modelação era dificil, confusa ou frustrante?
+**Interviewer:** <!-- T002 -->
+Can you briefly explain how software modelling relates to you — where you used it, in academic work and, if relevant, professionally?
 
-**Participant:**
-Eu não achei modelação dificil ou frustrante. Por vezes achei confuso sim, existem diversas familias, notações, modelos que no fundo servem o mesmo proposito. Eu recordo me de usar uma notação para diagramas de classes que aprendi ou usei em bases de dados numa outra cadeira, onde o objetivo era mesmo representar o sistema mas a notação correta era ligeiramente diferente. Não achei frustrante pois adaptai me rapidamente, mas questionei o necessidade de ensinar o mesmo conceito de formas diferentes em duas cadeiras diferentes. 
+**Participant:** <!-- T003 -->
+First, I finished my studies about three years ago, so my memory of the programme and of this topic is a bit rusty, but I will do my best. I studied at IST and also completed my master's there. The last time I used software modelling, if I am not mistaken, was during my dissertation, when I had to create a model of the system to present to the instructors. The first contact was probably in Object-Oriented Programming or Databases, and if I remember correctly we had a course dedicated to software modelling. I think it was a second-year course called Systems Analysis and Modelling (Análise e Modelação de Sistemas). That course introduced BPMN, SysML, requirements, and so on. UML and class diagrams I think we actually did in Object-Oriented Programming.
 
-**Interviewer:**
-Recordaste da tarefa em especifico?
+**Interviewer:** <!-- T004 -->
+Can you remember one specific moment when modelling felt difficult, confusing, or frustrating?
 
-**Participant:**
-Isso não, já foi a bastante tempo.
+**Participant:** <!-- T005 -->
+I did not find modelling difficult or frustrating. Confusing, yes, at times. There are several families, notations, and models that in the end serve the same purpose. I remember using a notation for class diagrams that I had learned, or used, in Databases in another course, where the goal was also to represent the system, but the correct notation was slightly different. I did not find it frustrating because I adapted quickly, but I did question the need to teach the same concept in different ways in two different courses.
 
-**Interviewer:**
-Lembras-te se resolviam exercicios no quadro?
+**Interviewer:** <!-- T006 -->
+Do you remember the specific task?
 
-**Participant:**
-Acho que sim, em grande parte das cadeiras era essa abordagem, até mesmo as de modelação. Agora quais ou qual em especifico isso não consigo dizer.
+**Participant:** <!-- T007 -->
+No. It was a long time ago.
 
-**Interviewer:**
-Mas tens memoria de resolverem ou desenharem modelos no quadro ou em papel certo?
+**Interviewer:** <!-- T008 -->
+Do you remember whether you solved exercises on the board, and how that worked when the teacher gave a system description and asked students to model it?
 
-**Participant:**
-Sim sim.
+**Participant:** <!-- T009 -->
+I think so. In a large part of the courses that was the approach, including the modelling ones. Which course exactly, I cannot say. I do remember drawing models on the board or on paper.
 
-**Interviewer:**
-Quando era esse tipo de exercicios, onde o professor dava uma descrição de um sistema e pedia aos alunos para o modelarem como era esse processo?
+I am not sure I remember perfectly, but I think the teacher usually started with a simple example on the board and explained the model, then gave the description of the system we had to model ourselves. Together with the class he elicited requirements: on the other board he made a kind of bullet list of what was needed, for example that the system needs to issue receipts. With that bullet list we built the model, and after some time he called someone to the board to draw it.
 
-**Participant:**
-Uhmm, não sei se me recordo perfeitamente, mas acho que geralmente o professor começava com um exemplo simples no quadro onde explicava o modelo, depois dava a descrição do sistemas que tinhamos de ser nos a modelar. Junto com a turma levantava requisitos, isto é, no outro quadro fazia uma especie de bullet list do que seria preciso, por exemplo, o sistema precisa de passar recibos, etc. E nos com esse bullet list faziamos o modelo, e passado algum tempo ele chamava alguem para ir ao quadro e desenhar o modelo.
+**Interviewer:** <!-- T010 -->
+Were there cases where nobody volunteered to go to the board? Was that lack of confidence, not having solved the exercise, embarrassment, or shyness?
 
-**Interviewer:**
-Okay, e haviam casos onde ninguém se voluntariava para ir ao quadro?
+**Participant:** <!-- T011 -->
+Obviously. Usually nobody wanted to go to the board, but the teacher picked someone at random. I think it was a combination of all those factors, but it was never a horrible experience. The teacher usually stayed quiet until the end. The people who ended up helping and reinforcing the models drawn on the board were the other students, which actually created a debate. The teacher only gave his input at the end, and it was generally quite constructive.
 
-**Participant:**
-Logico, geralmente ninguem queria ir ao quadro, mas o professor escolhia alguem ao acaso?
+**Interviewer:** <!-- T012 -->
+In your case, what did you do in the first ten minutes? Did you wait for someone to go to the board, volunteer, wait for the corrections, or attack the problem on your own?
 
-**Interviewer:**
-Mas os alunos não queria ir ao quadro por falta de confiança? Não resolveram o exercicio? Tem vergonha da resposta? Timidez?
+**Participant:** <!-- T013 -->
+Personally, because there was not really a “punishment” for solving the problem badly, and I even felt the teacher was more passive-aggressive with students who did not try at all, I had no problem starting as soon as possible, and I did not particularly mind being sent to the board. So I usually attacked the problem quickly to have something done in case I was the “victim” of the board. And if I was not chosen, I tried to join in and help the classmate who was sent up.
 
-**Participant:**
-Acho que era uma combinação desses fatores todos, mas nunca foi uma experiencia horrivel, o professor geralmente mantinha-se calado até ao fim, quem acabava por ajudar e a reforçar os modelos desenhados no quadro eram os outros alunos, o que até acaba por criar um ambiente de debate. O professor só dava o seu input no final e geralmente era bastante construtivo.
+Honestly, I had a strong mindset of staying in the teacher’s good books, so I tried to participate whenever I could. At that time I had a lot of courses, and the modelling course was one of the more boring ones, so to speak. It is not that I disliked it, but drawing and modelling were not my strength or my focus. But I can tell you that there were several students who waited for the solution on the board and did not even try to do anything. Basically they only went to those practicals to copy everything from the board.
 
-**Interviewer:**
-Okay interessante, e no teu caso como lidaste com isso? Por exemplo qual era o teu plano de ação nos primeiros 10 minutos? Esperavas alguém ir parar ao quadro, voluntariavaste, esperavas pelas correções, atacavas o problema sozinho?
+**Interviewer:** <!-- T014 -->
+Before that course, had you already had some experience with modelling concepts? Did that make it easier?
 
-**Participant:**
-Pessoalmente como não havia bem um "castigo" por resolver mal o problema, e até sinto que o professor ficava mais passive agressive com alunos que nem sequer tentavam, não tinha problemas em começar a resolver o problema assim que possivel e não fazia muita questão de não ir parar ao quadro. Portanto eu geralmente atacava o problema rápido para ter alguma coisa feita no caso de ser a "vitima" do quadro. E se não fosse o escolhido tentava integrar me e ajudar o colega que fosse parar ao quadro. Sincero eu tinha muito a mentalidade de ficar no bom olhado do professor, portanto tentava participar sempre que possivel, porque nessa altura eu lembro que tinha bastantes cadeiras e a cadeira de modelação era uma das mais aborrecidas por assim dizer, não é que não gostasse daquilo mas desenho e modelação não era o meu forte nem o meu foco. Mas posso dizer te que havia varios alunos que esperavam pela resolução no quadro e nem sequer tentavam fazer nada, basicamente só iam para aquelas praticas para copiar tudo do quadro.
+**Participant:** <!-- T015 -->
+I think so. That course was second or third year, so as I said before we had probably already had some courses where UML or class diagrams were covered. But that applied to all the students in that course, unless they had transferred from another university. So yes, it helped, but nothing dramatic. I just felt more at ease drawing diagrams and relations.
 
-**Interviewer:**
-Antes dessa cadeira já tinhas tido alguma experiencia com conceitos de modelação?
+**Interviewer:** <!-- T016 -->
+When the teacher solved the problem at the end, did that help you with anything?
 
-**Participant:**
-Acho que sim, essa cadeira era do segundo ou terceiro ano, portanto provavelmente como disse antes tivemos algumas cadeiras onde UML ou diagramas de classes foram abordados. Mas isso aplica-se a todos os alunos daquela cadeira, portanto se estas a tentar perguntar me se experiencia previa facilitou.
+**Participant:** <!-- T017 -->
+One hundred percent. As I already said, he usually solved a simpler problem before giving us autonomy, which was already a big help. Then the problems we solved on our own were fairly straightforward because we already had that base. Often the final correction, after students had solved it on the board, was the teacher correcting small nuances and presenting alternative methods or giving tips. I do not remember the teacher’s name, but I liked him a lot. The lectures were another story.
 
-**Interviewer:**
-Era exatamente onde queria chegar.
+**Interviewer:** <!-- T018 -->
+So the feedback at the end was a mix of syntax or notation correction and logic. Did you feel there was one correct answer, or a model solution?
 
-**Participant:**
-Sim certamente facilitou, mas como disse, isso aplicava-se a todos os alunos naquela cadeira acho eu, a não ser que tivessem sido transferidos de outra universidade. Portanto, sim facilitou, mas nada de outro mundo, sinto que só estava mais a vontade de desenhar diagramas e relações.
+**Participant:** <!-- T019 -->
+Exactly. I would say yes, because the teacher had his model done before the students even solved it on the board, and obviously both I and the other students treated the teacher’s solution as the most correct one. But the teacher always emphasised the idea that there is no single correct answer and that several models can be correct for the same problem. When he presented the “alternative” model it was usually his own solution, but he never presented it as the most correct one. It was almost a fun fact, like “ah, you can also do it this way and it ends up simpler.”
 
+**Interviewer:** <!-- T020 -->
+When you finished a problem and had a model, how did you decide it was good enough? Did the teachers give a checklist? Was there any kind of “compile button”?
 
-**Interviewer:**
-Perfeito, ainda neste topico. Quando o professor resolvia o problema no final sentias que isso ajudava com alguma coisa?
+**Participant:** <!-- T021 -->
+In the practicals it was a bit of gut feeling. I simply did what was asked, even if it was the bare minimum, and then I reinforced the weak points. There was no risk in the practicals; it was more for practice. But in tests and exams it was different. I feel I never had a way of knowing whether the model was good enough or complete. I always had that fear that something was missing, or that I had forgotten some concept or notation. But I also could not let that affect me too much psychologically, so it was really a matter of going on faith.
 
-**Participant:**
-100%, como já tinha dito ele geralmente resolvia um problema mais simples antes de nos passar a autonomia, o que em si já era uma grande ajuda. Depois os problemas que resolviamos autonomamente eram bastante diretos pois já tinhamos aquela base, muitas vezes a correção final, isto depois dos alunos resolverem no quadro, o professor corrigia pequenos nuances e apresentava metodos alternativos ou dava dicas. Não me lembro do nome do professor mas gostei bastente dele, nas teoricas já era outra historia.
+I do not remember well. Maybe they even taught a checklist. The practicals teacher always preached that there is no one definitive correct model and that several solutions could be accepted. Maybe what he did on the board at the beginning could be considered that checklist, and yes, I usually did the same in tests: I made a list of the requirements of the problem in simple natural language and at the end I crossed off the ones that were done. That may be what you were looking for.
 
-**Interviewer:**
-Portanto o feedback que ele dava no final era uma mistura de correção de sintaxe/notação e logica.
+In tests and board solutions there certainly was no compile button. But if my memory is not failing me, I think the teacher once presented an open-source tool to compile models, but the interface was a bit antiquated and using it created more problems than it solved. He did not like it much either. I think we used few tools in that course. We only really used tools for the project so the models would be in a format we could export to PDF, just to look nicer, but I think even then the teacher allowed hand drawing. Real tools we used more in a different course that also had a bit of modelling, Software Engineering if I am not mistaken.
 
-**Participant:**
-Exatamente
+## Part 2 — Group project, notation switching, tools and course conditions
 
-**Interviewer:**
-E sentiste que existia uma resposta correta ou resposta modelo?
+**Interviewer:** <!-- T022 -->
+How did that project work? Was there feedback between deliveries, and could you resubmit after feedback?
 
-**Participant:**
-Diria que sim, pois o professor tinha o seu modelo feito antes dos alunos sequer resolverem no quadro e obviamente que tanto eu como os outros alunos consideravamos a resolução do professor como a resolução mais correta. Mas o professor sempre metia emfase na idea que não existe um resposta correta e que é possivel ter vários modelos corretos para o mesmo problema, ele quando apresentava o modelo "alternativo" geralmente era a sua solução, mas ele nunca apresentou a mesma como a solução mais correta, era quase um fun fact, do tipo "ahh voces tambem podem fazer assim e fica mais simples".
+**Participant:** <!-- T023 -->
+It was a project in groups of three from the same practical class. We received a problem — honestly I no longer remember which one it was at the time — but it was, for example, modelling an organisation, so we had to understand who the stakeholders were, the goals, the entities that existed, systems, and so on. Then we had to model all of that in UML, SysML, elicit requirements, requirements engineering, and we could also use the allowed tools. There were two phases or deliveries. The first was worth less than the second, and at the end there was a defence or discussion of the project.
 
-**Interviewer:**
-E quando acabavas de resolver um problema e tinhas um modelo feito, como é que decidias que estava bom o suficiente?
+I think there was feedback. The teacher called the groups, pointed out defects in the model, and asked for explanations of certain modelling choices. I think we could not correct and resubmit. It was basically just to point out what was wrong so we could fix it for the next phase or before the defence. The grade was given before the feedback.
 
-**Participant:**
-Uhmm, nas praticas era um bocado gut feeling, simplesmente fazia o que era pedido, nem que fosse o bare minimum e depois ia reforçando os pontos fracos, não havia risco nas praticas era mais para praticar. Mas em teste e exames era diferente, sinto que nunca tinha como saber se o modelo estava bom o suficiente ou completo, tinha sempre aquele receio de que estava a faltar alguma coisa ou que esqueci me de algum conceito ou notação. Mas pronto também não podia deixar isso afetar me muito o psicologico por tanto era mesmo ir na fé.
+**Interviewer:** <!-- T024 -->
+After receiving that feedback, did you have to change something — a small adjustment, a complete redo, or nothing because there was no time?
 
-**Interviewer:**
-Mas não os professores não apresentaram nenhum tipo de checklist ou alguma forma de facilitar esse processo?
+**Participant:** <!-- T025 -->
+As it happens, we had to completely redo the system from the first phase. What we changed specifically I do not know, but I know we had to redo it from scratch. Those group assignments often make the process easier and help distribute the load among the members, but in our case it only delayed things at first. I formed a group with a classmate I was and still am quite close to, but the other member was a rather “get-it-done-fast” (*despachado*) student. So what ended up happening was that my classmate and I are the type of people who let some time pass and plan the work properly and distribute it to maximise effectiveness. The other classmate wanted it done yesterday, so he ended up doing almost everything, but in a rush, which in the end meant we had to completely redo his part.
 
-**Participant:**
-Sincero não me lembro bem, se calhar até ensinaram. Mas pronto o professor das praticas pregava sempre que não existe um modelo definitivo correto e que varias soluções podiam ser aceites. Se calhar aquilo que ele fazia no quadro no inicio podia ser considerado essa tal checklist, e sim eu geralmente fazia o mesmo nos testes, fazia uma lista com os requisitos do problema em linguagem natural e simples e no final riscava os que estavam feitos. É capaz de ser isso que estavas a procura.
+**Interviewer:** <!-- T026 -->
+Going back to the practicals: when you finished the model before the teacher or someone went to the board, how comfortable did you feel showing and sharing your solution — with classmates, the teacher, or even the whole class?
 
-**Interviewer:**
-Sim, isso pode ser considerado. E não havia nenhum tipo de "compile button"?
+**Participant:** <!-- T027 -->
+Quite comfortable, I would say. Modelling is more abstract, so I did not have that fear of “ah, this is probably completely wrong and they will think I am stupid.” Sharing code had more of that fear that I might have done something quite ignorant or inefficient and end up being judged for it. In modelling I feel I could never be that wrong, and even if I was, the teacher would never mock me or judge me.
 
-**Participant:**
-Como assim?
+**Interviewer:** <!-- T028 -->
+How did you actually receive feedback? Did you have to talk to the teacher in person, did he take the initiative, did you discuss with classmates, ask in forums, or receive nothing until the end?
 
-**Interviewer:**
-Por exemplo alguma forma de "compilar" o modelo e ver se falta alguma coisa?
+**Participant:** <!-- T029 -->
+Feedback did not fall from the sky. Anyone who wanted feedback had to go and talk to the teacher in person, except after the deliveries of each phase, when the group really had to meet the teacher and ended up receiving feedback. We often discussed between groups. There were probably more reserved students who emailed the teachers. Forums, in this case Moodle, were rarely used. People at IST liked to gatekeep the solutions.
 
-**Participant:**
-Em testes e soluções no quadro certamente que não havia. Mas se a minha memoria não me estiver a falhar acho que o professor uma vez apresentou uma ferramenta open source para compilar modelos, mas a interface daquilo era um bocado antiquada e usar aquilo dava mais problemas do resolver duvidas, nem ele gostava muito daquilo. Acho que usamos poucas tools para essa cadeira, só usamos mesmo tools para o projeto para ter os modelos num formato que desse para exportar para pdf só para ficar mais bonito, mas acho que mesmo isso o professor deixava desenhar a mão. Tools mesmo só usamos mais numa cadeira diferente que tambem teve um bocado de modelação, engenharia software se não me engano.
+**Interviewer:** <!-- T030 -->
+In the group project, how did you divide the work? Did each person own a part, or did you all do a bit of everything?
 
-**Interviewer:**
-E como funcionava esse projeto?
+**Participant:** <!-- T031 -->
+Our approach was: because there were several types of models, notations, and families, if each person was in charge of a single aspect, in the end we would not really know how to explain that aspect. For example, if I took the class diagrams and my classmate took the requirements or BPMN, I would have more knowledge and experience in class diagrams but I would fall short on requirements or BPMN, which could then be fatal in the defence or in the tests. For that reason we divided the tasks for each notation and at the end we peer-reviewed our models.
 
-**Participant:**
-Era um projeto em grupos de 3 do mesmo turno pratico. Recebiamos um problema, que sincero já nem me lembro qual era na altura, mas era por examplo, modelar uma organização, portanto teriamos de perceber quem eram os stakeholders, os objetivos, as entidades que existiam, sistemas, etc. E depois tinhamos que modelar isso tudo em UML, SysML, levantar requisitos, engenharia de requisitos? e pronto tambem podiamos usar as ferramentas permitidas. E que mais... Haviam 2 fases ou entregas, a primeira valia menos que a segunda e no final havia um defesa/discussão do projeto.
+**Interviewer:** <!-- T032 -->
+When you had to switch notations, was there friction, or were there aspects that transferred well from one notation to another?
 
-**Interviewer:**
-E havia feedback entre as entregas?
+**Participant:** <!-- T033 -->
+It depends. I feel that working in one notation and then moving to another had some complications around syntax, which could cause some confusion, for example the types of relations. But there was also a positive side: since I was already working with an abstract concept like modelling, moving to another type of model or diagram was easier. There was not as much of that mental lock on starting.
 
-**Participant:**
-Acho que sim, o professor chamava os grupos e apontava defeitos do modelo e pedia explicações para certas escolhas de modelação.
+**Interviewer:** <!-- T034 -->
+You said you do not remember the tools very well. What impression did you have of them, and of the support materials? If you missed lectures or practicals, were the slides enough? Did those modelling courses have a high workload that competed with other courses?
 
-**Interviewer:**
-Mas depois do feedback podia corrigir e voltar a submeter?
+**Participant:** <!-- T035 -->
+I know we used tools, some more specific to certain families, but names and details I do not remember at all. In general the idea I have of the tools is that they were unnecessarily complex, the UI/UX was quite weak, and they were specific to certain families: the tool we used for UML was decent only for UML.
 
-**Participant:**
-Acho que não, era basicamente só para apontar o que esta errado para corrigir para a proxima fase ou então antes da defesa. A nota era dada antes do feedback.
+I never missed classes, and modelling in general was something I rarely studied outside class. At most I tried to memorise concepts and definitions from the materials. I do not remember whether the slides were enough or whether I had to look for more materials online.
 
-**Interviewer:**
-E depois de receber os feedback aconteceu que tivesses que mudar alguma coisa? se sim o que em especifico? um pequeno ajuste, refazer completamente o modelo ou então nada devido a falta de tempo?
+On workload, certainly. I remember that in the second year there were too many courses per semester, and because modelling was not something that interested me much, I tried to get those course tasks done as fast as possible so I could focus more on the others. But in terms of workload I think it was adequate for the course. I do not think I struggled much with those courses.
 
-**Participant:**
-Por acaso tivemos que refazer completamente o sistema da primeira fase. O que mudamos em especifico não sei, mas sei que tivemos que refazer do zero. Acontece que esses trabalhos de grupo muitas vezes facilitam o processo e ajudam a distribuir a carga entre os membros, mas no nosso caso só atrasou inicialmente. Eu fiz grupo com um colega meu do qual era e sou bastante proximo, mas o outro membro era um estudante um bocado "despachado". Portanto o que acabou por acontecer foi, eu e o meu colega somos o tipo de pessoas que deixamos algum tempo passar e planeamos devidamente o trabalho e distribuimos de modo a maximizar a eficacia. Já o outro colega queria aquilo feita para ontem, portanto ele acabou por fazer quase tudo, mas a pressa o que no final resultou em termos de refazer completamente a parte dele.
+## Part 3 — AI, audience, and closing
 
-**Interviewer:**
-Certo. Agora voltando ao topico anterior, quando acabavas o modelo antes do professor ou alguem ir ao quadro, isto nas praticas, o quão confortavel te sentias para mostrar e partilhar a tua solução? Isto é, com colegas, o professor ou até mesmo a turma tuda
+**Interviewer:** <!-- T036 -->
+Did you use AI for those courses?
 
-**Participant:**
-Uhmm, bastante diria. Pois modelação é algo mais abstrato logo não tinha aquele receio de ahh isto aqui provavelmente esta completamente errado e vão achar que sou burro. Sinto que partilhar codigo tinha mais esse receio de que posso ter feito algo bastante ignorante ou inefeciente e acabar por ser julgado por isso. Em modelação sinto que nunca poderia estar assim tão errado, e mesmo que tivesse o professor nunca iria gozar comigo ou julgar me.
+**Participant:** <!-- T037 -->
+Unfortunately, or fortunately, no. At that time I think AI did not exist yet or was very weak. I have the idea that I only started using AI during the master’s.
 
-**Interviewer:**
-Okay, e lembraste de que tipo de feedback recebias? Do tipo, como recebias o feedback? tinhas que falar com o professor pessoalmente, ele tomava a iniciativa, discutias com colegas, perguntavas em foruns, ou até mesmo não recebias feedback nenhum até ao fim?
+**Interviewer:** <!-- T038 -->
+Did knowing that your models would be reviewed, or would have some practical use for describing the system to stakeholders, ever motivate you to produce better-quality models?
 
-**Participant:**
-É assim o feedback não caia do céu, isto é, quem queria feedback teria de ir falar pessoalmente com o professor, a não ser depois da entregas de cada fase que ai o grupo tinha mesmo que ir ter com o professor e acabava por receber feedback. Mas sim muitas vezes discutiamos entre grupos, provavelmente haviam alunos mais reservados a enviar emails aos professores. Foruns, neste caso o moodle, raramente usavam, o pessoal do tecnico gostava de dar gatekeep das soluções.
+**Participant:** <!-- T039 -->
+During the courses that were purely modelling, no. Those would probably only pass through the teacher’s hands, and I assume he had already seen millions of similar models. But during my thesis, definitely, because the architecture of my system was quite complex and even I got a bit lost. So having a model of my system to explain to the supervisor or during the defence was a high priority for me.
 
-**Interviewer:**
-Justo, e em relaçao ao projeto de grupo como voces dividiam o trabalho? cada um tinha uma parte que ficava encarregue? Faziam todos um pouco de tudo?
+**Interviewer:** <!-- T040 -->
+If you could make one realistic change to how modelling is taught, what would you do?
 
-**Participant:**
-O nosso approach era, como haviam varios tipos de modelos, notações e familias se cada um ficasse encarregue de um aspeto unico no final não iamos saber bem como explicar esse aspeto. Por exemplo, se eu ficasse com os diagramas de classes e o meu colega ficasse com os requisitos ou BPMN, eu ia ter um mais conhecimento e experiencia em diagramas de classes mas ia ficar a falhar na parte dos requisitos ou BPMN, o que depois podia ser fatal na defesa ou nos testes. Por esse motivo nós dividiamos as tarefas para cada notação e no final davamos peer review dos nossos modelos.  
+**Participant:** <!-- T041 -->
+Honestly, I do not really know what I would change. For example, even now that I have finished university and I work, I feel I have never thought about software modelling again. I mean, I have thought about modelling, but not as a well-defined, standardised concept. What I mean is that I have already thought in terms of modelling and even modelled systems, but I never worried about which notation I was going to use or about rules and constraints. I simply used modelling to explain an idea or a system better.
 
-**Interviewer:**
-E quando tinha que trocar de notações, haviam complicações ou fricção? ou haviam aspetos que transferiam bem de uma notação para a outra?
+That is to say, I think they should give more importance to explaining the usefulness of modelling and in which contexts to apply it. Personally I think they should abstract modelling more. I do not see much use in having fifty different notations for something similar. I think modelling has the purpose of abstracting something complex for stakeholders, clients, team members, and so on. And often, using a specific notation, however correct it may be, people will not understand or appreciate the detail and coherence of the model. So simplify, or have a universal notation or family that everyone can understand.
 
-**Participant:**
-Depende, sinto que trabalhando numa notação e de seguida passar para outra tinha algumas complicações em relação a sintaxe, o que podia causar alguma confusão, por exemplo os tipos de relações, etc. Mas tambem havia a parte positiva de, já que estou a trabalhar com um conceito abstrato como a modelação passar para outro tipo de modelo/diagrama era mais facil, não havia tanto aquele lock mental em começar.
-
-**Interviewer:**
-Tinhas dito que as ferramentas não tens muita recordação né?
-
-**Participant:**
-Sim isso não me lembro bem, sei que usamos ferramentas, algumas mais especificas para certas familias, mas nomes e detalhes não me lembro de todo. Em gerel a idea que tenho das ferramentas era que, era desnecessariamente complexas, o UI/UX era bastante fraco, e eram especificas para determinadas familias, do genero, a ferramenta que usavamos para UML era decente apenas para UML.
-
-**Interviewer:**
-Okay, e o que achavas do material de apoio? estou a referir me aos slides ou exemplos que o professor mostrava. Achas que isso era suficiente para estudar para um teste se faltasses as aulas teoricas ou praticas?
-
-**Participant:**
-Não sei, eu nunca faltava as aulas e esse topico, modelação em geral, era algo que eu raramente estudava fora das aulas, no maximo tentava memorizar conceitos e definições através do material. Mas não me recordo se os slides bastavam ou se tinha que procurar mais materiais online.
-
-**Interviewer:**
-E achas que essas cadeiras de modelação tinham um workload elevado? achas que competiam com outras cadeiras de modo a reduzir a qualidade dos modelos produzidos?
-
-**Participant:**
-A isso certamente, lembro que no segundo ano haviam demasiadas cadeiras por semestre, e como a modelação era algo que não me despertava muito interesse, tentava despachar o mais rapido possivel as tarefas dessas cadeiras para me poder focar mais nas outras. Mas em relação ao workload acho que era adequado a cadeira não acho que tenha dado muito struggle com essas cadeiras.
-
-**Interviewer:**
-Chegaste a usar AI para essas cadeiras?
-
-**Participant:**
-Ahh, isso infelizmente, ou felizmente não. Nessa altura acho que o AI ainda não existia ou era muito fraco, tenho a idea que só comecei a usar AI durante o mestrado.
-
-**Interviewer:**
-Alguma vez sentiste que saber que os teus modelos seria revistos e que teriam alguma utilidade pratica para descrever o sistema a steakholders ou alguem motivou para produzir modelos de melhor qualidade?
-
-**Participant:**
-Durante as cadeiras que eram puramente modelação, não, aquilo provavelmente ia apenas passar pelas mãos do professor e assumo que ele já devia ter visto milhoes de modelos semelhantes. Mas durante a minha tese, definitivamente, pois a arquitetura do meu sistema era bastante complexa e até mesmo eu perdia me um bocado. Portanto ter um modelo do meu sistema para explicar ao supervisor ou durante a defesa era uma grande prioridade que tinha.
-
-**Interviewer:**
-Perfeito, agora para concluir esta entrevista, se pudesses fazer uma mudança realista ao metodo que a modelação é ensinada o que farias?
-
-**Participant:**
-Sincero, nem sei bem o que poderia mudar. Por exemplo mesmo agora que já acabei a universidade e trabalho sinto que nunca mais pensei em modelação software. Quer dizer, pensei em modelação mas não como um conceito bem definido e standardizado, o que eu quero dizer é, eu já pensei em modelação e até mesmo modelei sistemas, mas nunca me preocupei com a notação que ia usar ou com regras e condições, simplesmente usei modelação para explicar melhor uma ideia ou sistema. Isto para dizer que, acho que deviam dar mais importancia em explicar a utilidade da modelação e em que contextos aplicar, e pessoalmente acho que deviam abstrair mais a modelação, não vejo muita utilidade em haver 50 diferentes notações para algo semelhante, acho que a modelação tem o proposito de abstrair algo complexo a steakholders, clientes, team members, etc. E muitas vezes usar uma notação expecifica por mais correto que seja as pessoas não vão entender e apreeciar o detalhe e coerencia do modelo. Portanto simplificar ou haver uma notação/familia universal que todos conseguem entender.
-
-**Interviewer:**
-Ótimo, obrigado pelo teu tempo e aqui concluimos a nossa entrevista, caso depois tenhas interesse vem ver a minha defesa e qualquer coisa vou te contactar para exclarecer alguma coisa que me tenha falhado.
+**Interviewer:** <!-- T042 -->
+Thank you. This was very helpful.
