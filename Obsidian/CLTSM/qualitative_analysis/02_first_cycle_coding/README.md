@@ -14,8 +14,12 @@ One folder per case; one note per code (canvas-linkable). Local coding conventio
 | S4 | [[S4/index\|S4]] | 15 | S4M1–S4M5 |
 | S5 | [[S5/index\|S5]] | 15 | S5M1–S5M5 |
 | S6 | [[S6/index\|S6]] | 15 | S6M1–S6M5 |
+| S7 | [[S7/index\|S7]] | 16 | S7M1–S7M6 |
+| S8 | [[S8/index\|S8]] | 9 | S8M1–S8M3 |
+| S9 | [[S9/index\|S9]] | 7 | S9M1–S9M3 |
+| S10 | [[S10/index\|S10]] | 18 | S10M1–S10M6 |
 
-**Total: 227 codes.**
+**Total: 277 codes.**
 
 Layout: `{Case}/index.md` + `{Case}/{Case}-Cnn.md`.
 

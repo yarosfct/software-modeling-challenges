@@ -13,46 +13,18 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "canvases/findings_map_overview.canvas",
+                "file": "canvases/local_saturation.canvas",
                 "viewState": {
-                  "x": 701.2877730759528,
-                  "y": 789.7633531062232,
-                  "zoom": -0.9999999999999999
+                  "x": 470,
+                  "y": 623.6499402175792,
+                  "zoom": -0.6922730514863613
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "findings_map_overview"
-            }
-          },
-          {
-            "id": "da8ae93be9f1f617",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "canvases/findings_map_overview.canvas",
-                "viewState": {
-                  "x": 744.7974623817822,
-                  "y": 806.2682183264076,
-                  "zoom": -1.6252823585723526
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "findings_map_overview"
-            }
-          },
-          {
-            "id": "5f8be44b2a8726a2",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "local_saturation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -72,7 +44,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -109,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 312.8359375
   },
   "right": {
     "id": "9e24f4063c4322ba",
@@ -233,12 +206,24 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "da8ae93be9f1f617",
+  "active": "606075830c97f41e",
   "lastOpenFiles": [
-    "canvases/findings_map_relations.canvas",
+    "qualitative_analysis/04_cross_case_analysis/wave2_constant_comparison.md",
+    "canvases/local_saturation.canvas",
+    "qualitative_analysis/04_cross_case_analysis/local_saturation_assessment.md",
+    "qualitative_analysis/04_cross_case_analysis/open_questions_status.md",
     "canvases/findings_map_overview.canvas",
+    "qualitative_analysis/04_cross_case_analysis/category_inventory_working.md",
+    "qualitative_analysis/04_cross_case_analysis/category_evidence_map.md",
+    "canvases/findings_map_relations.canvas",
+    "qualitative_analysis/01_raw_transcripts/S8_transcript.md",
+    "qualitative_analysis/01_raw_transcripts/S7_transcript.md",
+    "qualitative_analysis/01_raw_transcripts/pt/S7_transcript_pt.md",
     "canvases/categories/CAT02_notation_overload.canvas",
+    "canvases/categories/CAT10_real_audience.canvas",
     "canvases/categories/CAT01_starting_gated.canvas",
+    "qualitative_analysis/02_first_cycle_coding/S7/S7-C01.md",
+    "canvases/thesis_resume_roadmap.canvas",
     "qualitative_analysis/01_raw_transcripts/L1_transcript.md",
     "qualitative_analysis/02_first_cycle_coding/S5/S5-C04.md",
     "qualitative_analysis/02_first_cycle_coding/S5/S5-C03.md",
@@ -248,8 +233,6 @@
     "canvases/categories/CAT05_feedback_late.canvas",
     "qualitative_analysis/04_cross_case_analysis/_phase_a_student_evidence.md",
     "qualitative_analysis/04_cross_case_analysis/findings_map_guide.md",
-    "qualitative_analysis/04_cross_case_analysis/category_inventory_working.md",
-    "qualitative_analysis/04_cross_case_analysis/category_evidence_map.md",
     "qualitative_analysis/03_memos/S6M5.md",
     "qualitative_analysis/03_memos/S6M4.md",
     "qualitative_analysis/03_memos/S6M3.md",
@@ -260,13 +243,6 @@
     "qualitative_analysis/03_memos/S5M3.md",
     "qualitative_analysis/03_memos/S5M2.md",
     "qualitative_analysis/03_memos/S5M1.md",
-    "qualitative_analysis/03_memos/S4M5.md",
-    "qualitative_analysis/03_memos/S4M4.md",
-    "qualitative_analysis/03_memos/S4M3.md",
-    "qualitative_analysis/03_memos/S4M2.md",
-    "qualitative_analysis/03_memos/S4M1.md",
-    "qualitative_analysis/03_memos/S3M6.md",
-    "qualitative_analysis/03_memos/S3M5.md",
     "qualitative_analysis/03_memos",
     "qualitative_analysis/02_first_cycle_coding/S6",
     "qualitative_analysis/02_first_cycle_coding/S5",
@@ -276,9 +252,6 @@
     "qualitative_analysis/02_first_cycle_coding/S1",
     "qualitative_analysis/02_first_cycle_coding/L4",
     "qualitative_analysis/02_first_cycle_coding/L3",
-    "qualitative_analysis/02_first_cycle_coding/L2",
-    "canvases/categories/CAT14_cross_notation.canvas",
-    "canvases/categories/CAT13_ai_explainer.canvas",
-    "canvases/categories/CAT12_judge_good_enough.canvas"
+    "qualitative_analysis/02_first_cycle_coding/L2"
   ]
 }

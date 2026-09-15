@@ -1,18 +1,84 @@
 {
-	"nodes":[
-		{"id":"hub","type":"text","text":"CAT4 — Students invent process strategies when teaching is thin\nRQ2 · finding","x":140,"y":-80,"width":400,"height":100,"color":"4"},
-		{"id":"cases","type":"text","text":"Cases\nS1 S2 S3 S5","x":-220,"y":-80,"width":300,"height":70,"color":"3"},
-		{"id":"memo_group","type":"text","text":"**Memos** (4) — Ctrl+hover a link to preview\n\n- [[S1M2]] — worked examples bridge text and diagram\n- [[S2M2]] — examples and professor check substitute for process\n- [[S3M2]] — professor feedback as correctness gate\n- [[S5M3]] — early sharing and self-initiated drafts replace waiting","x":-330,"y":206,"width":520,"height":192,"color":"5"},
-		{"id":"code_group","type":"text","text":"**Codes** (13) — Ctrl+hover a link to preview\n\n- [[S1-C13]] — text-to-model via trial and error\n- [[S1-C15]] — no remembered step-by-step teaching\n- [[S1-C23]] — learn modelling best from worked examples\n- [[S2-C11]] — trial and error then ask professor\n- [[S2-C14]] — replicate reasoning from completed examples\n- [[S2-C15]] — start with objects then draw relationships\n- [[S2-C17]] — elements taught not explicit modelling process\n- [[S3-C07]] — waited for professor feedback to feel sure\n- [[S3-C13]] — picks first option when two seem valid\n- [[S3-C18]] — slides alone not enough without feedback\n- [[S5-C04]] — drafts version one without waiting for demo\n- [[S5-C07]] — small prototype settles modelling disagreements\n- [[S5-C14]] — wants weekly assessed diagram peer reviews","x":540,"y":206,"width":520,"height":444,"color":"5"},
-		{"id":"explainer","type":"text","text":"What this means\n\nWhen the course does not spell out a process, students invent their own — trial and error, early drafts, turning symbols into words, and similar tactics.","x":80,"y":-360,"width":520,"height":150,"color":"1"}
+	"nodes": [
+		{
+			"id": "hub",
+			"type": "text",
+			"text": "CAT4 — Students invent process strategies when teaching is thin\nRQ2 · finding",
+			"x": 140,
+			"y": -80,
+			"width": 400,
+			"height": 100,
+			"color": "4"
+		},
+		{
+			"id": "cases",
+			"type": "text",
+			"text": "Cases\nS1 S2 S3 S5 S7 S8 S9 S10",
+			"x": -220,
+			"y": -80,
+			"width": 300,
+			"height": 70,
+			"color": "3"
+		},
+		{
+			"id": "memo_group",
+			"type": "text",
+			"text": "**Memos** (8) — Ctrl+hover a link to preview\n\n- [[S1M2]] — worked examples bridge text and diagram\n- [[S2M2]] — examples and professor check substitute for process\n- [[S3M2]] — professor feedback as correctness gate\n- [[S5M3]] — early sharing and self-initiated drafts replace waiting\n- [[S7M1]] — board labs split starters from copiers\n- [[S8M1]] — modelling arrived as a project requirement first\n- [[S9M1]] — start waits on seeing it done once\n- [[S10M2]] — reserved starter: notebook yes, board no",
+			"x": -330,
+			"y": 206,
+			"width": 520,
+			"height": 304,
+			"color": "5"
+		},
+		{
+			"id": "code_group",
+			"type": "text",
+			"text": "**Codes** (26) — Ctrl+hover a link to preview\n\n- [[S1-C13]] — text-to-model via trial and error\n- [[S1-C15]] — no remembered step-by-step teaching\n- [[S1-C23]] — learn modelling best from worked examples\n- [[S2-C11]] — trial and error then ask professor\n- [[S2-C14]] — replicate reasoning from completed examples\n- [[S2-C15]] — start with objects then draw relationships\n- [[S2-C17]] — elements taught not explicit modelling process\n- [[S3-C07]] — waited for professor feedback to feel sure\n- [[S3-C13]] — picks first option when two seem valid\n- [[S3-C18]] — slides alone not enough without feedback\n- [[S5-C04]] — drafts version one without waiting for demo\n- [[S5-C07]] — small prototype settles modelling disagreements\n- [[S5-C14]] — wants weekly assessed diagram peer reviews\n- [[S7-C02]] — simple board example then class bullet-list\n- [[S7-C03]] — classmates copy the board instead of trying\n- [[S7-C04]] — starts fast to survive random board pick\n- [[S7-C05]] — teacher stays quiet until students debate\n- [[S8-C01]] — bachelor project required models without teaching them\n- [[S8-C03]] — underlines requirements then pencil-to-pen sketch\n- [[S8-C04]] — examples help notation more than expected answer\n- [[S9-C01]] — Covid online classes made shared modelling messy\n- [[S9-C02]] — teacher solves first then explains notation and why\n- [[S9-C03]] — needs to see it done once before starting alone\n- [[S10-C07]] — stays quiet at the board even with a ready solution\n- [[S10-C08]] — small public doubts go unresolved\n- [[S10-C14]] — desk walk-around beats raising a hand",
+			"x": 540,
+			"y": 206,
+			"width": 520,
+			"height": 808,
+			"color": "5"
+		},
+		{
+			"id": "explainer",
+			"type": "text",
+			"text": "What this means\n\nWhen the course does not spell out a process, students invent their own — trial and error, early drafts, pencil-to-pen sketches, notebook-then-board, or starting fast so they have something if picked at random.",
+			"x": 80,
+			"y": -360,
+			"width": 520,
+			"height": 180,
+			"color": "1"
+		}
 	],
-	"edges":[
-		{"id":"e_expl_hub","fromNode":"explainer","fromSide":"bottom","toNode":"hub","toSide":"top","label":"in plain words"},
-		{"id":"e_hub_memos","fromNode":"hub","fromSide":"bottom","toNode":"memo_group","toSide":"top","label":"backed by"},
-		{"id":"e_hub_codes","fromNode":"hub","fromSide":"bottom","toNode":"code_group","toSide":"top","label":"backed by"}
+	"edges": [
+		{
+			"id": "e_expl_hub",
+			"fromNode": "explainer",
+			"fromSide": "bottom",
+			"toNode": "hub",
+			"toSide": "top",
+			"label": "in plain words"
+		},
+		{
+			"id": "e_hub_memos",
+			"fromNode": "hub",
+			"fromSide": "bottom",
+			"toNode": "memo_group",
+			"toSide": "top",
+			"label": "backed by"
+		},
+		{
+			"id": "e_hub_codes",
+			"fromNode": "hub",
+			"fromSide": "bottom",
+			"toNode": "code_group",
+			"toSide": "top",
+			"label": "backed by"
+		}
 	],
-	"metadata":{
-		"version":"1.0-1.0",
-		"frontmatter":{}
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
 	}
 }

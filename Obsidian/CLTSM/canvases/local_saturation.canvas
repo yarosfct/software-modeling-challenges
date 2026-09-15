@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"claim","type":"text","text":"Claim\n\nWave 2 (S7–S10) added 50 codes and 18 memos and no new overview category. The 14 CAT / 4 PH set held. New interviews densified properties. This is local sufficiency for this thesis sample — not worldwide saturation.","x":-400,"y":-80,"width":420,"height":200,"color":"1"},
+		{"id":"not_claim","type":"text","text":"Not claimed\n\nEvery property saturated. Lecturer-side CATs re-sampled. S9 as a strong test. Abstraction deficit closed. Transfer to other countries/universities.","x":80,"y":-80,"width":360,"height":200,"color":"1"},
+		{"id":"matrix","type":"text","text":"Panel 2 — densification (not “nothing new”)\n\nKey: empty · inst. · new property · neg./boundary\n\nCAT1  S7 neg.  S8 new   S9 inst.  S10 neg.\nCAT2  S7 —     S8 inst. S9 —      S10 —     (switch = CAT14)\nCAT3  S7 inst. S8 inst. S9 inst.  S10 —\nCAT4  S7 new   S8 inst. S9 inst.  S10 inst.\nCAT5  S7 new   S8 inst. S9 —      S10 new\nCAT6  S7 inst. S8 new   S9 new    S10 new\nCAT7  S7 inst. S8 inst. S9 —      S10 —\nCAT8  S7 new   S8 inst. S9 inst.  S10 —\nCAT9  S7 new   S8 inst. S9 no     S10 inst.\nCAT10 S7 inst. S8 —     S9 —      S10 inst.\nCAT11 S7 new   S8 new   S9 —      S10 —\nCAT12 S7 new   S8 —     S9 inst.  S10 new\nCAT13 S7 —     S8 —     S9 no     S10 inst.\nCAT14 S7 new   S8 new   S9 no     S10 new","x":-650,"y":580,"width":920,"height":480,"color":"5"},
+		{"id":"stop","type":"text","text":"Stop rule\n\nLocal sufficiency of the 14-category set + recruitment constraint.\nNot “the theory is finished.” Unfulfilled OQs stay labelled.","x":500,"y":490,"width":400,"height":180,"color":"3"},
+		{"id":"chart","type":"text","text":"Overview CAT count\n\n14 |  * ──────────── *\n    |  *\n    |\n 0  +── wave 1 ──── wave 2 ──→\n      10 cases      S7–S10","x":1070,"y":-100,"width":470,"height":260,"color":"6"},
+		{"id":"oqs","type":"file","file":"qualitative_analysis/04_cross_case_analysis/open_questions_status.md","x":1070,"y":540,"width":300,"height":80},
+		{"id":"cmp","type":"file","file":"qualitative_analysis/04_cross_case_analysis/wave2_constant_comparison.md","x":-400,"y":-220,"width":300,"height":80},
+		{"id":"title","type":"text","text":"Local saturation of the category set\nNot global theoretical saturation","x":-400,"y":-360,"width":520,"height":80,"color":"4"},
+		{"id":"scope","type":"text","text":"Why not global\n\nMostly Portuguese HE students (IST/ISEL + earlier cases). Wave 1 also: 2 Wrocław (S4 S5), 1 Munich (S6). Wave 2: no new lecturers, no new countries. Coordinators: further recruitment unrealistic.","x":500,"y":240,"width":400,"height":200,"color":"3"},
+		{"id":"note","type":"file","file":"qualitative_analysis/04_cross_case_analysis/local_saturation_assessment.md","x":500,"y":750,"width":300,"height":80},
+		{"id":"waves","type":"text","text":"Panel 1 — cumulative overview CATs\n\nWave 1: 10 interviews (S1–S6, L1–L4) → 14 CATs\nWave 2: 4 interviews (S7–S10) → still 14 CATs\n\nNew overview categories in wave 2: 0","x":540,"y":-80,"width":400,"height":200,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"claim","fromSide":"right","toNode":"waves","toSide":"left","label":"shown as"},
+		{"id":"e2","fromNode":"waves","fromSide":"right","toNode":"chart","toSide":"left"},
+		{"id":"e3","fromNode":"claim","fromSide":"bottom","toNode":"matrix","toSide":"top","label":"but properties changed"},
+		{"id":"e4","fromNode":"not_claim","fromSide":"bottom","toNode":"scope","toSide":"top"},
+		{"id":"e5","fromNode":"matrix","fromSide":"right","toNode":"note","toSide":"left"},
+		{"id":"e6","fromNode":"stop","fromSide":"right","toNode":"oqs","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -40,14 +40,14 @@ All qualitative analysis lives under **`Obsidian/CLTSM/`**. There is no root `qu
 
 | Stage | Path | Status |
 |---|---|---|
-| Transcripts | `Obsidian/CLTSM/qualitative_analysis/01_raw_transcripts/` | 10 standardized cases (`L*_transcript.md`, `S*_transcript.md`) |
+| Transcripts | `Obsidian/CLTSM/qualitative_analysis/01_raw_transcripts/` | 14 standardized cases (`L*_transcript.md`, `S*_transcript.md`) |
 | First-cycle coding | `…/02_first_cycle_coding/{Case}/` | One note per code `{Case}-Cnn.md` + `index.md` (see habit note) |
 | Memos | `…/03_memos/` | Short idea memos `{Case}M{n}.md` (see habit note) |
-| Cross-case | `…/04_cross_case_analysis/` | Inventory, evidence map, findings guide |
+| Cross-case | `…/04_cross_case_analysis/` | Inventory, evidence map, findings guide, wave-2 comparison, open-question status, local saturation |
 | Habit note | `…/stgt_coding_memo_habit.md` | Coding + memo simplicity rules |
 | Category canvas habit | `…/stgt_category_canvas_habit.md` | Per-CAT evidence canvases + coding layout |
 | Canvas map habit | `…/stgt_canvas_map_habit.md` | Coordinator-friendly findings canvases |
-| Findings canvases | `Obsidian/CLTSM/canvases/` | Overview, relations, `categories/CAT….canvas` |
+| Findings canvases | `Obsidian/CLTSM/canvases/` | Overview, relations, `categories/CAT….canvas`, `local_saturation.canvas` |
 
 Do not recreate parallel analysis folders at the repo root.
 
@@ -57,6 +57,7 @@ Do not recreate parallel analysis folders at the repo root.
 |---|---|
 | `interview-pilot/pilot-student.md` | Student interview guide (Variants A/B/C + pt-PT appendix) |
 | `interview-pilot/pilot-teacher.md` | Lecturer interview guide (Variants A/B/C) |
+| `interview-pilot/followup-ist-isel-student.md` | Wave 2 theoretical-sampling triage (IST/ISEL) |
 | `paper-review/literature-index.md` | Short paper → thesis-use map |
 | `paper-review/cards/` | Concise per-paper cards |
 | `papers/` | Source PDF store (do not duplicate as long digests) |
@@ -64,7 +65,7 @@ Do not recreate parallel analysis folders at the repo root.
 ## Case IDs
 
 - Lecturers: **L1–L4**
-- Students: **S1–S6**
+- Students: **S1–S10**
 - Codes: `{Case}-C{nn}` in `02_first_cycle_coding/{Case}/` (e.g. `S4-C02`)
 - Memos: `{Case}M{n}` (e.g. `S4M1`, `L3M10`)
 
@@ -101,7 +102,7 @@ Distinguish:
 
 ## Cross-case work (when resumed)
 
-Rebuild under `04_cross_case_analysis/` from new memos/codes. Prefer bounded, conditional claims with memo/case IDs. Do not claim theoretical saturation unless asked to evaluate it.
+Rebuild under `04_cross_case_analysis/` from new memos/codes. Prefer bounded, conditional claims with memo/case IDs. **Local saturation of the 14-category set** is documented in `local_saturation_assessment.md`. Do not claim **global** theoretical saturation.
 
 ## Obsidian / MCP usage
 
@@ -117,3 +118,4 @@ When Obsidian MCP Connector is available:
 - Do not convert lecturer interpretations into student-reported facts.
 - Do not treat tool/AI proposals as empirically validated results.
 - Do not restore deleted audio, old digests, or dual analysis trees unless the user asks.
+- Do not use S9 to fill CAT9, CAT13, or CAT14 (weak recall; see wave-2 comparison).

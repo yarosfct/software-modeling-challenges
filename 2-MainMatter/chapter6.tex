@@ -1,0 +1,111 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% chapter6.tex
+%% NOVA thesis document file
+%%
+%% Chapter 6: Discussion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE chapter6.tex}%
+
+\chapter{Discussion}
+\label{cha:discussion}
+
+This chapter reads the 14-category, four-phenomenon account against the research questions and against related work. Claims stay those already supported in Chapter~\ref{cha:findings}. Implications are design-oriented readings of the data, not evaluated interventions. Remaining open questions are kept as gaps, not closed by rhetoric.
+
+\section{Answering the research questions}
+\label{sec:disc_rqs}
+
+\subsection{RQ1 --- Challenges across modelling activities}
+
+The challenges that earned overview categories are not a single ``students struggle with UML'' story. Starting is gated when a worked path is missing or arrives after a project already required models (CAT1). That gate is distinct from symbol and framework overload (CAT2). Evaluating a model is hard because there is no compile result (CAT12). Switching notation families is a further challenge: locally sensible diagrams lose trace or answer the wrong question (CAT14).
+
+This pattern is consistent with published modelling-education work that reports difficulty moving from requirements to models and judging adequacy \cite{istar-learning,maslov2025conceptual}, but it is not a replication of an iStar-only error taxonomy. Li et al.\ studied novices in one goal-modelling language and derived teaching and tool requirements from that setting \cite{istar-learning}. The present corpus spans BPMN, UML, iStar, ER, and courses that teach several of those notations together, and it includes lecturers. The closest empirical overlap is the first-modelling-move problem (PH1) and the demand for support that explains constructs rather than only listing them. Divergence appears where this study splits start-gate from symbol overload, and where CAT14 treats family translation as its own challenge rather than as more notation learning.
+
+CaMeLOT and related Bloom-informed frameworks argue that modelling education under-specifies evaluation and metacognitive outcomes \cite{bogdanova2019camelot,bogdanova2017domain,bork2019framework}. CAT12 and PH2 give an empirical reading of that gap: students invent checklists and wait for the teacher because the course rarely supplies a compile-like signal. Those frameworks are tools for writing course learning outcomes. This study did not sort interviews into Bloom levels (Chapter~\ref{cha:methodology}).
+
+\subsection{RQ2 --- Strategies and support needs}
+
+The dominant pedagogical unlock is still the worked example and the walkthrough (CAT3), with a visible negative case where a lecturer withholds solved exercises (L4). When that unlock is thin or late, students invent process tactics (CAT4): reading the brief aloud, attacking the board to survive a random pick, pencil-to-pen sketches, notebook-then-board. Feedback is both a timing problem (CAT5) and an access problem (CAT6). AI, where it appears, is used as an explainer and a second opinion, not as a generator of graded models (CAT13).
+
+Support needs that participants articulated therefore cluster around (i)~seeing a mapping from text to model, (ii)~getting a correctness signal while the artefact can still change, and (iii)~getting that signal in a format they will actually use (desk walk-around versus raising a hand; private versus public). Research on teaching with modelling tools similarly argues for feedback written for learners, not the cryptic error messages of an industrial compiler \cite{liebel2017model}. This study adds the access dimension: the same walk-around that helps a reserved student is not the same as a public board that an outgoing student enjoys, and neither is the same as comments that arrive after the grade is locked.
+
+CAT13 should not be over-read as an AI-education finding. Four student cases, including one Portuguese incident, reject generation for graded work. That aligns with PH3 (checks and explanations, not auto-drawn homework). It does not evaluate any particular tool. L3's wish for an LLM that explains a student's model back, rather than writing it, is an implication (Section~\ref{sec:disc_implications}), not part of CAT13.
+
+\subsection{RQ3 --- Socio-technical conditions}
+
+Tools, groups, audiences, and course load co-shape whether modelling happens at all. Semantic checking is valued (CAT7) and still dropped when the interface costs more than it saves (CAT8, S7). Groups can kill or save the diagram (CAT9). A real reader pulls care up more reliably than domain excitement alone (CAT10). Load and theory--practice gaps block the very demos and feedback loops that CAT3 and CAT5 require (CAT11).
+
+Liebel et al.\ already showed that tool perception depends on usability, the course role of models, and support---not brand alone---and that industrial tools can demotivate when models must generate code precisely and help is unreliable \cite{liebel2017model}. CAT7 versus CAT8 is the same tension in interview form: participants want checks; they will not pay an antique compile UI or a mid-course licence switch to get them. Buchmann et al.\ argue that models are knowledge structures, not drawings \cite{buchmann2019conceptual}. CAT14's ``models answer different questions'' is a student-language version of that claim at family boundaries; the missing piece in teaching is often the bridge method, not another symbol list.
+
+Survey work on domain choice finds that students prefer personally meaningful domains and that educator assumptions about games and technical domains can miss that preference \cite{grassl2026dei}. CAT10 does not deny domain interest (S4). It qualifies it: without a concrete reader, even an interesting domain is a weak pull compared with a supervisor or defence audience. Authenticity here is social (who will read this) as much as topical (what the system is about).
+
+Maslov's bibliometric picture of conceptual modelling education as fragmented across notations \cite{maslov2025conceptual} matches the practical cost of CAT14. An agenda for empirically validated BPMN pedagogy \cite{bpmn-education} is complementary: this thesis does not offer BPMN learning outcomes; it shows how getting started, getting feedback, using tools, and working in groups hang together across different modelling courses.
+
+\section{Implications}
+\label{sec:disc_implications}
+
+The following implications are \emph{not} findings and were not trialled.
+
+\paragraph{Feedback while the grade is still open.}
+Staged comments after a locked grade produce full redos or unused advice (CAT5, S7). Walk-around on an individual project can still change the artefact (S8) when time remains (S10). If ECTS leaves room for only one modelling submission, comments while the teacher walks the lab may be the only chance to change the work (CAT11).
+
+\paragraph{Format of the correctness signal.}
+Public boards help some students and freeze others (CAT6). Desk-side questions recovered work that raising a hand did not (S10). A private checker is a plausible recovery for small unresolved doubts; it is a design hypothesis (S10), not evidence that such a checker works.
+
+\paragraph{Checks, not generators.}
+PH3 and CAT13 point in the same direction for both modelling tools and AI: validation, explanations, and tools that only offer allowed symbols are closer to what participants asked for than auto-drawn homework. L3's proposal belongs here rather than in CAT13: an LLM that explains the student's model back in ordinary language, not one that writes the diagram or the constraints. That reading is consistent with education-tailored feedback arguments in MDSE teaching \cite{liebel2017model} and should not be confused with a product requirement specification.
+
+\paragraph{Teach the bridge between families.}
+Where several notations are assessed, students need an explicit method for what must survive a translation (CAT14, S6, S10). Reusing one case study across families is a teaching wish in the corpus, not a tested curriculum.
+
+\paragraph{Keep a reader in the loop.}
+Ownership inside the group and a real audience outside it (PH4) are conditions under which diagrams stay alive. Peer review after split-by-notation can surface divergence; it does not by itself create a shared model (S10).
+
+\section{Limits of the claims}
+\label{sec:disc_limits}
+
+Chapter~\ref{cha:methodology} stated how quality was pursued. This section states what those bounds do to the argument.
+
+Student-side CAT1 and CAT4--CAT6, CAT9, and CAT12--CAT14 are denser after wave~2 than at the wave~1 freeze. No further lecturers were interviewed, so accounts of course load and of planned feedback that could not be kept still come from wave~1. CAT11 therefore remains partly the lecturers' view of institutional constraint, even though S7 and S8 added student load.
+
+Wave~1 left five sampling questions (OQ1--OQ5). They are gaps, not extra categories. No lecturer and student from the same course offering were interviewed, which is why OQ3 is only partly answered: lecturers' ``students wait to start'' can describe the room without describing every student.
+
+The stop rule is local saturation of the 14-category set, not global theoretical saturation. Further Portuguese student interviews of the same kind would be unlikely to earn CAT15 on the present warrant; they would also be unlikely to saturate lecturer-side categories or non-Portuguese programmes.
+
+Smaller leftover questions from individual memos (whether a checker is dropped only when it is optional; whether lab walk-around can replace a second submission; whether exclusive notation ownership was the teacher's design or a group habit) stay as future-work recipes, not as a recruitment plan for this thesis.
+
+Table~\ref{tab:open_questions} lists the five sampling questions, what wave~2 did with them, and what remains.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Open questions that directed wave~2.}
+\label{tab:open_questions}
+\begin{tabularx}{\textwidth}{l >{\raggedright\arraybackslash}p{0.28\textwidth} l >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{ID} & \textbf{Question} & \textbf{Status} & \textbf{What remains} \\
+\midrule
+OQ1 & Is never reworking a model its own challenge? & Partly answered & Variation sits in CAT5 (when comments arrive relative to a locked grade), not a new category. How common a full redo is still open. \\
+OQ2 & Do shy and outgoing students need different public-feedback designs? & Answered & CAT6 is wider than shy versus outgoing. A private lab check remains a teaching idea, not a finding. \\
+OQ3 & Do lecturers' ``students wait to start'' claims match what students say? & Partly answered & Can be true of the room, not of every student. No matched lecturer--student pair in the same course. \\
+OQ4 & Is switching between notations more than one RE case? & Partly answered & CAT14 now includes S6, S7, and S10. Whether lecturers teach ``different questions'' as syllabus content is still open. \\
+OQ5 & Do students describe an abstraction deficit the way lecturers do? & Not answered & No student volunteered this. Wave~2 did not ask students whether they lacked abstraction, so it stays a lecturer interpretation. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Future work}
+% \label{sec:disc_future}
+%
+% A later study could address the remaining questions without pretending this MSc can still collect that sample:
+%
+% \begin{itemize}
+%     \item Observe the first minutes of a board lab, or interview the lecturer of the same offering as the students, to test wait-to-start as a room-level versus person-level claim.
+%     \item Interview a lecturer who teaches multi-notation AMS or RE specifically about whether a bridge method is in the syllabus (OQ4 remainder).
+%     \item Collect non-leading incidents about choosing granularity and what to omit, or observe the same task, before treating abstraction deficit as a student finding (OQ5).
+%     \item Trial a private in-lab validator with reserved students if the research question is about CAT6 recovery---as a design study, not as an extension of these interviews.
+% \end{itemize}
+%
+% Global saturation across countries, notations, and lecturer practice remains out of reach for a master's timeline; it is a different project.

@@ -48,4 +48,4 @@ Off overview = anything that does not help a "outsider" understand challenges, s
 
 ## Status
 
-Provisional lens for first-cycle findings map. No saturation claim. Update if RQs in TeX change.
+Provisional lens for the findings map (14 interviews after wave 2). Local saturation of the category set is a separate claim ([[local_saturation_assessment]]); this lens does not by itself licence global saturation. Update if RQs in TeX change.

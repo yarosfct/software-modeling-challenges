@@ -17,18 +17,22 @@
 		{"id":"rq2","type":"text","text":"RQ2 Strategies & support\nstudent + instructor · pedagogic · tools","x":-660,"y":714,"width":260,"height":100,"color":"5"},
 		{"id":"rq1","type":"text","text":"RQ1 Challenges\ninterpret · create · refine · evaluate","x":-660,"y":132,"width":260,"height":100,"color":"5"},
 		{"id":"rq3","type":"text","text":"RQ3 Socio-technical conditions\ntools · course · domains · feedback","x":-1160,"y":1252,"width":260,"height":108,"color":"5"},
-		{"id":"ph3","type":"text","text":"PH3 — Want checks and explanations, not auto-drawn homework [finding]\nAcross tools and AI, people ask for validation and help understanding — not a machine that draws the assignment.","x":1520,"y":896,"width":380,"height":166,"color":"6"},
+		{"id":"ph3","type":"text","text":"PH3 — Want checks and explanations, not auto-drawn homework [finding]\nAcross tools and AI, people ask for validation and help understanding — not a machine that draws the assignment.","x":1520,"y":896,"width":380,"height":144,"color":"6"},
 		{"id":"ph1","type":"text","text":"PH1 — Turning a written problem into the first diagram [finding]\nThis is the hard, under-taught step. Learning symbol names is easier than making that first model.","x":1520,"y":180,"width":380,"height":150,"color":"6"},
 		{"id":"ph2","type":"text","text":"PH2 — No auto-check, so the teacher is the “right/wrong” signal [finding]\nUnlike code, a model does not compile. Students mostly learn they are wrong when a teacher tells them.","x":1520,"y":575,"width":380,"height":157,"color":"6"},
-		{"id":"oq5","type":"text","text":"Open: student evidence for abstraction claim?","x":2260,"y":949,"width":280,"height":60,"color":"1"},
-		{"id":"oq1","type":"text","text":"Open: dedicated refine/rework challenge?","x":2260,"y":570,"width":280,"height":60,"color":"1"},
+		{"id":"oq5","type":"text","text":"Unfulfilled: no student evidence for abstraction deficit","x":2260,"y":949,"width":320,"height":80,"color":"1"},
+		{"id":"oq1","type":"text","text":"Partial: refine/rework is a CAT5 dimension, not a new CAT","x":2260,"y":570,"width":320,"height":80,"color":"1"},
 		{"id":"lens","type":"file","file":"qualitative_analysis/04_cross_case_analysis/thesis_relevance_lens.md","x":-1880,"y":604,"width":280,"height":70},
 		{"id":"guide","type":"file","file":"qualitative_analysis/04_cross_case_analysis/findings_map_guide.md","x":-1880,"y":714,"width":280,"height":70},
 		{"id":"emap","type":"file","file":"qualitative_analysis/04_cross_case_analysis/category_evidence_map.md","x":-1880,"y":824,"width":280,"height":70},
 		{"id":"ph4","type":"text","text":"PH4 — A diagram survives only if someone owns it and someone reads it [finding]\nGroup ownership and a real audience decide whether modelling stays alive and careful.","x":1520,"y":1390,"width":380,"height":140,"color":"6"},
-		{"id":"oq4","type":"text","text":"Open: densify CAT14 beyond S6?","x":2260,"y":1430,"width":280,"height":60,"color":"1"},
-		{"id":"oq3","type":"text","text":"Open: wait-to-start lecturer vs student?","x":2260,"y":215,"width":280,"height":63,"color":"1"},
-		{"id":"oq2","type":"text","text":"Open: shy vs outgoing feedback designs?","x":2260,"y":672,"width":280,"height":60,"color":"1"}
+		{"id":"oq3","type":"text","text":"Addressed: wait-to-start is true of the room, not every student","x":2260,"y":215,"width":320,"height":80,"color":"1"},
+		{"id":"oq2","type":"text","text":"Addressed: shy vs outgoing CAT6 — variation now mapped","x":2260,"y":672,"width":320,"height":80,"color":"1"},
+		{"id":"oq4","type":"text","text":"Partial: CAT14 densified (S10/S7/S8); lecturer method still open","x":500,"y":1720,"width":320,"height":80,"color":"1"},
+		{"id":"w2cmp","type":"file","file":"qualitative_analysis/04_cross_case_analysis/wave2_constant_comparison.md","x":-1880,"y":934,"width":280,"height":70},
+		{"id":"oqnote","type":"file","file":"qualitative_analysis/04_cross_case_analysis/open_questions_status.md","x":-1880,"y":1044,"width":280,"height":70},
+		{"id":"satnote","type":"file","file":"qualitative_analysis/04_cross_case_analysis/local_saturation_assessment.md","x":-1880,"y":1154,"width":280,"height":70},
+		{"id":"satcan","type":"file","file":"canvases/local_saturation.canvas","x":-1880,"y":1264,"width":280,"height":70}
 	],
 	"edges":[
 		{"id":"e_lens_rq","toFloating":false,"fromFloating":false,"fromNode":"lens","fromSide":"right","toNode":"rq3","toSide":"left","label":"filters"},
@@ -61,7 +65,7 @@
 		{"id":"e_ph1_oq3","fromNode":"ph1","fromSide":"right","toNode":"oq3","toSide":"left"},
 		{"id":"e_ph2_oq2","fromNode":"ph2","fromSide":"right","toNode":"oq2","toSide":"left"},
 		{"id":"e_ph2_oq1","fromNode":"ph2","fromSide":"right","toNode":"oq1","toSide":"left"},
-		{"id":"e_ph4_oq4","fromNode":"ph4","fromSide":"right","toNode":"oq4","toSide":"left"},
+		{"id":"e_ph4_oq4","fromFloating":false,"fromNode":"cat14","fromSide":"bottom","toNode":"oq4","toSide":"left"},
 		{"id":"e_ph3_oq5","fromNode":"ph3","fromSide":"right","toNode":"oq5","toSide":"left"},
 		{"id":"e_cat12_ph2","fromNode":"cat12","fromSide":"right","toNode":"ph2","toSide":"left","label":"helps explain"},
 		{
@@ -81,7 +85,11 @@
 			"fromSide":"right",
 			"toNode":"rq1",
 			"toSide":"left"
-		}
+		},
+		{"id":"e_w2_emap","fromNode":"w2cmp","fromSide":"top","toNode":"emap","toSide":"bottom"},
+		{"id":"e_oqnote_w2","fromNode":"oqnote","fromSide":"top","toNode":"w2cmp","toSide":"bottom"},
+		{"id":"e_sat_oqnote","fromNode":"satnote","fromSide":"top","toNode":"oqnote","toSide":"bottom"},
+		{"id":"e_satcan_sat","fromNode":"satcan","fromSide":"top","toNode":"satnote","toSide":"bottom"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",

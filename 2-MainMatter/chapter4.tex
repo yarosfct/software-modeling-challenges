@@ -11,17 +11,21 @@
 \chapter{Methodology}
 \label{cha:methodology}
 
+This chapter reports how the study was designed and carried out. It converts the research questions of Chapter~\ref{cha:introduction} into a qualitative procedure: who was interviewed, how data were collected and analysed, how sampling stopped, and how trustworthiness and limits are bounded. The analysis follows Socio-Technical Grounded Theory (STGT) as adapted for software engineering \cite{hoda2018socio,stol2016grounded}. The chapter describes the procedure that was actually used---open coding, short analytical memos, constant comparison, and category development---rather than a formal Strauss--Corbin axial coding paradigm.
+
 \section{Research design}
 \label{sec:method_design}
 
-This study uses a qualitative, theory-building research design based on Grounded Theory (GT) as adapted for software engineering research \cite{adolph2011using,stol2016grounded}. To explicitly attend to the interplay between social and technical elements in modelling education (e.g., students and instructors, teaching practices, notations, tools, and artefacts), the analysis is informed by Socio-Technical Grounded Theory (STGT) \cite{hoda2018socio}. Data collection and analysis proceed iteratively, allowing emerging insights to shape subsequent sampling and probing \cite{adolph2011using,stol2016grounded}.
+The study used a qualitative, theory-building design based on Grounded Theory (GT) as adapted for software engineering research \cite{adolph2011using,stol2016grounded}. To attend to the interplay between social and technical elements in modelling education (students and instructors, teaching practices, notations, tools, and artefacts), the analysis was informed by STGT \cite{hoda2018socio}. Data collection and analysis proceeded iteratively: wave~1 interviews seeded categories, and wave~2 recruitment was directed at open questions in that emerging map \cite{adolph2011using,stol2016grounded}.
 
-The overall design is informed by prior modelling-education research that combines modelling activities with interviews to elicit situated reasoning and derive support requirements, particularly the iStar learning study \cite{istar-learning}. The present work applies a similar activity-anchored elicitation logic while targeting a broader range of modelling contexts beyond a single modelling method.
+The design was also informed by prior modelling-education research that combines modelling activities with interviews to elicit situated reasoning, particularly the iStar learning study \cite{istar-learning}. That study used a tutorial and a modelling session before the interview. The present work did not replicate that activity. It used semi-structured interviews with incident probes about recent course tasks, and it targeted a broader range of modelling contexts than a single modelling method.
+
+The intended outcome was a grounded explanatory account of modelling learning and teaching challenges and associated support needs, organised as categories and cross-cutting phenomena (Chapter~\ref{cha:findings}). Design-oriented recommendations are treated as implications, not as validated intervention effects.
 
 \section{Research questions and operational focus}
 \label{sec:method_rq}
 
-The study is guided by three research questions:
+The study was guided by three research questions:
 
 \begin{itemize}
     \item \textbf{RQ1:} What challenges do students and instructors perceive in learning and teaching software modelling in higher education, and how do these challenges manifest across modelling activities (e.g., interpreting, creating, refining, and evaluating models)?
@@ -29,52 +33,81 @@ The study is guided by three research questions:
     \item \textbf{RQ3:} How do socio-technical factors (e.g., tools, course design, domains, feedback practices) shape modelling learning and teaching experiences?
 \end{itemize}
 
-To guide data collection and analysis, each research question is treated as an analytic focus rather than a hypothesis to test. RQ1 focuses on characterising challenges and their variation across modelling activities and contexts. RQ2 focuses on coping strategies and articulated support needs, including the conditions under which particular forms of support are seen as helpful. RQ3 focuses on linking challenges and strategies to contextual influences, clarifying how social and technical factors co-shape modelling experiences.
+Each research question was treated as something to explore rather than a hypothesis to test. RQ1 focused on characterising challenges and their variation across modelling activities. RQ2 focused on coping strategies and articulated support needs, including the conditions under which particular forms of support were seen as helpful. RQ3 focused on linking challenges and strategies to contextual influences. The interview guides turned these three questions into things that could be asked in a conversation. Appendix~\ref{app:rq_mapping} lists which main prompts speak to which research question.
 
 \section{Study context and participants}
 \label{sec:method_context_participants}
 
-The study is conducted in higher education software engineering and related courses that include software modelling components (e.g., requirements engineering, software design, business process modelling, or model-driven engineering). Two participant groups are targeted:
+The study was conducted in higher-education software engineering and related courses that include software modelling (for example requirements engineering, software design, business process modelling, or model-driven engineering). Two participant groups were included:
+
 \begin{itemize}
-    \item \textbf{Students:} learners who have encountered modelling activities in at least one course and have completed at least one modelling-related assignment or project.
-    \item \textbf{Instructors:} lecturers or teaching assistants who have taught modelling-related content and have experience assessing student models or guiding modelling activities.
+    \item \textbf{Students:} learners who had encountered modelling activities in at least one course and had completed at least one modelling-related assignment or project.
+    \item \textbf{Instructors:} lecturers or teaching assistants who had taught modelling-related content and had experience assessing student models or guiding modelling activities.
 \end{itemize}
 
-Sampling follows the principle of theoretical sampling: initial participants are recruited to seed the analysis, and subsequent recruitment is guided by emerging categories (e.g., variation across courses, notations, tool ecosystems, or assignment styles) until categories are sufficiently elaborated \cite{adolph2011using,stol2016grounded}. Inclusion criteria emphasise direct experience with modelling tasks in order to support experience-near accounts of challenges, strategies, and contextual constraints.
+Fourteen interviews were completed: four lecturers (L1--L4) and ten students (S1--S10). Table~\ref{tab:participants} summarises the corpus in general terms. Most student cases were in Portuguese higher education. Wave~2 added students at Instituto Superior T\'ecnico (IST; S7, S10), Instituto Superior de Engenharia de Lisboa (ISEL; S8), and one further Portuguese student (S9). Wave~1 also included two Computer Science students at a university in Wroc{\l}aw (S4, S5) and one Informatics master's student in Munich (S6). Lecturers taught modelling-related courses in Portuguese higher education; they were not re-sampled in wave~2.
+
+Inclusion emphasised direct experience with modelling tasks, so that accounts could stay close to concrete incidents. Identifying course titles, project names, and personal details are omitted or generalised here.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Interview corpus (anonymised). Context is given at a general grain.}
+\label{tab:participants}
+\begin{tabularx}{\textwidth}{l l l X}
+\toprule
+\textbf{ID} & \textbf{Role} & \textbf{Wave} & \textbf{Context (general)} \\
+\midrule
+L1 & Lecturer & 1 & Portuguese HE; process, SysML, and related modelling \\
+L2 & Lecturer & 1 & Portuguese HE; modelling-related teaching \\
+L3 & Lecturer & 1 & Portuguese HE; UML-heavy undergraduate modelling and SE \\
+L4 & Lecturer & 1 & Portuguese HE; requirements and modelling under load \\
+S1 & Student & 1 & Portuguese HE; SE course, dissertation, and work sketches \\
+S2 & Student & 1 & Portuguese HE; SE course, dissertation, and work sketches \\
+S3 & Student & 1 & Portuguese HE; BPMN / process modelling \\
+S4 & Student & 1 & Foreign (Poland) student; UML and ER \\
+S5 & Student & 1 & Foreign (Poland) student; UML team project \\
+S6 & Student & 1 & Foreign (Germany) student; iStar, NFR, UML \\
+S7 & Student & 2 & Portuguese HE; systems analysis and modelling; UML / BPMN \\
+S8 & Student & 2 & Portuguese HE; project-required models, then master's SE \\
+S9 & Student & 2 & Portuguese HE; modelling recalled at a distance \\
+S10 & Student & 2 & Portuguese HE; systems analysis and modelling, several notations \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \section{Data collection}
 \label{sec:method_data_collection}
 
-Data collection is based on semi-structured interviews with two stakeholder groups: (i) students who have recently engaged in modelling tasks in higher-education courses, and (ii) instructors (including lecturers and teaching assistants) who teach or assess modelling-related work. Two interview guides were prepared---one per group---with a shared backbone (perceptions of modelling, challenges, strategies, and support needs) but different emphases: student interviews focus on learning experiences and task-level difficulties, while instructor interviews focus on teaching goals, scaffolding, assessment, and observed misconceptions. Interviews typically last 20--30 minutes for both groups, and are complemented by an activity-centred elicitation component anchored in a concrete modelling task or artefact to ground reflections in situated examples of modelling practice, following the logic used in prior modelling education research \cite{istar-learning}. The procedure was refined through a pilot to validate interview flow, estimate timing, and improve probing for concrete examples.
+Data collection used semi-structured interviews with the two stakeholder groups. Two interview guides were prepared---one per group---with a shared backbone (perceptions of modelling, challenges, strategies, and support needs) but different emphases: student interviews focused on learning experiences and task-level difficulties; instructor interviews focused on teaching goals, scaffolding, assessment, and observed misconceptions. Interviews typically lasted 20--30 minutes. Guides included incident probes that asked for one recent assignment, laboratory, or the first minutes of a text-to-model task, so that talk stayed closer to practice than to general opinion. No live modelling exercise was run in the session, and no model artefact was present for a shared walkthrough. The procedure was refined through a pilot to validate interview flow, estimate timing, and improve those probes.
 
+Wave~2 student interviews used the same student spine, with extra probes aimed at the open questions left by wave~1 (Appendix~\ref{app:interview_guides}).
 
 \subsection{Interview guides and pilot}
 \label{subsec:method_instruments_pilot}
 
-Two semi-structured interview guides were developed: one for students and one for instructors. The guides share a common backbone (perceptions of modelling, challenges, strategies, support needs) but differ in emphasis. Student interviews focus on learning experiences and task-level difficulties; instructor interviews focus on teaching goals, scaffolding and assessment practices, and observed student misconceptions.
+Two semi-structured interview guides were developed: one for students and one for instructors. Bloom-based modelling frameworks informed the formulation of prompts by mapping modelling competence to observable activities (interpreting models, constructing models from text, judging model quality), supporting broad coverage of cognitive demands without imposing Bloom as a coding template.
 
-The pilot interview phase was used to refine question wording, ordering, and probing strategies, with the goal of improving the specificity of examples and the clarity of contextual detail. Bloom-based modelling frameworks informed the formulation of prompts by mapping modelling competence to observable activities (e.g., interpreting models, constructing models from text, and judging model quality), supporting broad coverage of cognitive demands without imposing Bloom as a coding template.
+The pilot phase refined question wording, ordering, and probing strategies, with the goal of improving the specificity of examples. Pilot interviews were retained in the final dataset (S1 and S2 appear as ordinary student cases) once the protocol had stabilised; their original role was to validate the protocol, not to stand as a separate subsample.
 
-\subsection{Activity-centered elicitation}
+\subsection{Incident-based probing}
 \label{subsec:method_modelling_task}
 
-To move beyond abstract opinions, participants are invited to discuss a concrete modelling task or artefact. Depending on participant context, this includes one of the following:
-(i) a short modelling exercise based on a brief scenario, or
-(ii) a retrospective walkthrough of a recent modelling assignment or model created/assessed in a course.
+To move beyond abstract opinions, the interviewer asked participants to recount a concrete episode: a recent modelling assignment or laboratory, a first-ten-minutes account of going from a text description to a model, or (for instructors) a recurring classroom moment when students struggled. These prompts are critical-incident questions inside the interview. They are not a second data-collection procedure.
 
-This activity-centered elicitation is inspired by the iStar learning study, which used a tutorial and modelling session followed by an interview to anchor reflections in a concrete modelling experience \cite{istar-learning}. The goal is to surface tacit reasoning, decision points, typical errors, and tool- or feedback-related constraints that may not emerge from interview questions alone.
+The iStar learning study inspired the wish for situated talk: that work used a tutorial and a modelling session, then an interview about that shared experience \cite{istar-learning}. The present study did not run such a session and did not do stimulated recall over a diagram brought to the interview. Uptake of the incident probes was uneven. Some participants stayed with a named course task; others remained more general (Section~\ref{sec:method_limitations}). The aim of the probes was still to surface decision points, typical errors, and tool- or feedback-related constraints that may not appear in opinion-only answers.
 
 \subsection{Interviews}
 \label{subsec:method_interviews}
 
-Interviews are conducted individually and last approximately 20--30 minutes. Two semi-structured guides were developed: one for students and one for instructors. The guides were piloted to refine question wording, ordering, and probing strategies and to verify that prompts elicit concrete incidents and contextual detail within the intended time window. While pilot interviews may be included in the final dataset, their primary purpose was to validate and improve the protocol. The full pilot interview guides are provided in Appendix~\ref{app:interview_guides}.
+Interviews were conducted individually. The full pilot interview guides are provided in Appendix~\ref{app:interview_guides}. Student interviews covered background and modelling exposure, perceived usefulness of modelling, learning difficulties, strategies for going from text to model, criteria for judging model quality, tool experiences, and motivational and contextual factors. Instructor interviews addressed teaching objectives, scaffolding, assessment design, common student misconceptions, tool choices and constraints, and perceived gaps in current pedagogy.
 
-Student interviews cover background and modelling exposure, perceived usefulness of modelling, learning difficulties, strategies for going from text to model, criteria for judging model quality, tool experiences, and motivational and contextual factors (including inclusion-related experiences where relevant). Instructor interviews address teaching objectives, scaffolding practices, assessment design, common student misconceptions, tool choices and constraints, and perceived gaps in current pedagogy.
+A summary mapping of guide questions to research questions is provided in Appendix~\ref{app:rq_mapping}. Interviews included flexible probing to explore emerging themes, consistent with GT's iterative logic \cite{adolph2011using,stol2016grounded}. Several wave~2 interviews (S7--S10) were conducted in Portuguese; analysis used English working transcripts, with Portuguese originals retained for verification of publication-level quotations.
 
-To support the research questions, interview prompts function as operational entry points to each analytic focus rather than as hypotheses to test. Prompts for \textbf{RQ1} target challenges and their manifestation across modelling activities (e.g., interpreting, creating, refining, evaluating). Prompts for \textbf{RQ2} target coping strategies and articulated pedagogical or tool-related support needs (including what participants report as helpful). Prompts for \textbf{RQ3} target socio-technical shaping factors such as tools, course design, domains, and feedback practices. A summary mapping of guide questions to RQs is provided in Appendix~\ref{app:rq_mapping}.
+\subsection{Transcription and analytic identifiers}
+\label{subsec:method_transcription}
 
-Interviews include flexible probing to explore emerging themes in depth, consistent with GT's iterative and adaptive logic \cite{adolph2011using,stol2016grounded}.
-
+Interviews were transcribed, anonymised, and standardised to a speaker pair (\emph{Interviewer} / \emph{Participant}). Substantive turns were marked with stable identifiers (\texttt{T001}, \texttt{T002}, \ldots) so that codes and memos could point back to the transcript without inventing timestamps. Identifying details were removed or generalised. The resulting files formed the sole first-cycle analysis corpus: 14 standardised transcripts.
 
 \section{Data analysis}
 \label{sec:method_analysis}
@@ -82,116 +115,201 @@ Interviews include flexible probing to explore emerging themes in depth, consist
 \subsection{Grounded Theory variant and socio-technical stance}
 \label{subsec:method_gt_variant}
 
-The analysis follows Grounded Theory principles as adapted for software engineering research \cite{adolph2011using,stol2016grounded}. In particular, the study adopts a socio-technical stance aligned with STGT, treating modelling education as an interaction between social elements (students, instructors, feedback practices, course constraints) and technical elements (notations, tools, model artefacts, automation features) \cite{hoda2018socio}. This stance informs both the coding process and the interpretation of emerging categories.
+The analysis followed Grounded Theory principles as adapted for software engineering \cite{adolph2011using,stol2016grounded}, with a socio-technical stance aligned with STGT. Modelling education was treated as an interaction between social elements (students, instructors, feedback practices, course constraints) and technical elements (notations, tools, model artefacts, automation features) \cite{hoda2018socio}. This stance informed both coding and the interpretation of categories: a difficulty was not coded as ``cognition only'' when the account bundled notation, tool, teaching, and assessment together.
 
-\subsection{Coding process}
+The procedure was a lightweight STGT workflow rather than Classic, Straussian, or constructivist GT as a complete package. In particular, the study did \emph{not} apply Strauss and Corbin's axial coding paradigm (phenomenon, causal conditions, context, intervening conditions, strategies) as a formal stage. Categories were related later through constant comparison and a findings map (helps explain, blocks, contrasts, interacts with), not through a coding-paradigm matrix.
+
+\subsection{Coding and memoing}
 \label{subsec:method_coding}
 
-The coding process follows an iterative progression of open coding, axial coding, and selective coding. Open coding labels segments of interview transcripts and artefacts with conceptual codes capturing modelling challenges, strategies, perceptions of value, tool interactions, and contextual constraints. Constant comparison is applied throughout: newly coded incidents are compared to previous incidents and codes to refine categories and identify variation \cite{adolph2011using}.
+Analysis was carried out by the author. Transcripts were coded in a one-note-per-code layout: each open code received a short natural-language title, one or more turn identifiers, and a short excerpt. Codes captured modelling challenges, strategies, perceptions of value, tool interactions, and contextual constraints. Constant comparison was applied throughout: newly coded incidents were compared with previous incidents and codes to refine categories and identify variation \cite{adolph2011using}.
 
-Axial coding relates categories using a coding paradigm (e.g., phenomenon, causal conditions, context, intervening conditions, and strategies), as demonstrated in modelling education research on iStar learning \cite{istar-learning}. Selective coding then integrates categories into a coherent explanatory account. Memoing is used continuously to document analytic decisions, emerging hypotheses, and links between categories \cite{adolph2011using,stol2016grounded}.
+Memos were written continuously, one idea per memo, linking codes and turns. Memos recorded analytic decisions, emerging hypotheses, and links between categories \cite{adolph2011using,stol2016grounded}. Linked notes kept the chain turn $\rightarrow$ code $\rightarrow$ memo $\rightarrow$ category.
 
-\subsection{Theoretical sampling and saturation}
+The completed first-cycle corpus comprises \textbf{277} open codes and \textbf{78} analytical memos (52 student memos; 26 lecturer memos). Per-case counts are summarised in Table~\ref{tab:code_memo_counts}.
+
+\begin{table}[t]
+\centering
+\small
+\caption{First-cycle codes and memos by case.}
+\label{tab:code_memo_counts}
+\begin{tabular}{lrr lrr}
+\toprule
+\textbf{Case} & \textbf{Codes} & \textbf{Memos} & \textbf{Case} & \textbf{Codes} & \textbf{Memos} \\
+\midrule
+L1 & 22 & 6 & S4 & 15 & 5 \\
+L2 & 24 & 6 & S5 & 15 & 5 \\
+L3 & 25 & 7 & S6 & 15 & 5 \\
+L4 & 35 & 7 & S7 & 16 & 6 \\
+S1 & 24 & 6 & S8 & 9 & 3 \\
+S2 & 30 & 7 & S9 & 7 & 3 \\
+S3 & 22 & 6 & S10 & 18 & 6 \\
+\midrule
+\multicolumn{3}{l}{Lecturer total: 106 codes, 26 memos} & \multicolumn{3}{l}{Student total: 171 codes, 52 memos} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Category development and the findings map}
+\label{subsec:method_categories}
+
+After open coding and memoing, constant comparison was used to merge, split, and bound categories against the research questions. The working warrant for an overview category was multiple memos and multiple cases, unless a category was explicitly marked thin. Overloaded labels were split when memos distinguished different mechanisms (for example start-gate versus symbol overload; feedback timing versus feedback access; semantic checking versus tool friction).
+
+The resulting overview comprises \textbf{14 categories} (CAT1--CAT14) and \textbf{4 cross-cutting phenomena} (PH1--PH4). Each category has a primary research-question assignment; some have a secondary assignment. Phenomena are spines that several categories feed; they are not a requirement that every category headline a phenomenon. CAT2, CAT11, and CAT14 answer research questions on the overview but do not feed a phenomenon; they condition or contrast other categories.
+
+Lecturers' accounts of their own teaching were kept separate from their interpretations of students. Wishes for new tools or course designs were not treated as findings.
+
+\subsection{Theoretical sampling}
 \label{subsec:method_sampling_saturation}
 
-Sampling decisions are guided by emerging categories rather than predetermined demographic quotas. For example, if early analysis suggests that tool friction is a major driver of negative modelling experiences, additional participants may be recruited from courses with different tool ecosystems to explore variation. Data collection continues until categories are sufficiently elaborated and additional data no longer contribute new properties or relationships to the explanatory account \cite{adolph2011using,stol2016grounded}.
+Sampling decisions were guided by emerging categories rather than predetermined demographic quotas \cite{adolph2011using,stol2016grounded}. Two analytic waves were conducted.
+
+\paragraph{Wave 1.}
+Ten interviews (L1--L4, S1--S6) were open-coded and memoed. Constant comparison produced the 14-category / 4-phenomenon overview and five open questions that directed the next interviews (OQ1--OQ5; Table~\ref{tab:open_questions} in Chapter~\ref{cha:discussion}).
+
+\paragraph{Wave 2.}
+Four further student interviews (S7--S10) were recruited as theoretical sampling against those open questions. Wave~2 added 50 first-cycle codes and 18 memos. It densified properties and bounds; it did not produce a 15th overview category that met the existing warrant. Interview density varied: S9 recalled modelling at a greater distance, so some categories rest more on the other wave~2 cases (Section~\ref{sec:method_limitations}).
+
+No additional lecturers were recruited in wave~2. The student interviews were enough to densify the 14-category set for this thesis, and a second lecturer wave was not pursued. Sampling stopped when that set was locally sufficient for the research questions.
+
+\subsection{Local saturation of the category set}
+\label{subsec:method_local_saturation}
+
+GT reporting often claims theoretical saturation when additional data no longer contribute new properties or relationships \cite{adolph2011using,stol2016grounded}. That global claim is not made here. Following Dey's caution against treating saturation as a finished theory \cite{dey1999grounding}, the stop rule is \textbf{local saturation of the overview category set} and \textbf{theoretical sufficiency} for this master's research questions and sample \cite{hoda2018socio,stol2016grounded}.
+
+Table~\ref{tab:saturation_count} reports the cumulative count of overview categories. Wave~1 produced 14 categories from 10 interviews; wave~2 left that count unchanged after four further interviews. Table~\ref{tab:densification} shows that ``no new category'' is not the same as ``nothing new'': several cells record new properties or dimensions (for example CAT5 after a locked grade, CAT6 access formats, CAT14 translation), negative or boundary cases (S5, S7, S10 on the start-gate), or mere instantiation of a known property.
+
+\begin{table}[t]
+\centering
+\caption{Cumulative overview-category count across analytic waves.}
+\label{tab:saturation_count}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Wave} & \textbf{Interviews in wave} & \textbf{Cumulative $n$} & \textbf{Overview CATs} \\
+\midrule
+Wave 1 (L1--L4, S1--S6) & 10 & 10 & 14 \\
+Wave 2 (S7--S10) & 4 & 14 & 14 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Wave-2 densification of existing categories. Cells: empty; inst.\ (instantiates a known property); new (new property or dimension); neg.\ (negative or boundary case); --- (not used: the interview did not supply an incident of that strength). S7/S10 switch incidents are counted under CAT14, not as extra CAT2 warrants.}
+\label{tab:densification}
+\begin{tabularx}{\textwidth}{X cccc}
+\toprule
+\textbf{Category} & \textbf{S7} & \textbf{S8} & \textbf{S9} & \textbf{S10} \\
+\midrule
+CAT1 Starting is gated & neg. & new & inst. & neg. \\
+CAT2 Notation overload & empty & inst. & empty & empty \\
+CAT3 Teacher examples & inst. & inst. & inst. & empty \\
+CAT4 Self-strategies & new & inst. & inst. & inst. \\
+CAT5 Feedback timing & new & inst. & empty & new \\
+CAT6 Feedback access & inst. & new & new & new \\
+CAT7 Semantic checking & inst. & inst. & empty & empty \\
+CAT8 Tool friction & new & inst. & inst. & empty \\
+CAT9 Groups & new & inst. & --- & inst. \\
+CAT10 Real audience & inst. & empty & empty & inst. \\
+CAT11 Course load & new & new & empty & empty \\
+CAT12 Good enough & new & empty & inst. & new \\
+CAT13 AI as explainer & empty & empty & --- & inst. \\
+CAT14 Cross-notation switching & new & new & --- & new \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+What is \emph{not} claimed: global theoretical saturation across modelling courses worldwide; saturation of every property of every category; saturation of lecturer-side categories that were not re-sampled; or that unfulfilled open questions (including a lecturer ``abstraction deficit'' without student memos) are closed. Transferability remains analytical---conditions under which a category appears---rather than statistical generalisation \cite{hoda2018socio,stol2016grounded}.
 
 \subsection{Bloom's taxonomy as a sensitising concept}
 \label{subsec:method_bloom_sensitising}
 
-Bloom's revised taxonomy is used as a sensitising concept to support the interpretation and communication of findings, particularly when describing the cognitive character of reported modelling challenges (e.g., difficulties related to understanding constructs and their semantics, applying modelling procedures, and evaluating model adequacy) \cite{krathwohl2002revision}. In practice, Bloom is applied \emph{after} grounded categories have been developed: codes and categories are generated inductively, and Bloom-inspired terminology is used selectively as an analytic lens and reporting vocabulary where it aligns with participant accounts and helps articulate differences between types of challenges across modelling activities. Bloom is therefore not used as a coding scheme or set of predefined bins; this avoids forcing data into a priori frameworks and is consistent with grounded theory guidance for maintaining the primacy of emergent concepts \cite{stol2016grounded}.
+Bloom's revised taxonomy was used as a sensitising concept to support the interpretation and communication of findings, particularly when describing the cognitive character of reported modelling challenges (understanding constructs and their semantics, applying modelling procedures, evaluating model adequacy) \cite{krathwohl2002revision}. In practice, Bloom was applied \emph{after} grounded categories had been developed: codes and categories were generated inductively, and Bloom-inspired terminology was used selectively as an analytic lens and reporting vocabulary where it aligned with participant accounts. Bloom was not used as a coding scheme or set of predefined bins, consistent with grounded theory guidance for maintaining the primacy of emergent concepts \cite{stol2016grounded}.
 
 \section{Rigour and trustworthiness}
 \label{sec:method_rigour}
 
-To ensure rigour, the study follows established guidance for conducting grounded theory in software engineering \cite{stol2016grounded} and adopts a socio-technical stance consistent with STGT \cite{hoda2018socio}. Trustworthiness is addressed through practices that support credibility, dependability, confirmability, and transferability \cite{hoda2018socio,stol2016grounded}.
+Rigour was pursued following guidance for grounded theory in software engineering \cite{stol2016grounded} and STGT reporting expectations \cite{hoda2018socio}. This section uses the usual qualitative headings---credibility, dependability, confirmability, and transferability---rather than experimental ``threats to validity'' \cite{hoda2018socio,stol2016grounded}.
 
-Credibility is supported by grounding categories in concrete, experience-near accounts and by using activity- or artefact-centred elicitation to anchor participant reflections in specific modelling tasks and decisions. Constant comparison is used throughout analysis to refine categories, identify variation across participants and contexts, and seek disconfirming cases that challenge emerging interpretations. Where feasible, preliminary interpretations are discussed with supervisors and refined through peer debriefing.
+Participants were not asked to review the categories after analysis (member checking). A second researcher did not independently recode the transcripts. Analysis was carried out by the author. Instead of agreement scores between two coders, a reader can follow an excerpt to a code, a memo, and a category (turn identifiers, code notes, and memos; see below).
 
-Dependability and confirmability are supported through a transparent analytic trail. Coding decisions, category evolution, and sampling changes are documented through memos, and links between claims and supporting excerpts are preserved. Iteration between data collection and analysis is recorded to make the development of the explanatory account traceable.
+Credibility was supported by grounding categories in experience-near accounts and by using incident probes to ask for a specific assignment, laboratory, or start-of-task moment. Those probes were verbal and uneven; they do not substitute for observation of modelling or for stimulated recall with an artefact present. Constant comparison was used to refine categories, identify variation, and retain disconfirming cases (for example students who did not wait for a teacher demonstration before drafting).
 
-Transferability is addressed by providing contextual detail about participants, course settings, modelling notations, and tool environments, enabling readers to assess the relevance of findings to other educational contexts. Rather than aiming for statistical generalisation, the thesis targets analytical generalisation by describing patterns of challenges and support needs and the conditions under which they appear.
+Dependability and confirmability were supported through a transparent analytic trail: turn identifiers, one-note-per-code files, memos, and an evidence map from categories to memos and codes. Claims in Chapter~\ref{cha:findings} are written with case and memo identifiers so that excerpts can be checked.
+
+Transferability is addressed by the contextual detail in Table~\ref{tab:participants} and by stating the conditions under which categories appeared (for example feedback access depending on public versus desk format). The thesis does not claim statistical generalisation.
 
 \section{Ethics and data management}
 \label{sec:method_ethics}
 
-Participation is voluntary and based on informed consent. Interview recordings and transcripts are anonymised, and any potentially identifying details (e.g., course identifiers, project names, personal data) are removed or generalised. Data are stored securely and used only for the purposes of this research. When collecting modelling artefacts (e.g., student models or assignments), additional care is taken to remove identifying information and to ensure that artefacts are used in ways consistent with participants' consent and institutional policies.
+Participation was voluntary and based on informed consent. Interview recordings and transcripts were anonymised, and potentially identifying details (course identifiers, project names, personal data) were removed or generalised. Data were stored securely and used only for the purposes of this research. When participants described modelling work or course artefacts, identifying details were removed or generalised, consistent with consent and institutional policies.
 
 \section{Methodological limitations}
 \label{sec:method_limitations}
 
-As a qualitative, context-sensitive study, the findings aim for analytical rather than statistical generalisation. Participant accounts may be influenced by recall bias, social desirability, and variation in course contexts. Additionally, tool- and notation-specific experiences may limit transferability across institutions or modelling families. These limitations are mitigated by triangulating accounts with concrete artefacts where possible, sampling for variation as categories emerge, and documenting contextual factors that shape the observed phenomena \cite{hoda2018socio,stol2016grounded}.
+As a qualitative, context-sensitive study, the findings aim for analytical rather than statistical generalisation. Participant accounts may be influenced by recall bias, social desirability, and variation in course contexts. Several students (including S7 and S9) described modelling courses at a distance of years; S9 was therefore excluded from categories that required incident-level recall.
+
+The student corpus is mostly Portuguese higher education. Two Polish cases and one German case sit in wave~1; they are not a global sample. Wave~2 added no new countries and no new lecturers. Claims that come mainly from lecturers---for example that heavy courses leave little time to teach, or that they planned several rounds of feedback but could not keep them---therefore rest on the four wave~1 lecturer interviews only. Tool- and notation-specific experiences may limit transferability across institutions or modelling families.
+
+Incident probes reduced abstraction where a participant could name a recent task, but they do not remove recall bias: no model was shared in the session, and some accounts remained general. Sampling for variation as categories emerged, documenting contextual factors, and labelling remaining open questions rather than discarding them further bound the claims \cite{hoda2018socio,stol2016grounded}. What the bounds mean for particular claims is taken up in Chapter~\ref{cha:discussion}.
 
 \section{Worked example of the coding process}
 \label{sec:method_coding_example}
 
-To illustrate the analysis procedure, this subsection presents a small worked example showing how an interview excerpt is transformed into open codes and then related at a more abstract level through axial coding. The example follows the grounded-theory progression adopted in this study (open $\rightarrow$ axial $\rightarrow$ selective coding) and demonstrates traceability from raw data to candidate categories and support needs.
-
-The example is drawn from two pilot student interviews (S1, S2). These interviews were conducted primarily to refine the protocol and assess timing and question clarity. They may be included in the final dataset, but their role here is illustrative rather than evidential, and no claims of saturation are made.
+To illustrate the analysis procedure, this subsection shows how interview excerpts became open codes and then entered later category work. The example is drawn from two student interviews (S1, S2). It is illustrative of the chain excerpt $\rightarrow$ open code $\rightarrow$ memo $\rightarrow$ category; it is not a claim that these two cases saturate any category.
 
 \paragraph{Step 1: Open coding.}
-Excerpts are segmented into meaning units and labelled with concise, action-oriented codes that stay close to the participant account.
+Excerpts were segmented into meaning units and labelled with concise, action-oriented codes that stay close to the participant account (for example ``symbol choices create doubt at start'', ``tool options overwhelming for simple relations'').
 
-\paragraph{Step 2: Axial coding.}
-Codes are related using an axial lens (e.g., phenomenon, context/conditions, strategies, consequences) to clarify when challenges arise and how participants respond.
+\paragraph{Step 2: Memoing and comparison.}
+Codes that recurred or contrasted were written up as short memos and compared with other cases. Relations such as ``helps explain'' or ``contrasts with'' were recorded when memos supported them; they were not forced into an axial paradigm.
 
-\paragraph{Step 3: Candidate support needs.}
-Where patterns indicate breakdowns or coping mechanisms, the analysis derives candidate pedagogical or tool-related support needs grounded in the data.
+\paragraph{Step 3: Category placement.}
+Where patterns indicated a bounded mechanism, codes and memos were assigned to an overview category (and, where relevant, to a phenomenon). Support needs mentioned by participants were kept distinct from the finding itself when they were design wishes rather than observed practice.
 
 \begin{table}[t]
 \small
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.12}
-\caption{Compact illustrative coding example from two pilot student interviews (S1, S2).}
+\caption{Illustrative coding chain from two student interviews (S1, S2). Later category IDs are those used in Chapter~\ref{cha:findings}.}
 \label{tab:coding_example_students_compact}
-\begin{tabularx}{\textwidth}{p{0.33\textwidth} X X}
+\begin{tabularx}{\textwidth}{p{0.34\textwidth} X X}
 \toprule
-\textbf{Excerpt} & \textbf{Open codes (examples)} & \textbf{Axial link + candidate support need} \\
+\textbf{Excerpt} & \textbf{Open codes (examples)} & \textbf{Later placement} \\
 \midrule
 
-\textbf{S1} “...useful to define how components interact... then it feels arbitrary and like extra documentation.” &
-value depends on context; modelling becomes “extra documentation” &
-\emph{Phenomenon:} conditional / polarised value perception.\newline
-\emph{Support need:} make modelling purpose explicit; connect models to concrete decisions and downstream use. \\
+\textbf{S1} ``Modelling is useful for defining how system components interact up to a certain point. After that, it can feel arbitrary and like extra documentation.'' &
+value depends on context; modelling becomes extra documentation &
+Conditional value of modelling; not a dedicated overview CAT \\
 
 \addlinespace
 
-\textbf{S1} “...confusing... different arrows mean different things... lots of information... feels arbitrary...” &
-notation semantics unclear; symbol overload; high cognitive load; low payoff &
-\emph{Causal condition:} semantic ambiguity + overload.\newline
-\emph{Support need:} semantics teaching with contrastive examples; staged complexity (subset first); “common confusions” guidance. \\
+\textbf{S1} ``Different arrows and boxes meant different things\ldots it felt arbitrary when trying to do something useful with it.'' &
+notation semantics unclear; symbol overload &
+CAT2 (notation overload); contrasts with CAT1 \\
 
 \addlinespace
 
-\textbf{S1} “...tool had so many options... overwhelming to do a simple relation.” &
-tool feature overload; novice usability issues; tool increases effort &
-\emph{Intervening condition:} tool-mediated load.\newline
-\emph{Support need:} novice mode (constrained palette), templates, guided workflows / quick-start patterns. \\
+\textbf{S1} ``The tool had so many options that it became completely overwhelming to know how to make a simple entity-to-box relation.'' &
+tool feature overload; novice usability issues &
+CAT8 (tool friction); related to CAT2 \\
 
 \midrule
 
-\textbf{S2} “...complex concepts... can’t fit them in your mind... a diagram simplifies it... for you and others.” &
-diagram as cognitive offloading; simplification; supports communication &
-\emph{Phenomenon:} modelling as thinking + communication aid.\newline
-\emph{Support need:} legitimise lightweight “working models”; teach modelling as a reasoning tool, not only a deliverable. \\
+\textbf{S2} ``Some concepts may be really complex and you cannot fit them in your mind. Making a small diagram can simplify them for you and for others\ldots'' &
+diagram as cognitive offloading; communication aid &
+Supports why modelling is worth the cost when an audience exists (CAT10) \\
 
 \addlinespace
 
-\textbf{S2} “...frustrating... frameworks not familiar... had to learn them before drawing.” &
-unfamiliar method barrier; entry cost; delays starting &
-\emph{Causal condition:} prerequisite method knowledge missing.\newline
-\emph{Support need:} staged onboarding; micro-exercises; minimal subset before full assignment. \\
-
-\addlinespace
-
-\textbf{S2} “...fit an abstraction into an already made system... had to fit those rules...” &
-retrofitting model to existing system; mismatch constraints; abstraction–reality tension &
-\emph{Context:} modelling after implementation / legacy constraints.\newline
-\emph{Support need:} guidance for modelling existing systems (purpose, scope, acceptable approximation); examples of reverse-engineering workflows. \\
+\textbf{S2} ``I had to use frameworks with which I was unfamiliar. I had to learn them before I could start drawing.'' &
+unfamiliar method barrier; entry cost &
+CAT1 / CAT2 boundary: missing path versus symbol/framework load \\
 
 \bottomrule
 \end{tabularx}
 \end{table}
 
-This worked example is not intended as a fixed coding template. It is included to illustrate the analytic logic and the progression from excerpts to codes, relationships, and candidate support needs.
-
+This worked example is not a fixed coding template. It is included to show traceability from excerpts to codes and later categories.
