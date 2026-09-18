@@ -18,7 +18,7 @@ Quotations are short excerpts from the coded transcripts, identified by case. Po
 \section{How to read this chapter}
 \label{sec:findings_how}
 
-Each category subsection states (i)~what the category is, (ii)~how it varies, including wave~2 properties, (iii)~at least one short quotation, and (iv)~negative or boundary cases where they exist. Table~\ref{tab:cat_roster} lists all fourteen categories before the detailed sections. Table~\ref{tab:cat_rq_summary} at the end of the chapter repeats the map with research questions, one-line claims, and memo identifiers.
+Each category subsection states (i)~what the category is, (ii)~how it varies, including wave~2 properties, (iii)~at least one short quotation, and (iv)~negative or boundary cases where they exist. Table~\ref{tab:cat_roster} lists all fourteen categories before the detailed sections. Figure~\ref{fig:findings_map} shows how categories sit under research questions and feed phenomena. Table~\ref{tab:cat_rq_summary} at the end of the chapter repeats the map with research questions, one-line claims, and memo identifiers (reproduced in Appendix~\ref{app:audit_trail}).
 
 \begin{table}[ht]
 \centering
@@ -47,6 +47,13 @@ CAT14 & Moving from one kind of diagram to another is a separate difficulty. \\
 \end{tabularx}
 \end{table}
 
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_findings_map}
+\caption{Findings map: research questions, overview categories, and phenomena. CAT2, CAT11, and CAT14 answer research questions but do not feed a phenomenon; they contrast or condition other categories (Figure~\ref{fig:relations_map}).}
+\label{fig:findings_map}
+\end{figure}
+
 \section{RQ1: Challenges across modelling activities}
 \label{sec:findings_rq1}
 
@@ -59,14 +66,28 @@ Getting from a written problem to the first real application was often gated on 
 
 Wave~2 added a different form of the same gate. In S8's bachelor's project, UML and requirements models were required when S8 did not know how to use those notations, even though earlier courses had already used entity-relationship and class diagrams: ``I had the idea that I had to use UML, requirements engineering, and so on, because it was in the project requirements, but I had no idea how to use those notations'' (S8). A later Software Engineering course introduced modelling more explicitly, but by then a homemade sketching routine was already in place (CAT4).
 
-The gate is not universal. S3 could start MSP exercises immediately because of earlier, even if shallow, BPMN contact: ``In MSP, I remember clearly that I could start the exercises as soon as the professor showed them. I did not need to wait'' (S3). S5 rarely waited for a teacher demonstration (``I rarely wait for a teacher demo''). S7 and S10 started without copying the board; wait-to-start can describe the \emph{room} (classmates who copy) without describing every student. S9, who recalled modelling at a distance, likewise needed to see the task done once before starting.
+The gate is not universal. S3 could start MSP exercises immediately because of earlier, even if shallow, BPMN contact: ``In MSP, I remember clearly that I could start the exercises as soon as the professor showed them. I did not need to wait'' (S3). S5 rarely waited for a teacher demonstration (``I rarely wait for a teacher demo''). S7 and S10 started without copying the board; wait-to-start can describe the \emph{room} (classmates who copy) without describing every student. S9, who recalled modelling at a distance, likewise needed to see the task done once before starting. Figure~\ref{fig:cat1} summarises those three forms of the gate.
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_cat1}
+\caption{CAT1 variation: room-level waiting, a project that required notations not yet taught, and students who can start without copying (cases L1, S3, S5, S7, S8, S10).}
+\label{fig:cat1}
+\end{figure}
 
 \subsection{CAT2 --- Notation and symbol overload create doubt}
 \label{sec:cat2}
 
 Unfamiliar symbols, arrows, and frameworks created doubt at the start \emph{and} mid-work. This is distinct from CAT1: S1 could name the high-level task and still stall on notation. ``The high-level concepts were fairly straightforward, but the symbols and notation complicated things'' (S1). On a game-modelling project, ``Different arrows and boxes meant different things. There was a lot of information to absorb, and it felt arbitrary when trying to do something useful with it'' (S1). S2 located course difficulty in having to learn frameworks before drawing: ``I had to use frameworks with which I was unfamiliar. I had to learn them before I could start drawing'' (S2).
 
-Wave~2 added that similar-looking diagrams confuse until an example sits beside them (S8). When S7 and S10 got stuck moving from one kind of diagram to another, that is discussed under CAT14 rather than as more symbol overload.
+Wave~2 added that similar-looking diagrams confuse until an example sits beside them (S8). When S7 and S10 got stuck moving from one kind of diagram to another, that is discussed under CAT14 rather than as more symbol overload. Figure~\ref{fig:cat1_vs_cat2} keeps the two mechanisms apart: a missing path is not the same as too many symbols.
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_cat1_vs_cat2}
+\caption{CAT1 versus CAT2. S1 could name the high-level task and still stall on notation; that incident belongs on the right, not as another start-gate.}
+\label{fig:cat1_vs_cat2}
+\end{figure}
 
 \subsection{CAT12 --- Hard to judge good enough}
 \label{sec:cat12}
@@ -80,12 +101,28 @@ Lecturers accepted multiple valid models (L1) and still had to grade completenes
 
 Moving across notation families lost traceability or required a new mindset and tool set. S6's hardest moment was not drawing actors but translating an iStar rationale model into UML: ``our pair produced a class diagram that looked syntactically correct but lost the goals'' (S6), and ``nobody had explicitly explained how much of the iStar model should survive in UML'' (S6). Each family demanded a different stance: ``UML felt more structural. iStar felt organisational and political: who depends on whom, which goals conflict'' (S6).
 
-Wave~2 densified CAT14 beyond that single RE course. S10 translated an external BPMN pool too directly into UML and was told afterwards that ``the models were answering different questions'' (S10). Names and requirements carried; process structure did not become classes. S7 reported a lighter variant: confusion at the switch was mainly syntax and duplicated teaching, not a first start. S8 got stuck when two notations looked similar (requirements diagrams versus class diagrams). That is part similar-symbol confusion (CAT2) and part moving between kinds of diagram (CAT14). Whether lecturers teach ``different questions'' as syllabus content remains open (Chapter~\ref{cha:discussion}).
+Wave~2 densified CAT14 beyond that single RE course. S10 translated an external BPMN pool too directly into UML and was told afterwards that ``the models were answering different questions'' (S10). Names and requirements carried; process structure did not become classes. S7 reported a lighter variant: confusion at the switch was mainly syntax and duplicated teaching, not a first start. S8 got stuck when two notations looked similar (requirements diagrams versus class diagrams). That is part similar-symbol confusion (CAT2) and part moving between kinds of diagram (CAT14). Whether lecturers teach ``different questions'' as syllabus content remains open (Chapter~\ref{cha:discussion}). Figure~\ref{fig:cat14} is the translation, not another symbol list.
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_cat14}
+\caption{CAT14 translation loss. The missing piece is often a taught bridge: what must survive when the family changes (S6, S7, S10; not S9).}
+\label{fig:cat14}
+\end{figure}
 
 \subsection{PH1 --- Turning a written problem into the first diagram}
 \label{sec:ph1}
 
-The hard, under-taught step is making the first model from a problem text---not memorising symbol names. CAT1 (missing path), CAT3 (examples as unlock), and CAT4 (self-invented procedures when teaching is thin) jointly support this phenomenon. CAT2 can delay the same first move, but it is a different mechanism: too many symbols, not the absence of a path.
+The hard, under-taught step is making the first model from a problem text---not memorising symbol names. CAT1 (missing path), CAT3 (examples as unlock), and CAT4 (self-invented procedures when teaching is thin) jointly support this phenomenon (Figure~\ref{fig:ph1}). CAT2 can delay the same first move, but it is a different mechanism: too many symbols, not the absence of a path.
+
+What PH1 is \emph{not}: a claim that every student waits, or that notation learning is irrelevant. S3, S5, S7, and S10 could start; the room can still wait. The phenomenon names the under-taught mapping from a written brief to a first diagram. Teacher examples open that mapping (CAT3); homemade tactics are what students do when the mapping is missing or late (CAT4).
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_ph1}
+\caption{PH1 focused view. Feeding categories are CAT1, CAT3, and CAT4; CAT2 is a contrast, not a feeder.}
+\label{fig:ph1}
+\end{figure}
 
 \section{RQ2: Strategies and support needs}
 \label{sec:findings_rq2}
@@ -104,7 +141,25 @@ A visible negative case is L4, who does not solve exercises up front: ``No, I do
 
 When a worked path was missing or late, students invented procedures: trial-and-error text-to-model, objects then relations, reading symbols as words, early drafts. S5's group scripted the first ten minutes before opening a tool: ``Someone reads the text aloud, we each say what jumps out, and we decide who drafts the first diagram'' (S5).
 
-Wave~2 added tactics tied to classroom risk and project timing. S7 attacked the problem quickly ``to have something done in case I was the `victim' of the board'' (S7), while classmates copied. S8 underlined requirements and moved from pencil to pen on the bachelor's project that required UML they did not yet know how to use; earlier courses had already used entity-relationship and class diagrams (CAT1). S10 drafted in a notebook and only then put work on the board. These are student strategies, not evidence that the course designed them.
+Wave~2 added tactics tied to classroom risk and project timing. S7 attacked the problem quickly ``to have something done in case I was the `victim' of the board'' (S7), while classmates copied. S8 underlined requirements and moved from pencil to pen on the bachelor's project that required UML they did not yet know how to use; earlier courses had already used entity-relationship and class diagrams (CAT1). S10 drafted in a notebook and only then put work on the board. These are student strategies, not evidence that the course designed them. Table~\ref{tab:cat4_tactics} lists the recurring tactics without treating them as a course method.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{CAT4 process tactics invented by students when a taught path was thin or late.}
+\label{tab:cat4_tactics}
+\begin{tabularx}{\textwidth}{l >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Tactic} & \textbf{Where it showed up} \\
+\midrule
+Read the brief aloud, then draft & S5 group script before opening a tool \\
+Objects then relations / symbols as words & Wave-1 process talk (S1--S3) \\
+Attack-to-survive vs wait-to-copy & S7 board-lab split \\
+Underline, pencil, then pen & S8, before master's teaching \\
+Notebook then board & S10, reserved starter \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \subsection{CAT5 --- Feedback arrives too late}
 \label{sec:cat5}
@@ -118,27 +173,38 @@ What students could still change depended on remaining time and whether the grad
 
 Detailed feedback often arrived only if students asked, and public formats favoured those willing to expose a half-finished diagram. S4 preferred private channels: ``Not very comfortable in public. I am shy, so presenting a half-finished diagram to the whole class is stressful'' (S4). S5, more outgoing, used a public lab board. Wave~2 widened the conditions beyond a shy/outgoing split: S7 was comfortable showing \emph{models} (more than code) but still treated extra comments as asked-for and in person; S8 shared easily with friends and the teacher, not with course-group strangers; S9 would hide poor drawing rather than a wrong model; S10 found desk walk-around easy and raising a hand hard: ``If the teacher comes by your desk and asks `is everything all right?', it is much easier to show what you are doing than to raise your hand in front of the class'' (S10). Graded versus ungraded work also gated whether S8 sought checks.
 
-S10 wanted a private way to check a model during the lab. Whether that would have answered the small questions that never reached the teacher is a suggestion for teaching design, not a finding (S10).
+S10 wanted a private way to check a model during the lab. Whether that would have answered the small questions that never reached the teacher is a suggestion for teaching design, not a finding (S10). Figure~\ref{fig:cat5_cat6} keeps timing (CAT5) separate from access (CAT6): both feed PH2, but they are not the same problem.
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_cat5_cat6}
+\caption{CAT5 versus CAT6. \emph{When} comments arrive is not the same as \emph{who} can get them (S4--S10).}
+\label{fig:cat5_cat6}
+\end{figure}
 
 \subsection{CAT13 --- AI used as explainer, not generator}
 \label{sec:cat13}
 
-Students who used AI asked it to explain options or compare approaches; they rejected generation for graded work. S5 used a chatbot ``to suggest alternative class diagrams from a bullet list, then compared options with the team'' (S5) and would not submit raw output. S10's incident is the first Portuguese lived case in the corpus: screenshots and small questions after a self-check, never a full model---``I never asked `make me the model of this whole system'.'' (S10). That use also substituted for some public questions S10 avoided (CAT6). S4 and S6 reported the same explain-not-generate stance. One lecturer wanted an LLM that would explain a student's model back in ordinary language, so the student could compare that explanation with what they had meant---not a tool that draws the assignment (L3). That is a teaching idea, not a CAT13 finding; Chapter~\ref{cha:discussion} returns to it.
+Students who used AI asked it to explain options or compare approaches; they rejected generation for graded work. S5 used a chatbot ``to suggest alternative class diagrams from a bullet list, then compared options with the team'' (S5) and would not submit raw output. S10's incident is the first Portuguese lived case in the corpus: screenshots and small questions after a self-check, never a full model---``I never asked `make me the model of this whole system'.'' (S10). That use also substituted for some public questions S10 avoided (CAT6). S4 and S6 reported the same explain-not-generate stance, which later feeds PH3 (Section~\ref{sec:ph3}). One lecturer wanted an LLM that would explain a student's model back in ordinary language, so the student could compare that explanation with what they had meant---not a tool that draws the assignment (L3). That is a teaching idea, not a CAT13 finding; Chapter~\ref{cha:discussion} returns to it.
 
 \subsection{PH2 --- The teacher is the only compile button}
 \label{sec:ph2}
 
-Because a model does not compile (CAT12), students often learn they are wrong when a teacher---or late feedback---tells them (CAT5, CAT6). Walk-around, private messages, and public boards change \emph{who} gets that signal in time, not the fact that the signal is social.
+Because a model does not compile (CAT12), students often learn they are wrong when a teacher---or late feedback---tells them (CAT5, CAT6). Walk-around, private messages, and public boards change \emph{who} gets that signal in time, not the fact that the signal is social (Figure~\ref{fig:ph2}). Homemade checklists and ``faith'' that the teacher's model will match (S4, S7) are student work-arounds for the missing compile result, not evidence that courses already supply one.
 
-\subsection{PH3 --- Want checks and explanations, not auto-drawn homework}
-\label{sec:ph3}
+What PH2 is \emph{not}: a claim that automated checkers do not exist, or that lecturers refuse to give comments. Checkers appear under PH3 (Section~\ref{sec:ph3}); here the point is that, in these courses, the everyday right/wrong signal is a person.
 
-Across tools and AI, participants asked for validation and help in understanding, not a machine that draws the assignment. CAT7 (semantic checking valued), CAT8 (friction when tools are heavy), and CAT13 (AI as explainer) feed this phenomenon. It is taken up again under RQ3 for the tool side.
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_ph2}
+\caption{PH2 focused view. CAT12 names the missing compile result; CAT5 and CAT6 name when and how the social substitute arrives.}
+\label{fig:ph2}
+\end{figure}
 
 \section{RQ3: Socio-technical conditions}
 \label{sec:findings_rq3}
 
-RQ3 asked how tools, course design, domains, and feedback practices shape modelling experience. The categories here are semantic checking (CAT7), tool friction (CAT8), groups (CAT9), real audiences (CAT10), and course load (CAT11). Course load cuts time for demonstrations and feedback.
+RQ3 asked how tools, course design, domains, and feedback practices shape modelling experience. The categories here are semantic checking (CAT7), tool friction (CAT8), groups (CAT9), real audiences (CAT10), and course load (CAT11). PH3 gathers the tool and AI support claim after CAT7 and CAT8; CAT13, reported under RQ2, feeds it as well. Course load cuts time for demonstrations and feedback.
 
 \subsection{CAT7 --- Semantic checking is valued}
 \label{sec:cat7}
@@ -152,10 +218,31 @@ Wave~2 added bounds. S7 saw an open-source compile tool presented and then dropp
 
 Option overload, licensing, mid-course switches, and slow or corrupt tools raised the cost of modelling. S1 found StarUML overwhelming for a simple relation: ``The tool had so many options that it became completely overwhelming to know how to make a simple entity-to-box relation'' (S1) and preferred a simpler drawing tool. Lecturers reported licensing pushing tool changes (L1). Wave~2 added an outdated compile interface that S7 then dropped, optional Camunda and Archi that S8 skipped in favour of draw.io, and UML menus S9 found outdated. Checks are still wanted (CAT7); a tool that is too complicated, optional, or slow will still be dropped.
 
+\subsection{PH3 --- Want checks and explanations, not auto-drawn homework}
+\label{sec:ph3}
+
+PH2 is the everyday situation: the right/wrong signal is a person. PH3 is what participants asked for instead: validation and explanations, not a machine that draws the assignment (Figure~\ref{fig:ph3}). CAT7 (semantic checking valued), CAT8 (friction when tools are heavy), and CAT13 (AI as explainer) feed this phenomenon. CAT13 was reported under RQ2; it belongs here as a feeder, not as a second home for that category.
+
+What PH3 is \emph{not}: evidence that a particular checker or chatbot works, or that lecturers' LLM redesign wishes (L3) are findings. Those wishes are implications (Chapter~\ref{cha:discussion}). CAT13 rests on four student cases, including one Portuguese incident (S10); it should not be over-read as an AI-education evaluation.
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_ph3}
+\caption{PH3 focused view. PH2 is the person-signal they actually get; PH3 is the check and explainer they asked for. Checking is wanted (CAT7); a heavy, optional, or antique tool is still dropped (CAT8); AI is used to explain options, not to generate graded models (CAT13).}
+\label{fig:ph3}
+\end{figure}
+
 \subsection{CAT9 --- Groups can kill or save the model}
 \label{sec:cat9}
 
-Code-first pressure or passive teammates killed diagrams; ownership, pairs, live boards, and stand-ups kept them alive. S4's group wanted to jump to implementation on a generic shop domain while S4 was still drawing the class diagram. Wave~2: a teammate who rushed to finish phase~1 forced S7's pair into a from-scratch redo (CAT5 interaction). S10's group split the work by notation---one person did BPMN, another requirements, another UML---and the diagrams started to disagree: ``Then we had two versions of the same system'' (S10). They later added a draft-and-review step so everyone could still explain the models at the defence.
+Code-first pressure or passive teammates killed diagrams; ownership, pairs, live boards, and stand-ups kept them alive. S4's group wanted to jump to implementation on a generic shop domain while S4 was still drawing the class diagram. Wave~2: a teammate who rushed to finish phase~1 forced S7's pair into a from-scratch redo (CAT5 interaction). S10's group split the work by notation---one person did BPMN, another requirements, another UML---and the diagrams started to disagree: ``Then we had two versions of the same system'' (S10). They later added a draft-and-review step so everyone could still explain the models at the defence. Figure~\ref{fig:cat9} is that kill-or-save split; S9 is not used here.
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_cat9}
+\caption{CAT9: groups can kill a diagram or keep it alive (S4, S7, S10; not S9).}
+\label{fig:cat9}
+\end{figure}
 
 \subsection{CAT10 --- Real audience makes modelling worth it}
 \label{sec:cat10}
@@ -170,12 +257,28 @@ Heavy continuous assessment, missed theory, slide-only catch-up, and late recogn
 \subsection{PH4 --- A diagram survives only if someone owns it and someone reads it}
 \label{sec:ph4}
 
-Group ownership (CAT9) and a real audience (CAT10) jointly decide whether modelling stays alive and careful. A well-taught example (CAT3) does not keep a diagram alive in a group that has already switched to code.
+Group ownership (CAT9) and a real audience (CAT10) jointly decide whether modelling stays alive and careful (Figure~\ref{fig:ph4}). A well-taught example (CAT3) does not keep a diagram alive in a group that has already switched to code. Course load (CAT11) is drawn as a blocker of the loops, not as a fourth feeder: when ECTS and concurrent work leave no time for demos or comments, ownership and audience have less to work with.
+
+What PH4 is \emph{not}: a claim that interesting domains do not matter. S4 still held that they do. Domain excitement is a weaker pull than a supervisor, a defence panel, or another stakeholder who will actually read the diagram.
+
+\begin{figure}[htbp]
+\centering
+\input{5-Figures/fig_ph4}
+\caption{PH4 focused view. CAT9 and CAT10 feed the phenomenon; CAT11 blocks the teaching loops around it.}
+\label{fig:ph4}
+\end{figure}
 
 \section{Category summary}
 \label{sec:findings_summary}
 
-Table~\ref{tab:cat_rq_summary} lists each overview category with its primary research question, a one-line claim, and the memos that most strongly support it. Those identifiers point to the analytical notes; they are not extra quotations.
+Table~\ref{tab:cat_rq_summary} lists each overview category with its primary research question, a one-line claim, and the memos that most strongly support it. Those identifiers point to the analytical notes reproduced in Appendix~\ref{app:audit_trail}; they are not extra quotations. Figure~\ref{fig:relations_map} shows every CAT--CAT edge from the findings-map relations canvas, split by destination so arrows do not share one network. How categories feed PH1--PH4 is in Figures~\ref{fig:ph1}--\ref{fig:ph4}. This is not a finished global theory.
+
+\begin{figure}[p]
+\centering
+\input{5-Figures/fig_relations_map}
+\caption{All category-to-category relations from the findings map. Solid arrows: helps explain. Dashed: contrasts, blocks, interacts, substitutes, or can split. Panels are grouped by where the arrows arrive, not by a single phenomenon: load, groups, late feedback, and switching all reach the start-gate; checks, access, audience, AI, and switching all reach judging. Feeds into PH1--PH4 are in Figures~\ref{fig:ph1}--\ref{fig:ph4}. Local sufficiency of this 14-category set is argued in Chapter~\ref{cha:methodology}.}
+\label{fig:relations_map}
+\end{figure}
 
 \begin{table}[p]
 \centering

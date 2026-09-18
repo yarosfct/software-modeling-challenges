@@ -1,0 +1,73 @@
+\begin{tikzpicture}[
+  catstack/.style={
+    rectangle split,
+    rectangle split parts=#1,
+    rectangle split part align=left,
+    draw,
+    rounded corners=2pt,
+    font=\scriptsize,
+    align=left,
+    inner xsep=5pt,
+    inner ysep=4pt,
+    text width=38mm,
+  },
+  rqband/.style={
+    draw, thick, align=center, font=\scriptsize\bfseries,
+    inner sep=4pt, text width=24mm, minimum width=24mm,
+  },
+  phband/.style={
+    draw, very thick, rounded corners=3pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=42mm,
+  },
+]
+  \newcommand{\catrow}[2]{\makebox[13mm][l]{\textbf{#1}}#2}
+
+  \node[catstack=4] (c1) {%
+    \catrow{CAT1}{start-gate}
+    \nodepart{two}\catrow{CAT2}{overload}
+    \nodepart{three}\catrow{CAT12}{good enough}
+    \nodepart{four}\catrow{CAT14}{switching}%
+  };
+  \node[catstack=5, below=16mm of c1] (c2) {%
+    \catrow{CAT3}{examples}
+    \nodepart{two}\catrow{CAT4}{tactics}
+    \nodepart{three}\catrow{CAT5}{late feedback}
+    \nodepart{four}\catrow{CAT6}{access}
+    \nodepart{five}\catrow{CAT13}{AI explainer}%
+  };
+  \node[catstack=5, below=16mm of c2] (c3) {%
+    \catrow{CAT7}{checking}
+    \nodepart{two}\catrow{CAT8}{tool friction}
+    \nodepart{three}\catrow{CAT9}{groups}
+    \nodepart{four}\catrow{CAT10}{audience}
+    \nodepart{five}\catrow{CAT11}{load}%
+  };
+
+  \path let \p1=(c1.north), \p2=(c1.south) in
+    node[rqband, minimum height=\y1-\y2, left=16mm of c1] (rq1) {RQ1\\Challenges};
+  \path let \p1=(c2.north), \p2=(c2.south) in
+    node[rqband, minimum height=\y1-\y2, left=16mm of c2] (rq2) {RQ2\\Strategies};
+  \path let \p1=(c3.north), \p2=(c3.south) in
+    node[rqband, minimum height=\y1-\y2, left=16mm of c3] (rq3) {RQ3\\Conditions};
+
+  \path let \p1=(c1.north), \p2=(c1.south) in
+    node[phband, minimum height=\y1-\y2, right=20mm of c1] (ph1)
+      {PH1\\First diagram from a written problem};
+  \path let \p1=(c2.north), \p2=(c2.south) in
+    node[phband, minimum height=\y1-\y2, right=20mm of c2] (ph2)
+      {PH2\\Teacher as the only compile button};
+  \path let \p1=(c3.north), \p2=(c3.south) in
+    node[phband, minimum height=\y1-\y2, right=20mm of c3] (ph3)
+      {PH3\\Checks and explanations,\\not generators};
+  \node[phband, below=10mm of ph3] (ph4)
+    {PH4\\Owner and reader keep the diagram alive};
+
+  \draw[arr] (rq1) -- (c1);
+  \draw[arr] (rq2) -- (c2);
+  \draw[arr] (rq3) -- (c3);
+  \draw[arr] (c1) -- (ph1);
+  \draw[arr] (c2) -- (ph2);
+  \draw[thick] (c3.east) -- ++(10mm,0) coordinate (j3);
+  \draw[arr] (j3) -- (ph3.west);
+  \draw[arr] (j3) |- (ph4.west);
+\end{tikzpicture}

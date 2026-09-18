@@ -1,0 +1,34 @@
+\begin{tikzpicture}[
+  phhead/.style={
+    draw, very thick, rounded corners=3pt, align=center,
+    font=\scriptsize\bfseries, inner sep=6pt, text width=58mm,
+    minimum height=14mm,
+  },
+  catleaf/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=38mm, minimum height=16mm,
+  },
+  catgap/.style={
+    draw, dashed, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=38mm, minimum height=16mm,
+  },
+]
+  \node[phhead] (ph) {PH1\\First model from a problem text,\\not symbol names};
+
+  \node[catleaf, below=18mm of ph] (cat1)
+    {\textbf{CAT1}\\missing path};
+  \node[catleaf, left=8mm of cat1] (cat3)
+    {\textbf{CAT3}\\worked examples};
+  \node[catleaf, right=8mm of cat1] (cat4)
+    {\textbf{CAT4}\\self-tactics};
+  \node[catgap, below=14mm of cat1] (cat2)
+    {\textbf{CAT2}\\symbol overload};
+
+  \draw[thick] (cat1.north) -- ++(0,7mm) coordinate (j);
+  \draw[arr] (j) -- (ph.south);
+  \draw[thick] (cat3.north) -- (j);
+  \draw[thick] (cat4.north) -- (j);
+  \draw[arrd] (cat2) -- (cat1);
+  \node[font=\tiny\itshape, inner sep=1pt, anchor=west]
+    at ($(cat2.north)!0.5!(cat1.south)+(2.5mm,0)$) {contrasts with};
+\end{tikzpicture}

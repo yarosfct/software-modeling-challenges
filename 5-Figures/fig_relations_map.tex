@@ -1,0 +1,81 @@
+\begin{tikzpicture}[
+  rcat/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=3pt, text width=22mm, minimum height=10mm,
+  },
+  rgap/.style={
+    draw, dashed, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=3pt, text width=22mm, minimum height=10mm,
+  },
+  ptitle/.style={font=\scriptsize\bfseries, align=left, anchor=west},
+  frame/.style={draw, rounded corners=2pt, inner sep=6pt},
+]
+  % --- (a) Into the start-gate: CAT1 and CAT3 ---
+  \begin{scope}[local bounding box=A]
+    \node[ptitle] (ta) at (-86mm,50mm)
+      {(a) Into the start-gate --- load, groups, late feedback, and switching also arrive};
+    \node[rcat] (a1) at (0,0) {\textbf{CAT1}\\start-gate};
+    \node[rcat] (a3) at (-38mm,0) {\textbf{CAT3}\\examples};
+    \node[rcat] (a4) at (0,22mm) {\textbf{CAT4}\\tactics};
+    \node[rgap] (a2) at (0,-22mm) {\textbf{CAT2}\\overload};
+    \node[rcat] (a14) at (-38mm,-22mm) {\textbf{CAT14}\\switching};
+    \node[rcat] (a11) at (-38mm,22mm) {\textbf{CAT11}\\load};
+    \node[rcat] (a5) at (-76mm,0) {\textbf{CAT5}\\late feedback};
+    \node[rcat] (a9) at (-76mm,-22mm) {\textbf{CAT9}\\groups};
+
+    \draw[arr] (a4) -- node[lbl, right] {helps explain} (a1);
+    \draw[arr] (a3) -- node[lbl, above] {helps explain} (a1);
+    \draw[arrd] (a2) -- node[lbl, right] {contrasts} (a1);
+    \draw[arr] (a14) -- node[lbl, above] {helps explain} (a2);
+    \draw[arrd] (a11) -- node[lbl, left] {blocks} (a3);
+    \draw[arrd] (a5) -- node[lbl, above] {blocks} (a3);
+    \coordinate (aover) at (18mm,36mm);
+    \draw[arrd] (a5.north) |- (aover) -- node[lbl, pos=0.15, right] {blocks} (a1.east);
+    \draw[arrd] (a9) -- node[lbl, above] {contrasts} (a3);
+    \path (-90mm,54mm) rectangle (24mm,-30mm);
+  \end{scope}
+
+  % --- (b) Into judging and checks: CAT12 and CAT7 ---
+  \begin{scope}[shift={(0,-88mm)}, local bounding box=B]
+    \node[ptitle] (tb) at (-86mm,32mm)
+      {(b) Into judging a model --- also from checks, access, audience, AI, switching};
+    \node[rcat] (b12) at (38mm,4mm) {\textbf{CAT12}\\good enough};
+    \node[rcat] (b7) at (0,18mm) {\textbf{CAT7}\\checks};
+    \node[rgap] (b8) at (-38mm,18mm) {\textbf{CAT8}\\friction};
+    \node[rcat] (b14) at (-76mm,18mm) {\textbf{CAT14}\\switching};
+    \node[rcat] (b6) at (0,-10mm) {\textbf{CAT6}\\access};
+    \node[rcat] (b13) at (-38mm,-10mm) {\textbf{CAT13}\\AI explainer};
+    \node[rcat] (b10) at (38mm,-18mm) {\textbf{CAT10}\\a real reader};
+
+    \draw[arr] (b14) -- node[lbl, above] {helps explain} (b8);
+    \draw[arrd] (b8) -- node[lbl, above] {contrasts} (b7);
+    \draw[arr] (b13) -- node[lbl, above] {helps explain} (b7);
+    \draw[arrd] (b13) -- node[lbl, above] {substitutes} (b6);
+    \draw[arr] (b7) -- node[lbl, above] {helps explain} (b12);
+    \draw[arrd] (b6) -- node[lbl, below] {blocks} (b12);
+    \draw[arr] (b10) -- node[lbl, right] {helps explain} (b12);
+    \path (-90mm,36mm) rectangle (52mm,-26mm);
+  \end{scope}
+
+  % --- (c) Groups, load, and switching ---
+  \begin{scope}[shift={(0,-166mm)}, local bounding box=C]
+    \node[ptitle] (tc) at (-86mm,28mm)
+      {(c) Groups, load, and switching};
+    \node[rcat] (c10) at (0,16mm) {\textbf{CAT10}\\a real reader};
+    \node[rcat] (c9) at (0,0) {\textbf{CAT9}\\groups};
+    \node[rcat] (c14) at (0,-16mm) {\textbf{CAT14}\\switching};
+    \node[rcat] (c11) at (-40mm,16mm) {\textbf{CAT11}\\load};
+    \node[rcat] (c5) at (-40mm,0) {\textbf{CAT5}\\late feedback};
+
+    \draw[arr] (c10) -- node[lbl, right] {helps explain} (c9);
+    \draw[arrd] (c9) -- node[lbl, right] {can split} (c14);
+    \draw[arrd] (c9) -- node[lbl, above] {interacts} (c5);
+    \draw[arrd] (c11) -- node[lbl, left] {blocks} (c5);
+    \path (-90mm,28mm) rectangle (52mm,-24mm);
+  \end{scope}
+
+  \begin{scope}[on background layer]
+    \foreach \bb in {A,B,C}
+      \node[frame, fit=(\bb)] {};
+  \end{scope}
+\end{tikzpicture}

@@ -1,0 +1,23 @@
+% Shared TikZ styles for CLTSM thesis figures.
+% Input this file inside a tikzpicture or before it.
+\tikzset{
+  catbox/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=3pt, minimum height=9mm, text width=24mm
+  },
+  rqbox/.style={
+    draw, thick, align=center, font=\scriptsize\bfseries,
+    inner sep=4pt, text width=22mm, minimum height=12mm
+  },
+  phbox/.style={
+    draw, very thick, rounded corners=3pt, align=center, font=\scriptsize,
+    inner sep=4pt, text width=34mm
+  },
+  notebox/.style={
+    draw, dashed, rounded corners=2pt, align=left, font=\scriptsize,
+    inner sep=4pt, text width=38mm
+  },
+  arr/.style={-{Stealth}, thick},
+  arrd/.style={-{Stealth}, dashed, thick},
+  lbl/.style={font=\tiny\itshape, inner sep=1pt, fill=white}
+}

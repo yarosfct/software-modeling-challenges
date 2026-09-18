@@ -1,0 +1,43 @@
+\begin{tikzpicture}[
+  phhead/.style={
+    draw, very thick, rounded corners=3pt, align=center,
+    font=\scriptsize\bfseries, inner sep=6pt, text width=52mm,
+    minimum height=16mm,
+  },
+  phgap/.style={
+    draw, dashed, rounded corners=2pt, align=center,
+    font=\scriptsize\bfseries, inner sep=6pt, text width=46mm,
+    minimum height=16mm,
+  },
+  catleaf/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=36mm, minimum height=16mm,
+  },
+  catgap/.style={
+    draw, dashed, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=36mm, minimum height=16mm,
+  },
+]
+  \node[phhead] (ph) {PH3\\Checks and explanations,\\not auto-drawn homework};
+  \node[phgap, left=26mm of ph] (ph2)
+    {PH2\\The teacher is the only\\compile button};
+
+  \node[catleaf, below=22mm of ph, xshift=-22mm] (c7)
+    {\textbf{CAT7}\\semantic checks valued};
+  \node[catleaf, below=22mm of ph, xshift=22mm] (c13)
+    {\textbf{CAT13}\\AI explains, does not generate};
+  \node[catgap, below=14mm of c7] (c8)
+    {\textbf{CAT8}\\friction when tools are heavy};
+
+  \draw[arrd] (ph2.east) -- (ph.west);
+  \node[lbl, align=center, anchor=south]
+    at ($(ph2.east)!0.5!(ph.west)+(1.5mm,1.6mm)$) {instead,\\they asked for};
+
+  \draw[thick] (c7.north) -- ++(0,8mm) coordinate (jl);
+  \draw[thick] (c13.north) -- ++(0,8mm) coordinate (jr);
+  \draw[thick] (jl) -- (jr);
+  \draw[arr] ($(jl)!0.5!(jr)$) -- (ph.south);
+  \draw[arrd] (c8) -- (c7);
+  \node[font=\tiny\itshape, inner sep=1pt, anchor=west]
+    at ($(c8.north)!0.5!(c7.south)+(2.5mm,0)$) {contrasts with};
+\end{tikzpicture}

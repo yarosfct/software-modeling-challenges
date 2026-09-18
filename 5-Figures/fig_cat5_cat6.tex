@@ -1,0 +1,47 @@
+\begin{tikzpicture}[
+  phhead/.style={
+    draw, very thick, rounded corners=3pt, align=center,
+    font=\scriptsize\bfseries, inner sep=6pt, text width=52mm,
+  },
+  qbox/.style={
+    rectangle split,
+    rectangle split parts=4,
+    rectangle split part align={center, left, left, left},
+    draw,
+    rounded corners=2pt,
+    font=\scriptsize,
+    inner xsep=6pt,
+    inner ysep=4pt,
+    text width=56mm,
+  },
+]
+  \newcommand{\caserow}[2]{\makebox[18mm][l]{\textbf{#1}}#2}
+
+  \node[qbox] (when) {%
+    {\centering\textbf{CAT5 --- When}\\
+    Can the model still change\\when the comment arrives?\par}
+    \nodepart{two}\caserow{S8}{walk-around, still changing}
+    \nodepart{three}\caserow{S10}{time left, local rewrite}
+    \nodepart{four}\caserow{S7}{grade locked, full redo}%
+  };
+  \path let \p1=(when.north), \p2=(when.south) in
+    node[qbox, minimum height=\y1-\y2, right=22mm of when] (who) {%
+      {\centering\textbf{CAT6 --- Who}\\
+      Who can get a detailed signal,\\and in which format?\par}
+      \nodepart{two}\caserow{S4, S10}{private / desk}
+      \nodepart{three}\caserow{S5}{public board}
+      \nodepart{four}\caserow{S7, S8}{asked-for or graded}%
+    };
+
+  \node[phhead] at ($(when.north)!0.5!(who.north)+(0,16mm)$) (ph)
+    {PH2\\The teacher is the only compile button};
+
+  \draw[thick] (when.north) -- ++(0,6mm) coordinate (jl);
+  \draw[thick] (who.north) -- ++(0,6mm) coordinate (jr);
+  \draw[thick] (jl) -- (jr) coordinate[midway] (jm);
+  \draw[arr] (jm) -- (ph.south);
+
+  \draw[arrd] (when.text east) -- (who.text west);
+  \node[font=\tiny\itshape, inner sep=1pt]
+    at ($(when.text east)!0.5!(who.text west)+(0,3.2mm)$) {contrasts with};
+\end{tikzpicture}

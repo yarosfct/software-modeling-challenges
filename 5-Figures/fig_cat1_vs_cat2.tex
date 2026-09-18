@@ -1,0 +1,36 @@
+\begin{tikzpicture}[
+  pairhead/.style={font=\scriptsize\bfseries, align=center},
+  pairbox/.style={
+    rectangle split,
+    rectangle split parts=2,
+    rectangle split part align=center,
+    draw,
+    rounded corners=2pt,
+    font=\scriptsize,
+    align=center,
+    inner xsep=6pt,
+    inner ysep=5pt,
+    text width=54mm,
+  },
+]
+  \node[pairbox] (c1) {%
+    \textbf{CAT1}\\Missing path
+    \nodepart{two}
+    Need a demo, prior contact, or a taught notation
+    before the first real application.%
+  };
+  \path let \p1=(c1.north), \p2=(c1.south) in
+    node[pairbox, minimum height=\y1-\y2, right=22mm of c1] (c2) {%
+      \textbf{CAT2}\\Symbol / framework overload
+      \nodepart{two}
+      The high-level task is clear; arrows, boxes, or
+      frameworks still stall work.%
+    };
+
+  \node[pairhead] at ($(c1.north)!0.5!(c2.north)+(0,8mm)$)
+    {Two mechanisms, not one ``UML is hard'' story};
+
+  \draw[arrd] (c1.east) -- (c2.west);
+  \node[font=\tiny\itshape, inner sep=1pt] at ($(c1.east)!0.5!(c2.west)+(0,3.2mm)$)
+    {contrasts with};
+\end{tikzpicture}

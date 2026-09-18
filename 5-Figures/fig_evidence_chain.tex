@@ -1,0 +1,11 @@
+\begin{tikzpicture}[node distance=5mm, every node/.style={align=center}]
+  \node[catbox, text width=20mm] (t) {Transcript\\turn \texttt{T00n}};
+  \node[catbox, text width=22mm, right=of t] (c) {Open code\\note \texttt{Case-Cnn}};
+  \node[catbox, text width=20mm, right=of c] (m) {Memo\\\texttt{CaseMn}};
+  \node[catbox, text width=16mm, right=of m] (cat) {Category\\CATn};
+  \node[phbox, text width=18mm, right=of cat, minimum height=12mm] (ph) {Phenomenon\\PHn};
+  \draw[arr] (t) -- (c);
+  \draw[arr] (c) -- (m);
+  \draw[arr] (m) -- (cat);
+  \draw[arr] (cat) -- (ph);
+\end{tikzpicture}

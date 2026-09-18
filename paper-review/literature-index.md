@@ -16,6 +16,12 @@ Short map from key papers to thesis use. Full PDFs live in `papers/`. Concise ca
 | Maslov — Towards empirically validated BPMN ed | [[cards/towards-empirically-bpmn]] | Meta related work | Agenda linking CM pedagogy, quality, feedback |
 | Holmes et al. — Experientialism (UCOSP) | — (stub) | Peripheral SE authenticity | Real projects/tasks/mentors; weak modelling-specific payoff |
 | Sedelmaier & Landes — EVELIN competencies | — (stub) | Peripheral methods/competency taxonomies | GT + competency levels for SE didactics |
+| Cámara et al. — ChatGPT and UML | [[cards/camara-chatgpt-uml]] | CAT13 / PH3 dialogue | LLM generation unreliable vs code; assistant not compiler |
+| Hasker & Rowe — UMLint | [[cards/hasker-umlint]] | CAT5 / PH2 | Delayed instructor critique of UML; automated defect checks |
+| Foss et al. — AutoER | [[cards/foss-autoer]] | CAT5 / PH2 | Immediate marking of UML database-design diagrams |
+| Silva et al. — Group vs individual UML | [[cards/silva-group-uml]] | CAT9 | Groups not uniformly better on correctness/completeness |
+| Verbruggen & Snoeck — Multi-perspective | [[cards/verbruggen-multiperspective]] | CAT14 | UML class + BPMN as different questions on one case |
+| Sikkel & Daneva — UML consistency teaching | [[cards/sikkel-uml-consistency]] | CAT14 | Horizontal consistency exercises across UML views |
 
 ## Peripheral stubs (no full card)
 

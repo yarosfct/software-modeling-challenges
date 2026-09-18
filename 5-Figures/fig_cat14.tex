@@ -1,0 +1,44 @@
+\begin{tikzpicture}[
+  cathead/.style={
+    draw, thick, align=center, font=\scriptsize\bfseries,
+    inner sep=6pt, text width=40mm, minimum height=14mm,
+  },
+  catstep/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=38mm, minimum height=16mm,
+  },
+  catgap/.style={
+    draw, dashed, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=38mm, minimum height=16mm,
+  },
+  catnote/.style={
+    rectangle split,
+    rectangle split parts=3,
+    rectangle split part align=left,
+    draw, dashed, rounded corners=2pt,
+    font=\scriptsize, align=left,
+    inner xsep=6pt, inner ysep=4pt,
+    text width=120mm,
+  },
+]
+  \node[cathead] (head) {CAT14\\translation loss};
+
+  \node[catgap, below=16mm of head] (bridge)
+    {Taught bridge?\\[2pt]{\tiny often missing}};
+  \node[catstep, left=12mm of bridge] (src)
+    {Source family\\[2pt]{\tiny iStar / BPMN / RE}};
+  \node[catstep, right=12mm of bridge] (tgt)
+    {Target family\\[2pt]{\tiny UML classes}};
+
+  \node[catnote, below=12mm of bridge] (loss) {%
+    \textbf{Often survives}\\names, requirements
+    \nodepart{two}
+    \textbf{Often drops}\\goals, process structure, and which question the model answers (S6, S10)
+    \nodepart{three}
+    \textbf{Bound}\\S7 is a lighter syntax-at-switch variant.%
+  };
+
+  \draw[thick] (head.south) -- (bridge.north);
+  \draw[arr] (src) -- (bridge);
+  \draw[arr] (bridge) -- (tgt);
+\end{tikzpicture}

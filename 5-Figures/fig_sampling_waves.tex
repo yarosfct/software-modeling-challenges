@@ -1,0 +1,10 @@
+\begin{tikzpicture}[node distance=18mm, every node/.style={align=center}]
+  \node[rqbox, text width=28mm] (w1) {Wave 1\\L1--L4, S1--S6\\($n=10$)};
+  \node[phbox, text width=30mm, right=of w1] (map) {14 categories\\4 phenomena\\OQ1--OQ5};
+  \node[rqbox, text width=28mm, right=24mm of map] (w2) {Wave 2\\S7--S10\\($n=4$)};
+  \node[notebox, text width=42mm, below=12mm of map] (stop) {Stop rule: local saturation of the 14-CAT set.\\No CAT15. Lecturer-side categories not re-sampled.};
+  \draw[arr] (w1) -- node[lbl, above=1pt] {open coding} (map);
+  \draw[arr] (map) -- node[lbl, above=2pt] {theoretical sampling} (w2);
+  \draw[arr] (w2.south) |- node[lbl, pos=0.25, fill=white] {densify properties} (stop.east);
+  \draw[arrd] (stop.west) -| (w1.south);
+\end{tikzpicture}

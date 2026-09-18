@@ -1,0 +1,31 @@
+\begin{tikzpicture}[
+  cathead/.style={
+    draw, thick, align=center, font=\scriptsize\bfseries,
+    inner sep=6pt, text width=48mm, minimum height=14mm,
+  },
+  catleaf/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=52mm, minimum height=22mm,
+  },
+  catnote/.style={
+    draw, dashed, rounded corners=2pt, align=left, font=\scriptsize,
+    inner sep=6pt, text width=112mm,
+  },
+]
+  \node[cathead] (cat) {CAT9\\groups can kill or save};
+
+  \node[catleaf, below=18mm of cat, xshift=-32mm] (kill)
+    {\textbf{Kill}\\Code-first or rushed teammates;\\split ownership that diverges\\[2pt]{\tiny S4, S7, S10}};
+  \node[catleaf, below=18mm of cat, xshift=32mm] (save)
+    {\textbf{Save}\\Ownership, pairs, live boards;\\draft-and-review after a split\\[2pt]{\tiny S7, S10}};
+
+  \coordinate (mid) at ($(kill.south)!0.5!(save.south)$);
+  \node[catnote, below=10mm of mid] (n) {%
+    The same group can do both: S10's split produced two versions, then a
+    review step kept the diagrams explainable. S9 is not used here.};
+
+  \draw[thick] (kill.north) -- ++(0,8mm) coordinate (jl);
+  \draw[thick] (save.north) -- ++(0,8mm) coordinate (jr);
+  \draw[thick] (jl) -- (jr);
+  \draw[thick] (cat.south) -- ($(jl)!0.5!(jr)$);
+\end{tikzpicture}

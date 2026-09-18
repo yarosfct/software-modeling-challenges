@@ -1,0 +1,32 @@
+\begin{tikzpicture}[
+  cathead/.style={
+    draw, thick, align=center, font=\scriptsize\bfseries,
+    inner sep=6pt, text width=40mm, minimum height=14mm,
+  },
+  catleaf/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=42mm, minimum height=16mm,
+  },
+  catnote/.style={
+    draw, dashed, rounded corners=2pt, align=left, font=\scriptsize,
+    inner sep=6pt, text width=92mm,
+  },
+]
+  \node[cathead] (gate) {CAT1\\start is gated};
+
+  \node[catleaf, below=18mm of gate] (cap)
+    {Required before taught\\[2pt]{\tiny S8 capstone}};
+  \node[catleaf, left=8mm of cap] (room)
+    {Room-level wait\\[2pt]{\tiny L1; classmates copy}};
+  \node[catleaf, right=8mm of cap] (start)
+    {Can start without copying\\[2pt]{\tiny S3, S5, S7, S10}};
+
+  \node[catnote, below=10mm of cap] (n) {%
+    Wait-to-start can describe the room without describing every student.
+    Prior contact (S3) is a bound, not a counter-theory.};
+
+  \draw[thick] (gate.south) -- ++(0,-7mm) coordinate (j);
+  \draw[arr] (j) -- (room.north);
+  \draw[arr] (j) -- (cap.north);
+  \draw[arr] (j) -- (start.north);
+\end{tikzpicture}

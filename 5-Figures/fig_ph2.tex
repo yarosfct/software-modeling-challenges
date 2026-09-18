@@ -1,0 +1,33 @@
+\begin{tikzpicture}[
+  phhead/.style={
+    draw, very thick, rounded corners=3pt, align=center,
+    font=\scriptsize\bfseries, inner sep=6pt, text width=58mm,
+    minimum height=14mm,
+  },
+  catleaf/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=38mm, minimum height=16mm,
+  },
+  catnote/.style={
+    draw, dashed, rounded corners=2pt, align=left, font=\scriptsize,
+    inner sep=6pt, text width=100mm,
+  },
+]
+  \node[phhead] (ph) {PH2\\The teacher is the only compile button};
+
+  \node[catleaf, below=24mm of ph] (c5)
+    {\textbf{CAT5}\\signal arrives late};
+  \node[catleaf, left=8mm of c5] (c12)
+    {\textbf{CAT12}\\no compile result};
+  \node[catleaf, right=8mm of c5] (c6)
+    {\textbf{CAT6}\\who can get the signal};
+
+  \node[catnote, below=10mm of c5] (n) {%
+    Walk-around, private messages, and public boards change \emph{who}
+    gets the signal in time, not the fact that the signal is social.};
+
+  \draw[thick] (c5.north) -- ++(0,9mm) coordinate (j);
+  \draw[arr] (j) -- (ph.south);
+  \draw[thick] (c12.north) -- (j);
+  \draw[thick] (c6.north) -- (j);
+\end{tikzpicture}

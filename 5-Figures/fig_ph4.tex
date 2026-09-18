@@ -1,0 +1,35 @@
+\begin{tikzpicture}[
+  phhead/.style={
+    draw, very thick, rounded corners=3pt, align=center,
+    font=\scriptsize\bfseries, inner sep=6pt, text width=64mm,
+    minimum height=16mm,
+  },
+  catleaf/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=40mm, minimum height=16mm,
+  },
+  catgap/.style={
+    draw, dashed, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=5pt, text width=44mm, minimum height=16mm,
+  },
+]
+  \node[phhead] (ph) {PH4\\A diagram survives only if\\someone owns it and someone reads it};
+
+  \node[catleaf, below=38mm of ph, xshift=-30mm] (c9)
+    {\textbf{CAT9}\\group ownership};
+  \node[catleaf, below=38mm of ph, xshift=30mm] (c10)
+    {\textbf{CAT10}\\a real reader};
+
+  \draw[thick] (c9.north) -- ++(0,8mm) coordinate (jl);
+  \draw[thick] (c10.north) -- ++(0,8mm) coordinate (jr);
+  \draw[thick] (jl) -- (jr) coordinate[midway] (jm);
+  \draw[arr] (jm) -- (ph.south);
+
+  \coordinate (hit) at ($(jm)!0.52!(ph.south)$);
+  \node[catgap, right=18mm of hit] (c11)
+    {\textbf{CAT11}\\load leaves no time for\\demos and feedback};
+
+  \draw[arrd] (c11.west) -- (hit);
+  \node[font=\tiny\itshape, inner sep=1pt, anchor=south]
+    at ($(c11.west)!0.5!(hit)+(0,1.8mm)$) {blocks loops};
+\end{tikzpicture}
