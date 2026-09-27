@@ -1,0 +1,17 @@
+\begin{tikzpicture}[node distance=3mm and 4mm, every node/.style={align=center}]
+  \node[rqbox, text width=20mm] (c1) {Ch.~1\\Introduction};
+  \node[catbox, right=of c1, text width=20mm] (c2) {Ch.~2\\Background};
+  \node[catbox, right=of c2, text width=20mm] (c3) {Ch.~3\\Related work};
+  \node[catbox, right=of c3, text width=20mm] (c4) {Ch.~4\\Methods};
+  \node[catbox, below=8mm of c1, text width=20mm] (c5) {Ch.~5\\Findings};
+  \node[catbox, right=of c5, text width=20mm] (c6) {Ch.~6\\Discussion};
+  \node[rqbox, right=of c6, text width=20mm] (c7) {Ch.~7\\Conclusion};
+  \draw[arr] (c1) -- (c2);
+  \draw[arr] (c2) -- (c3);
+  \draw[arr] (c3) -- (c4);
+  \draw[arr] (c4.south) |- ++(0,-4mm) -| (c5.north);
+  \draw[arr] (c5) -- (c6);
+  \draw[arr] (c6) -- (c7);
+  \node[font=\scriptsize, below=2mm of c5] {14 CAT / 4 PH};
+  \node[font=\scriptsize, below=2mm of c4] {14 interviews / STGT};
+\end{tikzpicture}

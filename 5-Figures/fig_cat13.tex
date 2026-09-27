@@ -1,0 +1,40 @@
+\begin{tikzpicture}[
+  pairhead/.style={font=\scriptsize\bfseries, align=center},
+  pairbox/.style={
+    rectangle split,
+    rectangle split part align={center, left, left, left},
+    draw,
+    rounded corners=2pt,
+    font=\scriptsize,
+    inner xsep=5pt,
+    inner ysep=3.5pt,
+    text width=58mm,
+  },
+]
+  \newcommand{\caserow}[2]{\makebox[12mm][l]{\textbf{#1}}#2}
+
+  \node[pairbox, rectangle split parts=5] (ask) {%
+    {\centering\textbf{What they asked}\\
+    Explain, or compare options\par}
+    \nodepart{two}\caserow{S4}{explain a stuck sequence diagram}
+    \nodepart{three}\caserow{S5}{compare alternative class diagrams}
+    \nodepart{four}\caserow{S6}{explain an iStar dependency}
+    \nodepart{five}\caserow{S10}{small questions after a self-check}%
+  };
+  \node[pairbox, rectangle split parts=5, anchor=north west]
+    at ([xshift=18mm]ask.north east) (no) {%
+      {\centering\textbf{What they refused}\\
+      A generated model as the assignment\par}
+      \nodepart{two}\caserow{S4}{not the final graded model}
+      \nodepart{three}\caserow{S5}{raw output not submitted}
+      \nodepart{four}\caserow{S6}{no generated model to hand in}
+      \nodepart{five}\caserow{S10}{never the whole system}%
+    };
+
+  \node[pairhead] at ($(ask.north)!0.5!(no.north)+(0,8mm)$)
+    {Using the tool is not the same as submitting its diagram};
+
+  \draw[arrd] (ask.east) -- (ask.east -| no.west);
+  \node[font=\tiny\itshape, inner sep=1pt, anchor=south]
+    at ($(ask.east)!0.5!(ask.east -| no.west)+(0,1.5mm)$) {contrasts with};
+\end{tikzpicture}

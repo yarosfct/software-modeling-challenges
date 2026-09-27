@@ -1,73 +1,51 @@
 \begin{tikzpicture}[
-  catstack/.style={
-    rectangle split,
-    rectangle split parts=#1,
-    rectangle split part align=left,
-    draw,
-    rounded corners=2pt,
-    font=\scriptsize,
-    align=left,
-    inner xsep=5pt,
-    inner ysep=4pt,
-    text width=38mm,
+  feed/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=3pt, text width=24mm, minimum height=11mm,
   },
-  rqband/.style={
-    draw, thick, align=center, font=\scriptsize\bfseries,
-    inner sep=4pt, text width=24mm, minimum width=24mm,
+  gap/.style={
+    draw, dashed, rounded corners=2pt, align=center, font=\scriptsize,
+    inner sep=3pt, text width=78mm, minimum height=8mm,
   },
-  phband/.style={
-    draw, very thick, rounded corners=3pt, align=center, font=\scriptsize,
-    inner sep=5pt, text width=42mm,
+  ph/.style={
+    draw, very thick, rounded corners=3pt, align=center,
+    font=\scriptsize\bfseries, inner sep=4pt, text width=38mm, minimum height=14mm,
   },
+  rowgap/.style={below=11mm of},
 ]
-  \newcommand{\catrow}[2]{\makebox[13mm][l]{\textbf{#1}}#2}
+  % --- PH1 ---
+  \node[feed] (c1) {\textbf{CAT1}\\{\tiny RQ1} start-gate};
+  \node[feed, right=2mm of c1] (c3) {\textbf{CAT3}\\{\tiny RQ2} examples};
+  \node[feed, right=2mm of c3] (c4) {\textbf{CAT4}\\{\tiny RQ2} tactics};
+  \node[draw, rounded corners=2pt, inner sep=2.5pt, fit=(c1)(c3)(c4)] (g1) {};
+  \node[ph, right=12mm of g1] (ph1) {PH1\\First diagram};
+  \draw[arr] (g1.east) -- (ph1.west);
+  \node[gap, below=1.5mm of g1.south west, anchor=north west] (n1)
+    {\textbf{CAT2} (RQ1) contrasts with CAT1. It does not feed PH1.};
 
-  \node[catstack=4] (c1) {%
-    \catrow{CAT1}{start-gate}
-    \nodepart{two}\catrow{CAT2}{overload}
-    \nodepart{three}\catrow{CAT12}{good enough}
-    \nodepart{four}\catrow{CAT14}{switching}%
-  };
-  \node[catstack=5, below=16mm of c1] (c2) {%
-    \catrow{CAT3}{examples}
-    \nodepart{two}\catrow{CAT4}{tactics}
-    \nodepart{three}\catrow{CAT5}{late feedback}
-    \nodepart{four}\catrow{CAT6}{access}
-    \nodepart{five}\catrow{CAT13}{AI explainer}%
-  };
-  \node[catstack=5, below=16mm of c2] (c3) {%
-    \catrow{CAT7}{checking}
-    \nodepart{two}\catrow{CAT8}{tool friction}
-    \nodepart{three}\catrow{CAT9}{groups}
-    \nodepart{four}\catrow{CAT10}{audience}
-    \nodepart{five}\catrow{CAT11}{load}%
-  };
+  % --- PH2 ---
+  \node[feed, below=16mm of c1] (c12) {\textbf{CAT12}\\{\tiny RQ1} good enough};
+  \node[feed, right=2mm of c12] (c5) {\textbf{CAT5}\\{\tiny RQ2} late feedback};
+  \node[feed, right=2mm of c5] (c6) {\textbf{CAT6}\\{\tiny RQ2} access};
+  \node[draw, rounded corners=2pt, inner sep=2.5pt, fit=(c12)(c5)(c6)] (g2) {};
+  \node[ph, right=12mm of g2] (ph2) {PH2\\Only compile button};
+  \draw[arr] (g2.east) -- (ph2.west);
 
-  \path let \p1=(c1.north), \p2=(c1.south) in
-    node[rqband, minimum height=\y1-\y2, left=16mm of c1] (rq1) {RQ1\\Challenges};
-  \path let \p1=(c2.north), \p2=(c2.south) in
-    node[rqband, minimum height=\y1-\y2, left=16mm of c2] (rq2) {RQ2\\Strategies};
-  \path let \p1=(c3.north), \p2=(c3.south) in
-    node[rqband, minimum height=\y1-\y2, left=16mm of c3] (rq3) {RQ3\\Conditions};
+  % --- PH3 ---
+  \node[feed, below=9mm of c12] (c7) {\textbf{CAT7}\\{\tiny RQ3} checks};
+  \node[feed, right=2mm of c7] (c13) {\textbf{CAT13}\\{\tiny RQ2} explain or compare};
+  \node[draw, rounded corners=2pt, inner sep=2.5pt, fit=(c7)(c13)] (g3) {};
+  \node[ph, right=12mm of g2.east |- c7] (ph3) {PH3\\Checks, not generators};
+  \draw[arr] (g3.east) -- (ph3.west);
+  \node[gap, below=1.5mm of g3.south west, anchor=north west] (n3)
+    {\textbf{CAT8} (RQ3) contrasts with CAT7: a heavy or optional tool is still dropped.};
 
-  \path let \p1=(c1.north), \p2=(c1.south) in
-    node[phband, minimum height=\y1-\y2, right=20mm of c1] (ph1)
-      {PH1\\First diagram from a written problem};
-  \path let \p1=(c2.north), \p2=(c2.south) in
-    node[phband, minimum height=\y1-\y2, right=20mm of c2] (ph2)
-      {PH2\\Teacher as the only compile button};
-  \path let \p1=(c3.north), \p2=(c3.south) in
-    node[phband, minimum height=\y1-\y2, right=20mm of c3] (ph3)
-      {PH3\\Checks and explanations,\\not generators};
-  \node[phband, below=10mm of ph3] (ph4)
-    {PH4\\Owner and reader keep the diagram alive};
-
-  \draw[arr] (rq1) -- (c1);
-  \draw[arr] (rq2) -- (c2);
-  \draw[arr] (rq3) -- (c3);
-  \draw[arr] (c1) -- (ph1);
-  \draw[arr] (c2) -- (ph2);
-  \draw[thick] (c3.east) -- ++(10mm,0) coordinate (j3);
-  \draw[arr] (j3) -- (ph3.west);
-  \draw[arr] (j3) |- (ph4.west);
+  % --- PH4 ---
+  \node[feed, below=16mm of c7] (c9) {\textbf{CAT9}\\{\tiny RQ3} groups};
+  \node[feed, right=2mm of c9] (c10) {\textbf{CAT10}\\{\tiny RQ3} a real reader};
+  \node[draw, rounded corners=2pt, inner sep=2.5pt, fit=(c9)(c10)] (g4) {};
+  \node[ph] at (ph3.center |- c9) (ph4) {PH4\\Owner and reader};
+  \draw[arr] (g4.east) -- (ph4.west);
+  \node[gap, below=1.5mm of g4.south west, anchor=north west] (n4)
+    {\textbf{CAT11} (RQ3) blocks demos and feedback. \textbf{CAT14} (RQ1) feeds no phenomenon.};
 \end{tikzpicture}

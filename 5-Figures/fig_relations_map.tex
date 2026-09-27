@@ -1,4 +1,6 @@
 \begin{tikzpicture}[
+  scale=0.78,
+  transform shape,
   rcat/.style={
     draw, rounded corners=2pt, align=center, font=\scriptsize,
     inner sep=3pt, text width=22mm, minimum height=10mm,
@@ -12,27 +14,26 @@
 ]
   % --- (a) Into the start-gate: CAT1 and CAT3 ---
   \begin{scope}[local bounding box=A]
-    \node[ptitle] (ta) at (-86mm,50mm)
+    \node[ptitle] (ta) at (-86mm,38mm)
       {(a) Into the start-gate --- load, groups, late feedback, and switching also arrive};
     \node[rcat] (a1) at (0,0) {\textbf{CAT1}\\start-gate};
     \node[rcat] (a3) at (-38mm,0) {\textbf{CAT3}\\examples};
     \node[rcat] (a4) at (0,22mm) {\textbf{CAT4}\\tactics};
     \node[rgap] (a2) at (0,-22mm) {\textbf{CAT2}\\overload};
     \node[rcat] (a14) at (-38mm,-22mm) {\textbf{CAT14}\\switching};
-    \node[rcat] (a11) at (-38mm,22mm) {\textbf{CAT11}\\load};
-    \node[rcat] (a5) at (-76mm,0) {\textbf{CAT5}\\late feedback};
+    \node[rcat] (a5) at (-38mm,22mm) {\textbf{CAT5}\\late feedback};
+    \node[rcat] (a11) at (-76mm,0) {\textbf{CAT11}\\load};
     \node[rcat] (a9) at (-76mm,-22mm) {\textbf{CAT9}\\groups};
 
     \draw[arr] (a4) -- node[lbl, right] {helps explain} (a1);
     \draw[arr] (a3) -- node[lbl, above] {helps explain} (a1);
     \draw[arrd] (a2) -- node[lbl, right] {contrasts} (a1);
     \draw[arr] (a14) -- node[lbl, above] {helps explain} (a2);
-    \draw[arrd] (a11) -- node[lbl, left] {blocks} (a3);
-    \draw[arrd] (a5) -- node[lbl, above] {blocks} (a3);
-    \coordinate (aover) at (18mm,36mm);
-    \draw[arrd] (a5.north) |- (aover) -- node[lbl, pos=0.15, right] {blocks} (a1.east);
+    \draw[arrd] (a5) -- node[lbl, left] {blocks} (a3);
+    \draw[arrd] (a11) -- node[lbl, below] {blocks} (a3);
+    \draw[arrd] (a5.south east) -- node[lbl, pos=0.25, above] {blocks} (a1.north west);
     \draw[arrd] (a9) -- node[lbl, above] {contrasts} (a3);
-    \path (-90mm,54mm) rectangle (24mm,-30mm);
+    \path (-90mm,42mm) rectangle (16mm,-30mm);
   \end{scope}
 
   % --- (b) Into judging and checks: CAT12 and CAT7 ---
@@ -53,7 +54,7 @@
     \draw[arrd] (b13) -- node[lbl, above] {substitutes} (b6);
     \draw[arr] (b7) -- node[lbl, above] {helps explain} (b12);
     \draw[arrd] (b6) -- node[lbl, below] {blocks} (b12);
-    \draw[arr] (b10) -- node[lbl, right] {helps explain} (b12);
+    \draw[arr] (b10) -- node[lbl, left] {helps explain} (b12);
     \path (-90mm,36mm) rectangle (52mm,-26mm);
   \end{scope}
 
@@ -69,7 +70,7 @@
 
     \draw[arr] (c10) -- node[lbl, right] {helps explain} (c9);
     \draw[arrd] (c9) -- node[lbl, right] {can split} (c14);
-    \draw[arrd] (c9) -- node[lbl, above] {interacts} (c5);
+    \draw[arrd] (c9) -- node[lbl, above=3pt] {interacts} (c5);
     \draw[arrd] (c11) -- node[lbl, left] {blocks} (c5);
     \path (-90mm,28mm) rectangle (52mm,-24mm);
   \end{scope}

@@ -2,6 +2,8 @@
 
 Short map from key papers to thesis use. Full PDFs live in `papers/`. Concise cards are in `cards/`.
 
+The six papers added for Section 3.7.2 are checked, claim by claim, in [[additional-papers-claims]].
+
 | Paper | Card | Thesis use | Core bullets |
 |---|---|---|---|
 | Maslov — Conceptual Modelling Education (bibliometric) | [[cards/maslov-cm-education]] | Related work / CM ed landscape | CM ed fragmented; evaluation & metacognition weak; tools understudied |

@@ -1,0 +1,41 @@
+\begin{tikzpicture}[
+  act/.style={
+    draw, thick, rounded corners=2pt, align=center,
+    font=\scriptsize\bfseries, inner sep=4pt,
+    text width=22mm, minimum height=16mm,
+  },
+  cell/.style={
+    draw, rounded corners=2pt, align=left, font=\scriptsize,
+    inner sep=5pt, text width=86mm, minimum height=16mm,
+  },
+  cellgap/.style={
+    cell, dashed,
+  },
+  where/.style={
+    draw, rounded corners=2pt, align=center, font=\scriptsize\bfseries,
+    inner sep=4pt, text width=16mm, minimum height=16mm,
+  },
+  wheregap/.style={
+    where, dashed,
+  },
+]
+  \node[act] (a1) {Interpret};
+  \node[cell, right=3mm of a1] (c1)
+    {\textbf{CAT2.} Symbols and frameworks stall the work even when the task is already clear.};
+  \node[where, right=3mm of c1] (w1) {RQ1};
+
+  \node[act, below=3mm of a1] (a2) {Create};
+  \node[cell, right=3mm of a2] (c2)
+    {\textbf{CAT1.} The first diagram is gated. \textbf{CAT14.} The next family drops what the previous model carried.};
+  \node[where, right=3mm of c2] (w2) {RQ1};
+
+  \node[act, below=3mm of a2] (a3) {Refine};
+  \node[cellgap, right=3mm of a3] (c3)
+    {\textbf{CAT5.} Comments arrive when the model can no longer change easily. Reported under strategies; not moved into RQ1.};
+  \node[wheregap, right=3mm of c3] (w3) {RQ2};
+
+  \node[act, below=3mm of a3] (a4) {Evaluate};
+  \node[cell, right=3mm of a4] (c4)
+    {\textbf{CAT12.} There is no compile result, so ``good enough'' is a judgement.};
+  \node[where, right=3mm of c4] (w4) {RQ1};
+\end{tikzpicture}

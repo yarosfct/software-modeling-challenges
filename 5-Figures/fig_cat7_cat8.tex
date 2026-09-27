@@ -1,0 +1,40 @@
+\begin{tikzpicture}[
+  pairhead/.style={font=\scriptsize\bfseries, align=center},
+  pairbox/.style={
+    rectangle split,
+    rectangle split part align={center, left, left, left},
+    draw,
+    rounded corners=2pt,
+    font=\scriptsize,
+    inner xsep=5pt,
+    inner ysep=3.5pt,
+    text width=56mm,
+  },
+]
+  \newcommand{\caserow}[2]{\makebox[12mm][l]{\textbf{#1}}#2}
+
+  \node[pairbox, rectangle split parts=4] (c7) {%
+    {\centering\textbf{CAT7 --- Checks wanted}\\
+    A tool that can catch an invalid model\par}
+    \nodepart{two}\caserow{S3}{BPMN vocabulary sits in the interface}
+    \nodepart{three}\caserow{L4}{piStar checker for iStar}
+    \nodepart{four}\caserow{L1}{a modelling tool, when the licence allows}%
+  };
+  \node[pairbox, rectangle split parts=6, anchor=north west]
+    at ([xshift=16mm]c7.north east) (c8) {%
+      {\centering\textbf{CAT8 --- Tool still dropped}\\
+      Cost, licence, or a weak interface\par}
+      \nodepart{two}\caserow{S1}{StarUML options for one relation}
+      \nodepart{three}\caserow{L1}{licensing forces a tool change}
+      \nodepart{four}\caserow{S7}{antique compile UI, then dropped}
+      \nodepart{five}\caserow{S8}{Camunda/Archi skipped; draw.io}
+      \nodepart{six}\caserow{S9}{outdated UML menus}%
+    };
+
+  \node[pairhead] at ($(c7.north)!0.5!(c8.north)+(0,8mm)$)
+    {Wanting a check is not the same as keeping the tool};
+
+  \draw[arrd] (c7.east) -- (c7.east -| c8.west);
+  \node[font=\tiny\itshape, inner sep=1pt, anchor=south]
+    at ($(c7.east)!0.5!(c7.east -| c8.west)+(0,1.5mm)$) {contrasts with};
+\end{tikzpicture}
