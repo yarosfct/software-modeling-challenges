@@ -21,14 +21,14 @@
   \node[ph, right=12mm of g1] (ph1) {PH1\\First diagram};
   \draw[arr] (g1.east) -- (ph1.west);
   \node[gap, below=1.5mm of g1.south west, anchor=north west] (n1)
-    {\textbf{CAT2} (RQ1) contrasts with CAT1. It does not feed PH1.};
+    {\textbf{CAT2} (RQ1) is a different mechanism from CAT1. It does not feed PH1.};
 
   % --- PH2 ---
   \node[feed, below=16mm of c1] (c12) {\textbf{CAT12}\\{\tiny RQ1} good enough};
   \node[feed, right=2mm of c12] (c5) {\textbf{CAT5}\\{\tiny RQ2} late feedback};
   \node[feed, right=2mm of c5] (c6) {\textbf{CAT6}\\{\tiny RQ2} access};
   \node[draw, rounded corners=2pt, inner sep=2.5pt, fit=(c12)(c5)(c6)] (g2) {};
-  \node[ph, right=12mm of g2] (ph2) {PH2\\Only compile button};
+  \node[ph, right=12mm of g2] (ph2) {PH2\\A review from a person};
   \draw[arr] (g2.east) -- (ph2.west);
 
   % --- PH3 ---

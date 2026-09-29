@@ -34,7 +34,7 @@
     };
 
   \node[phhead] at ($(when.north)!0.5!(who.north)+(0,16mm)$) (ph)
-    {PH2\\The teacher is the only compile button};
+    {PH2\\A review from a person};
 
   \draw[thick] (when.north) -- ++(0,6mm) coordinate (jl);
   \draw[thick] (who.north) -- ++(0,6mm) coordinate (jr);
@@ -43,5 +43,5 @@
 
   \draw[arrd] (when.text east) -- (who.text west);
   \node[font=\tiny\itshape, inner sep=1pt]
-    at ($(when.text east)!0.5!(who.text west)+(0,3.2mm)$) {contrasts with};
+    at ($(when.text east)!0.5!(who.text west)+(0,3.2mm)$) {bears on};
 \end{tikzpicture}

@@ -11,7 +11,7 @@
 \chapter{Background}
 \label{cha:background}
 
-\section{Software modelling \& conceptual modelling}
+\section{Software modelling}
 \label{sec:software_modelling_conceptual}
 
 \subsection{Purpose and role of modelling in software engineering}
@@ -32,151 +32,38 @@ One account of a modelling method includes the language and the steps for creati
 
 If a model is stored so a machine can read it, it can be queried, analysed, or transformed.
 
+\subsection{Modelling education}
+\label{sec:modelling_education}
+
+Modelling education, in this thesis, means the courses in which students learn software modelling: what a construct means, how to build a model from a description, and how to judge whether it is good enough. Modelling is often a smaller part of the programme than programming, and students often treat it as less central than coding courses.
+
+\subsection{Modelling tools}
+\label{subsec:tools_mde_education}
+
+A modelling tool is the program a student uses to draw a model, to check it, or to turn it into another form, such as code. In model-driven engineering, the tool treats the model as the source of that other form.
+
 \subsection{Implications for the scope of this thesis}
 \label{subsec:implications_scope_thesis}
 
 This thesis is about software modelling in courses, where students and lecturers deal with what a construct means, how to build a model from a description, and how to judge whether it is good enough.
 
-\section{Modelling education}
-\label{sec:modelling_education}
-
-\subsection{Process and goal modelling education}
-\label{subsec:process_goal_modelling_education}
-
-Beyond data and structural modelling, there is growing interest in how students learn process and goal-oriented modelling. For business process modelling with BPMN, Maslov outlines a research agenda for developing empirically validated process-modelling education that integrates insights from conceptual modelling education, process model quality research, and learning sciences \cite{bpmn-education}. This agenda highlights the need for systematic mapping of existing work, empirical studies of novice modellers' behaviour and typical errors, and the design and experimental evaluation of BPMN-specific teaching strategies and feedback mechanisms. This reflects a broader recognition that teaching process modelling effectively requires more than just introducing notation; it requires attention to cognitive demands, quality criteria, and the kinds of feedback needed to help learners improve.
-
-Goal-oriented requirements modelling approaches introduce additional layers of complexity, as it requires learners to reason about stakeholder intentions, rationales, and dependencies. An iStar learning study explicitly investigates the challenges students face when learning iStar, using a combination of Bloom-based task framing and grounded theory analysis of tutorials, modelling sessions, and interviews \cite{istar-learning}. The authors report difficulties at multiple cognitive levels, including understanding the semantics of iStar constructs, applying the notation to real requirements, and analysing models to assess completeness and appropriateness. They derive a catalogue of strategies and tool-supported requirements (e.g., conceptual clarification, syntax checking, process guidance, templates, visualisation, and semi-automation modelling from text) that could help address these challenges \cite{istar-learning}.
-
-These strands of work on BPMN and iStar education illustrate that different modelling families pose distinct learning challenges and may require specialised pedagogical approaches. They also reinforce broader themes in modelling education, including the need for scaffolding from text to model, support for managing complexity, and explicit attention to how learners evaluate and refine their models.
-
-\subsection{Modelling, tools, and model-driven engineering in education}
-\label{subsec:tools_mde_education}
-
-Modelling in educational settings is often mediated by tools, ranging from simple drawing tools and web-based modellers to industrial-grade model-driven engineering (MDE) environments. Tool choice can influence students' perceptions of modelling and their opportunities to practice particular skills. Liebel et al.\ conducted a multi-case study of model-driven software engineering courses that use different tools (e.g., Umple, Papyrus) and place different emphasis on model-driven architecture and code generation \cite{liebel2017model}. Their results indicate that students' perceptions of tools are highly context-dependent: the same tool may be perceived positively in one course setup and negatively in another, depending on project design, available support, and the roles that models play (e.g., for communication versus strict code generation). They also find that perceptions of UML as modelling language are more positive and robust when models are used for requirements and analysis, rather than only as precise inputs to code generators \cite{liebel2017model}.
-
-In a later agenda paper, Liebel and colleagues argue that educational modelling tools should favour usability, feedback, and fit with learning goals over a full set of industrial features \cite{human-factors-mde}. From an educational perspective, this suggests that tool selection and integration should be carefully considered to ensure they support the intended modelling competencies and do not inadvertently increase cognitive load or distract from learning objectives.
-
-\subsection{Competence-oriented and human-centred perspectives}
-\label{subsec:competence_human_centre}
-
-Broader software engineering education research brings in complementary competence-oriented and human-centred perspectives that can inform modelling education. Sedelmaier and Landes propose the EVELIN research agenda for identifying and developing required competencies in software engineering, arguing that curricula should be grounded in explicit competence models rather than only topic lists \cite{sedelmaier2013research}. They introduce a six-level classification system (remember, understand, explain, use, apply, develop) for technical competencies and outline an iterative, data-driven approach to relating teaching methods and structural conditions to competency development \cite{sedelmaier2013research}. This approach resonates with the Bloom-based frameworks discussed earlier, but emphasises the need for empirical validation and alignment with real-world professional requirements.
-
-Work on human factors in modelling and software engineering education further highlights the role of motivation, inclusion, and authenticity. For example, studies on domain diversity and motivation in modelling courses show that educators' assumptions about which domains are motivating (e.g., games, automation) do not always match students' preferences, and that students value domains that connect to their interests and everyday or socially relevant contexts \cite{grassl2026dei}. Students also report that feeling excluded by unfamiliar or culturally distant domains, or by assignment setups that do not fit their backgrounds, can hinder their engagement and learning \cite{grassl2026dei}. More generally, experiential education initiatives emphasise the value of working on real systems, real tasks, and with real mentors to bridge the gap between classroom modelling exercises and the complexities of practice \cite{holmes2018dimensions}.
-
-Taken together, these competence-oriented and human-centred perspectives reinforce the idea that modelling education should be designed not only around notations and tools, but also around the competencies to be developed, the diversity of learners, and the authenticity and inclusiveness of modelling tasks and domains.
-
-\subsection{Implications for this thesis}
-\label{subsec:modelling_education_implications}
-
-The literature on modelling education, Bloom-based frameworks, process and goal modelling, tooling, competencies, and human factors provides several important implications for this thesis. First, it suggests that modelling learning outcomes can be systematically described in terms of cognitive and knowledge dimensions, and that existing courses may underemphasise evaluation and metacognitive aspects of modelling competence \cite{bogdanova2019camelot, bogdanova2017domain, bork2019framework}. Second, it shows that different modelling families (e.g., data, process, goal) can pose partly distinct learning demands and error patterns, meaning that findings are not automatically transferable across notations and tasks. At the same time, family-specific empirical studies---such as the iStar learning work---show how challenges can be elicited from a concrete modelling activity and how support requirements can be derived from learner experience \cite{istar-learning,bpmn-education}. This thesis takes that interest in situated accounts into a broader educational scope, but asks, inside the interview, about a specific episode rather than running a tutorial and a modelling session. Third, it highlights that tools and model-driven approaches can both enable and hinder learning, depending on how they are integrated into course designs and on the kind of feedback and affordances they provide \cite{liebel2017model,human-factors-mde}. Finally, competence-oriented and human-centred research indicates that modelling education must be sensitive to students' motivations, backgrounds, and learning environments, and that explicit competence models can support more systematic design and evaluation of teaching \cite{chakraborty2022perceptions,holmes2018dimensions,sedelmaier2013research}.
-
-
-\section{Grounded Theory}
-\label{sec:grounded_theory}
-
-\subsection{Overview and key characteristics}
-\label{subsec:gt_overview}
-
-Grounded Theory (GT) is a qualitative research methodology originally developed in sociology with the aim of generating theory that is systematically grounded in data rather than deduced from prior hypotheses. Instead of starting from a fixed theoretical framework, GT proceeds iteratively: data collection and analysis occur simultaneously, and emerging insights guide subsequent sampling and questioning. Core practices include \emph{coding} (assigning conceptual labels to segments of data), \emph{constant comparison} (comparing new data with existing codes and categories), and \emph{theoretical sampling} (collecting new data to refine or challenge emerging concepts), and extensive \emph{memoing} to capture analytic ideas \cite{adolph2011using,stol2016grounded}. 
-
-The outcome of a GT study is not a set of descriptive themes, but a more abstract, integrated explanation of how participants handle a central problem or concern. This explanation is typically organised around a \emph{core category} that captures a dominant pattern in the data and links other categories together. Evaluation criteria emphasise the \emph{fit} of concepts to the data, the \emph{workability} of the emerging theory in explaining the studied phenomenon, its \emph{relevance} to practitioners and researchers, and its \emph{modifiability} in light of new data, rather than statistical notions of validity \cite{adolph2011using}.
-
-Over time, GT has evolved into several variants, including \emph{Classic GT} (Glaser and Strauss), \emph{Straussian GT} (Strauss and Corbin), and \emph{Constructivist GT} (Charmaz) \cite{charmaz2006constructing,glaser1967discovery,strauss1998basics}. While these variants share core principles, they differ in the degree to which they prescribe specific coding procedures, the role of prior theory, and the epistemological stance of the researcher. For software engineering research, this diversity offers flexibility but also introduces risks of inconsistent or superficial use if methodological choices are not made explicit \cite{stol2016grounded}.
-
-\subsection{Grounded Theory in software engineering}
-\label{subsec:gt_in_se}
-
-In software engineering (SE), GT has been used to study topics that are difficult to capture through controlled experiments or surveys, such as developer experience, team practices, decision-making processes, and socio-technical phenomena. A critical review by Stol et al.\ \cite{stol2016grounded} finds that GT has become increasingly popular in SE research, but that many studies lack methodological rigour, adopt only parts of GT procedures, and show limited reflexivity regarding the researcher's role \cite{stol2016grounded}. To address these issues, they offer a set of guidelines on when GT is appropriate (e.g., for under-theorised, practice-oriented problems), how to choose among GT variants, and how to report GT studies in a way that allows readers to assess their quality.
-
-Adolph et al.\ provide a concrete example of applying classical (Glaserian) GT to study how software practitioners cope with the process of development, while also reflecting on the practical challenges of conducting GT research in SE contexts \cite{adolph2011using}. They describe in detail how they conducted open coding on interviews and field observations, developed concepts and categories through constant comparison, and iteratively refined their sampling strategy to explore interesting phenomena in more depth. Their work highlights the importance of staying close to the data, avoiding overly mechanical use of qualitative analysis tools, and systematically documenting analytic decisions through memos.
-
-These contributions establish GT as a suitable methodology for SE when the research goal is to generate mid-level substantive theory about human and organisational aspects of software development, and they provide concrete guidance for designing and reporting such studies.
-
-\subsection{Socio-Technical Grounded Theory}
-\label{subsec:stgt}
-
-Hoda et al.\ propose Socio-Technical Grounded Theory (STGT) as a specialisation of GT for SE that explicitly foregrounds the socio-technical nature of software development \cite{hoda2018socio}. STGT retains the core principles of GT (iterative data collection and analysis, constant comparison, theoretical sampling, memoing) but emphasises the need to attend simultaneously to social and technical elements and their interactions. This involves, for example, paying attention to roles, norms, tools, artefacts, and organisational structures, and analysing how these co-evolve over time.
-
-STGT also articulates expectations for rigour in terms of credibility, transferability, dependability, and confirmability, and provides detailed guidance on reporting, including the description of research context, participants, data sources, coding procedures, and the evolution of categories and core concepts \cite{hoda2018socio}. Therefore, STGT offers SE researchers a reporting template tailored to the realities of socio-technical systems.
-
-
-\subsection{Implications for this thesis}
-\label{subsec:gt_implications_thesis}
-
-As in Section~\ref{sec:intro_aim_rq}, the aim is an account of challenges and support needs in higher-education modelling. The interviews ask lecturers and students about a specific recent incident they can recall, and how they dealt with it, including the practices and tools in that incident. STGT is used because that account is built from the interviews. Sims and Cilliers use theoretical sufficiency for a stopping judgment: there is enough evidence to support the claims of the study \cite{sims2023qualitatively}.
-
-
-\section{Bloom's Taxonomy and learning outcomes}
+\section{Bloom's revised taxonomy}
 \label{sec:blooms_taxonomy}
 
-\subsection{Overview of Bloom's revised taxonomy}
-\label{subsec:bloom_overview}
+Bloom's revised taxonomy names six levels: remember, understand, apply, analyse, evaluate, and create \cite{krathwohl2002revision}. This thesis uses four of them for interview prompts: remembering a notation, understanding a construct, applying a procedure, and evaluating whether a model is good enough. Metacognition means noticing one's own way of working.
 
-The original Bloom's taxonomy was presented as a hierarchical classification of educational objectives, describing increasingly complex cognitive activities from simple recall to higher-order thinking. Krathwohl's revision restructures the taxonomy into a two-dimensional framework that distinguishes between a \emph{knowledge dimension} (factual, conceptual, procedural, metacognitive) and a \emph{cognitive process dimension} (remember, understand, apply, analyse, evaluate, create) \cite{krathwohl2002revision}. This revised taxonomy encourages educators to formulate learning outcomes that are explicit both about the type of knowledge involved and the level of cognitive processing expected from learners.
+\section{Grounded Theory and Socio-Technical Grounded Theory}
+\label{sec:grounded_theory}
 
-In the revised framework, \emph{factual knowledge} concerns basic elements that students must know, such as terminology and specific details; \emph{conceptual knowledge} involves relationships among elements and larger structures; \emph{procedural knowledge} relates to methods, techniques, and criteria for using procedures; and \emph{metacognitive knowledge} refers to awareness of one's own cognition and learning strategies. The cognitive process dimension ranges from lower-order processes such as remembering and understanding, through applying and analysing, to higher-order processes of evaluating and creating \cite{krathwohl2002revision}. The combination of these two dimensions supports a more fine-grained articulation of what learners should know and be able to do.
+Grounded Theory builds an explanation from the interviews as they are collected \cite{glaser1967discovery,stol2016grounded}. The researcher codes those interviews, writes memos, and compares each new incident with what is already coded.
 
-\subsection{Learning outcomes in computing and software engineering}
-\label{subsec:bloom_computing_se}
+Socio-Technical Grounded Theory (STGT) uses those same practices in software engineering \cite{hoda2018socio}. The explanation has to cover the people, the practices, and the tools together. A Grounded Theory study can leave the tool as background. An STGT study treats the tool as part of the account.
 
-In computing and software engineering education, Bloom’s revised taxonomy is widely used to express learning outcomes and to align teaching and assessment with intended levels of cognitive demand \cite{cc2020,krathwohl2002revision}. Typical applications include mapping course objectives to cognition levels, ensuring that programmes do not over-concentrate on lower-order outcomes, and checking that assessment tasks actually require the intended level of performance. However, generic formulations of the taxonomy can be difficult to apply directly in specialised domains such as software modelling, where domain-specific activities (e.g., interpreting a diagram, constructing a model from text, critiquing a modelling method) require more tailored descriptions.
+This study used open coding, memos written during coding, and constant comparison. It did not use the Strauss and Corbin coding paradigm. Interviewing stopped when the evidence was enough for the claims of the study. Sims and Cilliers call that theoretical sufficiency \cite{sims2023qualitatively}.
 
-This has led to several domain-specific adaptations of Bloom's taxonomy in areas such as domain modelling, conceptual data modelling, and metamodeling \cite{bogdanova2019camelot,bogdanova2017domain,bork2019framework}. These adaptations retain the underlying cognitive-process levels while refining the knowledge categories and example tasks to reflect the particular demands of modelling work.
-
-\subsection{Bloom-based formulations of modelling learning outcomes}
-\label{subsec:bloom_modelling}
-
-Several works in the modelling education literature explicitly build on Bloom's revised taxonomy to describe and analyse modelling-related learning outcomes. Bogdanova and Snoeck adapt the taxonomy to domain modelling by specifying what each cognitive level can mean in this context, such as remembering notation elements, understanding the meaning of relationships, applying modelling rules to construct diagrams, analysing models for completeness and consistency, evaluating alternative designs, and creating new models from complex descriptions \cite{bogdanova2017domain}. Using this adapted taxonomy, they classify a large set of assessment tasks and show that existing practice tends to focus on understanding, analysing, and creating conceptual knowledge, with comparatively little emphasis on evaluation tasks, procedural knowledge, or metacognitive learning outcomes \cite{bogdanova2017domain}.
-
-Extending this work, CaMeLOT proposes a three-dimensional framework for conceptual data modelling that explicitly combines Bloom's cognitive levels with the knowledge dimension and specific content areas such as classes, relationships, constraints, modelling methods, quality criteria, and tool usage \cite{bogdanova2019camelot}. The authors instantiate this framework with example learning outcomes, demonstrating how it can be used to design, review, or compare modelling courses. Their analysis also suggests that metacognitive outcomes (e.g., reflecting on modelling strategies, recognising one's own limitations) are rarely made explicit in current curricula \cite{bogdanova2019camelot}.
-
-Bork further generalises the Bloom-based perspective by developing separate yet related taxonomies for conceptual modelling and metamodeling \cite{bork2019framework}. He maps the knowledge and cognitive dimensions to the components of modelling methods (language, semantics, notation, procedure, mechanisms and algorithms) and uses this mapping to evaluate a Smart City teaching case. The evaluation reveals an imbalance: many activities target creation and application at higher cognitive levels, while explicit evaluate-level tasks and metacognitive activities are largely absent \cite{bork2019framework}. This pattern is consistent with the findings of Bogdanova and Snoeck and suggests that modelling education often emphasises the ability to produce models but gives less structured attention to helping students judge model quality or reflect on their modelling practice.
-
-These Bloom-based formulations show that learning outcomes for modelling can be described systematically across different levels and types of knowledge, and they provide concrete examples of how to manage this in educational settings. They also highlight recurring gaps, particularly in relation to evaluative and metacognitive aspects of modelling competence.
-
-\subsection{Bloom, competencies, and this thesis}
-\label{subsec:bloom_competencies_thesis}
-
-For this thesis, Bloom's revised taxonomy and its modelling-specific adaptations provide a conceptual vocabulary for describing modelling competence in terms of cognitive demands and knowledge types. In particular, they help distinguish challenges related to understanding modelling constructs and their semantics, applying modelling procedures to construct and refine model artefacts, and exercising evaluative judgement when assessing model quality and fit-for-purpose. The recurring gaps identified in prior work---especially the limited explicit emphasis on evaluation and metacognitive outcomes in many course designs---motivate a closer empirical examination of how students and teachers experience modelling and what kinds of support they perceive as needed \cite{bogdanova2019camelot,bogdanova2017domain,bork2019framework,sedelmaier2013research}.
-
-
-\section{Human factors in modelling and SE education}
+\section{Human factors}
 \label{sec:human_factors}
 
-
-\subsection{Motivation, engagement, and the ``value'' of modelling}
-\label{subsec:hf_motivation_value}
-
-Software and conceptual modelling are often perceived by students as either highly valuable (e.g., for understanding complex systems and communicating design intent) or as burdensome ``extra documentation'' that competes with implementation time \cite{grassl2026dei}. Such perceptions are not merely a matter of individual preference; they reflect a broader set of human factors that shape engagement, learning effort, and ultimately competence development. In modelling education, learners frequently report that motivation depends on whether tasks feel authentic, whether modelling outputs matter beyond grading, and whether modelling is integrated into a meaningful workflow rather than treated as a stand-alone academic exercise \cite{grassl2026dei}.
-
-Research on modelling education explicitly highlights motivation as a key factor. A study on domain diversity, motivation, and inclusion in software modelling education shows that educators' assumptions about which domains are motivating do not always match students' preferences \cite{grassl2026dei}. Students tend to value domains that connect to their interests, everyday experiences, or socially relevant contexts, and they report higher motivation when they have some agency (e.g., choice or personalisation of the domain) \cite{grassl2026dei}. These results suggest that human factors in modelling education cannot be separated from how modelling tasks are framed, which domains they use, and whether students can see a clear purpose for modelling beyond producing a diagram.
-
-
-\subsection{Inclusion, domain diversity, and participation barriers}
-\label{subsec:hf_inclusion_domain}
-
-Human factors also include issues of inclusion and participation. Even when modelling topics are formally accessible, examples and assignments can implicitly privilege specific backgrounds, interests, or prior experiences. Domain-diversity research indicates that certain commonly used modelling domains (e.g., video games or specific technical automation scenarios) may be engaging for some students but alienating for others \cite{grassl2026dei}. Students may also experience barriers related to group-work structures, competitive gamification elements, or assumptions about familiarity with particular cultural or socioeconomic contexts. These factors can influence not only motivation but also opportunities for practice and feedback, thereby affecting learning outcomes.
-
-From a course-design perspective, these findings motivate the careful selection of modelling domains and assignment setups, balancing instructors' preferences and curricular relevance with the diversity of student experiences and interests. Providing alternative domains, allowing domain choice, and ensuring that examples do not rely on narrow cultural references can be considered human-centred strategies to improve participation and reduce disengagement \cite{grassl2026dei}.
-
-\subsection{Tools as mediators of learning experience}
-\label{subsec:hf_tools_mediator}
+Human factors are the conditions around a task that change how a person does it. In this thesis they are the conditions around a modelling task in a course: the tool, the subject of the assignment, who reads the model, the feedback, and the load of the course. They are not the notation itself.
 
 Tools shape how easily students can try ideas, get feedback, and recover from mistakes, and a difficult tool can turn students against modelling even when the notation is clear (Section~\ref{subsec:tools_mde_education}).
-
-\subsection{Authenticity, experiential learning, and social dynamics}
-\label{subsec:hf_authenticity_experiential}
-
-Human factors in SE education also encompass the extent to which learning activities resemble real-world practice. Experiential education initiatives emphasise that authenticity can enhance motivation, engagement, strengthen soft-skill development, and improve students' understanding of the complexities of software practice. Holmes et al.\ identify three ``dimensions of experientialism'' in a large, distributed capstone programme: working on real projects (existing open-source systems and codebases), performing real tasks (non-trivial contributions), and engaging with real mentors (experienced developers embedded in the project) \cite{holmes2018dimensions}. Students report that this combination helps them foster communication skills, teamwork, time management, and practical problem-solving abilities, while also deepening their technical understanding in authentic contexts \cite{holmes2018dimensions}. Although modelling courses may not always be structured as capstones, the experientialism perspective is still relevant.
-
-\subsection{Competence development and human-centred educational design}
-\label{subsec:hf_competence_design}
-
-Competence-oriented research in SE education argues that curricula should be grounded in explicit competence models of what students should be able to do, and that teaching methods and structural conditions should be linked to competence outcomes rather than treated as ad hoc choices \cite{sedelmaier2013research}. Sedelmaier and Landes propose the EVELIN research agenda for identifying and developing required competencies in software engineering, introducing a multi-level classification system for technical competencies intended to describe progression from basic familiarity to the ability to develop new solutions \cite{sedelmaier2013research}. This approach emphasises iterative improvement through measuring competence levels, identifying influencing factors (structural conditions and process variables), and refining course designs accordingly \cite{sedelmaier2013research}. 
-
-Adopting such a competence-oriented and human-centred perspective in modelling education may require more than selecting an engaging domain or user-friendly tool; it may also involve designing learning activities and assessments that support the systematic progression across competencies, including conceptual understanding, procedural ability to create and refine models, evaluative judgement of model quality, and reflective awareness of modelling choices and limitations. The reviewed literature indicates evaluation and metacognitive competencies are often underemphasised in current modelling education \cite{bogdanova2017domain,bogdanova2019camelot,bork2019framework}, and human factors research provides a complementary explanation: learners may disengage when feedback is insufficient, tasks feel artificial, tools are frustrating, or domains do not resonate with their interests and experiences.
-
-\subsection{Implications for this thesis}
-\label{subsec:hf_implications_thesis}
-
-The human factors literature motivates this thesis in several ways. First, it highlights that modelling education should be analysed not only in terms of notations and learning outcomes, but also in terms of student and teacher experiences shaped by motivation, inclusion, feedback, and perceived authenticity \cite{grassl2026dei,holmes2018dimensions}. Second, modelling tools should be treated as socio-technical mediators that influence cognitive load, engagement, and attitudes toward modelling, making tool choice and integration important pedagogical determinants of learning experience \cite{liebel2017model,human-factors-mde}. Third, competence-oriented perspectives suggest that empirical investigation should seek to connect perceived challenges and support needs to explicit competence development and course design choices \cite{sedelmaier2013research}.

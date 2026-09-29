@@ -13,7 +13,7 @@
     inner sep=5pt, text width=38mm, minimum height=16mm,
   },
 ]
-  \node[phhead] (ph) {PH1\\First model from a problem text,\\not symbol names};
+  \node[phhead] (ph) {PH1\\First model from a problem statement,\\not the symbols};
 
   \node[catleaf, below=18mm of ph] (cat1)
     {\textbf{CAT1}\\missing path};
@@ -30,5 +30,5 @@
   \draw[thick] (cat4.north) -- (j);
   \draw[arrd] (cat2) -- (cat1);
   \node[font=\tiny\itshape, inner sep=1pt, anchor=west]
-    at ($(cat2.north)!0.5!(cat1.south)+(2.5mm,0)$) {contrasts with};
+    at ($(cat2.north)!0.5!(cat1.south)+(2.5mm,0)$) {different mechanism};
 \end{tikzpicture}

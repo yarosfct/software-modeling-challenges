@@ -13,18 +13,18 @@
     inner sep=6pt, text width=100mm,
   },
 ]
-  \node[phhead] (ph) {PH2\\The teacher is the only compile button};
+  \node[phhead] (ph) {PH2\\A review from a person};
 
   \node[catleaf, below=24mm of ph] (c5)
     {\textbf{CAT5}\\signal arrives late};
   \node[catleaf, left=8mm of c5] (c12)
-    {\textbf{CAT12}\\no compile result};
+    {\textbf{CAT12}\\judging without a run};
   \node[catleaf, right=8mm of c5] (c6)
     {\textbf{CAT6}\\who can get the signal};
 
   \node[catnote, below=10mm of c5] (n) {%
     Walk-around, private messages, and public boards change \emph{who}
-    gets the signal in time, not the fact that the signal is social.};
+    gets a teacher's comment in time.};
 
   \draw[thick] (c5.north) -- ++(0,9mm) coordinate (j);
   \draw[arr] (j) -- (ph.south);
