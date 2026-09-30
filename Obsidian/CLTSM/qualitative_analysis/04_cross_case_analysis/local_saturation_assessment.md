@@ -18,7 +18,7 @@ That is the coordinator-facing fact: **later interviews did not result in new ca
 
 ## What we do not claim
 
-- **Global theoretical saturation.** The student corpus is mostly Portuguese HE (IST, ISEL, plus earlier Portuguese cases), with two Wrocław students (S4, S5) and one Munich student (S6). Wave 2 added no new countries and **no new lecturers**.
+- **Global theoretical saturation.** The student corpus is mostly Portuguese HE (IST, ISEL, plus earlier Portuguese cases), with two Wrocław students (S4, S5), one Munich student (S6), and S9 (a computer science degree in the United Kingdom, recalled weakly, then company training in the United Kingdom). Wave 2 added **no new lecturers**. It did add the United Kingdom for S9. Superseded 30 September 2026: the 7 September wording “Wave 2 added no new countries” and “S9 (Portuguese interview)” treated S9 as Portuguese higher education. The degree institution is not named in the thesis. S9 called the later course a postgraduate course; it was company training.
 - Saturation of **every property** of every CAT. CAT5 rework, CAT6 gating, CAT14 translation, and CAT13’s Portuguese incident **did** change the property list.
 - Saturation of **lecturer-side** categories (CAT11 supply, CAT1 lecturer_interp, CAT5 designed-but-truncated loops). Those were not re-sampled.
 - That S9 was a strong test (weak recall; excluded from CAT9/CAT13/CAT14).
@@ -31,7 +31,7 @@ That is the coordinator-facing fact: **later interviews did not result in new ca
 | Wave | Cases | Analytic job | Outcome for the CAT set |
 |---|---|---|---|
 | 1 | L1–L4, S1–S6 | Open coding, memoing, split/add to 14 CAT / 4 PH | Category set **emerged** |
-| 2 | S7, S10 (IST); S8 (ISEL); S9 (Portuguese interview, thin) | Theoretical sampling against overview OQs (`followup-ist-isel-student.md`) | Category set **held**; properties densified |
+| 2 | S7, S10 (IST); S8 (ISEL); S9 (UK degree, thin; later UK company training) | Theoretical sampling against overview OQs (`followup-ist-isel-student.md`) | Category set **held**; properties densified |
 
 **Stop rule:** local sufficiency of the 14-category set for this thesis **plus** recruitment constraint (timeline; participants in scope who will take part). Not “the theory is finished.”
 
@@ -68,7 +68,7 @@ Cell key: **empty** · **inst.** (instantiates a known property) · **new** (new
 | CAT3 teacher examples | inst. | inst. | inst. | empty |
 | CAT4 self-strategies | **new** | inst. | inst. | inst. |
 | CAT5 feedback timing / rework | **new** | inst. | empty | **new** |
-| CAT6 feedback access | inst. | **new** | **new** | **new** |
+| CAT6 feedback access | inst. | **new** | boundary‡ | **new** |
 | CAT7 semantic checking | inst. | inst. | empty | empty |
 | CAT8 tool friction | **new** | inst. | inst. | empty |
 | CAT9 groups | **new** | inst. | empty† | inst. |
@@ -79,7 +79,8 @@ Cell key: **empty** · **inst.** (instantiates a known property) · **new** (new
 | CAT14 cross-notation | **new** | **new** | empty† | **new** |
 
 \* S7/S10 switch incidents are CAT14 (boundary with CAT2), not extra symbol-overload warrants.  
-† S9 explicitly not used for CAT9, CAT13, CAT14.
+† S9 explicitly not used for CAT9, CAT13, CAT14.  
+‡ S9’s CAT6 cell is a hypothetical answer (T021), not a recalled sharing event. Superseded 30 September 2026: the 7 September cell was **new**.
 
 Reading the matrix: the first panel is **not** “nothing new.” Several cells are **new** properties. What did **not** happen is a 15th CAT.
 

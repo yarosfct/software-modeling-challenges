@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "canvases/local_saturation.canvas",
+                "file": "canvases/findings_map_overview.canvas",
                 "viewState": {
-                  "x": 470,
-                  "y": 623.6499402175792,
-                  "zoom": -0.6922730514863613
+                  "x": 1094.581913215476,
+                  "y": 987.8856211793128,
+                  "zoom": -1.6502294555579375
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "local_saturation"
+              "title": "findings_map_overview"
             }
           }
         ]
@@ -208,14 +208,14 @@
   },
   "active": "606075830c97f41e",
   "lastOpenFiles": [
-    "qualitative_analysis/04_cross_case_analysis/wave2_constant_comparison.md",
+    "canvases/findings_map_relations.canvas",
     "canvases/local_saturation.canvas",
+    "qualitative_analysis/04_cross_case_analysis/wave2_constant_comparison.md",
     "qualitative_analysis/04_cross_case_analysis/local_saturation_assessment.md",
     "qualitative_analysis/04_cross_case_analysis/open_questions_status.md",
     "canvases/findings_map_overview.canvas",
     "qualitative_analysis/04_cross_case_analysis/category_inventory_working.md",
     "qualitative_analysis/04_cross_case_analysis/category_evidence_map.md",
-    "canvases/findings_map_relations.canvas",
     "qualitative_analysis/01_raw_transcripts/S8_transcript.md",
     "qualitative_analysis/01_raw_transcripts/S7_transcript.md",
     "qualitative_analysis/01_raw_transcripts/pt/S7_transcript_pt.md",

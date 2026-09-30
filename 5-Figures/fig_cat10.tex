@@ -20,16 +20,16 @@
   };
   \node[pairbox, rectangle split parts=3, anchor=north west]
     at ([xshift=18mm]dom.north east) (read) {%
-      {\centering\textbf{A concrete reader}\\
-      Someone will actually read it\par}
-      \nodepart{two}\caserow{S7}{supervisor and defence, not only the teacher}
+      {\centering\textbf{What the model is for}\\
+      A course submission, or a defence\par}
+      \nodepart{two}\caserow{S7}{course submission and a thesis defence}
       \nodepart{three}\caserow{S10}{explainability for the defence}%
     };
 
   \node[pairhead] at ($(dom.north)!0.5!(read.north)+(0,8mm)$)
-    {An interesting domain does not replace a reader};
+    {Both were reported};
 
   \draw[arrd] (dom.east) -- (dom.east -| read.west);
   \node[font=\tiny\itshape, inner sep=1pt, anchor=south]
-    at ($(dom.east)!0.5!(dom.east -| read.west)+(0,1.5mm)$) {does not replace};
+    at ($(dom.east)!0.5!(dom.east -| read.west)+(0,1.5mm)$) {also reported};
 \end{tikzpicture}

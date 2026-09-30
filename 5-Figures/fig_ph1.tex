@@ -13,7 +13,7 @@
     inner sep=5pt, text width=38mm, minimum height=16mm,
   },
 ]
-  \node[phhead] (ph) {PH1\\First model from a problem statement,\\not the symbols};
+  \node[phhead] (ph) {PH1\\First model from a problem statement};
 
   \node[catleaf, below=18mm of ph] (cat1)
     {\textbf{CAT1}\\missing path};
@@ -22,7 +22,7 @@
   \node[catleaf, right=8mm of cat1] (cat4)
     {\textbf{CAT4}\\self-tactics};
   \node[catgap, below=14mm of cat1] (cat2)
-    {\textbf{CAT2}\\symbol overload};
+    {\textbf{CAT2}\\notation};
 
   \draw[thick] (cat1.north) -- ++(0,7mm) coordinate (j);
   \draw[arr] (j) -- (ph.south);

@@ -28,7 +28,7 @@ Cells: **P** = primary (drawn on overview), **S** = secondary (listed here only)
 
 ### CAT1 — Starting is gated without a worked path
 **Honesty:** finding. **Voice:** student + lecturer_interp. **Primary RQ:** RQ1.
-Getting stuck before the first real application unless a demo, prior contact, or worked path is available. Wave 2: ISEL capstone required models before teaching (S8M1); wait-to-start can describe the room (copiers) without describing every student (S7M1, S10M2). **Cases:** S3, S4, S8, S9 (thin), L1, L2, L3. Neg/bound: S5, S7, S10. **Evidence:** S3M1, S4M2, S8M1, L1M1, L2M1, L3M4, S7M1, S10M2. Negative: S5M3, S10M2.
+Getting stuck before the first real application unless a demo, prior contact, or worked path is available. Wave 2: ISEL capstone required models S8 did not know how to use (S8M1; “before teaching” superseded 30 September 2026); wait-to-start can describe the room (copiers) without describing every student (S7M1, S10M2). **Cases:** S3, S4, S8, S9 (thin), L1, L2, L3. Neg/bound: S5, S7, S10. **Evidence:** S3M1, S4M2, S8M1, L1M1, L2M1, L3M4, S7M1, S10M2. Negative: S5M3, S10M2.
 
 ### CAT2 — Notation and symbol overload create doubt
 **Honesty:** finding. **Voice:** student. **Primary RQ:** RQ1.
@@ -40,7 +40,7 @@ Worked examples and whiteboard walkthroughs are the main pedagogical unlock. Wav
 
 ### CAT4 — Students invent process strategies when teaching is thin
 **Honesty:** finding. **Voice:** student. **Primary RQ:** RQ2.
-Trial-and-error text-to-model, objects-then-relations, symbols-to-words, early drafts — plus attack-to-survive vs wait-to-copy (S7M1), pencil-to-pen before teaching (S8M1), notebook-then-board (S10M2). **Cases:** S1, S2, S3, S5, S7, S8, S10 (S9 thin). **Evidence:** S1M2, S2M2, S3M2, S5M3, S7M1, S8M1, S10M2.
+Trial-and-error text-to-model, objects-then-relations, symbols-to-words, early drafts — plus attack-to-survive vs wait-to-copy (S7M1), pencil-to-pen in later class exercises, not before teaching (S8M1; superseded 30 September 2026), notebook-then-board (S10M2). **Cases:** S1, S2, S3, S5, S7, S8, S10 (S9 thin). **Evidence:** S1M2, S2M2, S3M2, S5M3, S7M1, S8M1, S10M2.
 
 ### CAT5 — Feedback arrives too late
 **Honesty:** finding. **Voice:** both. **Primary RQ:** RQ2 (secondary RQ3).

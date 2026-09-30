@@ -11,140 +11,82 @@
 \chapter{Related Work}
 \label{cha:related_work}
 
-\section{Conceptual modelling education landscape}
+\section{Scope of the literature}
 \label{sec:rw_landscape}
 
-Research on conceptual modelling education spans multiple modelling families and research communities, including data modelling, process modelling, requirements-related modelling, and model-driven development. Maslov et al.\ map the conceptual modelling education literature and report that educational work is distributed across multiple communities and modelling subfields that have developed partially independent terminology, learning-theory grounding, and evaluation approaches \cite{maslov2025conceptual}. As a result, findings are often difficult to compare across modelling families, and evidence about effective teaching strategies and supports accumulates unevenly across subdomains. Researchers write learning-outcome frameworks, study where learners struggle, and study how tools support modelling.
+Research on modelling education covers data models, process models, goal models, and model-driven development. Maslov et al.\ map that literature and find it spread across communities that do not share one terminology or one way of evaluating teaching \cite{maslov2025conceptual}. Findings from one family are therefore hard to compare with findings from another. The sections below follow the kinds of work in that map: frameworks for what a course might aim at, studies of where learners struggle, studies of tools, and studies of the course conditions around the task.
 
-This thesis builds on the landscape evidence by drawing together frameworks and empirical results from different modelling-education strands (conceptual/data, process, goal-oriented, and tool-supported modelling) and by focusing on the challenges and support needs reported by both students and instructors.
-
-\section{Modelling frameworks}
+\section{Learning objectives}
 \label{sec:rw_frameworks}
 
-A common approach to strengthening modelling education research is to define explicit frameworks for learning outcomes, competencies, and assessment design. Several works adapt Bloom's revised taxonomy \cite{krathwohl2002revision} to modelling activities in order to clarify what learners should know and be able to do beyond learning a notation. The following subsections summarise three modelling-education frameworks that are especially relevant to this thesis.
+Several frameworks use Bloom's revised taxonomy to say what a modelling course might aim at beyond copying a notation \cite{krathwohl2002revision}. CaMeLOT combines Bloom's levels with a knowledge dimension and with areas of data-modelling content, and it gives example learning outcomes for designing a course \cite{bogdanova2019camelot}. Bogdanova and Snoeck examined assessment tasks and found that many of them ask students to understand, analyse, and create, while evaluation and metacognition receive little explicit attention \cite{bogdanova2017domain}. Bork relates the same Bloom dimensions to the parts of a modelling method, including the language, the notation, and the procedure, and a teaching case in that paper likewise gives little explicit practice in evaluation \cite{bork2019framework}. These frameworks name a gap in written outcomes. They do not show what the lecturers in this study taught, and this thesis did not sort the interviews into Bloom levels.
 
-\subsection{CaMeLOT: a framework for conceptual data modelling learning outcomes}
-\label{subsec:rw_camelot}
+Sedelmaier and Landes propose the EVELIN agenda for software engineering competence more broadly \cite{sedelmaier2013research}. Curricula, on that agenda, should state competence targets rather than only lists of topics, and should check those targets over time. The agenda is not about modelling courses. It does treat structural conditions, such as how a programme is organised, as something a competence-oriented curriculum has to take into account.
 
-CaMeLOT proposes an educational framework for conceptual data modelling that combines Bloom's cognitive levels with a knowledge dimension (factual, conceptual, procedural, metacognitive) and modelling content areas \cite{bogdanova2019camelot}. The framework is instantiated with detailed example learning outcomes and can be used to design course objectives, learning activities, and assessments in a systematic manner. For this thesis, CaMeLOT is valuable as a template for articulating modelling competence across cognitive and knowledge dimensions, and for motivating the inclusion of procedural and reflective elements rather than focusing exclusively on diagram production.
+\section{Reported challenges}
+\label{sec:rw_empirical}
 
-\subsection{Domain Modelling in Bloom: empirical analysis of assessment practices}
-\label{subsec:rw_domain_bloom}
+Li et al.\ studied beginners learning iStar. They framed tasks with Bloom's levels, analysed the accounts with grounded theory, and reported difficulty understanding constructs, applying the notation, and judging whether a model was complete \cite{istar-learning}. From that they derived support requirements, including explanation of constructs, syntax checking, and guidance through the process, and they implemented some of those requirements in a prototype. The study included lecturers as well as beginners. It ran a tutorial and a modelling session before the interviews, and it stayed with one language. This thesis did not run that session, and it asks about several notations.
 
-Bogdanova and Snoeck empirically analyse domain-modelling assessment tasks through the lens of Bloom's revised taxonomy \cite{bogdanova2017domain}. They report that many tasks concentrate on understanding, analysing, and creating conceptual knowledge, while evaluation, procedural knowledge, and metacognitive learning outcomes receive limited explicit attention. This work provides evidence that modelling courses may implicitly expect higher-level modelling competence without systematically scaffolding or assessing foundational skills. For this thesis, these findings support examining modelling challenges in relation to cognitive demands and considering whether educational support should target not only syntax and notation use but also strategies for evaluation and refinement.
+Chakraborty and Liebel interviewed students and lecturers about what modelling is for \cite{chakraborty2022perceptions}. Students often did not understand what a model says, and they described modelling either as a useful instrument or as extra documentation.
 
-\subsection{Teaching conceptual modelling and metamodeling}
-\label{subsec:rw_bork_framework}
+Chakraborty, Troya, Burgue{\~n}o, and Liebel report a separate study, in which they watched students carry out a modelling task \cite{chakraborty2026actions}. Sixteen pairs at two universities worked for about an hour on a UML class diagram and a sequence diagram. One student drew while the other followed the problem, and then they swapped. The researchers recorded the screen, the pair's talk during the task, and the diagrams they produced, and they analysed the difficulties that showed up in that record. This thesis did not watch its participants model. The interviews are what the participants could still recount about a past incident.
 
-Bork extends Bloom-based framing to both conceptual modelling and metamodeling by relating cognitive and knowledge dimensions to components of modelling methods (language, semantics, notation, procedure, mechanisms and algorithms) \cite{bork2019framework}. By analysing a teaching case using the proposed framework, the work suggests that even practice-oriented materials may emphasise model creation while providing limited explicit support for evaluation tasks and metacognitive reflection.
+Maslov sets out an agenda for BPMN education rather than the results of a completed experiment \cite{bpmn-education}. The agenda calls for a review of existing work, studies of how novices model and where they go wrong, and BPMN teaching strategies that are then tested. It places process-modelling education among the strands that still need that kind of evidence.
 
-Bogdanova and Snoeck find almost no assessment tasks at the evaluate level, and no metacognitive outcomes \cite{bogdanova2017domain}. Bork's teaching case gives little explicit practice in evaluation or metacognition \cite{bork2019framework}.
-
-\section{Empirical studies on modelling learning challenges}
-\label{sec:rw_empirical_challenges}
-
-Process modelling and goal modelling are part of conceptual modelling.
-
-Frameworks clarify educational targets, but empirical studies are needed to understand where learners struggle in practice and which supports are perceived as valuable. Two complementary strands are particularly relevant: studies of goal-oriented modelling learning challenges and research agendas for process modelling education.
-
-\subsection{iStar learning challenges and support requirements}
-\label{subsec:rw_istar_learning}
-
-A key empirical reference for this thesis is an iStar learning study, which investigates challenges beginners face when learning and practising iStar and derives requirements for facilitating learning \cite{istar-learning}. Using Bloom-based task framing and grounded theory analysis, the study reports difficulties at multiple cognitive levels, including understanding the semantics of modelling constructs, applying the notation to requirements scenarios, and analysing models for quality and completeness. The authors derive a catalogue of strategies and tool-supported requirements (e.g., conceptual clarification, syntax checking, process guidance, templates, advanced visualisation, and partial automation from textual requirements) and implement a subset of these requirements in a prototype tool \cite{istar-learning}. This thesis builds on these insights by extending the focus from a single modelling method to broader modelling education contexts and by eliciting perspectives from both students and instructors.
-
-\subsection{Process modelling education and the need for empirical validation}
-\label{subsec:rw_bpmn_education}
-
-In the domain of process modelling, Maslov argues for empirically validated process-modelling education using BPMN and outlines a research agenda that integrates conceptual modelling education, process model quality research, and learning theory \cite{bpmn-education}. The agenda emphasises systematic synthesis of existing work, empirical investigation of novice modelling behaviour and typical errors, and the design and experimental validation of BPMN-specific teaching strategies and feedback mechanisms. This agenda is relevant to the present thesis as a parallel strand: it highlights that modelling families pose distinct cognitive and practical demands while pointing to recurring educational needs such as scaffolding, feedback, and support for managing modelling complexity.
-
-\section{Tools and model-driven engineering in education}
+\section{Notation and tools}
 \label{sec:rw_tools_mde}
 
-These papers study tools in software modelling courses and in model-driven engineering.
+Moody proposes principles for the design of visual notations \cite{moody2009physics}. Symbol overload means that one symbol stands for more than one construct. Symbol redundancy means that more than one symbol stands for the same construct. A diagram that simply contains many symbols is a different problem. These terms describe notations. They are not a result of the interviews in this thesis.
 
-\subsection{Perception of tools and UML in MDE education}
-\label{subsec:rw_liebel_tools_uml}
+The UML specification separates the abstract syntax of a language from its concrete syntax \cite{omg2017uml}. The abstract syntax is the set of concepts the language allows, and the rules for combining them. The concrete syntax is how those concepts are drawn. Difficulty telling symbols apart is not the same difficulty as failing to understand the concept a symbol stands for. A diagram that follows the rules can still fail to say what the person who made it meant.
 
-Liebel et al.\ show that students’ tool experiences depend less on the tool “in isolation” than on how it is embedded in the course---including the support provided, the surrounding workflow, and the expectations placed on models (for example, exploratory communication artefacts versus precise inputs to downstream automation) \cite{liebel2017model}. The study also suggests that perceptions of UML are more robustly positive when models are used for requirements and analysis rather than primarily as code generation inputs \cite{liebel2017model}. These results motivate treating tooling and course design as socio-technical factors that shape modelling experiences, rather than as neutral delivery mechanisms.
+Liebel, Badreddin, and Heldal studied how students perceive tools and UML in model-driven courses \cite{liebel2017model}. What students thought of a tool depended on the course around it: the support they were given, the place of the tool in the work, and whether the model was used to talk about requirements or had to generate code. Views of UML were more positive when models were used for requirements and analysis than when they were used mainly to generate code.
 
-\subsection{Human factors in model-driven engineering}
-\label{subsec:rw_hf_mde}
+Akayama and colleagues discuss how a modelling tool is chosen for a course \cite{akayama2013tools}. The choice depends on the aim of the activity, on what students already know, and on how the course is organised. The paper is a record of that discussion. It does not compare tools by how much students learn.
 
-Work on human factors in model-driven engineering argues for research that accounts for usability, cognitive load, and the alignment between tools and user goals \cite{human-factors-mde}. From an educational perspective, this supports the view that modelling tools should be evaluated not only by feature completeness, but also by how they support learning processes such as exploration, error detection, reflection, and progressive mastery.
+Hammouda and colleagues asked 44 students about assignments done on paper and assignments done in a modelling tool \cite{hammouda2014tools}. Students reported benefits and limits for both. Paper was used before the tool, and the assignments differed, so the medium alone does not explain the difference. The answers are perceptions, not a measure of learning.
 
-\section{Human factors and learning context in modelling education}
+Kienzle and colleagues, and Zschaler and colleagues, list requirements for modelling tools used in teaching, including feedback, examples, and support suited to a course \cite{kienzle2024requirements,zschaler2025tools}. Both papers use one survey of 59 higher-education teachers. They are not two independent studies. A stated priority is not evidence that the feature improves learning. In that survey, support for generative AI was a relatively low priority.
+
+Burgue{\~n}o, Vallecillo, and Gogolla describe teaching UML with OCL so that a tool can execute the model and check constraints \cite{burgueno2018teaching}. A failed check shows that a stated rule was broken. It does not show that the rule, or the model, fits the situation the student was trying to describe. They report using this approach in a course. Students who took the course said they valued it. That report is not a measured gain in learning.
+
+A later agenda from that group sets human factors in model-driven engineering as future research: usability, the effort a tool demands, and whether the tool fits what the user is trying to do \cite{human-factors-mde}. It is a list of questions for the field. It is not a second study of student perceptions.
+
+Buchmann and colleagues argue that a model is not a drawing \cite{buchmann2019conceptual}. They call it a knowledge structure: the symbols have to follow a modelling language, so each mark stands for a concept that language allows, and the links have to be ones that language permits. A tool that only lets someone draw does not, on that account, check whether the model is a valid use of the language.
+
+Hasker and Rowe built UMLint because a student can work for days and then wait again for a grade, and a diagram can follow the notation and still be wrong \cite{hasker2011umlint}. Foss, Urazova, and Lawrence treat slow marking of design diagrams as a bottleneck and offer immediate automated feedback on UML database-design questions \cite{foss2022autoer}. These tools check a diagram against rules. They do not show whether a student can still change the work after a comment.
+
+Vemuri and colleagues report a BPMN course in which students could submit optional practice exercises and receive feedback \cite{vemuri2023feedback}. On average, those exercises drew 11 submissions from 43 students. The report does not show that the feedback improved learning. It does show that feedback can be offered and still go largely unused.
+
+Garaccione and colleagues built a web application in which students draw BPMN diagrams, and they compared two versions of it with 200 students \cite{garaccione2024gamification}. One version added points, progress, and penalties, and it also gave more feedback on the diagram. The other version was the same application with less feedback and without those game-like elements. Students who used the version with points and extra feedback checked the diagram more often, and on one measure the diagrams matched the intended process more closely. The results were mixed, and the authors say the tool still needs further work before ordinary classroom use. The version with the better diagrams had both the extra feedback and the points. The experiment did not include a version with only one of those, so it does not show whether the diagrams were better because of the points, because of the extra feedback, or because of the two together.
+
+Sikkel and Daneva say textbooks rarely teach students to check that two UML diagrams of the same system agree, and they use exercises that compare a pair of diagrams \cite{sikkel2010consistency}. Verbruggen and Snoeck watched students model one case as a class diagram and as a BPMN model \cite{verbruggen2022multiperspective}. Deciding which requirements belong in which diagram is, on their account, part of the quality of the model.
+
+\section{Domain, motivation, and authenticity}
 \label{sec:rw_human_context}
 
-Beyond frameworks, methods, and tools, modelling education is influenced by motivational and contextual factors such as domain choice, inclusiveness, and the authenticity of tasks.
+Gra{\ss}l and colleagues surveyed students and educators about the domain of a modelling assignment, about motivation, and about inclusion \cite{grassl2026dei}. Students preferred domains they found personally meaningful. Educators' assumptions about which domains would motivate students, such as games or technical systems, did not always match those preferences. The survey is a reason to pay attention to the domain participants describe. It does not show that a particular domain causes students to be excluded, or that a familiar domain improves learning.
 
-\subsection{Domain diversity, motivation, and inclusion}
-\label{subsec:rw_domain_diversity}
+Holmes et al.\ studied software engineering education more broadly \cite{holmes2018dimensions}. They describe the experiences students value as real projects, real tasks, and real mentors. The work is not about modelling notations. It is about the setting of the task.
 
-Research on domain diversity and motivation in modelling education reports that educators' assumptions about ``motivating'' domains do not always match students' preferences, and that students value domains that connect to their interests and everyday or socially relevant contexts \cite{grassl2026dei}. The work also highlights that assignment design can unintentionally exclude learners when domains or examples presume cultural, economic, or experiential background that not all students share \cite{grassl2026dei}. These findings motivate treating domain choice and inclusiveness as relevant contextual variables when interpreting modelling learning experiences.
+Whittle and colleagues report on a software engineering course they taught at Lancaster University \cite{whittle2014studio}. They call the course a design studio: students work on a practical project, with coaching and critique, instead of lectures being the main activity. The name is borrowed from studio teaching in design schools. When students could choose how to draw, they made many informal drawings, sketches that do not follow a notation such as UML, and they almost never produced a formal model. They used those sketches when talking with each other about the design. An informal drawing can still be useful in that conversation even when it is not maintained as a formal model. The paper concerns this one course. It does not examine which assignment domain students prefer, and it does not examine inclusion.
 
-\subsection{Experiential learning and authenticity}
-\label{subsec:rw_experientialism}
+\section{Groups and generative AI}
+\label{sec:rw_groups_ai}
 
-Holmes et al.\ propose dimensions of experientialism in software engineering education and show that students value learning experiences that involve real projects, real tasks, and real mentors \cite{holmes2018dimensions}. Although this work is not modelling-specific, it contributes a useful lens for interpreting how authenticity and mentorship can influence learners' engagement and competence development, and it supports the relevance of studying modelling experiences in realistic educational contexts.
+Silva and colleagues compared individual and group UML exercises \cite{silva2018group}. On some measures the individual diagrams were more correct. On some measures the group diagrams were more complete. A group is not automatically the better way to model.
 
-\section{Competence-oriented agendas and methodological precedents}
+C\'amara and colleagues tested ChatGPT on UML class diagrams with OCL and found the results unreliable next to code generation: problems of syntax, inconsistency, and scale \cite{camara2023chatgpt}. That is a test of the system on those tasks. It is not a study of how students in a course used it.
+
+\section{How studies of this kind are done}
 \label{sec:rw_competence_methods}
 
-Competence-oriented perspectives provide a complementary lens for structuring educational goals and for linking teaching approaches to measurable outcomes.
+Stol, Ralph, and Fitzgerald review how grounded theory has been used in software engineering and set out guidelines for doing it \cite{stol2016grounded}. Hoda proposes socio-technical grounded theory for that field \cite{hoda2018socio}. The explanation has to cover the people, the way they work, and the tool they use. The tool is part of what is explained, not a mere setting around it. Adolph, Hall, and Kruchten give a practical account of using grounded theory to study how software is developed \cite{adolph2011using}.
 
-\subsection{Competency identification and development in SE education}
-\label{subsec:rw_evelin}
+This thesis used the parts named in Chapter~\ref{cha:methodology}: open coding, memos written during coding, and constant comparison. It did not use the Strauss and Corbin coding paradigm.
 
-Sedelmaier and Landes propose the EVELIN research agenda for identifying and developing competencies in software engineering and argue that curricula should be grounded in explicit competence models rather than topic lists \cite{sedelmaier2013research}. They introduce a six-level classification system for technical competencies and advocate an iterative approach in which competence targets are identified, competence levels are measured, and teaching strategies and structural constraints are adjusted over time \cite{sedelmaier2013research}. While not specific to modelling, this agenda supports treating modelling competence as multi-dimensional (conceptual, procedural, analytical, socio-technical) and complements Bloom-based modelling frameworks by emphasising explicit competence models and iterative alignment between competence targets, teaching methods, and structural constraints.
-
-\subsection{Grounded Theory in software engineering research}
-\label{subsec:rw_gt}
-
-Methodologically, grounded theory has been widely discussed in software engineering research as an approach for developing explanatory theory from qualitative data. Stol et al.\ provide a critical review and practical guidelines for conducting grounded theory in software engineering \cite{stol2016grounded}, while Hoda et al.\ propose a socio-technical grounded theory perspective that explicitly accounts for the interplay between social and technical factors \cite{hoda2018socio}. Adolph et al.\ offer a practical account of using grounded theory to study the experience of software development \cite{adolph2011using}. These works provide methodological grounding for the approach used in this thesis and support the use of interviews and iterative coding to derive an explanatory account from participant experiences.
-
-\section{Relating the literature to the present study}
-\label{sec:rw_dialogue}
-
-This section places the literature above, and a small set of additional papers, against the 14-category account in Chapter~\ref{cha:findings}. The additional papers were read because they speak to claims that the core set covers only thinly---delayed critique of student diagrams, group versus individual UML work, consistency across modelling views, and the reliability of LLM-generated UML. They strengthen selected claims; they do not replace the core literature.
-
-\subsection{How the core literature speaks to the findings}
-\label{subsec:rw_core_against_findings}
-
-Maslov et al.'s picture of conceptual modelling education as fragmented across families \cite{maslov2025conceptual} is the landscape condition under which the present corpus was collected: interviews span UML, BPMN, ER, iStar, and courses that teach several of those notations together, rather than a single-language laboratory. The same fragmentation is the practical cost later labelled CAT14.
-
-The Bloom-informed frameworks \cite{bogdanova2019camelot,bogdanova2017domain,bork2019framework} name an evaluation and metacognitive gap in intended learning outcomes. That vocabulary is useful for CAT12 and PH2: students invent checklists and wait for the teacher because a compile-like signal is missing. The frameworks describe intended learning outcomes. They do not, by themselves, describe the lived substitutes observed in the interviews, and this study did not sort transcripts into Bloom bins (Chapter~\ref{cha:methodology}).
-
-The closest qualitative peer remains the iStar learning study \cite{istar-learning}. It supports the first-modelling-move problem (PH1) and parts of CAT1, CAT4, and CAT7: moving from a requirements scenario to a first model is hard, and learners ask for explanation and checking rather than only a symbol list. It is also a methods peer (grounded analysis in modelling education). It is not a template that this thesis replicates. Li et al.\ studied one goal-modelling language after a tutorial and a modelling session; this corpus is multi-notation, interview-only, and includes lecturers.
-
-Chakraborty and Liebel report that students often do not understand what a model ``says,'' and that perceptions of modelling polarise between valuable instrument and extra documentation \cite{chakraborty2022perceptions}. That finding supports CAT2 as a comprehension and notation problem rather than only a missing demonstration. It does not split the start-gate (CAT1) from overload (CAT2); the present analysis treats those as distinct mechanisms.
-
-Maslov's BPMN education agenda \cite{bpmn-education} remains a parallel strand rather than a source of BPMN learning outcomes. It flags scaffolding, feedback, and typical novice errors as open needs. This thesis does not close that agenda; it shows how getting started, getting comments, using tools, and working in groups hang together across families.
-
-Liebel et al.\ and the human-factors MDE literature \cite{liebel2017model,human-factors-mde} support treating tools as socio-technical rather than as a brand choice. CAT7 versus CAT8 is that tension in interview form: semantic checks are wanted; an antique compile UI or a mid-course licence switch is still dropped. Buchmann et al.\ insist that models are knowledge structures, not drawings \cite{buchmann2019conceptual}, which helps explain why a drawing tool that cannot catch an invalid model is a poor substitute for a checker---and why students still choose draw.io when the checker costs more than it saves.
-
-Grassl et al.\ treat motivating domains and inclusion as design variables \cite{grassl2026dei}; Holmes et al.\ describe authenticity as real projects, real tasks, and real mentors \cite{holmes2018dimensions}. CAT10 relates to that authenticity literature and qualifies it: in these interviews a concrete reader (supervisor, stakeholders, defence) pulled care up more reliably than domain excitement alone. Modelling-specific evidence for ``who reads the diagram'' remains thinner than evidence for ``which domain the diagram is about.''
-
-Course load and theory--practice gaps (CAT11) have little dedicated modelling-education literature. EVELIN treats structural conditions as something competence-oriented curricula must measure \cite{sedelmaier2013research}; that is an adjacent agenda, not a study of ECTS versus a paid job versus packed concurrent courses.
-
-\subsection{Additional work that strengthens selected claims}
-\label{subsec:rw_additional}
-
-A further set of papers is useful where the core frame is thin.
-
-Industrial modelling tools give little quality feedback, so students wait on the instructor. Hasker and Rowe built UMLint because a student may work for days, submit, and wait further days for a graded response, while producing diagrams that are syntactically acceptable and semantically wrong \cite{hasker2011umlint}. Foss, Urazova, and Lawrence similarly treat delayed marking of design diagrams as a teaching bottleneck and offer immediate, automated feedback on UML database-design questions \cite{foss2022autoer}. Those papers support CAT5 and PH2 as a recognised educational problem: the correctness signal is late and person-bound unless a tool intercepts it. They also show that automated checkers are an available design response, not only ``more lecturer hours.'' They do not address CAT6. Access---who can show a half-finished diagram, in public or at the desk, on graded or ungraded work---is largely absent from that tool literature.
-
-Silva, Gadelha, Steinmacher, and Conte compared individual and group UML exercises and found that groups were not uniformly better: some artefacts were more correct when produced individually and more complete when produced in a group \cite{silva2018group}. That supports CAT9's two-sided claim---groups can kill or save a diagram---and argues against treating group work as automatically the better pedagogy. Their outcome measures are correctness and completeness of classroom exercises, not code-first pressure, exclusive notation ownership, or a defence audience. Those conditions are the present study's addition.
-
-Sikkel and Daneva argued that textbooks rarely teach consistency across UML views and developed pairwise-comparison exercises so that students notice missing elements between diagrams \cite{sikkel2010consistency}. Verbruggen and Snoeck observed students modelling the same case in a UML class diagram and a BPMN process model and argued that knowing which requirements belong in which perspective is part of model quality, not an extra trick \cite{verbruggen2022multiperspective}. Those sources support CAT14 as a recognised teaching problem: a class diagram, a process model, and a goal model answer different questions about the same system, and keeping them consistent has to be taught. They do not document the incidents in this corpus---an iStar rationale that loses its goals when the work moves to UML (S6), or a BPMN pool copied too directly into classes (S10). They also do not say whether courses teach that difference up front, or whether students only hear it after a diagram has already gone wrong.
-
-C\'amara, Troya, Burgue\~no, and Vallecillo assessed ChatGPT on UML class diagrams with OCL and found limited reliability: syntactic and semantic deficiencies, inconsistency, and poor scaling compared with code generation \cite{camara2023chatgpt}. That result is consistent with CAT13's student stance (explain and compare, do not submit generated homework): if generation is unreliable, using the tool as an explainer is a rational classroom tactic, not only an integrity rule. It also undercuts any claim that current LLMs already close CAT12 by compiling models. The present CAT13 evidence is four student cases, not an evaluation of ChatGPT.
-
-\subsection{Where the literature remains thin}
-\label{subsec:rw_remaining_thin}
-
-Taken together, prior work is strongest on landscape fragmentation, Bloom-shaped outcome gaps, iStar-specific challenges, tool friction in MDE courses, delayed diagram feedback, and multi-perspective consistency. It is weaker on feedback \emph{access} (CAT6), groups as kill-or-save under code-first pressure, AI used as an explainer in modelling courses, and course load as a blocker of demonstrations and feedback loops (CAT11). This thesis does not close those gaps by volume of interviews; it offers a bounded, multi-notation, student-and-lecturer account against which that literature can be read.
-
-\section{Summary}
+\section{What this thesis adds}
 \label{sec:rw_summary_positioning}
 
-In summary, existing work provides: (i) landscape-level evidence that modelling education research is distributed across modelling families and communities \cite{maslov2025conceptual}; (ii) frameworks that structure modelling learning outcomes using Bloom-based dimensions \cite{bogdanova2019camelot,bogdanova2017domain,bork2019framework}; (iii) empirical studies and agendas that identify modelling-specific learning challenges and the need for validated educational support \cite{istar-learning,bpmn-education}; and (iv) tool-, competence-, and human-centred perspectives that emphasise the role of context, usability, motivation, inclusiveness, and authenticity \cite{grassl2026dei,holmes2018dimensions,liebel2017model,sedelmaier2013research}. Section~\ref{sec:rw_dialogue} places that frame against the findings of this thesis and adds a smaller set of studies on delayed diagram feedback, group versus individual UML work, multi-perspective modelling, and LLM-generated UML \cite{camara2023chatgpt,foss2022autoer,hasker2011umlint,silva2018group,sikkel2010consistency,verbruggen2022multiperspective}. Those additional sources strengthen selected claims; they do not replace the core literature summarised above.
+Studies cited above already include interviews with students and lecturers, comparisons of classroom tasks, and tests of tools. This thesis relates the difficulties its participants could still describe to the course conditions they described. A missing path and difficulty with the notation are reported as different difficulties and are not ranked. Comments sometimes arrived while the work could still change. In the group episodes, what happened to the diagram went together with how the work was shared and what the model was for. It does not measure how common those difficulties are, and it does not test whether a change in the course or the tool would help.

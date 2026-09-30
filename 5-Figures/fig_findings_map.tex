@@ -25,7 +25,7 @@
 
   % --- PH2 ---
   \node[feed, below=16mm of c1] (c12) {\textbf{CAT12}\\{\tiny RQ1} good enough};
-  \node[feed, right=2mm of c12] (c5) {\textbf{CAT5}\\{\tiny RQ2} late feedback};
+  \node[feed, right=2mm of c12] (c5) {\textbf{CAT5}\\{\tiny RQ2} comment timing};
   \node[feed, right=2mm of c5] (c6) {\textbf{CAT6}\\{\tiny RQ2} access};
   \node[draw, rounded corners=2pt, inner sep=2.5pt, fit=(c12)(c5)(c6)] (g2) {};
   \node[ph, right=12mm of g2] (ph2) {PH2\\A review from a person};
@@ -38,14 +38,14 @@
   \node[ph, right=12mm of g2.east |- c7] (ph3) {PH3\\Checks, not generators};
   \draw[arr] (g3.east) -- (ph3.west);
   \node[gap, below=1.5mm of g3.south west, anchor=north west] (n3)
-    {\textbf{CAT8} (RQ3) contrasts with CAT7: a heavy or optional tool is still dropped.};
+    {\textbf{CAT8} (RQ3) contrasts with CAT7: wanting a check did not decide the outcome.};
 
   % --- PH4 ---
   \node[feed, below=16mm of c7] (c9) {\textbf{CAT9}\\{\tiny RQ3} groups};
-  \node[feed, right=2mm of c9] (c10) {\textbf{CAT10}\\{\tiny RQ3} a real reader};
+  \node[feed, right=2mm of c9] (c10) {\textbf{CAT10}\\{\tiny RQ3} what it is for};
   \node[draw, rounded corners=2pt, inner sep=2.5pt, fit=(c9)(c10)] (g4) {};
-  \node[ph] at (ph3.center |- c9) (ph4) {PH4\\Owner and reader};
+  \node[ph] at (ph3.center |- c9) (ph4) {PH4\\Shared work, a use};
   \draw[arr] (g4.east) -- (ph4.west);
   \node[gap, below=1.5mm of g4.south west, anchor=north west] (n4)
-    {\textbf{CAT11} (RQ3) blocks demos and feedback. \textbf{CAT14} (RQ1) feeds no phenomenon.};
+    {\textbf{CAT11} (RQ3) limits time for demos and feedback. It does not feed PH4. \textbf{CAT14} (RQ1) feeds no phenomenon.};
 \end{tikzpicture}

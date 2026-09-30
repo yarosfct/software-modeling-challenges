@@ -4,7 +4,7 @@
   \node[rqbox, text width=28mm, right=24mm of map] (w2) {Wave 2\\S7--S10\\($n=4$)};
   \node[notebox, text width=42mm, below=12mm of map] (stop) {No 15th category.\\Detail inside the existing 14.};
   \draw[arr] (w1) -- node[lbl, above=1pt] {open coding} (map);
-  \draw[arr] (map) -- node[lbl, above=2pt] {theoretical sampling} (w2);
+  \draw[arr] (map) -- node[lbl, above=2pt] {second round} (w2);
   \draw[arr] (w2.south) |- node[lbl, pos=0.25, fill=white] {densify properties} (stop.east);
   \draw[arrd] (stop.west) -| (w1.south);
 \end{tikzpicture}

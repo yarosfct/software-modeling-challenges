@@ -25,10 +25,10 @@ Status: **14 CATs + 4 PH** for overview (soft range 8–14 / 2–5). Wave 2 dens
 
 ### Warrant notes (one line each)
 
-- **CAT1:** Start depends on prior contact / demo / teacher path — distinct from symbol doubt (CAT2). Wave 2: capstone **required before taught** (S8M1); lecturer wait-to-start can be true of the room without being true of every student (S7M1 copiers vs S7/S10 starters). Negatives: S5M3, S10M2. S9M1 thin.
+- **CAT1:** Start depends on prior contact / demo / teacher path — distinct from symbol doubt (CAT2). Wave 2: capstone required notations S8 did not know how to use (S8M1; “required before taught” superseded 30 September 2026); lecturer wait-to-start can be true of the room without being true of every student (S7M1 copiers vs S7/S10 starters). Negatives: S5M3, S10M2. S9M1 thin.
 - **CAT2:** Symbol/arrow/framework overload stalls start *and* mid-work; S1 prefers fewer options (links CAT8). S8M3 lookalikes are a light add; S7/S10 stuck-at-switch moments belong on CAT14, not here.
 - **CAT3:** Strongest RQ2 pedagogical pattern; L4M6 withholds solved examples (negative — keep visible). Wave 2 instantiates (S7 board ritual; S8 examples teach notation not the answer; S9M1 thin).
-- **CAT4:** Trial-and-error, objects-then-relations, symbols-to-words, early drafts — plus wave 2: attack-to-survive vs wait-to-copy (S7M1), pencil-to-pen before teaching (S8M1), notebook-then-board (S10M2).
+- **CAT4:** Trial-and-error, objects-then-relations, symbols-to-words, early drafts — plus wave 2: attack-to-survive vs wait-to-copy (S7M1), pencil-to-pen in later class exercises (S8M1; “before teaching” superseded 30 September 2026), notebook-then-board (S10M2).
 - **CAT5:** End-only feedback lets errors compound; lecturers design stages that scarcity truncates (L2M2, L3M5). Wave 2 **rework dimension**: walk-around changes (S8M2), timed local rewrite (S10M3), grade-locked full redo (S7M3). Not a new CAT.
 - **CAT6:** Initiative-gated, public vs private, shy vs outgoing — plus graded-work gating (S8M2), drawing-skill hiding (S9M2), desk walk-around vs raising a hand (S10M2). Comfort showing models (S7M4) ≠ getting detailed comments.
 - **CAT7:** Students/lecturers want *checks*; S1M4 prefers simple draw.io over StarUML overload. Wave 2: checker shown then dropped for UI (S7M2); optional Camunda/Archi unused (S8M2). S10M6 private-checker wish stays implication.

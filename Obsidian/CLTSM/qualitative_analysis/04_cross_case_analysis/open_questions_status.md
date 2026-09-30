@@ -36,10 +36,10 @@ Status key: **addressed** · **partially addressed** · **unfulfilled**.
 | S5 | Outgoing; public lab / group board |
 | S7 | Comfortable showing **models** (more than code); extra comments still asked-for / in person ([[S7M4]]) |
 | S8 | Sharing easy with friends and the teacher, not course-group strangers; skipped checks from **lack of interest**, not shyness ([[S8M2]]) |
-| S9 | Would hide **poor drawing**, not a wrong model ([[S9M2]]) |
+| S9 | Hypothetical: would hide **poor drawing**, not a wrong model. S9 said this never happened ([[S9M2]], T021). |
 | S10 | Reserved **starter**; desk walk-around easy, raising a hand is not ([[S10M2]]) |
 
-**Why this is enough for the thesis:** CAT6 now has conditions (initiative, graded vs ungraded, public vs desk, graphic skill) rather than a two-type personality split.
+**Why this is enough for the thesis:** CAT6 now has conditions (initiative, graded vs ungraded, public vs desk) rather than a two-type personality split. S9 adds only a hypothetical concern about drawing skill, not a recalled sharing event. Superseded 30 September 2026: the earlier list treated graphic skill as a lived condition.
 
 **What remains:** Whether a **private checker** would recover S10’s small arrow-type doubts ([[S10M2]], [[S10M6]]). That is a design implication, not a finding.
 
@@ -51,7 +51,7 @@ Status key: **addressed** · **partially addressed** · **unfulfilled**.
 
 **What we asked:** How often do lecturer “students wait to start” claims (L1/L2) match student self-reports?
 
-**What wave 2 showed:** The claim can be true of the **room** without being true of every student ([[S7M1]]: copiers vs attack-to-survive; [[S10M2]]: reserved notebook starter). Already bounded by [[S5M3]] (drafts without waiting). [[S8M1]] is a different gate (required before taught). [[S9M1]] thin “need to see it once.”
+**What wave 2 showed:** The claim can be true of the **room** without being true of every student ([[S7M1]]: copiers vs attack-to-survive; [[S10M2]]: reserved notebook starter). Already bounded by [[S5M3]] (drafts without waiting). [[S8M1]] is a different gate (the bachelor’s project required notations S8 did not know how to use). Superseded 30 September 2026: “required before taught.” [[S9M1]] thin “need to see it once.”
 
 **Why not fully closed:** No matched lecturer–student pair in the **same** UC. Wave 2 added students only.
 

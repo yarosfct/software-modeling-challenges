@@ -15,24 +15,24 @@
 
   \node[pairbox, rectangle split parts=4] (c7) {%
     {\centering\textbf{CAT7 --- Checks wanted}\\
-    A tool that can catch an invalid model\par}
+    Vocabulary, or a language-rule check\par}
     \nodepart{two}\caserow{S3}{BPMN vocabulary sits in the interface}
-    \nodepart{three}\caserow{L4}{piStar checker for iStar}
+    \nodepart{three}\caserow{L4}{language-rule checker}
     \nodepart{four}\caserow{L1}{a modelling tool, when the licence allows}%
   };
   \node[pairbox, rectangle split parts=6, anchor=north west]
     at ([xshift=16mm]c7.north east) (c8) {%
-      {\centering\textbf{CAT8 --- Tool still dropped}\\
-      Cost, licence, or a weak interface\par}
-      \nodepart{two}\caserow{S1}{StarUML options for one relation}
+      {\centering\textbf{CAT8 --- What happened}\\
+      Stopped, never used, or kept\par}
+      \nodepart{two}\caserow{S1}{too many options for one relation}
       \nodepart{three}\caserow{L1}{licensing forces a tool change}
-      \nodepart{four}\caserow{S7}{antique compile UI, then dropped}
-      \nodepart{five}\caserow{S8}{Camunda/Archi skipped; draw.io}
-      \nodepart{six}\caserow{S9}{outdated UML menus}%
+      \nodepart{four}\caserow{S7}{outdated compile UI, then dropped}
+      \nodepart{five}\caserow{S8}{optional programs, unused}
+      \nodepart{six}\caserow{S9}{outdated menus, but kept}%
     };
 
   \node[pairhead] at ($(c7.north)!0.5!(c8.north)+(0,8mm)$)
-    {Wanting a check is not the same as keeping the tool};
+    {Wanting a check did not decide the outcome};
 
   \draw[arrd] (c7.east) -- (c7.east -| c8.west);
   \node[font=\tiny\itshape, inner sep=1pt, anchor=south]

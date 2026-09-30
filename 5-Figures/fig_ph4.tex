@@ -13,12 +13,12 @@
     inner sep=5pt, text width=44mm, minimum height=16mm,
   },
 ]
-  \node[phhead] (ph) {PH4\\A diagram survives only if\\someone owns it and someone reads it};
+  \node[phhead] (ph) {PH4\\Shared work and a use};
 
   \node[catleaf, below=38mm of ph, xshift=-30mm] (c9)
-    {\textbf{CAT9}\\group ownership};
+    {\textbf{CAT9}\\what the group did};
   \node[catleaf, below=38mm of ph, xshift=30mm] (c10)
-    {\textbf{CAT10}\\a real reader};
+    {\textbf{CAT10}\\what it is for};
 
   \draw[thick] (c9.north) -- ++(0,8mm) coordinate (jl);
   \draw[thick] (c10.north) -- ++(0,8mm) coordinate (jr);
@@ -31,5 +31,5 @@
 
   \draw[arrd] (c11.west) -- (hit);
   \node[font=\tiny\itshape, inner sep=1pt, anchor=south]
-    at ($(c11.west)!0.5!(hit)+(0,1.8mm)$) {blocks loops};
+    at ($(c11.west)!0.5!(hit)+(0,1.8mm)$) {limits time};
 \end{tikzpicture}

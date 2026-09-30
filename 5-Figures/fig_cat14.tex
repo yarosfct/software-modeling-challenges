@@ -13,7 +13,7 @@
   },
   catnote/.style={
     rectangle split,
-    rectangle split parts=3,
+    rectangle split parts=4,
     rectangle split part align=left,
     draw, dashed, rounded corners=2pt,
     font=\scriptsize, align=left,
@@ -21,20 +21,22 @@
     text width=120mm,
   },
 ]
-  \node[cathead] (head) {CAT14\\translation loss};
+  \node[cathead] (head) {CAT14\\different questions};
 
   \node[catgap, below=16mm of head] (bridge)
-    {Different purpose\\[2pt]{\tiny limited trace}};
+    {Different purpose\\[2pt]{\tiny omission can be right}};
   \node[catstep, left=12mm of bridge] (src)
     {Source family\\[2pt]{\tiny iStar / BPMN / RE}};
   \node[catstep, right=12mm of bridge] (tgt)
     {Target family\\[2pt]{\tiny UML classes}};
 
   \node[catnote, below=12mm of bridge] (loss) {%
-    \textbf{Often survives}\\names, requirements
+    \textbf{Often carried}\\names, requirements
     \nodepart{two}
-    \textbf{Often drops}\\goals, process structure, and which question the model answers (S6, S10)
+    \textbf{Often left out, and that can be right}\\goals, process structure
     \nodepart{three}
+    \textbf{Unclear bridge}\\S6: how much should carry was not explained. S10 was told afterwards, and that unblocked the work.
+    \nodepart{four}
     \textbf{Bound}\\S7 is a lighter syntax-at-switch variant.%
   };
 
